@@ -1,4 +1,4 @@
-* Getting Started
+* Not Getting Started
 * Writing tests
 	* Targeting HTML Components
 	* Selector Combinators
