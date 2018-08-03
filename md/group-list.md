@@ -15,8 +15,8 @@
 	* For each
 	* If - Else
 	* Section
-	* Select element
 	* Set Variable
+	* Select element
 	* Assert Elements
 	* Assert Elements Count
 	* Assert URL
