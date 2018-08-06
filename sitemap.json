@@ -78,7 +78,7 @@
 	},
 	{
 		"name": "Page Object pattern and Components",
-		"md" : "page-object-pattern-and-components"
+		"md": "page-object-pattern-and-components",
 		"children": [{
 				"name": "Simple button component"
 			},
