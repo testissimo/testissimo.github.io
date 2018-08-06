@@ -1,11 +1,13 @@
-[{
+[
+	{
 		"name": "How to start using Testissimo",
 		"md": "how-to-start-using-testissimo"
 	},
 	{
 		"name": "Writing Tests",
 		"md": "writing-tests",
-		"children": [{
+		"children": [
+			{
 				"name": "Targeting HTML Components"
 			},
 			{
@@ -22,7 +24,8 @@
 	{
 		"name": "Built-in Tools",
 		"md": "built-in-tools",
-		"children": [{
+		"children": [
+			{
 				"name": "Fill file input"
 			},
 			{
@@ -79,7 +82,8 @@
 	{
 		"name": "Page Object pattern and Components",
 		"md": "page-object-pattern-and-components",
-		"children": [{
+		"children": [
+			{
 				"name": "Simple button component"
 			},
 			{
@@ -102,7 +106,8 @@
 	{
 		"name": "Test maintainability",
 		"md": "test-maintainability",
-		"children": [{
+		"children": [
+			{
 				"name": "Maintainability with component based approach"
 			},
 			{
