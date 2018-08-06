@@ -1,114 +1,113 @@
-[
-	{
-		"name" : "How to start using Testissimo"
+[{
+		"name": "How to start using Testissimo"
 	},
 	{
-		"name" : "Writing Tests",
-		"children" : [
-			{
-				"name" : "Targeting HTML Components"
+		"name": "Writing Tests",
+		"children": [{
+				"name": "Targeting HTML Components"
 			},
 			{
-				"name" : "Selector Combinators"
+				"name": "Selector Combinators"
 			},
 			{
-				"name" : "Attributes Matching"
+				"name": "Attributes Matching"
 			},
 			{
-				"name" : "Extended Pseudo Selectors"
+				"name": "Extended Pseudo Selectors"
 			}
 		]
 	},
 	{
-		"name" : "Built-in Tools"
-		"children" : [
-			{ 
-				"name" : "Fill file input"
+		"name": "Built-in Tools",
+		"children": [{
+				"name": "Fill file input"
 			},
-			{ 
-				"name" : "Keyboard (Write / Key press / Focus)"
+			{
+				"name": "Keyboard (Write / Key press / Focus)"
 			},
-			{ 
-				"name" : "Mouse click (Left / Middle / Right / Double)"
+			{
+				"name": "Mouse click (Left / Middle / Right / Double)"
 			},
-			{ 
-				"name" : "Navigate to (Custom URL, Back, Reload Page)"
+			{
+				"name": "Navigate to (Custom URL, Back, Reload Page)"
 			},
-			{ 
-				"name" : "Select option"
+			{
+				"name": "Select option"
 			},
-			{ 
-				"name" : "Wait"
+			{
+				"name": "Wait"
 			},
-			{ 
-				"name" : "Extract elements values"
+			{
+				"name": "Extract elements values"
 			},
-			{ 
-				"name" : "For each"
-			}, 
-			{ 
-				"name" : "If - Else"
-			}, 
-			{ 
-				"name" : "Section"
+			{
+				"name": "For each"
 			},
-			{ 
-				"name" : "Select element"
+			{
+				"name": "If - Else"
 			},
-			{ 
-				"name" : "Set Variable"
+			{
+				"name": "Section"
 			},
-			{ 
-				"name" : "Assert Elements"
+			{
+				"name": "Select element"
 			},
-			{ 
-				"name" : "Assert Elements Count"
+			{
+				"name": "Set Variable"
 			},
-			{ 
-				"name" : "Assert URL"
+			{
+				"name": "Assert Elements"
 			},
-			{ 
-				"name" : "Assert Variable"
+			{
+				"name": "Assert Elements Count"
+			},
+			{
+				"name": "Assert URL"
+			},
+			{
+				"name": "Assert Variable"
 			}
 		]
 	},
 	{
-		"name" : "Paramater"
+		"name": "Paramater"
 	},
-	{ 
-		"name" : "Page Object pattern and Components"
-		"children" : [
-			{ "name" : "Simple button component"},
-			{ "name" : "Complex component and components composition"},
+	{
+		"name": "Page Object pattern and Components",
+		"children": [{
+				"name": "Simple button component"
+			},
+			{
+				"name": "Complex component and components composition"
+			}
 		]
 	},
-	{ 
-		"name" : "Marco"
+	{
+		"name": "Marco"
 	},
-	{ 
-		"name" : "Test execution"
+	{
+		"name": "Test execution"
 	},
-	{ 
-		"name" : "Synchronization"
+	{
+		"name": "Synchronization"
 	},
-	{ 
-		"name" : "Test maintainability"
-		"children" : [
-			{ 
-				"name" : "Maintainability with component based approach"
+	{
+		"name": "Test maintainability",
+		"children": [{
+				"name": "Maintainability with component based approach"
 			},
-			{ 
-				"name" : "Maintenance using macros"
-			},
+			{
+				"name": "Maintenance using macros"
+			}
 		]
 	},
-	{ 
-		"name" : "Run anywhere"
+	{
+		"name": "Run anywhere"
 	},
-	{ 
-		"name" : "Build-in version control system"
+	{
+		"name": "Build-in version control system"
 	},
-	{ 
-		"name" : "Test reports"
+	{
+		"name": "Test reports"
 	}
 ]
