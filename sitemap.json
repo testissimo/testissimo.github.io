@@ -1,8 +1,10 @@
 [{
-		"name": "How to start using Testissimo"
+		"name": "How to start using Testissimo",
+		"md": "how-to-start-using-testissimo"
 	},
 	{
 		"name": "Writing Tests",
+		"md": "writing-tests",
 		"children": [{
 				"name": "Targeting HTML Components"
 			},
@@ -19,6 +21,7 @@
 	},
 	{
 		"name": "Built-in Tools",
+		"md": "built-in-tools",
 		"children": [{
 				"name": "Fill file input"
 			},
@@ -70,7 +73,8 @@
 		]
 	},
 	{
-		"name": "Paramater"
+		"name": "Paramater",
+		"md": "paramater"
 	},
 	{
 		"name": "Page Object pattern and Components",
@@ -83,16 +87,20 @@
 		]
 	},
 	{
-		"name": "Marco"
+		"name": "Marco",
+		"md": "marco"
 	},
 	{
-		"name": "Test execution"
+		"name": "Test execution",
+		"md": "test-execution"
 	},
 	{
-		"name": "Synchronization"
+		"name": "Synchronization",
+		"md": "synchronization"
 	},
 	{
 		"name": "Test maintainability",
+		"md": "test-maintainability",
 		"children": [{
 				"name": "Maintainability with component based approach"
 			},
@@ -102,12 +110,15 @@
 		]
 	},
 	{
-		"name": "Run anywhere"
+		"name": "Run anywhere",
+		"md": "run-anywhere"
 	},
 	{
-		"name": "Build-in version control system"
+		"name": "Build-in version control system",
+		"md": "build-in-version-control-system"
 	},
 	{
-		"name": "Test reports"
+		"name": "Test reports",
+		"md": "test-reports"
 	}
 ]
