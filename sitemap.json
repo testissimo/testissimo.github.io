@@ -92,6 +92,10 @@
     "md": "macro"
 },
 {
+    "name": "Test",
+    "md": "test"
+}, 
+{
     "name": "Test execution",
     "md": "test-execution"
 },
