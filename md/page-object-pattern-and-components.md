@@ -14,7 +14,7 @@ Component in Testissimo can by anything from very simple things like button and 
 
 
 
-![](/cmsimages/r1WYsihz7/526x239.png)  
+![](/cmsimages/r1WYsihz7.png)  
 
 This is an example of button component which is defined by its selector:  
 button[class\*=”btn”][@text\*={text}] and which has one method “click”. The component as we see in here is just the definition. It can be executed in development phase for testing purposes but it doesn’t do anything unless you use it in test. To see if the defined component is on current page, you can click the eye button next to the component name and Testissimo will highlight all occurrences of that component
