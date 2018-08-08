@@ -10,7 +10,7 @@ or FireFox plugin: [firefox-0.2.8](https://www.dropbox.com/s/x80m0fzcprgplau/tes
 
 Testissimo should appear overlapping your application and prompting you to login. 
 
-![](/cmsimages/rkh4mL5zQ/699x688.png)  
+![](/cmsimages/rkh4mL5zQ.png)  
 After you have successfully logged in, you will need to create new repository (or clone existing one in case someone already created it and assigned rights to you. The repository is named place where you store all your tests, components and everything you have done. It is like GIT repository but build-in to Testissimo infrastructure. Your tests are stored safely in cloud and are accessible from everywhere.
 
 In “Repos -> Remote” section you can either checkout existing repository or create a new one.
