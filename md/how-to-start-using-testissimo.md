@@ -19,4 +19,4 @@ In “Repos -> Remote” section you can either checkout existing repository or
 
 
 
-![](/cmsimages/SkYk_85G7/468x154.png)  
+![](/cmsimages/SkYk_85G7.png)  
