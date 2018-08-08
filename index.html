@@ -51,12 +51,10 @@
 				    function showMobileMenu(){
 					var menu = document.getElementById("collapse-menu");
 					if(menu.className.indexOf('collapse-in') > 0) {
-					    console.log('je tam collapse in', menu.className);
 					    menu.classList.remove('collapse-in');
 					    menu.classList.add('collapse');
 					}
 					else {
-					    console.log('nie je tam collapse in', menu.className);
 					    menu.classList.add('collapse-in');
 					    menu.classList.remove('collapse')
 					}
