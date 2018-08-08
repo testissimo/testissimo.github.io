@@ -22,7 +22,7 @@ The action has tree variants. It can be used
 
 Following example demonstrates a component method which is writing sequence of character into an INPUT html object
 
-![](/cmsimages/HkYq9UcGX/498x155.png)  
+![](/cmsimages/HkYq9UcGX.png)  
 
 
 
@@ -32,7 +32,7 @@ The action simulates click on some html object. The action has four variants dep
 
 The following example demonstrates component method which click on a button identified by its label
 
-![](/cmsimages/rJp9pIqfX/509x129.png)  
+![](/cmsimages/rJp9pIqfX.png)  
 
 
 
@@ -48,7 +48,7 @@ The following example demonstrated the navigating the application to some relati
 
 
 
-### ![](/cmsimages/S1bvkv5Gm/372x144.png)
+### ![](/cmsimages/S1bvkv5Gm.png)
 
  
 
@@ -87,7 +87,7 @@ In the following example, the action check if the variable ‘do-cleanup’ has 
 
 
 
-### ![](/cmsimages/rylc-vcG7/439x229.png)
+### ![](/cmsimages/rylc-vcG7.png)
 
  
 
@@ -112,7 +112,7 @@ Using this command, user can assert if some HTML elements parameter has a given 
 Using this command user can assert HTML elements count for given CSS Selector. This can also be used to check the existence of some HTML element in the given context.  
 In the example below, Testissimo will check if there is exactly one ‘strong’ element within the given ‘Document grid’ component
 
-![](/cmsimages/Sy9sb2nGm/525x178.png)  
+![](/cmsimages/Sy9sb2nGm.png)  
 
 
 
