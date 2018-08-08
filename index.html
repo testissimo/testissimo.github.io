@@ -41,13 +41,29 @@
                             <div class="nav-outer clearfix">
                                 <nav class="main-menu">
                                     <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: rgb(88, 156, 7)">
+                                        <button type="button" class="navbar-toggle" onclick="showMobileMenu() "style="background-color: rgb(88, 156, 7)">
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
                                         </button>
                                     </div>
-                                    <div class="navbar-collapse collapse scroll-nav clearfix">
+				<script>
+				    function showMobileMenu(){
+					var menu = document.getElementById("collapse-menu");
+					if(menu.className.indexOf('collapse-in') > 0) {
+					    console.log('je tam collapse in', menu.className);
+					    menu.classList.remove('collapse-in');
+					    menu.classList.add('collapse');
+					}
+					else {
+					    console.log('nie je tam collapse in', menu.className);
+					    menu.classList.add('collapse-in');
+					    menu.classList.remove('collapse')
+					}
+
+				    }
+				</script>
+                                    <div class="navbar-collapse collapse collapse scroll-nav clearfix">
                                         <ul class="navigation clearfix">
                                             <li  class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Home" href="#" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Home</a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Features" href="#" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Feature</a></li>
