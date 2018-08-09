@@ -15,12 +15,12 @@
         
         <!-- css import -->
         <link rel="stylesheet" id="bootstrap-css" href="./css/bootstrap.css" type="text/css" media="all">
-    
-		<link rel="stylesheet" id="animate-css" href="./css/animate.css" type="text/css" media="all">
+	<link rel="stylesheet" id="animate-css" href="./css/animate.css" type="text/css" media="all">
         <link rel="stylesheet" id="spring-main-style-css" href="./css/style.css" type="text/css" media="all">
         <link rel="stylesheet" id="spring-responsive-css" href="./css/responsive.css" type="text/css" media="all">
-
-        
+        <link rel="stylesheet" id="kc-general-css" href="./css/kingcomposer.min.css" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		        
         <!-- vue import -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
@@ -31,51 +31,58 @@
     <body>
         <div class="page-wrapper" style="background-color: white">
         <!-- main navigation -->
-        <header class="main-header">
-            <div class="main-box">
-                <div class="auto-container" style="max-width:1200px">
-                    <div class="outer-container ">
-                        <div class="logo-box">
-                            <img src="./images/logo.png">
-                        </div>
-                        <div class="nav-outer">
+        <header class="main-header alternate" style="background-color: rgb(249, 253, 244)">
+        <!-- Main Box -->
+        	<div class="main-box" >
+            	<div class="auto-container">
+                	<div class="outer-container clearfix" >
+                	    <div class="logo-box" >
+                	        <img src="./images/logo(1).png" width="140px" height="28px" style="margin-top : 16px">
+            	        </div>
+                	    <!--Nav Outer-->
+                        <div class="nav-outer clearfix">
+                            <!-- Main Menu -->
                             <nav class="main-menu">
+                            
                                 <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" onclick="showMobileMenu()" style="background-color: rgb(88, 156, 7)">
+                                    <!-- Toggle Button -->    	
+                                    <button type="button" class="navbar-toggle" onclick="showMobileMenu()" style="background-color: rgb(88, 156, 7);
+                                        margin-top : 10px">
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
                                 <script>
-                                    function showMobileMenu(){
-                                        var menu = document.getElementById("collapse-menu");
-                                        if(menu.className.indexOf('collapse-in') > 0) {
-                                            menu.classList.remove('collapse-in');
-                                            menu.classList.add('collapse');
+                                        function showMobileMenu(){
+                                            var menu = document.getElementById("collapse-menu");
+                                            if(menu.className.indexOf('collapse-in') > 0) {
+                                                menu.classList.remove('collapse-in');
+                                                menu.classList.add('collapse');
+                                            }
+                                            else {
+                                                menu.classList.add('collapse-in');
+                                                menu.classList.remove('collapse')
+                                            }
                                         }
-                                        else {
-                                            menu.classList.add('collapse-in');
-                                            menu.classList.remove('collapse')
-                                        }
-                                    }
-                                </script>
-                                <div id="collapse-menu" class="navbar-collapse collapse scroll-nav ">
-                                    <ul class="navigation ">
-                                        <li  class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Home" href="#" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Home</a></li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Features" href="#" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Feature</a></li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Documentation" href="#" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Documentation</a></li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom" style="margin-left : 0px">
-                                            <div class="other-links">
-                                                <a href="#pageContent" class="theme-btn btn-style-one" style="background-color : rgb(88, 156, 7)">Find Out More</a>
-                                            </div>
-                                        </li>
-                                    <div class="dropdown-btn"></div>
-                                    </ul>
+                                    </script>
+                                
+                                <div id="collapse-menu" class="navbar-collapse collapse scroll-nav clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li><a title="Home" href="#" class="hvr-underline-from-left1" style="padding-top : 35px">Home</a></li>
+                                        <li><a title="Features" href="#pageContent" class="hvr-underline-from-left1" style="padding-top : 35px">Features</a></li>
+                                        <li><a title="Documentation" href="https://testissimo.github.io" class="hvr-underline-from-left1" style="padding-top : 35px">Documentation</a></li>
+                                     </ul>
                                 </div>
                             </nav>
+                            <!-- Main Menu End-->
+                                                    <!--Other Links-->
+                                <div class="other-links" style="padding-top : 30px">
+                            	<a href="#" class="theme-btn btn-style-one" style="background-color : rgb(88, 156, 7)">FREE TRIAL</a>
+                            </div>
                         </div>
-                    </div>    
+                        <!--Nav Outer End-->
+                	</div>    
                 </div>
             </div>
         </header>
