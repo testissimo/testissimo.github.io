@@ -4,8 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <!-- tu sa nacita favicon-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
-	    <link rel="icon" href="" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/favicon (1).png" type="image/x-icon">
+	    <link rel="icon" href="./images/favicon (1).png" type="image/x-icon">
 	    
         <!-- Responsive -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,29 +15,82 @@
         
         <!-- css import -->
         <link rel="stylesheet" id="bootstrap-css" href="./css/bootstrap.css" type="text/css" media="all">
-	<link rel="stylesheet" id="animate-css" href="./css/animate.css" type="text/css" media="all">
+		<link rel="stylesheet" id="animate-css" href="./css/animate.css" type="text/css" media="all">
         <link rel="stylesheet" id="spring-main-style-css" href="./css/style.css" type="text/css" media="all">
         <link rel="stylesheet" id="spring-responsive-css" href="./css/responsive.css" type="text/css" media="all">
-        <link rel="stylesheet" id="kc-general-css" href="https://testissimo.io/css/kingcomposer.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="kc-general-css" href="./css/kingcomposer.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="kc-general-css" href="./css/testissimo.css" type="text/css" media="all">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		        
-        <!-- vue import -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
-        <script src="./js/vue-showdown.min.js"></script>
-    </head>
-    <body>
-        <div class="page-wrapper" style="background-color: white">
-        <!-- main navigation -->
-        <header class="main-header alternate" style="background-color: rgb(249, 253, 244)">
+		<!--JS import-->
+        <script>
+     // smoothscroll
+            function currentYPosition() {
+                // Firefox, Chrome, Opera, Safari
+                if (self.pageYOffset) return self.pageYOffset;
+                // Internet Explorer 6 - standards mode
+                if (document.documentElement && document.documentElement.scrollTop)
+                    return document.documentElement.scrollTop;
+                // Internet Explorer 6, 7 and 8
+                if (document.body.scrollTop) return document.body.scrollTop;
+                return 0;
+            }
+            function elmYPosition(eID) {
+                var elm = document.getElementById(eID);
+                var y = elm.offsetTop;
+                var node = elm;
+                while (node.offsetParent && node.offsetParent != document.body) {
+                    node = node.offsetParent;
+                    y += node.offsetTop;
+                } return y;
+            }
+            function smoothScroll(eID) {
+                var startY = currentYPosition();
+                var stopY = elmYPosition(eID);
+                var distance = stopY > startY ? stopY - startY : startY - stopY;
+                if (distance < 100) {
+                    scrollTo(0, stopY); return;
+                }
+                var speed = Math.round(distance / 20);
+                if (speed >= 20) speed = 20;
+                var step = Math.round(distance / 25);
+                var leapY = stopY > startY ? startY + step : startY - step;
+                var timer = 0;
+                if (stopY > startY) {
+                    for ( var i=startY; i<stopY; i+=step ) {
+                        setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                        leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+                    } return;
+                }
+                for ( var i=startY; i>stopY; i-=step ) {
+                    setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                    leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+                }
+            }
+     
+     //header sticks on top after scroll
+            window.onscroll = function changeClass(){
+                var scrollPositionY = window.pageYOffset | document.body.scrollTop;
+                if(scrollPositionY > 0) {
+                    headerContainer.classList.add('addBottomBorder')
+                    mainHeader.className = ('main-header alternate fixed-header');
+                } else if(scrollPositionY == 0) {
+                    headerContainer.classList.remove('addBottomBorder')
+                    mainHeader.className =  ('main-header alternate');
+                }
+                    
+            }
+        </script>
+        
+</head>
+<body style="font-family: 'Roboto', sans-serif !important;">
+    <div id="pageBeginning" class="page-wrapper">
+        <header id="mainHeader" class="main-header alternate" style="background-color: rgb(249, 253, 244)">
         <!-- Main Box -->
-        	<div class="main-box" >
-            	<div class="auto-container">
+        	<div  id="headerContainer" class="main-box" >
+            	<div  class="auto-container">
                 	<div class="outer-container clearfix" >
-                	    <div class="logo-box" >
-                	        <img src="https://testissimo.io/images/logo(1).png" width="140px" height="28px" style="margin-top : 16px">
+                	    <div class="logo-box">
+                	        <img src="./images/logo(1).png" width="140px" height="28px" >
             	        </div>
                 	    <!--Nav Outer-->
                         <div class="nav-outer clearfix">
@@ -59,26 +112,60 @@
                                             if(menu.className.indexOf('collapse-in') > 0) {
                                                 menu.classList.remove('collapse-in');
                                                 menu.classList.add('collapse');
+                                                
+                                                var scrollPositionY = window.pageYOffset | document.body.scrollTop;
+                                                if(scrollPositionY == 0) headerContainer.classList.remove('addBottomBorder')
                                             }
                                             else {
+                                                
                                                 menu.classList.add('collapse-in');
                                                 menu.classList.remove('collapse')
+                                            
+                                                var scrollPositionY = window.pageYOffset | document.body.scrollTop;
+                                                headerContainer.classList.add('addBottomBorder')
                                             }
                                         }
                                     </script>
                                 
                                 <div id="collapse-menu" class="navbar-collapse collapse scroll-nav clearfix">
                                     <ul class="navigation clearfix">
-                                        <li><a title="Home" href="https://testissimo.io/new" onclick="showMobileMenu()" class="hvr-underline-from-left1" style="padding-top : 35px; color : rgb(84, 84, 80)">Home</a></li>
-                                        <li><a title="Features" href="https://testissimo.io/new#pageContent" onclick="showMobileMenu()" class="hvr-underline-from-left1" style="padding-top : 35px;  color : rgb(84, 84, 80)">Features</a></li>
-                                        <li><a title="Documentation" href="https://testissimo.github.io" onclick="showMobileMenu()" class="hvr-underline-from-left1" style="padding-top : 35px;  color : rgb(84, 84, 80)">Documentation</a></li>
+                                        <li>
+                                            <a title="Home" 
+                                            href="testissimo.io/new" 
+                                            onclick="showMobileMenu();smoothScroll('pageBeginning');return false">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Features" 
+                                            href="testissimo.io/new#pageContent" 
+                                            onclick="showMobileMenu();smoothScroll('pageContent');return false">
+                                                Features
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Documentation" 
+                                            href="#" 
+                                            onclick="showMobileMenu()">
+                                                Documentation
+                                            </a>
+                                        </li>
+                                        <li id="navigationButtonDiv">
+                                            <div href="#pageContent" 
+                                                onclick="showMobileMenu();smoothScroll('pageContent');return false">                                            
+                                                <a id="freeTrialButton" 
+                                                class="theme-btn btn-style-one">
+                                                    FREE TRIAL
+                                                </a>
+                                            </div>
+                                        </li>
                                      </ul>
                                 </div>
                             </nav>
                             <!-- Main Menu End-->
                                                     <!--Other Links-->
-                                <div class="other-links" style="padding-top : 30px">
-                            	<a href="#" class="theme-btn btn-style-one" style="background-color : rgb(88, 156, 7)">FREE TRIAL</a>
+                                <div class="other-links" >
+                            	
                             </div>
                         </div>
                         <!--Nav Outer End-->
