@@ -15,18 +15,33 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 
 **Standard css combinators:**
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+    <th style="text-align:center">Selector combinator</th>
+    <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><strong>&quot; &quot;</strong></td>
+      <td style="text-align:left">all descendants (has alias “&gt;&gt;”)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“&gt;”</strong></td>
+      <td style="text-align:left">direct children</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“+”</strong></td>
+      <td style="text-align:left">adjanced sibling (first direct next sibling)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“~”</strong></td>
+      <td style="text-align:left">general siblings (all next siblings)</td>
+    </tr>
+  </tbody>
+</table>
 
-| Selector combinator | Description                                   | 
-|:-------------------:|:----------------------------------------------| 
-| **" "**             | all descendants (has alias ">>")              |  
-| **">"**             | direct children                               |
-| **"+"**             | adjanced sibling (first direct next sibling)  |  
-| **"~"**             | general siblings (all next siblings)          |
 <br>
 
 
