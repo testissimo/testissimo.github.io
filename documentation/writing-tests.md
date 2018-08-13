@@ -96,12 +96,12 @@ Inner text selectors, will select all elements containing text, not only nearest
 
 |Inner text selector|Description|
 |:---:|:---|
-| **:contains(text) **  | contains substring - (extractable) |
-| **:text(text) ** | equals substring - (extractable) |
-| **:text-contains(text) ** | alias for :contains - (extractable)  |
-| **:text-begins(text) ** | begins with text (extractable) |
-| **:text-ends(text) ** | (extractable) |
-| **:text-regex(regextext) ** |(extractable) |
+| **:contains(text)**  | contains substring - (extractable) |
+| **:text(text)** | equals substring - (extractable) |
+| **:text-contains(text)** | alias for :contains - (extractable)  |
+| **:text-begins(text)** | begins with text (extractable) |
+| **:text-ends(text)** | (extractable) |
+| **:text-regex(regextext)** |(extractable) |
 
 <br>
 Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
