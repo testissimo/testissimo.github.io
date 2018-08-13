@@ -10,8 +10,8 @@ p{position:relative;line-height:1.6em;}
 .auto-container{position:static;max-width:1200px;padding:0px 15px;margin:0 auto;}
 .medium-container{max-width:850px;}
 .page-wrapper{position:relative;margin:0 auto;width:100%;min-width:300px;}
-ul,li{list-style:disc;list-style-position:inside;padding:0px;margin:0px;}
-ol,li{list-style:decimal;list-style-position:inside;padding:0px;margin:0px;}
+ul{list-style:disc;list-style-position:inside;padding:0px;margin:0px;}
+ol{list-style:decimal;list-style-position:inside;padding:0px;margin:0px;}
 .theme-btn{display:inline-block;transition:all 0.3s ease;-moz-transition:all 0.3s ease;-webkit-transition:all 0.3s ease;-ms-transition:all 0.3s ease;-o-transition:all 0.3s ease;}
 .centered{text-align:center;}
 .anim-3,.anim-3-all *{transition:all 0.3s ease;-moz-transition:all 0.3s ease;-webkit-transition:all 0.3s ease;-ms-transition:all 0.3s ease;-o-transition:all 0.3s ease;}
