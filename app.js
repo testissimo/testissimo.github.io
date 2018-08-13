@@ -67,6 +67,7 @@ const DocumentationContent = {
         var path = "./documentation/" + id + ".md";
         this.$http.get(path)
         .then(function (data) {
+          console.log(data.body)
             self.mdData = data.body;
             self.title = (self.mdData.split('\n')[0]).slice(2, (self.mdData.split('\n')[0]).length);
         })
