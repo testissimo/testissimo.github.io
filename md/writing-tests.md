@@ -4,10 +4,10 @@
 
 When you write UI automation test, most of your work will be telling your test automation tool how to find HTML elements which you want to interact with. This is no different with Testissimo. In Testissimo you can use full set of CSS selectors and some built-in helpers to always target elements on page with ease.
 
-As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the basics of CSS selectors: [https://flukeout.github.io/](https://flukeout.github.io/). 
+As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the basics of CSS selectors: [flukeout.github.io](https://flukeout.github.io/). 
 
 As cheat-sheet we like to use this website where there is a full description of CSS selectors capabilities 
-[https://www.w3schools.com/cssref/css_selectors.asp.](https://www.w3schools.com/cssref/css_selectors.asp) 
+[www.w3schools.com/cssref/css_selectors](https://www.w3schools.com/cssref/css_selectors.asp) 
 Testissimo supports all of css3 selectors and adds custom, extended syntax to fulfill all searching needs.
 <br>
 ### Selector Combinators 
