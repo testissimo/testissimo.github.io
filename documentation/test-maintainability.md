@@ -8,7 +8,7 @@ Let’s assume you have simple book search web application. There is only search
 <ol>
 1. Do search “some book”
 2. Assert book result list – it should contain only relevant results with no data missing
-<ol>
+</ol>
 <br>
 Now, imagine pseudo code of this test:
 
