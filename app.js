@@ -47,7 +47,7 @@ const DocumentationContent = {
   template : 
   " \
     <div id='docContent'> \
-      <li class='list-group-item' style='margin-bottom : 50px; width : fit-content'> \
+      <li id='breadcrumbs' class='list-group-item' style='margin-bottom : 50px; width : fit-content'> \
         <router-link to='/'>Documentation ></router-link> \
         {{ title }}  \
         </li> \
