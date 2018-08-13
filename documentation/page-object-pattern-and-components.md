@@ -48,8 +48,8 @@ component) to implement methods of these higher level component. Let’s look at
 
 
 
-The application we want to test has one grid which show the documents matching the filter criteria. Let’s call it “Document grid”. As the content of this grid are also rather complex component it wouldn’t be good design if we would create all the methods in the **“Document Grid”**. Let’s create two more components. One which represents the row of this grid and thus one document with name “Grid document”. Second which represents the component for document tags manipulation with name  
-“Document tags editor”. 
+The application we want to test has one grid which show the documents matching the filter criteria. Let’s call it **“Document grid”**. As the content of this grid are also rather complex component it wouldn’t be good design if we would create all the methods in the **“Document Grid”**. Let’s create two more components. One which represents the row of this grid and thus one document with name **“Grid document”**. Second which represents the component for document tags manipulation with name  
+**“Document tags editor”**. 
 
 As **“Grid document”** always exists in the context of **“Document grid”**, we don’t need to be too specific in its CSS selector definition, because it should always be used in test as part of **“Document grid”** component and its selector must be selective  
 only within this section. The component definition could look like this:
