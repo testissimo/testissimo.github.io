@@ -1,4 +1,4 @@
-# Build-in tools
+# Built-in tools
 
 This is a set of basic build-in actions which can be used to create more complex constructs like component methods. These actions are the Testissimo language which all other component are composed of. 
 
@@ -12,7 +12,7 @@ As of the current version, the set of Simple actions is given by Testissimo it-s
 
 TODO
 <br>
-## Keyboard (Write/Key press/Focus)
+## Keyboard (Write / Key press / Focus)
 
 The action has tree variants. It can be used 
 
@@ -26,7 +26,7 @@ Following example demonstrates a component method which is writing sequence of c
 
 
 <br>
-## Mouse click (Left/Middle/Right/Double)
+## Mouse click (Left / Middle / Right / Double)
 
 The action simulates click on some html object. The action has four variants depending on which mouse button you want to click and if the click should be single or double. 
 
