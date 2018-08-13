@@ -4,10 +4,10 @@
 
 When you write UI automation test, most of your work will be telling your test automation tool how to find HTML elements which you want to interact with. This is no different with Testissimo. In Testissimo you can use full set of CSS selectors and some built-in helpers to always target elements on page with ease.
 
-As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the basics of CSS selectors: [https://flukeout.github.io/](https://flukeout.github.io/). 
+As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the basics of CSS selectors at [flukeout](https://flukeout.github.io/). 
 
 As cheat-sheet we like to use this website where there is a full description of CSS selectors capabilities 
-[https://www.w3schools.com/cssref/css_selectors.asp.](https://www.w3schools.com/cssref/css_selectors.asp) 
+[CSS selectors capabilities ](https://www.w3schools.com/cssref/css_selectors.asp) 
 Testissimo supports all of css3 selectors and adds custom, extended syntax to fulfill all searching needs.
 <br>
 ### Selector Combinators 
@@ -79,7 +79,7 @@ Positional selectors with argument value, for scaffolding reason, if value is em
 <br>
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
 <ul>
-  <li> <b>:contains(text) - contains substring - (extractable) </li>
+  <li> <b>:contains(text) </b> - contains substring - (extractable) </li>
   <li> <b>:text(text) </b>- equals substring - (extractable) </li>
   <li> <b>:text-contains(text) </b>- alias for :contains - (extractable)  </li>
   <li> <b>:text-begins(text) </b>- begins with text (extractable) </li>
@@ -121,7 +121,10 @@ Location url based filtering - usefull if you have many components, but not all 
   <li> <b>:url-hash-equals(text) </b>- exclude "#"  </li>
 </ul>
 <br>
-Variable based filtering - usefull if you have multiple comma separated options how to select element, and you have to switch between them, e.g. input:value({value}):if-var({value}), input:index({index}):if-not-var({value})    
+Variable based filtering - usefull if you have multiple comma separated options how to select element, and you have to switch between them, e.g. 
+```javascript
+input:value({value}):if-var({value}), input:index({index}):if-not-var({value})    
+```
 <ul>
   <li> <b>:if-var({variable})</b> - allways true in suggestiom mode (because variables are not yet defined)  </li>
   <li> <b>:if-not-var({variable})</b> - allways true in suggestiom mode (because variables are not yet defined)</li>
