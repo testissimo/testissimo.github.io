@@ -1,5 +1,3 @@
-import showdown from './js/js/vue-showdown.min.js'
-
 const Home = {
   name : 'Home',
   template : 
@@ -115,15 +113,13 @@ const router = new VueRouter({
   ]
 });
 
-const VueShowdown = new showdown.Converter({extensions: ['table']});
-
 var app = new Vue({
     router : router,
     el: '#app',
     components : {
       Home : Home,
       DocumentationContent : DocumentationContent,
-      VueShowdown,
+      VueShowdown : VueShowdown,
     },
     data: {
       message : "Vue loaded!"
