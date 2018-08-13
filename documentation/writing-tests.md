@@ -15,6 +15,11 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 
 **Standard css combinators:**
 
+| Col 1   | Col 2                                              |
+|======== |====================================================| 
+|**bold** | ![Valid XHTML] (http://w3.org/Icons/valid-xhtml10) | 
+| Plain   | Value                                              |
+
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
