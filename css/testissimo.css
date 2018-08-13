@@ -38,7 +38,3 @@ body {
 #breadcrumbs a:hover, #sitemap a:hover{
     color :rgb(75,132,6)
 }
-
-#showdownDiv pre {
-    display : none
-}
