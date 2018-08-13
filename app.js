@@ -1,3 +1,5 @@
+import showdown from './js/js/vue-showdown.min.js'
+
 const Home = {
   name : 'Home',
   template : 
