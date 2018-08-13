@@ -85,6 +85,7 @@ Inner text selectors, will select all elements containing text, not only nearest
   <li> <b>:text-begins(text) </b>- begins with text (extractable) </li>
   <li> <b>:text-ends(text) </b>- (extractable) </li>
   <li> <b>:text-regex(regextext) </b>- (extractable) </li>
+</ul>
 <br>
 Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
 Visibility selections, based on element or ancestors "display:none" style  
