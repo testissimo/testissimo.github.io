@@ -28,3 +28,9 @@ body {
 #showdownDiv a:hover {
     color :rgb(75,132,6)
 }
+#sitemap a{
+    color : #555
+}
+#sitemap a:hover{
+    color :rgb(75,132,6)
+}
