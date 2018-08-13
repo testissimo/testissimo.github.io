@@ -47,17 +47,53 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 
 **Extended combinators:**
 
-|Extended combinator|Description                                                         |
-|:-----------------:|:-------------------------------------------------------------------|
-| **"<"**           | direct parent (alias for "!>")                                     |
-| **"<<"**          | all ancestors include parent up to HTML document (alias for "!")   |
-| **"^"**           | first direct child (alternative is "> :first")                     |  
-| **"!"**           | all ancestors (has alias "<<")                                     |
-| **"!>"**          | direct parent (has alias "<")                                      |
-| **"!+"**          | previous adjanced sibling (first direct previous sibling)          |  
-| **"!~"**          | previous siblings                                                  |
-| **"!^"**          | last direct child (alternative is "> :last")                       |
-| **"++"**          | next and previous direct sibling - not implemented yet             |
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align:center">Extended combinator</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><strong>“&lt;”</strong></td>
+      <td style="text-align:left">direct parent (alias for “!&gt;”)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“&lt;&lt;”</strong></td>
+      <td style="text-align:left">all ancestors include parent up to HTML document (alias for “!”)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“^”</strong></td>
+      <td style="text-align:left">first direct child (alternative is “&gt; :first”)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“!”</strong></td>
+      <td style="text-align:left">all ancestors (has alias “&lt;&lt;”)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“!&gt;”</strong></td>
+      <td style="text-align:left">direct parent (has alias “&lt;”)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“!+”</strong></td>
+      <td style="text-align:left">previous adjanced sibling (first direct previous sibling)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“!~”</strong></td>
+      <td style="text-align:left">previous siblings</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“!^”</strong></td>
+      <td style="text-align:left">last direct child (alternative is “&gt; :last”)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>“++”</strong></td>
+      <td style="text-align:left">next and previous direct sibling - not implemented yet</td>
+    </tr>
+    </tbody>
+</table>
+
 <br>
 
 ### Attributes Matching 
