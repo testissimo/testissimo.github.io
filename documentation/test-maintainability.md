@@ -6,19 +6,20 @@ The biggest issue in software testing is tests maintainability. The less effort 
 
 Let’s assume you have simple book search web application. There is only search input and books result list. How will be logical steps of simple search test looks like?
 <ol>
-1. Do search “some book”
-2. Assert book result list – it should contain only relevant results with no data missing
+ <li>Do search “some book”</li>
+ <li>Assert book result list – it should contain only relevant results with no data missing</li>
 </ol>
 <br>
 Now, imagine pseudo code of this test:
-
-1. Select search input by **id=”books-search”**
-2. Select book result list container by **id=”result-list”**
-3. Select all result items inside result list containers
-4. For each item in result list, do:
-5. Select field name by some selector
-6. Assert field name value
-7. Etc.
+<ol>
+ <li>Select search input by <b>id=”books-search”</b></li>
+ <li>Select book result list container by <b>id=”result-list”</b></li>
+ <li>Select all result items inside result list containers</li>
+ <li>For each item in result list, do:</li>
+ <li>Select field name by some selector</li>
+ <li>Assert field name value</li>
+ <li>Etc.</li>
+</ol>
 <br>
 Now, let’s do some changes in tested app, and see how would our test handle it:
 
@@ -57,7 +58,7 @@ Now, we can write test like this:
 <br>
 If we redesign web app, we need to do changes only in tests components, in one place, not in tests. Therefore, components are crucial for tests maintainability.
 <br>
-### Maintenance using macros
+## Maintenance using macros
 
 If you are repeating some application flow in tests, like login, or fill user profile, or add product to cart, etc. where this flow span more than one component, it is better to use macros. Macros are reusable test part with parameters. Imagine,  
-you are testing ecommerce cart, with several payment and delivery options, physical products, goods, localized offers, etc. You don’t want to rewrite all tests because of someone added cart confirmation step. You just need to update one macro “make order”. 
+you are testing ecommerce cart, with several payment and delivery options, physical products, goods, localized offers, etc. You don’t want to rewrite all tests because of someone added cart confirmation step. You just need to update one macro **“make order”**. 
