@@ -9,6 +9,10 @@ body {
     margin:0px;
 }
 
+#showdownDiv ul li, #showdownDiv ol li{
+    margin-left : 5px;
+} 
+
 #showdownDiv h1{
     padding-bottom : 20px;
     font-weight : bold;
