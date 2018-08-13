@@ -5,9 +5,10 @@
 The biggest issue in software testing is tests maintainability. The less effort takes to fix tests if tested application change, the happier development team, and software development speed is.
 
 Let’s assume you have simple book search web application. There is only search input and books result list. How will be logical steps of simple search test looks like?
-
+<ol>
 1. Do search “some book”
 2. Assert book result list – it should contain only relevant results with no data missing
+<ol>
 <br>
 Now, imagine pseudo code of this test:
 
