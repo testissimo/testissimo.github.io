@@ -5,6 +5,7 @@
 }
 #showdownDiv ol li{
     list-style-type : decimal;
+    font-weight : bold;
     list-style-position : inside
 }
 
