@@ -8,7 +8,7 @@ Let’s assume you have simple book search web application. There is only search
 
 1.  Do search “some book”
 2.  Assert book result list – it should contain only relevant results with no data missing
-
+<br>
 Now, imagine pseudo code of this test:
 
 1.  Select search input by id=”books-search”
@@ -18,7 +18,7 @@ Now, imagine pseudo code of this test:
 5.  Select field name by some selector
 6.  Assert field name value
 7.  Etc.
-
+<br>
 Now, let’s do some changes in tested app, and see how would our test handle it:
 
 Redesign of search, now it has another id, and search suggestions, so it acts more like drop down, and has input wrapped by another element, which are generated, input has no more id attribute
@@ -27,7 +27,7 @@ Removed some book fields, added new, with conditionally hiding/showing behavior
 
 Tests pseudo code must be changed entirely, but logical steps doesn’t. In real world, there are no few and simple tests, but hundreds or thousands, robust tests with similar and repeated behaviors, like search in categories, tags, search in  
 authors, search by ISBN, etc. Rewriting it entirely is very time consuming.
-
+<br>
 ### Maintainability with component based approach
 
 In Testissimo, maintainability is provided by reusable components and their methods. Best practice is to follow logical steps. So, in our book search example, it would look like:
@@ -39,20 +39,20 @@ We will create component “Search-Input” with methods
 * action 2: keyboard write text {searchPhrase} into search input
 * action 3: assert search input value, it should be equal to {searchPhrase}
 * action 4: select start search button, or keyboard keypress enter
-
+<br>
 And Search-Result-List component with method
 
 * “assertResults”, with actions
 * action 1: …
 * action 2: …
-
+<br>
 Now, we can write test like this:
 
 1.  Search-Input.doSearch ( searchPhrase = “some book” )
 2.  Search-Result-List.assertResults
-
+<br>
 If we redesign web app, we need to do changes only in tests components, in one place, not in tests. Therefore, components are crucial for tests maintainability.
-
+<br>
 ### Maintenance using macros
 
 If you are repeating some application flow in tests, like login, or fill user profile, or add product to cart, etc. where this flow span more than one component, it is better to use macros. Macros are reusable test part with parameters. Imagine,  

@@ -5,7 +5,7 @@ As soon as you have at least one repository and you know the basic set of Testis
 Build-in tools, However, the test you would produce would be very be of poor quality, minimal code reuse and wouldn’t be very resilient to any UI changes. To produce test of high code reuse and thus test with low maintenance cost Testissimo adapt the Page Object patter and implements it in very intuitive and easy to use way. To understand the idea behind Page object patter we advise you to read following article written by Martin Fowler (https://martinfowler.com/bliki/PageObject.html) and also to read the following chapter: Test maintainability.
 
 Component in Testissimo can by anything from very simple things like button and test fields all the way to complex Grids and component which are very specific to your application. The component is defined by its selector (which can have parameters) and set of method which can be performed on this component. 
-
+<br>
 ### Simple button component
 
 
@@ -17,7 +17,10 @@ Component in Testissimo can by anything from very simple things like button and 
 ![](/documentation/images/r1WYsihz7.png)  
 
 This is an example of button component which is defined by its selector:  
-button[class\*=”btn”][@text\*={text}] and which has one method “click”. The component as we see in here is just the definition. It can be executed in development phase for testing purposes but it doesn’t do anything unless you use it in test. To see if the defined component is on current page, you can click the eye button next to the component name and Testissimo will highlight all occurrences of that component
+```javascript
+button[class\*=”btn”][@text\*={text}]
+```
+and which has one method “click”. The component as we see in here is just the definition. It can be executed in development phase for testing purposes but it doesn’t do anything unless you use it in test. To see if the defined component is on current page, you can click the eye button next to the component name and Testissimo will highlight all occurrences of that component
 
 ![](/documentation/images/BJhNfnWxM.png)  
 
@@ -41,7 +44,7 @@ By using components rather than writing test using simple action, we can achieve
 
 Furthermore, using component we can create sort of DSL specific to our application and Test can written on much higher level of abstraction than if they would just use simple low-level action. This way we can achieve great amount of code reuse and  
 nice readability of our test. 
-
+<br>
 ### Complex component and components composition
 
 As soon as we have defined the basic components like button, text fields, combos and so on, we can start defining more complex component which are very specific for our application. Of course, we can use already defined simple component (or any  
