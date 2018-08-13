@@ -59,10 +59,10 @@ For strict selection, e.g. if you want to select element with attribute equals t
 * [attribute!==value], etc…  
 <br>
 ### Extended Pseudo Selectors
- * \:first - first in selection  
- * \:last - last in selection  
- * \:even - every even element in current selection  
- * \:odd - every odd element in current selection  
+ * :first - first in selection  
+ * :last - last in selection  
+ * :even - every even element in current selection  
+ * :odd - every odd element in current selection  
 
 
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
@@ -77,12 +77,12 @@ Positional selectors with argument value, for scaffolding reason, if value is em
 <br>
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo :first, :last      
 
-* \:contains(text) - contains substring - (extractable)
-* \:text(text) - equals substring - (extractable)
-* \:text-contains(text) - alias for :contains - (extractable)
-* \:text-begins(text) - begins with text (extractable)
-* \:text-ends(text) - (extractable)
-* \:text-regex(regextext) - (extractable)      
+* /:contains(text) - contains substring - (extractable)
+* /:text(text) - equals substring - (extractable)
+* /:text-contains(text) - alias for :contains - (extractable)
+* /:text-begins(text) - begins with text (extractable)
+* /:text-ends(text) - (extractable)
+* /:text-regex(regextext) - (extractable)      
 <br>
 Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
 Visibility selections, based on element or ancestors "display:none" style  
