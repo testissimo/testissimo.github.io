@@ -22,17 +22,19 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 | **"+"**             | adjanced sibling (first direct next sibling)  |  
 | **"~"**             | general siblings (all next siblings)          |
 <br>
+
 **Extended combinators:**
-* **"<"** direct parent (alias for "!>")  
-* **"<<"** all ancestors include parent up to HTML document (alias for "!")  
-* **"^"** first direct child (alternative is "> :first")  
-* **"!"** all ancestors (has alias "<<")  
-* **"!>"** direct parent (has alias "<")  
-* **"!+"** previous adjanced sibling (first direct previous sibling)  
-* **"!~"** previous siblings  
-* **"!^"** last direct child (alternative is "> :last")  
-* **"~~"** all next and previous siblings - not implemented yet  
-* **"++"** next and previous direct sibling - not implemented yet  
+|Extended combinator|Description|
+|---|---|
+| **"<"**   |direct parent (alias for "!>")  |
+| **"<<"**  |all ancestors include parent up to HTML document (alias for "!")  |
+| **"^"**   |first direct child (alternative is "> :first") |  
+| **"!"**   |all ancestors (has alias "<<")  |
+| **"!>"**  |direct parent (has alias "<")  |
+| **"!+"**  |previous adjanced sibling (first direct previous sibling) |  
+| **"!~"**  |previous siblings  |
+| **"!^"**  |last direct child (alternative is "> :last")  |
+| **"++"**  | next and previous direct sibling - not implemented yet  |
 <br>
 ### Attributes Matching 
 
