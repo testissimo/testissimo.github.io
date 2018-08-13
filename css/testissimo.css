@@ -2,6 +2,13 @@
 body {
     color : #555
 }
+#showdownDiv ul{
+    list-style:disc;
+    list-style-position:inside;
+    padding:0px;
+    margin:0px;
+}
+
 #showdownDiv h1{
     padding-bottom : 20px;
     font-weight : bold;
