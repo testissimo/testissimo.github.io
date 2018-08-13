@@ -81,7 +81,7 @@ For strict selection, e.g. if you want to select element with attribute equals t
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
 
 |Positional selector| Description|
-|:---:|---|
+|:---:|:---|
 | **:index(0…9)** | zero based position number (extractable) |
 | **:index(0…9)** |  zero based position number (extractable)  | 
 | **:order(1…9)** |  same as :index but starting from one (extractable) | 
@@ -93,14 +93,16 @@ Positional selectors with argument value, for scaffolding reason, if value is em
 
 <br>
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
-<ul>
-  <li> <b>:contains(text) </b> - contains substring - (extractable) </li>
-  <li> <b>:text(text) </b>- equals substring - (extractable) </li>
-  <li> <b>:text-contains(text) </b>- alias for :contains - (extractable)  </li>
-  <li> <b>:text-begins(text) </b>- begins with text (extractable) </li>
-  <li> <b>:text-ends(text) </b>- (extractable) </li>
-  <li> <b>:text-regex(regextext) </b>- (extractable) </li>
-</ul>
+
+|Inner text selector|Description|
+|:---:|:---|
+| **:contains(text) **  | contains substring - (extractable) |
+| **:text(text) ** | equals substring - (extractable) |
+| **:text-contains(text) ** | alias for :contains - (extractable)  |
+| **:text-begins(text) ** | begins with text (extractable) |
+| **:text-ends(text) ** | (extractable) |
+| **:text-regex(regextext) ** |(extractable) |
+
 <br>
 Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
 Visibility selections, based on element or ancestors "display:none" style  
