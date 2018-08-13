@@ -1,4 +1,4 @@
-## Build-in tools
+# Build-in tools
 
 This is a set of basic build-in actions which can be used to create more complex constructs like component methods. These actions are the Testissimo language which all other component are composed of. 
 
@@ -8,11 +8,11 @@ Most of the simple action has a CSS selector which defined the html object on wh
 
 As of the current version, the set of Simple actions is given by Testissimo it-self. They do have an undocumented API and thus even custom simple action can be plugged into Testissimo. If you are interested in doing so, please contact the Testissimo development team for further information. 
 <br>
-### Fill file input
+## Fill file input
 
 TODO
 <br>
-### Keyboard (Write/Key press/Focus)
+## Keyboard (Write/Key press/Focus)
 
 The action has tree variants. It can be used 
 
@@ -26,7 +26,7 @@ Following example demonstrates a component method which is writing sequence of c
 
 
 <br>
-### Mouse click (Left/Middle/Right/Double)
+## Mouse click (Left/Middle/Right/Double)
 
 The action simulates click on some html object. The action has four variants depending on which mouse button you want to click and if the click should be single or double. 
 
@@ -36,7 +36,7 @@ The following example demonstrates component method which click on a button iden
 
 
 <br>
-### Navigate to (Custom URL, Back, Reload Page)
+## Navigate to (Custom URL, Back, Reload Page)
 
 The action can perform various navigation tasks. It can
 
@@ -48,23 +48,23 @@ The following example demonstrated the navigating the application to some relati
 
 
 
-### ![](/documentation/images/S1bvkv5Gm.png)
+## ![](/documentation/images/S1bvkv5Gm.png)
 
  
 <br>
-### Select option
+## Select option
 
 TODO
 <br>
-### Wait
+## Wait
 
 The action forces Testissimo to wait for certain amount of time. In clear majority of cases, you will not need to use this action. Testissimo will do most of the synchronization for you. 
 <br>
-### Extract element values
+## Extract element values
 
 TODO
 <br>
-### For each
+## For each
 
 Using this construct, Testissimo can iterate over some collection and execute some set of actions for each element of that collection. There are various ways how to define the collection. The options are
 
@@ -74,7 +74,7 @@ Using this construct, Testissimo can iterate over some collection and execute so
 * JSON (in the form of array of object)
 * Using values in variable which is of type array of objects
 <br>
-### If – Else
+## If – Else
 
 Using this construct, you can implement decision making in Testissimo.The decision can be based 
 
@@ -86,28 +86,27 @@ Using this construct, you can implement decision making in Testissimo.The decisi
 In the following example, the action check if the variable ‘do-cleanup’ has the value true and if so perform call to some method
 
 
-
-### ![](/documentation/images/rylc-vcG7.png)
+![](/documentation/images/rylc-vcG7.png)
 
  
 <br>
-### Section
+## Section
 
 This construct can be used to define some section on the HTML page. This is very like component definition (we encourage you to almost always create component instead of section) with the difference that section cannot have method of its own. Using section, one can fix constant part of CSS selectors for underlying actions. 
 <br>
-### Select element
+## Select element
 
 TODO
 <br>
-### Set Variable
+## Set Variable
 
 Using this command, user can set (or declare and set) some variable which can be later used as a method parameter of for decision making in some if statement. Using this command, user can save some HTML properties if he needs them later in the test to make for example some assertions.
 <br>
-### Assert Elements
+## Assert Elements
 
 Using this command, user can assert if some HTML elements parameter has a given value. If this condition is not met, Testissimo stops the test execution and related error message is shown. 
 <br>
-### Assert Elements Count
+## Assert Elements Count
 
 Using this command user can assert HTML elements count for given CSS Selector. This can also be used to check the existence of some HTML element in the given context.  
 In the example below, Testissimo will check if there is exactly one ‘strong’ element within the given ‘Document grid’ component
@@ -116,12 +115,10 @@ In the example below, Testissimo will check if there is exactly one ‘strong’
 
 
 <br>
-###  
-<br>
-### Assert URL
+## Assert URL
 
 TODO
 <br>
-### Assert Variable
+## Assert Variable
 
 TODO
