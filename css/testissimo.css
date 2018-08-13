@@ -3,6 +3,11 @@
     list-style-type : disc;
     list-style-position : inside
 }
+#showdownDiv ol li{
+    list-style-type : decimal;
+    list-style-position : inside
+}
+
 body {
     color : #555
 }
