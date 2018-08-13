@@ -91,7 +91,7 @@ Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1    
 Visibility selections, based on element or ancestors "display:none" style  
 <ul>
   <li> <b>:visible</b>, <b>:visible(true/false)</b> - (extractable)  </li>
-  <li <b>:hidden</b>, <b>:hidden(true/false)</b> - (extractable) </li>      
+  <li> <b>:hidden</b>, <b>:hidden(true/false)</b> - (extractable) </li>      
 </ul>
 <br>
 Input state selectors  
