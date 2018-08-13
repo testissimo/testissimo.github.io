@@ -67,54 +67,54 @@ For strict selection, e.g. if you want to select element with attribute equals t
 
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
 
-* \:index(0…9) - zero based position number (extractable)  
-* \:order(1…9) - same as :index but starting from one (extractable)
-* \:eq(0…9) - means equal, it is alias for :index (extractable)
-* \:gt(0…9) - greater than
-* \:gte(0…9) - greater or equal than
-* \:lt(0…9) - lower than
-* \:lte(0…9) - lower or equal than      
+* :index(0…9) - zero based position number (extractable)  
+* :order(1…9) - same as :index but starting from one (extractable)
+* :eq(0…9) - means equal, it is alias for :index (extractable)
+* :gt(0…9) - greater than
+* :gte(0…9) - greater or equal than
+* :lt(0…9) - lower than
+* :lte(0…9) - lower or equal than      
 <br>
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo :first, :last      
 
-* /:contains(text) - contains substring - (extractable)
-* /:text(text) - equals substring - (extractable)
-* /:text-contains(text) - alias for :contains - (extractable)
-* /:text-begins(text) - begins with text (extractable)
-* /:text-ends(text) - (extractable)
-* /:text-regex(regextext) - (extractable)      
+* :contains(text) - contains substring - (extractable)
+* :text(text) - equals substring - (extractable)
+* :text-contains(text) - alias for :contains - (extractable)
+* :text-begins(text) - begins with text (extractable)
+* :text-ends(text) - (extractable)
+* :text-regex(regextext) - (extractable)      
 <br>
 Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
 Visibility selections, based on element or ancestors "display:none" style  
 
-* \:visible, :visible(true/false) - (extractable)  
-* \:hidden, :hidden(true/false) - (extractable)      
+* :visible, :visible(true/false) - (extractable)  
+* :hidden, :hidden(true/false) - (extractable)      
 <br>
 Input state selectors  
 
-* \:enabled, :enabled(true/false) - (extractable)  
-* \:disabled, :disabled(true/false) - (extractable)  
-* \:checked, :checked(true/false) - (extractable)  
-* \:selected, :selected(true/false) - (extractable)  
-* \:focused, :focused(true/false) - (extractable)  
+* :enabled, :enabled(true/false) - (extractable)  
+* :disabled, :disabled(true/false) - (extractable)  
+* :checked, :checked(true/false) - (extractable)  
+* :selected, :selected(true/false) - (extractable)  
+* :focused, :focused(true/false) - (extractable)  
 <br>
 Selecting by element value property  
 
-* \:value(value) - (extractable)  
-* \:value-contains(value) - (extractable)  
-* \:value-begins(value) - (extractable)  
-* \:value-ends(value) - (extractable)  
+* :value(value) - (extractable)  
+* :value-contains(value) - (extractable)  
+* :value-begins(value) - (extractable)  
+* :value-ends(value) - (extractable)  
 <br>
 Location url based filtering - usefull if you have many components, but not all of them are suitable for some pages, it helps to filter them    
 
-* \:url-contains(text)  
-* \:url-query-contains(text) - exclude "?"  
-* \:url-hash-contains(text) - exclude "#"  
-* \:url-equals(text)  
-* \:url-query-equals(text) - exclude "?"  
-* \:url-hash-equals(text) - exclude "#"  
+* :url-contains(text)  
+* :url-query-contains(text) - exclude "?"  
+* :url-hash-contains(text) - exclude "#"  
+* :url-equals(text)  
+* :url-query-equals(text) - exclude "?"  
+* :url-hash-equals(text) - exclude "#"  
 <br>
 Variable based filtering - usefull if you have multiple comma separated options how to select element, and you have to switch between them, e.g. input:value({value}):if-var({value}), input:index({index}):if-not-var({value})    
 
-* \:if-var({variable}) - allways true in suggestiom mode (because variables are not yet defined)  
-* \:if-not-var({variable}) - allways true in suggestiom mode (because variables are not yet defined)
+* :if-var({variable}) - allways true in suggestiom mode (because variables are not yet defined)  
+* :if-not-var({variable}) - allways true in suggestiom mode (because variables are not yet defined)
