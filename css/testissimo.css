@@ -3,22 +3,6 @@
     list-style-type : disc;
     list-style-position : inside
 }
-#showdownDiv ol li{
-    list-style-type : decimal;
-    font-weight : bold;
-    list-style-position : inside
-}
-#showdownDiv ol li span{
-    list-style-type : decimal;
-    font-weight : normal;
-    list-style-position : inside
-}
-#showdownDiv ol p{
-    list-style-type : decimal;
-    font-weight : normal;
-    list-style-position : inside
-}
-
 body {
     color : #555
 }
