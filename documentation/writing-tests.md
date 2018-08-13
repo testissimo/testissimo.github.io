@@ -24,17 +24,18 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 <br>
 
 **Extended combinators:**
-|Extended combinator|Description|
-|---|---|
-| **"<"**   |direct parent (alias for "!>")  |
-| **"<<"**  |all ancestors include parent up to HTML document (alias for "!")  |
-| **"^"**   |first direct child (alternative is "> :first") |  
-| **"!"**   |all ancestors (has alias "<<")  |
-| **"!>"**  |direct parent (has alias "<")  |
-| **"!+"**  |previous adjanced sibling (first direct previous sibling) |  
-| **"!~"**  |previous siblings  |
-| **"!^"**  |last direct child (alternative is "> :last")  |
-| **"++"**  | next and previous direct sibling - not implemented yet  |
+
+|Extended combinator|Description                                                         |
+|:-----------------:|:-------------------------------------------------------------------|
+| **"<"**           | direct parent (alias for "!>")                                     |
+| **"<<"**          | all ancestors include parent up to HTML document (alias for "!")   |
+| **"^"**           | first direct child (alternative is "> :first")                     |  
+| **"!"**           | all ancestors (has alias "<<")                                     |
+| **"!>"**          | direct parent (has alias "<")                                      |
+| **"!+"**          | previous adjanced sibling (first direct previous sibling)          |  
+| **"!~"**          | previous siblings                                                  |
+| **"!^"**          | last direct child (alternative is "> :last")                       |
+| **"++"**          | next and previous direct sibling - not implemented yet             |
 <br>
 ### Attributes Matching 
 
