@@ -4,7 +4,7 @@
     list-style-position : inside
 }
 #showdiv ol li{
-    list-style-type : decimal;
+    list-style : decimal;
     list-style-position : inside
 }
 body {
