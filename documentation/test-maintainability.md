@@ -58,6 +58,7 @@ Now, we can write test like this:
 <br>
 If we redesign web app, we need to do changes only in tests components, in one place, not in tests. Therefore, components are crucial for tests maintainability.
 <br>
+
 ## Maintenance using macros
 
 If you are repeating some application flow in tests, like login, or fill user profile, or add product to cart, etc. where this flow span more than one component, it is better to use macros. Macros are reusable test part with parameters. Imagine,  
