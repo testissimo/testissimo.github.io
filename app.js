@@ -1,7 +1,7 @@
 const Home = {
   name : 'Home',
   template : 
-    "<div> \
+    "<div id="sitemap"> \
       <ul class='list-group'> \
         <li class='list-group-item' v-for='(section, index) in sectionList' :key='index'> \
           <router-link :to=\"'/documentation/' + section.md\">{{ section.name }} </router-link> \
