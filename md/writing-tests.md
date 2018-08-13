@@ -59,10 +59,10 @@ For strict selection, e.g. if you want to select element with attribute equals t
 * [attribute!==value], etc…  
 <br>
 ### Extended Pseudo Selectors
-    * :first - first in selection  
-    * :last - last in selection  
-    * :even - every even element in current selection  
-    * :odd - every odd element in current selection  
+ * :first - first in selection  
+ * :last - last in selection  
+ * :even - every even element in current selection  
+ * :odd - every odd element in current selection  
 
 
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
