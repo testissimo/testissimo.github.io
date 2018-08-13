@@ -2,7 +2,7 @@
 
 You can run any test by clicking on the play button in the right corner of the test. In development phase of some test you can also run single step of the test by clicking on the item “Run only this step” from the context menu
 
-![](/cmsimages/ry_SV2blM.png)  
+![](/documentation/images/ry_SV2blM.png)  
 
 
 
