@@ -52,10 +52,11 @@ Same as standard css attribute matching, but allways true if value is missing or
 | **[attribute]** | has attribute, value is irelevant (extractable) | 
 | **[attribute=value]** | attribute equals to value (extractable)  |
 | **[attribute~=value]** | attribute value is in space separated list (extractable)  |
-| **[attribute|=value]** | attribute value is in hyphen separated list (extractable) |  
+| **[attribute\|=value]** | attribute value is in hyphen separated list (extractable) |  
 | **[attribute^=value]** | attribute starts with value (extractable) | 
 | **[attribute$=value]** | attribute ends with value (extractable)  |
 | **[attribute\*=value]** | attribute contains value (extractable) |  
+
 <br>
 **Extended attribute matching**
 
