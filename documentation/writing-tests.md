@@ -106,16 +106,48 @@ can be extracted from element and suggested
 
 Same as standard css attribute matching, but allways true if value is missing or empty, e.g. [attribute=""] or [attribute\*=""] is same like **[attribute]**     
 
-|Attribute|Description|
-|:---:|:---|
-| **[attribute]** | has attribute, value is irelevant (extractable) | 
-| **[attribute=value]** | attribute equals to value (extractable)  |
-| **[attribute~=value]** | attribute value is in space separated list (extractable)  |
-| **[attribute\|=value]** | attribute value is in hyphen separated list (extractable) |  
-| **[attribute^=value]** | attribute starts with value (extractable) | 
-| **[attribute$=value]** | attribute ends with value (extractable)  |
-| **[attribute\*=value]** | attribute contains value (extractable) |  
-| **[attribute!=value]** | attribute not equals to |
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align:center">Attribute</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><strong>[attribute]</strong></td>
+      <td style="text-align:left">has attribute, value is irelevant (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>[attribute=value]</strong></td>
+      <td style="text-align:left">attribute equals to value (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>[attribute~=value]</strong></td>
+      <td style="text-align:left">attribute value is in space separated list (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>[attribute|=value]</strong></td>
+      <td style="text-align:left">attribute value is in hyphen separated list (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>[attribute^=value]</strong></td>
+      <td style="text-align:left">attribute starts with value (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>[attribute$=value]</strong></td>
+      <td style="text-align:left">attribute ends with value (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>[attribute*=value]</strong></td>
+      <td style="text-align:left">attribute contains value (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>[attribute!=value]</strong></td>
+      <td style="text-align:left">attribute not equals to</td>
+    </tr>
+  </tbody>
+</table>
 <br>
 
 **Extended attribute matching**
@@ -127,38 +159,116 @@ For strict selection, e.g. if you want to select element with attribute equals t
 <br>
 
 ### Extended Pseudo Selectors
-|Extended Pseudo Selector|Description|
-|:---:|:---|
-| **:first** | first in selection | 
-| **:last** | last in selection  |
-| **:even** | every even element in current selection | 
-| **:odd** | every odd element in current selection | 
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align:center">Extended Pseudo Selector</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><strong>:first</strong></td>
+      <td style="text-align:left">first in selection</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:last</strong></td>
+      <td style="text-align:left">last in selection</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:even</strong></td>
+      <td style="text-align:left">every even element in current selection</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:odd</strong></td>
+      <td style="text-align:left">every odd element in current selection</td>
+    </tr>
+  </tbody>
+</table>
 
 
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
 
-|Positional selector| Description|
-|:---:|:---|
-| **:index(0…9)** | zero based position number (extractable) |
-| **:index(0…9)** |  zero based position number (extractable)  | 
-| **:order(1…9)** |  same as :index but starting from one (extractable) | 
-| **:eq(0…9)** |  means equal, it is alias for :index (extractable) | 
-| **:gt(0…9)** |  greater than | 
-| **:gte(0…9)** |  greater or equal than | 
-| **:lt(0…9)** |  lower than | 
-| **:lte(0…9)** |  lower or equal than |      
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align:center">Positional selector</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><strong>:index(0…9)</strong></td>
+      <td style="text-align:left">zero based position number (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:index(0…9)</strong></td>
+      <td style="text-align:left">zero based position number (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:order(1…9)</strong></td>
+      <td style="text-align:left">same as :index but starting from one (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:eq(0…9)</strong></td>
+      <td style="text-align:left">means equal, it is alias for :index (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:gt(0…9)</strong></td>
+      <td style="text-align:left">greater than</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:gte(0…9)</strong></td>
+      <td style="text-align:left">greater or equal than</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:lt(0…9)</strong></td>
+      <td style="text-align:left">lower than</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:lte(0…9)</strong></td>
+      <td style="text-align:left">lower or equal than</td>
+    </tr>
+  </tbody>
+</table>     
 
 <br>
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
 
-|Inner text selector|Description|
-|:---:|:---|
-| **:contains(text)**  | contains substring - (extractable) |
-| **:text(text)** | equals substring - (extractable) |
-| **:text-contains(text)** | alias for :contains - (extractable)  |
-| **:text-begins(text)** | begins with text (extractable) |
-| **:text-ends(text)** | (extractable) |
-| **:text-regex(regextext)** |(extractable) |
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align:center">Inner text selector</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><strong>:contains(text)</strong></td>
+      <td style="text-align:left">contains substring - (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:text(text)</strong></td>
+      <td style="text-align:left">equals substring - (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:text-contains(text)</strong></td>
+      <td style="text-align:left">alias for :contains - (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:text-begins(text)</strong></td>
+      <td style="text-align:left">begins with text (extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:text-ends(text)</strong></td>
+      <td style="text-align:left">(extractable)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><strong>:text-regex(regextext)</strong></td>
+      <td style="text-align:left">(extractable)</td>
+    </tr>
+    </tbody>
+</table>
 
 <br>
 Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
