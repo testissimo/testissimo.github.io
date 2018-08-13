@@ -13,10 +13,12 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 ### Selector Combinators 
 
 **Standard css combinators:**
-* **" "** all descendants (has alias ">>")  
-* **">"** direct children  
-* **"+"** adjanced sibling (first direct next sibling)  
-* **"~"** general siblings (all next siblings)  
+| Selector combinator | Description | 
+| ------------- |:-------------:| 
+| **" "** | all descendants (has alias ">>")  
+| **">"** | direct children  
+| **"+"** | adjanced sibling (first direct next sibling)  
+| **"~"** | general siblings (all next siblings)  
 <br>
 **Extended combinators:**
 * **"<"** direct parent (alias for "!>")  
