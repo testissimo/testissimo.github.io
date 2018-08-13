@@ -8,7 +8,7 @@ Add the following snipped to your index.html
 
 or use Google Chrome [plugin](https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en )
 
-or FireFox plugin: [firefox-0.2.8](https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1)
+or FireFox [plugin](https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1)
 
 Testissimo should appear overlapping your application and prompting you to login. 
 
