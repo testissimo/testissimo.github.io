@@ -65,6 +65,7 @@ const DocumentationContent = {
     loadFile : function(id){
         var self = this;
         var path = "./documentation/" + id + ".md";
+      console.log(path)
         this.$http.get(path)
         .then(function (data) {
           console.log(data.body)
