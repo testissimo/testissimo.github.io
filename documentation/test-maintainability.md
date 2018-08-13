@@ -46,8 +46,9 @@ And Search-Result-List component with method
 <ul>
  <li><b>“assertResults”</b>, with actions</li>
  <li><b>action 1:</b> …</li>
- <li>action 2:</b> …</li>
- <br>
+ <li><b>action 2:</b> …</li>
+</ul>
+<br>
 Now, we can write test like this:
 
 1.  **Search-Input.doSearch ( searchPhrase = “some book” )**
