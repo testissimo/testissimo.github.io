@@ -33,19 +33,21 @@ authors, search by ISBN, etc. Rewriting it entirely is very time consuming.
 In Testissimo, maintainability is provided by reusable components and their methods. Best practice is to follow logical steps. So, in our book search example, it would look like:
 
 We will create component **“Search-Input”** with methods
-
-* **“doSearch”** with parameter **“searchPhrase”**, with actions:
-* **action 1:** select search input inside search drop down
-* **action 2:** keyboard write text {searchPhrase} into search input
-* **action 3:** assert search input value, it should be equal to {searchPhrase}
-* **action 4:** select start search button, or keyboard keypress enter
+<ul>
+ <li><b>"doSearch"</b> with parameter <b>“searchPhrase”</b>, with actions:</li>
+ <li><b>action 1:</b> select search input inside search drop down</li>
+ <li><b>action 2:</b> keyboard write text <b>{searchPhrase}</b> into search input</li>
+ <li><b>action 3:</b> assert search input value, it should be equal to <b>{searchPhrase}</b></li>
+ <li><b>action 4:</b> select start search button, or keyboard keypress enter</li>
+</ul>
 <br>
+ 
 And Search-Result-List component with method
-
-* **“assertResults”**, with actions
-* **action 1:** …
-* **action 2:** …
-<br>
+<ul>
+ <li><b>“assertResults”</b>, with actions</li>
+ <li><b>action 1:</b> …</li>
+ <li>action 2:</b> …</li>
+ <br>
 Now, we can write test like this:
 
 1.  **Search-Input.doSearch ( searchPhrase = “some book” )**
