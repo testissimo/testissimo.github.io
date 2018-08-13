@@ -3,7 +3,7 @@
     list-style-type : disc;
     list-style-position : inside
 }
-#showdiv ol li{
+#showdiv ol, li{
     list-style : decimal !important;
     list-style-position : inside
 }
