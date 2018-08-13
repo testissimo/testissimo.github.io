@@ -65,15 +65,12 @@ const DocumentationContent = {
     loadFile : function(id){
         var self = this;
         var path = "./documentation/" + id + ".md";
-      console.log(path)
         this.$http.get(path)
         .then(function (data) {
-          console.log(data.body)
             self.mdData = data.body;
             self.title = (self.mdData.split('\n')[0]).slice(2, (self.mdData.split('\n')[0]).length);
         })
         .catch(function (error){
-            console.log(error.message, error);
             self.mdData = "The data you requested could not be found!";
         })
     }
