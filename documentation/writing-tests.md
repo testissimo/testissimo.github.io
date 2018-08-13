@@ -124,4 +124,4 @@ Variable based filtering - usefull if you have multiple comma separated options 
 <ul>
   <li> :if-var({variable}) - allways true in suggestiom mode (because variables are not yet defined)  </li>
   <li> :if-not-var({variable}) - allways true in suggestiom mode (because variables are not yet defined)</li>
-</ul
+</ul>
