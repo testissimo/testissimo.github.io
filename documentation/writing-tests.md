@@ -231,8 +231,8 @@ Positional selectors with argument value, for scaffolding reason, if value is em
     </tr>
   </tbody>
 </table>     
-
 <br>
+
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
 
 <table class="table table-striped table-bordered">
