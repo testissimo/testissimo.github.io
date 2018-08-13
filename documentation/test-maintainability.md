@@ -6,18 +6,18 @@ The biggest issue in software testing is tests maintainability. The less effort 
 
 Let’s assume you have simple book search web application. There is only search input and books result list. How will be logical steps of simple search test looks like?
 
-1.  Do search “some book”
-2.  Assert book result list – it should contain only relevant results with no data missing
+1. Do search “some book”
+2. Assert book result list – it should contain only relevant results with no data missing
 <br>
 Now, imagine pseudo code of this test:
 
-1.  Select search input by **id=”books-search”**
-2.  Select book result list container by **id=”result-list”**
-3.  Select all result items inside result list containers
-4.  For each item in result list, do:
-5.  Select field name by some selector
-6.  Assert field name value
-7.  Etc.
+1. Select search input by **id=”books-search”**
+2. Select book result list container by **id=”result-list”**
+3. Select all result items inside result list containers
+4. For each item in result list, do:
+5. Select field name by some selector
+6. Assert field name value
+7. Etc.
 <br>
 Now, let’s do some changes in tested app, and see how would our test handle it:
 
@@ -51,8 +51,8 @@ And Search-Result-List component with method
 <br>
 Now, we can write test like this:
 
-1.  **Search-Input.doSearch ( searchPhrase = “some book” )**
-2.  **Search-Result-List.assertResults**
+1. **Search-Input.doSearch ( searchPhrase = “some book” )**
+2. **Search-Result-List.assertResults**
 <br>
 If we redesign web app, we need to do changes only in tests components, in one place, not in tests. Therefore, components are crucial for tests maintainability.
 <br>
