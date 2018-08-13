@@ -8,6 +8,16 @@
     font-weight : bold;
     list-style-position : inside
 }
+#showdownDiv ol li span{
+    list-style-type : decimal;
+    font-weight : normal;
+    list-style-position : inside
+}
+#showdownDiv ol p{
+    list-style-type : decimal;
+    font-weight : normal;
+    list-style-position : inside
+}
 
 body {
     color : #555
