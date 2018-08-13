@@ -1,4 +1,4 @@
-## Test maintainability 
+# Test maintainability 
 
  
 
@@ -11,8 +11,8 @@ Let’s assume you have simple book search web application. There is only search
 <br>
 Now, imagine pseudo code of this test:
 
-1.  Select search input by id=”books-search”
-2.  Select book result list container by id=”result-list”
+1.  Select search input by **id=”books-search”**
+2.  Select book result list container by **id=”result-list”**
 3.  Select all result items inside result list containers
 4.  For each item in result list, do:
 5.  Select field name by some selector
@@ -28,28 +28,28 @@ Removed some book fields, added new, with conditionally hiding/showing behavior
 Tests pseudo code must be changed entirely, but logical steps doesn’t. In real world, there are no few and simple tests, but hundreds or thousands, robust tests with similar and repeated behaviors, like search in categories, tags, search in  
 authors, search by ISBN, etc. Rewriting it entirely is very time consuming.
 <br>
-### Maintainability with component based approach
+## Maintainability with component based approach
 
 In Testissimo, maintainability is provided by reusable components and their methods. Best practice is to follow logical steps. So, in our book search example, it would look like:
 
-We will create component “Search-Input” with methods
+We will create component **“Search-Input”** with methods
 
-* “doSearch” with parameter “searchPhrase”, with actions:
-* action 1: select search input inside search drop down
-* action 2: keyboard write text {searchPhrase} into search input
-* action 3: assert search input value, it should be equal to {searchPhrase}
-* action 4: select start search button, or keyboard keypress enter
+* **“doSearch”** with parameter **“searchPhrase”**, with actions:
+* **action 1:** select search input inside search drop down
+* **action 2:** keyboard write text {searchPhrase} into search input
+* **action 3:** assert search input value, it should be equal to {searchPhrase}
+* **action 4:** select start search button, or keyboard keypress enter
 <br>
 And Search-Result-List component with method
 
-* “assertResults”, with actions
-* action 1: …
-* action 2: …
+* **“assertResults”**, with actions
+* **action 1:** …
+* **action 2:** …
 <br>
 Now, we can write test like this:
 
-1.  Search-Input.doSearch ( searchPhrase = “some book” )
-2.  Search-Result-List.assertResults
+1.  **Search-Input.doSearch ( searchPhrase = “some book” )**
+2.  **Search-Result-List.assertResults**
 <br>
 If we redesign web app, we need to do changes only in tests components, in one place, not in tests. Therefore, components are crucial for tests maintainability.
 <br>
