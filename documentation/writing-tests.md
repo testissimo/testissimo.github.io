@@ -66,7 +66,11 @@ For strict selection, e.g. if you want to select element with attribute equals t
 
 
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
-
+<ul>
+  <li> :index(0…9) - zero based position number (extractable) </li>
+  <li> :index(0…9) - zero based position number (extractable) </li>
+  <li> :index(0…9) - zero based position number (extractable) </li>
+</ul>
 * :index(0…9) - zero based position number (extractable)  
 * :order(1…9) - same as :index but starting from one (extractable)
 * :eq(0…9) - means equal, it is alias for :index (extractable)
