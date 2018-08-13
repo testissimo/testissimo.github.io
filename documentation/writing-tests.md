@@ -79,16 +79,17 @@ For strict selection, e.g. if you want to select element with attribute equals t
 
 
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
+
 |Positional selector| Description|
 |:---:|---|
-| **:index(0…9)** | zero based position number (extractable) </li>
-|**:index(0…9)**|  zero based position number (extractable)  | 
-|**:order(1…9)**|  same as :index but starting from one (extractable) | 
-|**:eq(0…9)**|  means equal, it is alias for :index (extractable) | 
-|**:gt(0…9)**|  greater than | 
-|**:gte(0…9)**|  greater or equal than | 
-|**:lt(0…9)**|  lower than | 
-|**:lte(0…9)** |  lower or equal than |      
+| **:index(0…9)** | zero based position number (extractable) |
+| **:index(0…9)** |  zero based position number (extractable)  | 
+| **:order(1…9)** |  same as :index but starting from one (extractable) | 
+| **:eq(0…9)** |  means equal, it is alias for :index (extractable) | 
+| **:gt(0…9)** |  greater than | 
+| **:gte(0…9)** |  greater or equal than | 
+| **:lt(0…9)** |  lower than | 
+| **:lte(0…9)** |  lower or equal than |      
 
 <br>
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
