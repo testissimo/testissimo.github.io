@@ -23,6 +23,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 | **"~"**             | general siblings (all next siblings)          |
 <br>
 
+
 **Extended combinators:**
 
 |Extended combinator|Description                                                         |
@@ -37,6 +38,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 | **"!^"**          | last direct child (alternative is "> :last")                       |
 | **"++"**          | next and previous direct sibling - not implemented yet             |
 <br>
+
 ### Attributes Matching 
 
 **Extractable** - when drag-dopping component from preview in app into test, some variables from selector definition can be suggested to user, e.g. 
@@ -56,23 +58,24 @@ Same as standard css attribute matching, but allways true if value is missing or
 | **[attribute^=value]** | attribute starts with value (extractable) | 
 | **[attribute$=value]** | attribute ends with value (extractable)  |
 | **[attribute\*=value]** | attribute contains value (extractable) |  
-
+| **[attribute!=value]** | attribute not equals to |
 <br>
+
 **Extended attribute matching**
-
-**[attribute!=value]** - attribute not equals to
-
 For strict selection, e.g. if you want to select element with attribute equals to empty value "", use double "==" syntax
 
 * **[attribute==value]**
 * **[attribute\*==value]**
 * **[attribute!==value]**, etc…  
 <br>
+
 ### Extended Pseudo Selectors
- * **:first** - first in selection  
- * **:last** - last in selection  
- * **:even** - every even element in current selection  
- * **:odd** - every odd element in current selection  
+|Extended Pseudo Selector|Description|
+|:---:|:---|
+| **:first** | first in selection | 
+| **:last** | last in selection  |
+| **:even** | every even element in current selection | 
+| **:odd** | every odd element in current selection | 
 
 
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
