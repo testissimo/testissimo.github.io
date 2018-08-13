@@ -1,5 +1,6 @@
 # Writing tests
 <br>
+
 ## Targeting HTML components
 
 When you write UI automation test, most of your work will be telling your test automation tool how to find HTML elements which you want to interact with. This is no different with Testissimo. In Testissimo you can use full set of CSS selectors and some built-in helpers to always target elements on page with ease.
@@ -14,6 +15,11 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 
 **Standard css combinators:**
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 | Selector combinator | Description                                   | 
 |:-------------------:|:----------------------------------------------| 
