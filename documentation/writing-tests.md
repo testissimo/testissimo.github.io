@@ -112,7 +112,7 @@ Selecting by element value property
 <br>
 Location url based filtering - usefull if you have many components, but not all of them are suitable for some pages, it helps to filter them    
 <ul>
-  <li> <b>:url-contains(text)</b>  
+  <li> <b>:url-contains(text)</b>  </li>
   <li> <b>:url-query-contains(text) </b>- exclude "?"  </li>
   <li> <b>:url-hash-contains(text)</b> - exclude "#"  </li>
   <li> <b>:url-equals(text)</b>  </li>
