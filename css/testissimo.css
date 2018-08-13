@@ -7,11 +7,16 @@ body {
     color : #555
 }
 h1{
-    padding-bottom : 20px
+    padding-bottom : 20px;
+    text-weight : bold;
 }
 h2, h3, h4, h5 {
     padding-bottom : 10px;
     padding-top : 10px;
+    text-weight : bold;
+}
+#showdownDiv img {
+    margin : 10px;
 }
 #showdownDiv a {
     color : rgb(88, 156, 7);
