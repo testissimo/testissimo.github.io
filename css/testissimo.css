@@ -106,21 +106,22 @@ table{
     border: 1px solid rgb(221, 221, 221);
     border-radius : 4px;
     margin-bottom : 35px;
+    border-collapse : unset;
 }
-
 tr :first-child{
     width : 30%;
 }
+tr :last-child{
+    border-left : 1px solid rgb(221, 221, 221);
+}
 td {
     padding : 5px;
-    border-left : 1px solid rgb(221, 221, 221)
+    border-bottom : 1px solid rgb(221, 221, 221);
 }
-th{
+
+
+th {
     background-color : rgb(245, 245, 245);
     padding : 5px;
-    border-left : 1px solid rgb(221, 221, 221)       
 }
-tr {
-    border-radius:  10px;
-    border : 1px solid rgb(221, 221, 221);
-}
+
