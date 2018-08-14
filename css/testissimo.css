@@ -104,7 +104,7 @@ table{
     border: 1px solid rgb(221, 221, 221);
     border-radius : 4px
 }
-table tr:firs-child{
+tr:firs-child{
     width : 30%;
     border-right : 1px solid rgb(221, 221, 221)
 }
