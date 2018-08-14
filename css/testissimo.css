@@ -104,8 +104,8 @@ body {
 table{
     min-width : 100%;
     border: 1px solid rgb(221, 221, 221);
-    border-radius : 4px
-    margin-bottom : 35px !important;
+    border-radius : 4px;
+    margin-bottom : 35px;
 }
 
 tr :first-child{
