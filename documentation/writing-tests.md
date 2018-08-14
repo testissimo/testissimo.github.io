@@ -16,7 +16,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 **Standard css combinators:**
 
 
-<table class="table table-striped table-bordered">
+<table >
   <thead>
     <tr>
     <th style="text-align:center">Selector combinator</th>
@@ -41,14 +41,15 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
       <td style="text-align:left">general siblings (all next siblings)</td>
     </tr>
   </tbody>
-</table>
+</
+  >
 
 <br>
 
 
 **Extended combinators:**
 
-<table class="table table-striped table-bordered">
+<table >
   <thead>
     <tr>
       <th style="text-align:center">Extended combinator</th>
@@ -107,7 +108,7 @@ can be extracted from element and suggested
 
 Same as standard css attribute matching, but allways true if value is missing or empty, e.g. [attribute=""] or [attribute\*=""] is same like **[attribute]**     
 
-<table class="table table-striped table-bordered">
+<table>
   <thead>
     <tr>
       <th style="text-align:center">Attribute</th>
@@ -160,7 +161,7 @@ For strict selection, e.g. if you want to select element with attribute equals t
 <br>
 
 ### Extended Pseudo Selectors
-<table class="table table-striped table-bordered">
+<table>
   <thead>
     <tr>
       <th style="text-align:center">Extended Pseudo Selector</th>
@@ -190,7 +191,7 @@ For strict selection, e.g. if you want to select element with attribute equals t
 
 Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
 
-<table class="table table-striped table-bordered">
+<table>
   <thead>
     <tr>
       <th style="text-align:center">Positional selector</th>
@@ -235,7 +236,7 @@ Positional selectors with argument value, for scaffolding reason, if value is em
 <br>
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
 
-<table class="table table-striped table-bordered">
+<table >
   <thead>
     <tr>
       <th style="text-align:center">Inner text selector</th>
