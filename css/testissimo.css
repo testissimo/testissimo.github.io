@@ -121,4 +121,20 @@ tr:last-child td{
     border-bottom : none 
 }
 
+@media only screen and (max-width: 762px){
+    .banner-two{
+        max-width : 1200px;
+        text-align : left !important;
+        max-height: 30vh;
+    }
+
+}
+@media only screen and (min-width: 762px){
+    .banner-two{
+        max-width : 1200px;
+        text-align : left !important;
+        max-height: 50vh;
+    }
+}
+
 
