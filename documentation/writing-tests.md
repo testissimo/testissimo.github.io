@@ -11,9 +11,9 @@ As cheat-sheet we like to use this website where there is a full description of 
 [CSS selectors capabilities ](https://www.w3schools.com/cssref/css_selectors.asp) 
 Testissimo supports all of css3 selectors and adds custom, extended syntax to fulfill all searching needs.
 <br>
-### Selector Combinators 
+## Selector Combinators 
 
-#### Standard css combinators:
+### Standard css combinators:
 
 <table >
   <thead>
@@ -42,7 +42,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
   </tbody>
 </table>
 
-#### Extended combinators:
+### Extended combinators:
 
 <table >
   <thead>
