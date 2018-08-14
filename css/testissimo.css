@@ -130,10 +130,14 @@ tr:last-child td{
 
 }
 @media only screen and (min-width: 762px){
+    #textColumn{
+        padding-left : 10px;
+    }
     .banner-two{
         max-width : 1200px;
         text-align : left !important;
         max-height: 50vh;
+        margin:  0 auto;
     }
 }
 
