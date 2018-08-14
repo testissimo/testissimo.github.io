@@ -106,6 +106,6 @@ table{
     border-radius : 4px
 }
 tr:firs-child{
-    width : 30%;
+    max-width : 30%;
     border-right : 1px solid rgb(221, 221, 221)
 }
