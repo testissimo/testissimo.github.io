@@ -15,12 +15,12 @@ body {
 
 #showdownDiv h1{
     padding-bottom : 20px;
-    font-weight : bold;
+    font-weight : 700;
 }
 #showdownDiv h2, h3, h4, h5 {
     padding-bottom : 10px;
     padding-top : 10px;
-    font-weight : bold;
+    font-weight : 700;
 }
 #showdownDiv img {
     margin : 10px;
