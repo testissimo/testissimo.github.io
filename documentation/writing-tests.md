@@ -15,7 +15,6 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 
 **Standard css combinators:**
 
-
 <table >
   <thead>
     <tr>
@@ -41,11 +40,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
       <td style="text-align:left">general siblings (all next siblings)</td>
     </tr>
   </tbody>
-</
-  >
-
-<br>
-
+</table>
 
 **Extended combinators:**
 
