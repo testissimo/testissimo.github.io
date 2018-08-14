@@ -33,24 +33,16 @@
     .hvr-underline-from-left1{
         color:white !important
     }
-    #freeTrialButton{
-        margin-top:0 !important;
-        padding:5px 10px !important
-    }
-    #freeTrialButton:hover{
-        background-color:rgb(88,156,7) !important
-    }
     .main-banner{
         padding-top:70px !important;
         padding-bottom:30px !important
     }
     .auto-container{
-        padding-bottom:10px
+        padding-bottom:5px
     }
     #navigationButtonDiv{
         background-color:rgb(249,253,244);
-        padding-top:20px;
-        padding-bottom:9px
+        padding-bottom:13px
     }
 }
 
@@ -117,13 +109,13 @@ tr td strong{
     border-left : 0px !important; 
 }
 td {
-    padding : 5px;
+    padding : 5px 20px;
     border-bottom : 1px solid rgb(221, 221, 221);
 }
 th {
     background-color : rgb(245, 245, 245);
     border-bottom : 1px solid rgb(221, 221, 221);    
-    padding : 5px;
+    padding : 5px 20px;
 }
 tr:last-child td{
     border-bottom : none 
