@@ -13,7 +13,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 <br>
 ### Selector Combinators 
 
-**Standard css combinators:**
+#### Standard css combinators:
 
 <table >
   <thead>
@@ -42,7 +42,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
   </tbody>
 </table>
 
-**Extended combinators:**
+#### Extended combinators:
 
 <table >
   <thead>
