@@ -113,6 +113,9 @@ tr :first-child{
 tr :last-child{
     border-left : 1px solid rgb(221, 221, 221);
 }
+tr td strong{
+    border-left : 0px !important; 
+}
 td {
     padding : 5px;
     border-bottom : 1px solid rgb(221, 221, 221);
@@ -125,3 +128,5 @@ th {
 tr:last-child td{
     border-bottom : none 
 }
+
+
