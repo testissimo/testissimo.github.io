@@ -113,7 +113,7 @@ const router = new VueRouter({
 
 var app = new Vue({
     router : router,
-    el: '#app',
+    el: '#pageBeginning',
     components : {
       Home : Home,
       DocumentationContent : DocumentationContent,
