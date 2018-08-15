@@ -52,7 +52,7 @@ img{display:inline-block;max-width:100%;}
 .main-header{position:absolute;left:0px;top:0px;z-index:99;width:100%;-webkit-transition:all 300ms ease;-ms-transition:all 300ms ease;-o-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;}
 .main-header .auto-container{position:relative;max-width:1800px;}
 .main-header.alternate .auto-container,
-.main-header.header-style-two .auto-container{max-width:1200px;}
+.main-header.header-style-two .auto-container{max-width:1000px;}
 .main-header .main-box{position:relative;left:0px;top:30px;width:100%;padding:0px 50px;-webkit-transition:all 300ms ease;-ms-transition:all 300ms ease;-o-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;}
 .main-header.header-style-two .main-box{top:0px;background:rgba(255,255,255,0.30);}
 .main-header .main-box:after{content:'';position:absolute;left:0px;top:100%;height:0px;width:100%;opacity:0;-webkit-transition:all 300ms ease;-ms-transition:all 300ms ease;-o-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;}
@@ -114,7 +114,6 @@ img{display:inline-block;max-width:100%;}
 .banner-one .text-column h2{font-size:36px;font-weight:300;color:#3b566e;margin-bottom:15px;}
 .banner-one .text-column p{font-size:18px;margin-bottom:50px;}
 .banner-two{position:relative;padding:270px 0px;background-position:center top;background-repeat:no-repeat;background-size:cover;}
-.banner-two:before{content:'';position:absolute;bottom:-300px;left:0px;width:100%;height:437px;background:url(images/background/banner-shape-1.png) left bottom no-repeat;}
 .banner-two .text-column,
 .banner-two .image-column{margin-bottom:30px;}
 .banner-two .text-column .inner{position:relative;padding-top:40px;}

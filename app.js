@@ -18,6 +18,7 @@ const Home = {
   },
   mounted : function() {
     this.getMDfromServer();
+    app.sectionDisplayName = "Documentation";
   },
   watch : {
     $route : function() {
@@ -47,10 +48,7 @@ const DocumentationContent = {
   template : 
   " \
     <div id='docContent'> \
-      <li id='breadcrumbs' class='list-group-item' style='margin-bottom : 50px; width : fit-content'> \
-        <router-link to='/'>Documentation ></router-link> \
-        {{ title }}  \
-        </li> \
+        <div id='breadcrumbs'><router-link to='/'>Documentation ></router-link>   {{ title }} </div>  \
       <div id='showdownDiv'> \
         <vue-showdown :markdown='mdData'/> \
       </div> \

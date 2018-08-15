@@ -54,7 +54,8 @@
 }
 
 body {
-    color : #555
+    color : #555;
+    background-color : white;
 }
 #showdownDiv ul{
     list-style:disc;
@@ -86,10 +87,10 @@ body {
 #showdownDiv a:hover {
     color :rgb(75,132,6)
 }
-#breadcrumbs a, #sitemap a{
+#sitemap a{
     color : #555
 }
-#breadcrumbs a:hover, #sitemap a:hover{
+#sitemap a:hover{
     color :rgb(75,132,6)
 }   
 table{
@@ -123,7 +124,6 @@ tr:last-child td{
 
 @media only screen and (max-width: 1024px){
     .banner-two{
-        max-width : 1200px;
         max-height: 40vh;
         text-align : left;
     }
@@ -137,12 +137,12 @@ tr:last-child td{
     #textColumn{
         padding-left : 12px;
         text-align : left;
-        
     }
     .banner-two{
-        max-width : 1200px;
+        padding-bottom : 20px;
+        padding-top : 150px;
+        max-width : 1000px;
         text-align : left;
-        max-height: 50vh;
         margin:  0 auto;
     }
     #pageContent{
@@ -151,4 +151,37 @@ tr:last-child td{
     }
 }
 
+#sectionContent{
+    padding-top: 20px;
+    width : 100%;
+    background-color : white;
+    padding-bottom : 200px;
+}
 
+#sectionContent div {
+    margin : 0 auto;
+    max-width : 1000px;
+}
+
+#showdownDiv, #sitemap{
+    padding-right : 15px;
+    padding-left : 15px;
+}
+
+#showdownDiv div h1{
+    display : none;
+}
+
+#breadcrumbs{
+    padding-top : 20px;
+    padding-right : 15px;
+    padding-left : 15px;
+    padding-bottom : 20px;
+    
+}
+#breadcrumbs a {
+    color : #555;
+}
+#breadcrumbs a:hover {
+    color : rgb(75,132,6);
+}
