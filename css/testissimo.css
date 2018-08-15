@@ -121,21 +121,27 @@ tr:last-child td{
     border-bottom : none 
 }
 
-@media only screen and (max-width: 762px){
+@media only screen and (max-width: 1024px){
     .banner-two{
         max-width : 1200px;
-        text-align : left !important;
-        max-height: 30vh;
+        max-height: 40vh;
+        text-align : left;
+    }
+    #textColumn{
+        padding-left : 10px;
+        text-align : left;
     }
 
 }
-@media only screen and (min-width: 762px){
+@media only screen and (min-width: 1024px){
     #textColumn{
         padding-left : 10px;
+        text-align : left;
+        
     }
     .banner-two{
         max-width : 1200px;
-        text-align : left !important;
+        text-align : left;
         max-height: 50vh;
         margin:  0 auto;
     }
