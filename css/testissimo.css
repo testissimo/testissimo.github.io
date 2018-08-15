@@ -135,7 +135,7 @@ tr:last-child td{
 }
 @media only screen and (min-width: 1024px){
     #textColumn{
-        padding-left : 10px;
+        padding-left : 12px;
         text-align : left;
         
     }
