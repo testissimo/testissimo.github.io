@@ -69,6 +69,7 @@ const DocumentationContent = {
         .then(function (data) {
             self.mdData = data.body;
             self.title = (self.mdData.split('\n')[0]).slice(2, (self.mdData.split('\n')[0]).length);
+            app.sectionDisplayName = self.title;
         })
         .catch(function (error){
             self.mdData = "The data you requested could not be found!";
@@ -119,7 +120,8 @@ var app = new Vue({
       VueShowdown : VueShowdown,
     },
     data: {
-      message : "Vue loaded!"
+      message : "Vue loaded!",
+      sectionDisplayName : ""
     }
   }
 )
