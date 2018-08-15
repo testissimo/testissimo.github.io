@@ -121,7 +121,7 @@ var app = new Vue({
     },
     data: {
       message : "Vue loaded!",
-      sectionDisplayName : ""
+      sectionDisplayName : "Documentation"
     }
   }
 )
