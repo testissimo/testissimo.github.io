@@ -3,6 +3,9 @@
 #sectionContent{
     margin-top : 50px;
 }
+#showdownDiv{
+    padding-top : 50px;
+}
 #showdownDiv ul {
     list-style: disc;
     list-style-position: inside;
@@ -23,6 +26,7 @@
     list-style-position: inside;
 }
 #showdownDiv h1 {
+    display : none;
     padding-bottom: 20px;
     font-weight: 700;
 }
