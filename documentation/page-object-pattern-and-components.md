@@ -1,5 +1,4 @@
 # Page Object pattern and Components
-
 As soon as you have at least one repository and you know the basic set of Testissimo tools and action which are described in chapter 
 
 Build-in tools, However, the test you would produce would be very be of poor quality, minimal code reuse and wouldn’t be very resilient to any UI changes. To produce test of high code reuse and thus test with low maintenance cost Testissimo adapt the Page Object patter and implements it in very intuitive and easy to use way. To understand the idea behind Page object patter we advise you to read following [article written by Martin Fowler](https://martinfowler.com/bliki/PageObject.html) and also to read the following chapter: **Test maintainability**.

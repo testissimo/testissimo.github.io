@@ -1,5 +1,4 @@
 # How to start using Testissimo
-
 Add the following snipped to your index.html
 
 ```javascript

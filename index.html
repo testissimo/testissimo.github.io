@@ -4,8 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <!-- tu sa nacita favicon-->
-        <link rel="shortcut icon" href="./images/favicon (1).png" type="image/x-icon">
-	    <link rel="icon" href="./images/favicon (1).png" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+	    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
 	    
         <!-- Responsive -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,14 +68,21 @@
             }
      
      //header sticks on top after scroll
-            window.onscroll = function changeClass(){
+     window.onscroll = function changeClass(){
                 var scrollPositionY = window.pageYOffset | document.body.scrollTop;
                 if(scrollPositionY > 0) {
-                    headerContainer.classList.add('addBottomBorder')
-                    mainHeader.className = ('main-header alternate fixed-header');
-                } else if(scrollPositionY == 0) {
-                    headerContainer.classList.remove('addBottomBorder')
+                    mainHeader.className = ('main-header alternate fixed-header header-inverse');
+                    logoBoxBasic.className = ("logo-box hide-me")
+                    logoBoxInverse.className = ("logo-box")
+                    freeTrialButtonInverse.className = ("theme-btn btn-style-one")
+                    freeTrialButton.className = ("theme-btn btn-style-one hide-me")
+                } 
+                else if(scrollPositionY == 0) {
                     mainHeader.className =  ('main-header alternate');
+                    logoBoxBasic.className = ("logo-box")
+                    logoBoxInverse.className = ("logo-box hide-me")
+                    freeTrialButtonInverse.className = ("theme-btn btn-style-one hide-me")
+                    freeTrialButton.className = ("theme-btn btn-style-one")
                 }
                     
             }
@@ -87,107 +94,117 @@
         <script src="./js/vue-showdown.min.js"></script>
     	
 </head>
-<body style="font-family: 'Roboto', sans-serif !important; background-color : rgb(249, 253, 244)">
+<body style="font-family: 'Roboto', sans-serif !important;">
     <div id="pageBeginning" class="page-wrapper">
-        <header id="mainHeader" class="main-header alternate" style="background-color: rgb(249, 253, 244)">
-        <!-- Main Box -->
-        	<div  id="headerContainer" class="main-box" >
-            	<div  class="auto-container">
-                	<div class="outer-container clearfix" >
-                	    <div class="logo-box">
-                	        <img src="./images/logo.png" width="140px" height="28px" >
-            	        </div>
-                	    <!--Nav Outer-->
-                        <div class="nav-outer clearfix">
-                            <!-- Main Menu -->
-                            <nav class="main-menu">
-                            
-                                <div class="navbar-header">
-                                    <!-- Toggle Button -->    	
-                                    <button type="button" class="navbar-toggle" onclick="showMobileMenu()" style="background-color: rgb(88, 156, 7);
-                                        margin-top : 10px">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <script>
-                                        function showMobileMenu(){
-                                            var menu = document.getElementById("collapse-menu");
-                                            if(menu.className.indexOf('collapse-in') > 0) {
-                                                menu.classList.remove('collapse-in');
-                                                menu.classList.add('collapse');
-                                                
-                                                var scrollPositionY = window.pageYOffset | document.body.scrollTop;
-                                                if(scrollPositionY == 0) headerContainer.classList.remove('addBottomBorder')
-                                            }
-                                            else {
-                                                
-                                                menu.classList.add('collapse-in');
-                                                menu.classList.remove('collapse')
-                                            
-                                                var scrollPositionY = window.pageYOffset | document.body.scrollTop;
-                                                headerContainer.classList.add('addBottomBorder')
-                                            }
-                                        }
-                                    </script>
-                                
-                                <div id="collapse-menu" class="navbar-collapse collapse scroll-nav clearfix">
-                                    <ul class="navigation clearfix">
-                                        <li>
-                                            <a title="Home" 
-                                            href="https://testissimo.io/new">
-                                                Home
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="Features" 
-                                            href="https://testissimo.io/new#pageContent" >
-                                                Features
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="Documentation" 
-                                            href="#" 
-                                            onclick="showMobileMenu()">
-                                                Documentation
-                                            </a>
-                                        </li>
-                                        <li id="navigationButtonDiv">
-                                            <div href="https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en">                                            
-                                                <a id="freeTrialButton" 
-                                                class="theme-btn btn-style-one"
-						href="https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en"   
-						   >
-                                                    FREE TRIAL
-                                                </a>
-                                            </div>
-                                        </li>
-                                     </ul>
-                                </div>
-                            </nav>
-                            <!-- Main Menu End-->
-			    <!--Other Links-->
+        <header id="mainHeader" class="main-header alternate">
+                <!-- Main Box -->
+            <div  id="headerContainer" class="main-box" >
+                <div class="outer-container header-container" >
+                    <div class="logo-container">
+                        <div id="logoBoxBasic">
+                            <img src="./images/Logo_White.png" alt="logo" width="50%" height="50%">
                         </div>
-                        <!--Nav Outer End-->
-		     </div>    
-                </div>
-            </div>
-        </header>
-        <!-- "jumbotron" -->
-        <section class="main-banner banner-two" id="banner" style="background-color: rgb(249, 253, 244)">
-            <div  class="auto-container">
-                <div class="row clearfix">
-                    <div id="textColumn" class="text-column col-md-12 col-sm-12 col-xs-12">
-                        <div class="inner">
-                            <h2>{{sectionDisplayName}}</h2>
+                        <div id="logoBoxInverse" class="hide-me">
+                            <img src="./images/Logo_Colour.png" alt="logo" width="50%" height="50%">
                         </div>
                     </div>
-                </div>
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix navbar-container">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" onclick="showMobileMenu()" style="background-color: rgb(88, 156, 7);
+                                    margin-top : 10px">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <script>
+                                    function showMobileMenu(){
+                                        var menu = document.getElementById("collapse-menu");
+                                        if(menu.className.indexOf('collapse-in') > 0) {
+                                            menu.classList.remove('collapse-in');
+                                            menu.classList.add('collapse');
+                                            
+                                            var scrollPositionY = window.pageYOffset | document.body.scrollTop;
+                                            if(scrollPositionY == 0) headerContainer.classList.remove('addBottomBorder')
+                                        }
+                                        else {
+                                            
+                                            menu.classList.add('collapse-in');
+                                            menu.classList.remove('collapse')
+                                        
+                                            var scrollPositionY = window.pageYOffset | document.body.scrollTop;
+                                            headerContainer.classList.add('addBottomBorder')
+                                        }
+                                    }
+                                </script>
+                            
+                            <div id="collapse-menu" class="navbar-collapse collapse scroll-nav">
+                                <ul class="navigation clearfix">
+                                    <li>
+                                        <a title="Home" 
+                                        href="https://testissimo.io/new" 
+                                        onclick="showMobileMenu();smoothScroll('pageBeginning');return false">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Documentation" 
+                                        href="https://testissimo.github.io" 
+                                        onclick="showMobileMenu()">
+                                            Documentation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Features" 
+                                        href="https://testissimo.io/new" 
+                                        onclick="showMobileMenu();smoothScroll('pageContent');return false">
+                                            Features
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Pricing" 
+                                        href="https://testissimo.io/new" 
+                                        onclick="showMobileMenu();smoothScroll('pageContent');return false">
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li id="navigationButtonDiv">
+                                        <div href="https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en" >
+                                            <a id="freeTrialButton"  
+                                            href="https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en"
+                                            class="theme-btn btn-style-one">
+                                                Try It Now
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a id="freeTrialButtonInverse"  
+                                            href="https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en"
+                                            class="theme-btn btn-style-one hide-me">
+                                                Try It Now
+                                            </a>
+                                        </div>
+                                    </li>
+                                    </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                    </div>
+                    <!--Nav Outer End-->
+                </div>    
+            </div>
+        </header>
+        <div class="placeholder"></div>
+        <section class="main-banner banner-two" id="banner" style="background-color: rgb(249, 253, 244)">
+            <div  class="auto-container">
+                    <h1 id="siteHeading">{{sectionDisplayName}}</h1>
             </div>
         </section>
         <section id="sectionContent">
-            <div class="inner-box" id="app">
+            <div class="auto-container" id="app">
                 <router-view/>
             </div>
         </section>

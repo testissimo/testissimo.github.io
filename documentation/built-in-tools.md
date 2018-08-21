@@ -1,5 +1,4 @@
 # Built-in tools
-
 This is a set of basic build-in actions which can be used to create more complex constructs like component methods. These actions are the Testissimo language which all other component are composed of. 
 
 ![](/documentation/images/By-JXGlX9W.png)

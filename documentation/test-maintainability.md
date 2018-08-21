@@ -1,7 +1,4 @@
 # Test maintainability 
-
- 
-
 The biggest issue in software testing is tests maintainability. The less effort takes to fix tests if tested application change, the happier development team, and software development speed is.
 
 Let’s assume you have simple book search web application. There is only search input and books result list. How will be logical steps of simple search test looks like?
