@@ -1,0 +1,976 @@
+@media only screen and (max-width : 762px){
+    .main-header .main-box .outer-container, .main-header .fixed-header .main-box, .main-header .main-box, .main-header {
+        background-color: #34b982;
+        transition: all 300ms ease;
+    }
+    .main-header .main-box{
+        padding : 10px 0;
+    }
+    .hide-me{
+        display: none;
+    }
+    .logo-container{
+        margin-left : 25px;
+    }
+    .logo-box > img{
+        width : 100%;
+        height: 100%;
+    }
+    #logoBoxInverse{
+        display : none !important;
+    }
+    #logoBoxBasic{
+        display : block !important;
+    }
+    
+    .main-menu .navbar-header{
+        padding : 0;
+        margin : 0 25px;
+        display : flex;
+        align-content : center;
+        justify-content: flex-end;
+    }
+    .icon-bar{
+        background-color : white;   
+    }
+    .scrolled > .icon-bar{
+        background-color : white;   
+    }
+    #mojeDropdown{
+        min-width : 100%;
+        text-align: center;
+        padding-bottom : 20px;
+    }
+    #mojeDropdown div {
+        margin : 5px 25px !important;
+        padding : 5px;
+        background-color : white;
+        text-align : center;
+
+    }
+    #mojeDropdown div a{
+        color : #34b982
+    }
+    #navbar-button{
+        padding : 0px !important;
+        background-color : #34b982;
+        border : 2px solid white;
+    }
+    #navbar-button button{
+        padding : 5px;
+        color : white;
+        background-color : #34b982;
+        border : none;
+        width : 100%;
+    }
+    
+    .main-menu .navigation > li > a{
+        color : white;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding : 0;
+    }
+    .main-menu .navigation > li > a:hover {
+        color : white;
+    }
+    .header-inverse, .header-inverse .main-box .outer-container, .header-inverse .fixed-header .main-box {
+        background-color: #34b982;
+        transition: all 300ms ease;
+    }
+    .header-inverse .navigation > li > a{
+        color : #34b982;
+    }
+    .header-inverse .navigation > li > a:hover{
+        color : #34b982;
+    }
+    .main-header.fixed-header .main-box {
+        box-shadow:  0 2px 30px 0 rgb(144, 144, 144, 0.2);
+    }
+    #freeTrialButton {
+        font-weight: 500;
+        font-size : 1.1em;
+        background-color: white;
+        color: #34b982;
+        border : 2px solid white;
+        padding: 8px 30px;
+    }
+    #freeTrialButton:hover {
+        background-color : #eeeeee !important;
+        border : 2px solid #eeeeee;
+        
+    }
+    #freeTrialButtonInverse {
+        font-weight: 500;
+        font-size : 1.1em;
+        background-color: #34b982;
+        border : 2px solid #34b982;
+        color: white;
+        padding: 8px 30px;
+    }
+    #freeTrialButtonInverse:hover {
+        background-color : #1d6145;
+        border : 2px solid #1d6145;
+    }
+    .header-container{
+        max-width: 1100px;
+        margin : 0 auto;
+        display : flex;
+        align-items: center; 
+        justify-content: space-between;
+    }
+    .header-container > .auto-container{
+        max-width: unset;
+    }
+    .logo-container{
+        display : flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .navigation{
+        display : flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #myCarousel{
+        display: none;
+    }
+    #banner{
+        background-color : #34b982;
+    }
+    .placeholder{
+        background-color : #34b982;
+        height : 86px;
+    }
+
+    .banner-two{
+        padding : 8vh 0 10vh 0;
+    }
+    .banner-two .text-column p{
+        margin-bottom : 15px;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .text-column .inner hr{
+        margin-top : 35px;
+        margin-bottom : 30px;
+    }
+    .inner{
+        text-align : center;
+    }
+    #smallText{
+        color : #1d6145;
+        font-weight : bold;
+        font-size : 0.9em;
+    }
+    #siteHeading{
+        color : white;
+        font-size : 2em;
+        line-height: 1.2em;
+        font-weight: 900;
+    }
+    #documentationText a {
+        font-weight: 600;
+        color : #1d6145;
+    }
+    .inner hr{
+        margin-right : auto;
+        margin-left : auto;
+        border-top : 2px solid #1d6145;
+        width : 20%;
+    }
+    #documentationButton {
+        font-size: 1.1em;
+        font-weight: 500;
+        color : white;
+        background: #34b982;
+        border : 2px solid white;
+        border-radius : 5px;
+        padding : 8px 30px ;
+        margin-bottom : 25px;
+    }
+    #documentationButton:hover {
+        background: white;
+        color : #34b982
+    }
+    .inner div span {
+        color : #1d6145;
+    }
+    .features-section{
+        background-color : white;
+        color : #444;
+        text-align: center;
+    }
+    .downloadDiv{
+        display : none;
+    }
+    .downloadDiv p {
+        margin : 8px 0;
+        font-weight: bold;
+    }
+    .addonButton{
+        display : none !important;
+    }
+    .addonButton .blackIcon{
+        display : unset;
+    }
+    .addonButton .whiteIcon{
+        display : none;
+    }
+    .addonButton div{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .addonButton img{
+        margin-right : 15px;
+        width : 20px;
+        height: 20px;
+    }
+    .addonButton span{
+        color : #444 !important;
+    }
+    .addonButton:hover {
+        background-color : #444;
+        border : 2px solid #444;
+    }
+    .addonButton:hover span {
+        color : white !important;
+    }
+    .addonButton:hover .blackIcon{
+        display : none;
+    }
+    .addonButton:hover .whiteIcon{
+        display : unset;
+    }
+    .documentationAnchor a{
+        position: relative;
+        color : #444;
+        font-weight: 900;
+    }
+    .documentationAnchor a:after{ 
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid #444;
+        transition: 0.4s;
+    }
+    .navigation > li > a:after{
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid white;
+        transition: 0.4s;
+    }
+    .header-inverse .navigation > li > a:after{
+        border-bottom: 2px solid #34b982;
+    }
+    .documentationAnchor a:hover:after, .navigation > li > a:hover:after  {
+        width: 100%;
+        }
+    .features-section h1{
+        font-weight: 900;
+        text-align: center;
+        padding-bottom : 60px;
+    }
+    .feature-heading{
+        display : flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .feature-heading img {
+        width : 45px;
+        height: 45px;
+    }
+    .feature h3{
+        margin-left : 25px;
+        text-align: left;
+        font-weight: 900;
+    }
+    .feature{
+        margin-bottom : 25px !important;
+    }
+    .feature p{
+        line-height: 2em;
+        text-align : left;
+        padding-bottom : 0px !important;
+    }
+    .feature-button {
+        margin-top : 70px;
+        background-color: white;
+        color : #444;
+        border : 2px solid #444;
+        font-size : 1.1em;
+        font-weight: 700;
+        padding : 8px 30px;
+    }
+    .feature-button:hover{
+        background-color: #444;
+        color : white;
+    }
+    .feature h3{
+        font-weight: 900;
+    }
+    .pricing {
+        color : white;
+        padding : 100px 0;
+        background-color : #34b982;
+    }    
+    .pricing p {
+        padding-top : 20px;
+        font-size  : 1.1em;
+        line-height: 40px;
+    }
+    .setup-intro-section{
+        color : #444;
+        text-align: center;
+        padding-bottom : 400px;
+    }
+    .setup-intro-section h1{
+        padding : 50px 50px 60px 50px;
+        font-weight: 900;
+    }
+    .setup-intro-section table {
+        border : none;
+    }
+    .setup-intro-section tr {
+        border: none;
+    }
+    .setup-intro-section .text td:nth-child(odd){
+        padding : 5px 0;
+        border : none;
+        color : #444;
+        font-size : 1.4em;
+        font-weight: 500;
+    }
+    .setup-intro-section .text td:nth-child(odd){
+        margin-left : 50px;
+        margin-right : 50px;
+    }
+
+    .setup-intro-section .numbers td:nth-child(odd){
+        height: 75px;
+        border : 4px solid #444;
+        border-radius : 100%;
+        padding : 5px;
+        color : #444;
+        font-size : 1.4em;
+        font-weight: 700;
+    }
+    .setup-intro-section .numbers td:nth-child(even) {
+        padding : 0px;
+    }
+    .setup-intro-section .numbers td:nth-child(even) hr{
+        width : 100%;
+        border : 2px solid #444;
+    }
+    .setup h1{
+        color : #444;
+        font-weight: 900;
+        padding-bottom : 60px;
+    }
+    .setup-step-heading {
+        display : flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .setup-step{
+        margin-bottom : 25px !important;
+    }
+    .setup-step-heading img{
+        width : 45px;
+        height : 45px;
+    }
+    .setup-step h3{
+        margin-left : 25px;
+        text-align: left;
+        font-weight: 900;
+    }
+    .setup-step > p, .downloadDiv > p{
+        text-align : left;
+    }
+    #dontMoveMe{
+        margin-left : 0px !important;
+    }
+    
+    .greenCode{
+        display : none;
+    }
+    .companies{
+        margin-top : 100px;
+        background-color : #efefef;
+        text-align : center;
+        padding-bottom : 300px;
+        padding-top : 150px;
+    }
+    .companies h1{
+        margin-top : 40px;
+        font-weight: 900;
+    }
+    footer{
+        background-color: #34b982;
+        color : white;
+        text-align : center;
+        padding : 25px;
+    }
+    footer h1{
+        font-weight: 900;
+        margin-bottom : 25px;
+    }
+    footer input{
+        margin-top : 25px;
+        font-weight: 500;
+        padding : 8px 30px;
+        border-radius : 5px;
+        border : 2px solid white;
+        color : #444;
+    }
+    footer button{
+        margin-top : 15px;
+        font-weight: 500;
+        background-color: #34b982;
+        border-radius : 4px;
+        border: 2px solid white;
+        padding : 8px 30px; 
+        margin-left : 15px;
+        font-size : 1.1em;
+    }
+
+    footer .links {
+        margin: 25px 0 50px 0;
+        width : 100%;
+        display : flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    footer .links a {
+        font-weight: 600;
+        color : white; 
+    }
+    .carousel{
+        background-color : white;
+    }
+    .carousel .inner{
+        margin-top : -70px;
+    }
+    .auto-container{
+        margin : 0 25px;
+        padding : 0;
+    }
+    .navbar-container{
+        display : flex;
+        justify-content: flex-end;
+    }
+    .navbar-collapse::after{
+        display : none;
+    }
+    .main-header .main-box::after{
+        display: none;
+    }
+    .row{
+        margin : 0;
+    }
+    body {
+        color: #444;
+        /* background-color: #34b982; */
+        font-family: 'Roboto', sans-serif !important;
+        line-height: 2em;
+    }
+
+}
+
+@media only screen and (min-width : 763px) and (max-width : 1299px){
+    .main-header .main-box .outer-container, .main-header .fixed-header .main-box, .main-header .main-box, .main-header, .main-box {
+        background-color: #34b982;
+        transition: all 300ms ease;
+    }
+    .main-header.fixed-header .main-box{
+        background-color : #34b982;
+    }
+    .main-header .main-box{
+        background-color : #34b982;
+        padding : 10px 0;
+    }
+    .hide-me{
+        display: none;
+    }
+    .logo-container{
+        margin-left : 50px;
+    }
+    .logo-box > img{
+        height: 100%;
+    }
+    #logoBoxInverse{
+        display : none !important;
+    }
+    #logoBoxBasic{
+        display : block !important;
+    }
+    
+    .main-menu .navbar-header{
+        padding : 0;
+        margin : 0 25px;
+        display : flex;
+        align-content : center;
+        justify-content: flex-end;
+    }
+    .icon-bar{
+        background-color : white;   
+    }
+    .scrolled > .icon-bar{
+        background-color : white;   
+    }
+    #mojeDropdown{
+        min-width : 100%;
+        text-align: center;
+        padding-bottom : 20px;
+    }
+    #mojeDropdown div {
+        display : none !important;
+
+    }
+    #mojeDropdown div a{
+        color : #34b982
+    }
+    #navbar-button{
+        padding : 0px !important;
+        background-color : #34b982;
+        border : 2px solid white;
+    }
+    #navbar-button button{
+        padding : 5px;
+        color : white;
+        background-color : #34b982;
+        border : none;
+        width : 100%;
+    }
+    
+    .main-menu .navigation > li > a{
+        color : white;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding : 0;
+    }
+    .main-menu .navigation > li > a:hover {
+        color : white;
+    }
+    .header-inverse, .header-inverse .main-box .outer-container, .header-inverse .fixed-header .main-box {
+        background-color: #34b982;
+        transition: all 300ms ease;
+    }
+    .header-inverse .navigation > li > a{
+        color : white;
+    }
+    .header-inverse .navigation > li > a:hover{
+        color : #34b982;
+    }
+    .main-header.fixed-header .main-box {
+        box-shadow:  0 2px 30px 0 rgb(144, 144, 144, 0.2);
+    }
+    #freeTrialButton {
+        font-weight: 500;
+        font-size : 1.1em;
+        background-color: white;
+        color: #34b982;
+        border : 2px solid white;
+        padding: 8px 30px;
+    }
+    #freeTrialButton:hover {
+        background-color : #eeeeee !important;
+        border : 2px solid #eeeeee;
+        
+    }
+    #freeTrialButtonInverse {
+        font-weight: 500;
+        font-size : 1.1em;
+        background-color: white;
+        border : 2px solid white;
+        color: #34b982;
+        padding: 8px 30px;
+    }
+    #freeTrialButtonInverse:hover {
+        background-color : #1d6145;
+        border : 2px solid #1d6145;
+    }
+    .header-container{
+        max-width: 1100px;
+        margin : 0 auto;
+        display : flex;
+        align-items: center; 
+        justify-content: space-between;
+    }
+    .header-container > .auto-container{
+        max-width: unset;
+    }
+    .logo-container{
+        display : flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .navigation{
+        display : flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right : 50px;
+    }
+    #myCarousel{
+        display: none;
+    }
+    #banner{
+        background-color : #34b982;
+    }
+    .placeholder{
+        background-color : #34b982;
+        height : 86px;
+    }
+
+    .banner-two{
+        padding : 8vh 0 10vh 0;
+    }
+    .banner-two .text-column p{
+        margin-bottom : 15px;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .text-column .inner hr{
+        margin-top : 35px;
+        margin-bottom : 30px;
+    }
+    .inner{
+        text-align : center;
+    }
+    #smallText{
+        color : #1d6145;
+        font-weight : bold;
+        font-size : 0.9em;
+    }
+    #siteHeading{
+        color : white;
+        font-size : 2em;
+        line-height: 1.2em;
+        font-weight: 900;
+    }
+    #documentationText a {
+        font-weight: 600;
+        color : #1d6145;
+    }
+    .inner hr{
+        margin-right : auto;
+        margin-left : auto;
+        border-top : 2px solid #1d6145;
+        width : 20%;
+    }
+    #documentationButton {
+        font-size: 1.1em;
+        font-weight: 500;
+        color : white;
+        background: #34b982;
+        border : 2px solid white;
+        border-radius : 5px;
+        padding : 8px 30px ;
+        margin-bottom : 25px;
+    }
+    #documentationButton:hover {
+        background: white;
+        color : #34b982
+    }
+    .inner div span {
+        color : #1d6145;
+    }
+    .features-section{
+        background-color : white;
+        color : #444;
+        text-align: center;
+    }
+    .downloadDiv{
+        display : none;
+    }
+    .downloadDiv p {
+        margin : 8px 0;
+        font-weight: bold;
+    }
+    .addonButton{
+        display : none !important;
+    }
+    .addonButton .blackIcon{
+        display : unset;
+    }
+    .addonButton .whiteIcon{
+        display : none;
+    }
+    .addonButton div{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .addonButton img{
+        margin-right : 15px;
+        width : 20px;
+        height: 20px;
+    }
+    .addonButton span{
+        color : #444 !important;
+    }
+    .addonButton:hover {
+        background-color : #444;
+        border : 2px solid #444;
+    }
+    .addonButton:hover span {
+        color : white !important;
+    }
+    .addonButton:hover .blackIcon{
+        display : none;
+    }
+    .addonButton:hover .whiteIcon{
+        display : unset;
+    }
+    .documentationAnchor a{
+        position: relative;
+        color : #444;
+        font-weight: 900;
+    }
+    .documentationAnchor a:after{ 
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid #444;
+        transition: 0.4s;
+    }
+    .navigation > li > a:after{
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid white;
+        transition: 0.4s;
+    }
+    .header-inverse .navigation > li > a:after{
+        border-bottom: 2px solid #34b982;
+    }
+    .documentationAnchor a:hover:after, .navigation > li > a:hover:after  {
+        width: 100%;
+        }
+    .features-section h1{
+        font-weight: 900;
+        text-align: center;
+        padding-bottom : 60px;
+    }
+    .feature-heading{
+        display : flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .feature-heading img {
+        width : 45px;
+        height: 45px;
+    }
+    .feature h3{
+        margin-left : 25px;
+        text-align: left;
+        font-weight: 900;
+    }
+    .feature{
+        margin-bottom : 25px !important;
+    }
+    .feature p{
+        line-height: 2em;
+        text-align : left;
+        padding-bottom : 0px !important;
+    }
+    .feature-button {
+        margin-top : 70px;
+        background-color: white;
+        color : #444;
+        border : 2px solid #444;
+        font-size : 1.1em;
+        font-weight: 700;
+        padding : 8px 30px;
+    }
+    .feature-button:hover{
+        background-color: #444;
+        color : white;
+    }
+    .feature h3{
+        font-weight: 900;
+    }
+    .pricing {
+        color : white;
+        padding : 100px 0;
+        background-color : #34b982;
+    }    
+    .pricing p {
+        padding-top : 20px;
+        font-size  : 1.1em;
+        line-height: 40px;
+    }
+    .setup-intro-section{
+        color : #444;
+        text-align: center;
+        padding-bottom : 400px;
+    }
+    .setup-intro-section h1{
+        padding : 50px 50px 60px 50px;
+        font-weight: 900;
+    }
+    .setup-intro-section table {
+        border : none;
+    }
+    .setup-intro-section tr {
+        border: none;
+    }
+    .setup-intro-section .text td:nth-child(odd){
+        width : 100px;
+        padding : 5px 0;
+        border : none;
+        color : #444;
+        font-size : 1.4em;
+        font-weight: 700;
+    }
+    .setup-intro-section .text td:nth-child(odd){
+        margin-left : 50px;
+        margin-right : 50px;
+    }
+
+    .setup-intro-section .numbers td:nth-child(odd){
+        width: 100px;
+        height: 100px;
+        border : 4px solid #444;
+        border-radius : 100%;
+        padding : 5px;
+        color : #444;
+        font-size : 1.4em;
+        font-weight: 700;
+    }
+    .setup-intro-section .numbers td:nth-child(even) {
+        padding : 0px;
+    }
+    .setup-intro-section .numbers td:nth-child(even) hr{
+        width : 100%;
+        border : 2px solid #444;
+    }
+    .setup h1{
+        color : #444;
+        font-weight: 900;
+        padding-bottom : 60px;
+    }
+    .setup-step-heading {
+        display : flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .setup-step{
+        margin-bottom : 25px !important;
+    }
+    .setup-step-heading img{
+        width : 45px;
+        height : 45px;
+    }
+    .setup-step h3{
+        margin-left : 25px;
+        text-align: left;
+        font-weight: 900;
+    }
+    .setup-step > p, .downloadDiv > p{
+        text-align : left;
+    }
+    #dontMoveMe{
+        margin-left : 0px !important;
+    }
+    
+    .greenCode{
+        display : none;
+    }
+    .companies{
+        margin-top : 100px;
+        background-color : #efefef;
+        text-align : center;
+        padding-bottom : 300px;
+        padding-top : 150px;
+    }
+    .companies h1{
+        margin-top : 40px;
+        font-weight: 900;
+    }
+    footer{
+        background-color: #34b982;
+        color : white;
+        text-align : center;
+        padding : 25px;
+    }
+    footer h1{
+        font-weight: 900;
+        margin-bottom : 25px;
+    }
+    footer input{
+        margin-top : 25px;
+        font-weight: 500;
+        padding : 8px 30px;
+        border-radius : 5px;
+        border : 2px solid white;
+        color : #444;
+    }
+    footer button{
+        margin-top : 15px;
+        font-weight: 500;
+        background-color: #34b982;
+        border-radius : 4px;
+        border: 2px solid white;
+        padding : 8px 30px; 
+        margin-left : 15px;
+        font-size : 1.1em;
+    }
+
+    footer .links {
+        margin: 25px 0 50px 0;
+        width : 100%;
+        display : flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    footer .links a {
+        font-weight: 600;
+        color : white; 
+    }
+    .carousel{
+        background-color : white;
+    }
+    .carousel .inner{
+        margin-top : -70px;
+    }
+    .auto-container{
+        margin : 0 50px;
+        padding : 0;
+    }
+    .navbar-container{
+        display : flex;
+        justify-content: flex-end;
+    }
+    .navbar-collapse::after{
+        display : none;
+    }
+    .main-header .main-box::after{
+        display: none;
+    }
+    .row{
+        margin : 0;
+    }
+    body {
+        color: #444;
+        /* background-color: #34b982; */
+        font-family: 'Roboto', sans-serif !important;
+        line-height: 2em;
+    }
+
+}
