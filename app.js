@@ -18,7 +18,6 @@ const Home = {
   },
   mounted : function() {
     this.getMDfromServer();
-    app.sectionDisplayName = "Documentation";
   },
   watch : {
     $route : function() {
@@ -67,11 +66,14 @@ const DocumentationContent = {
         .then(function (data) {
             self.mdData = data.body;
             self.title = (self.mdData.split('\n')[0]).slice(2, (self.mdData.split('\n')[0]).length);
-            app.sectionDisplayName = self.title;
+            this.onDataLoaded(self.title);
         })
         .catch(function (error){
             self.mdData = "The data you requested could not be found!";
         })
+          },
+    onDataLoaded : function(title){
+      this.$emit(title);
     }
   },
   watch: {
@@ -83,17 +85,6 @@ const DocumentationContent = {
     this.loadFile(this.$route.params.id)
   },
 };
-
-// const Section = {
-//   template : `
-//     <div>
-//       <!-- breadcrumb-->
-//       breadcrumbs
-//       <router-view></router-view> 
-//     </div>
-//   `,
-//   name : "Section"
-// };
 
 
 const router = new VueRouter({
@@ -120,6 +111,11 @@ var app = new Vue({
     data: {
       message : "Vue loaded!",
       sectionDisplayName : "Documentation"
+    },
+    methods : {
+      setSectionDisplayName : function(event){
+        console.log("but hey it got fired", event)
+      }
     }
   }
 )
