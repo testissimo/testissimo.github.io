@@ -1,15 +1,26 @@
 const Home = {
   name : 'Home',
-  template : 
-    "<div id='sitemap'> \
-      <ul class='list-group'> \
-        <li class='list-group-item' v-for='(section, index) in sectionList' :key='index'> \
-          <router-link :to=\"'/documentation/' + section.md\">{{ section.name }} </router-link> \
-        </li> \
-      </ul> \
-      <router-view></router-view> \
-    </div> ",
-  
+  template : " \
+  <div>\
+    <section class='main-banner banner-two' id='banner'> \
+      <div  class='auto-container'> \
+              <h1 id='siteHeading'>Documentation</h1> \
+      </div> \
+    </section> \
+    <section id='sectionContent'> \
+      <div class='auto-container' id='app'> \
+        <div id='sitemap'> \
+        <ul class='list-group'> \
+          <li class='list-group-item' v-for='(section, index) in sectionList' :key='index'> \
+            <router-link :to=\"'/documentation/' + section.md\">{{ section.name }} </router-link> \
+          </li> \
+        </ul> \
+        <router-view></router-view> \
+      </div> \
+      </div> \
+    </section>\
+    </div> \
+    ",
   data : function() {
     return {
       sectionList : {},
@@ -42,16 +53,30 @@ const Home = {
   }
 };
 
-const DocumentationContent = {
-  name : 'DocumentationContent',
+const DocumentationComponent = {
+  name : 'DocumentationComponent',
   template : 
-  " \
-    <div id='docContent'> \
-        <div id='breadcrumbs'><router-link to='/'>Documentation ></router-link>   {{ title }} </div>  \
-      <div id='showdownDiv'> \
-        <vue-showdown :markdown='mdData'/> \
-      </div> \
-    </div> ",
+  " <div>\
+      <section class='main-banner banner-two' id='banner'> \
+        <div  class='auto-container'> \
+                <h1 id='siteHeading'>{{title}}</h1> \
+        </div> \
+      </section> \
+      <section id='sectionContent'> \
+        <div class='auto-container' id='app'> \
+          <div id='docContent'> \
+            <div id='breadcrumbs'> \
+              <router-link to='/'>Documentation ></router-link>   {{ title }} \
+            </div>  \
+            <div id='showdownDiv'> \
+              <vue-showdown :markdown='mdData'/> \
+            </div> \
+          </div> \
+        </div> \
+      </section>\
+    </div>\
+    ",
+    
   data : function() {
     return {
         mdData : "Loading MDdata",
@@ -91,7 +116,7 @@ const router = new VueRouter({
   routes : [
     { 
       path : "/documentation/:id",
-      component : DocumentationContent 
+      component : DocumentationComponent 
     },
     { 
       path : "/",
@@ -105,7 +130,7 @@ var app = new Vue({
     el: '#pageBeginning',
     components : {
       Home : Home,
-      DocumentationContent : DocumentationContent,
+      DocumentationContent : DocumentationComponent,
       VueShowdown : VueShowdown,
     },
     data: {
