@@ -111,11 +111,10 @@
     	
 </head>
 <body style="font-family: 'Roboto', sans-serif !important;">
-    <div id="pageBeginning" class="page-wrapper">
+    <div id="pageBeginning" @dataLoaded="setSectionDisplayName($event)" class="page-wrapper">
             <header id="mainHeader" class="main-header alternate">
                     <!-- Main Box -->
                         <div  id="headerContainer" class="main-box" >
-                            
                             <div class="outer-container header-container" >
                                 <div class="logo-container">
                                     <div id="logoBoxBasic" class="logo-box">
@@ -220,7 +219,7 @@
                 <router-view/>
             </div>
         </section>
-	<script src="app.js"></script>
     </div>
+<script src="app.js"></script>
 </body>
 </html>
