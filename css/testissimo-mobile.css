@@ -328,10 +328,10 @@
     .setup-intro-section{
         color : #444;
         text-align: center;
-        padding-bottom : 400px;
+        padding-bottom : 25px;
     }
     .setup-intro-section h1{
-        padding : 50px 50px 60px 50px;
+        padding : 50px 0px 60px 0px;
         font-weight: 900;
     }
     .setup-intro-section table {
@@ -360,6 +360,9 @@
         color : #444;
         font-size : 1.4em;
         font-weight: 700;
+    }
+    .setup{
+        padding-bottom : 50px;
     }
     .setup-intro-section .numbers td:nth-child(even) {
         padding : 0px;
@@ -483,9 +486,99 @@
         line-height: 2em;
     }
 
+    #showOffSection, #signUpSection, #startTestissimoSection{
+        display : none;
+    }
 }
 
-@media only screen and (min-width : 763px) and (max-width : 1299px){
+@media only screen and (min-width : 763px) and (max-width : 1200px){
+    #mobileOnlySection{
+        display: none;
+    }
+    #startTestissimoButton{
+        background-color: #34b982;
+        color : white;
+        padding : 8px 30px;
+        font-size : 1.1em;
+        font-weight: 500;
+        border : 2px solid #34b982
+    }
+    #startTestissimoButton:hover{
+        background-color : #1d6145;
+        border : 2px solid #1d6145;
+    }
+    #start-using-testissimo section{
+        padding: 50px 0px;
+    }
+    #start-using-testissimo section h1{
+        padding-bottom: 25px;
+    }
+    #testissimoShowOffSection{
+        font-family: inherit;
+        line-height: 1.6em;
+        color : #444;
+    }
+    #alreadyRegisteredButton{
+        color : #34b982;
+        background-color: white;
+        padding : 8px 30px;
+        border : solid 2px #34b982
+    }
+    #alreadyRegisteredButton:hover{
+        background-color: #34b982;
+        color : white;
+    }
+    #startTestButton{
+        width : 100%;
+        color : white;
+        background-color: #34b982;
+        font-size : 1.1em;
+        padding : 8px 30px;
+    }
+    #startTestButton:hover{
+        background-color: #1d6145;
+    }
+    #showOffSection{
+        text-align: center;
+        padding : 50px;
+    }
+    #showOffSection hr{
+        margin-top : 50px;
+    }
+    #showOffSection ol li{
+        text-align: left;
+        list-style: decimal inside;
+    }
+    #showOffSection div{
+        padding : 0;
+    }
+    #showOffSection p, #showOffSection h1{
+        text-align: left;
+    }
+    #showOffSection .greenCode{
+        margin-top : 25px;
+    }
+    #testForm #firstTestSubmitButton{
+        font-size : 1.1em; 
+        font-family: 'Roboto', sans-serif;
+        padding : 8px 30px; 
+        background-color : #34b982; 
+        color : white; 
+        border-radius : 4px;
+    }
+    #testForm #firstTestSubmitButton:hover{
+        background-color : #1d6145;
+    }
+    #testForm #firstTestResestButton{
+        font-size : 1.1em; 
+        padding : 8px 30px; 
+        background-color : salmon; 
+        color : white; 
+        border-radius : 4px;
+    }
+    #testForm #firstTestResestButton:hover{
+        background-color : crimson !important;
+    }
     .main-header .main-box .outer-container, .main-header .fixed-header .main-box, .main-header .main-box, .main-header, .main-box {
         background-color: #34b982;
         transition: all 300ms ease;
@@ -816,25 +909,27 @@
     .setup-intro-section{
         color : #444;
         text-align: center;
-        padding-bottom : 400px;
+        padding-bottom : 50px;
     }
     .setup-intro-section h1{
         padding : 50px 50px 60px 50px;
         font-weight: 900;
     }
     .setup-intro-section table {
+        width : 70%;
         border : none;
     }
     .setup-intro-section tr {
         border: none;
     }
     .setup-intro-section .text td:nth-child(odd){
-        width : 100px;
+        width : 75px;
         padding : 5px 0;
         border : none;
         color : #444;
         font-size : 1.4em;
         font-weight: 700;
+        text-align: center;
     }
     .setup-intro-section .text td:nth-child(odd){
         margin-left : 50px;
@@ -842,13 +937,14 @@
     }
 
     .setup-intro-section .numbers td:nth-child(odd){
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         border : 4px solid #444;
         border-radius : 100%;
         padding : 5px;
         color : #444;
-        font-size : 1.4em;
+        font-size : 36px;
+        text-align: center;
         font-weight: 700;
     }
     .setup-intro-section .numbers td:nth-child(even) {
@@ -856,7 +952,7 @@
     }
     .setup-intro-section .numbers td:nth-child(even) hr{
         width : 100%;
-        border : 2px solid #444;
+        border : 1px solid #444;
     }
     .setup h1{
         color : #444;
