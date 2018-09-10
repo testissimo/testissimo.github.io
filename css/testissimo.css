@@ -1,4 +1,5 @@
 
+
 /* css pre dokumentaciu :  */
 #sectionContent{
     margin-top : 50px;
@@ -84,6 +85,115 @@ tr:last-child td {
 
 /* desktop css */
 @media only screen and (min-width:1200px) {
+    #mobileOnlySection{
+        display : none !important;
+    }
+    #startTestButton{
+        width : 100%;
+        color : white;
+        background-color: #34b982;
+        font-size : 1.1em;
+        padding : 8px 30px;
+    }
+    #startTestButton:hover{
+        background-color: #1d6145;
+    }
+    #showOffSection{
+        text-align: center;
+        padding : 50px;
+    }
+    #showOffSection hr{
+        margin-top : 50px;
+    }
+    #showOffSection ol li{
+        text-align: left;
+        list-style: decimal inside;
+    }
+    #showOffSection div{
+        padding : 0;
+    }
+    #showOffSection p, #showOffSection h1{
+        text-align: left;
+    }
+    #showOffSection .greenCode{
+        margin-top : 25px;
+    }
+    #testForm #firstTestSubmitButton{
+        font-size : 1.1em; 
+        font-family: 'Roboto', sans-serif;
+        padding : 8px 30px; 
+        background-color : #34b982; 
+        color : white; 
+        border-radius : 4px;
+    }
+    #testForm #firstTestSubmitButton:hover{
+        background-color : #1d6145;
+    }
+    #testForm #firstTestResestButton{
+        font-size : 1.1em; 
+        padding : 8px 30px; 
+        background-color : salmon; 
+        color : white; 
+        border-radius : 4px;
+    }
+    #testForm #firstTestResestButton:hover{
+        background-color : crimson !important;
+    }
+    pre {
+        background-color : #EEE;
+        padding : 15px;
+        border : none;
+        border-radius : 5px;
+        color : #34b982;
+        width : auto;
+        clear : both;
+    }
+    pre code{
+        background-color : #EEE;
+        padding : 15px;
+        border-radius : 5px;
+        color : #34b982;
+        font-weight: 700;
+        font-family: monospace;
+        width : auto;
+        clear : both;
+    }
+    .left-aligned{
+        text-align: left !important;
+    }
+    #startTestissimoButton{
+        background-color: #34b982;
+        color : white;
+        padding : 8px 30px;
+        font-size : 1.1em;
+        font-weight: 500;
+        border : 2px solid #34b982
+    }
+    #startTestissimoButton:hover{
+        background-color : #1d6145;
+        border : 2px solid #1d6145;
+    }
+    #start-using-testissimo section{
+        padding: 50px 0px;
+    }
+    #start-using-testissimo section h1{
+        padding-bottom: 25px;
+    }
+    #testissimoShowOffSection{
+        font-family: inherit;
+        line-height: 1.6em;
+        color : #444;
+    }
+    #alreadyRegisteredButton{
+        color : #34b982;
+        background-color: white;
+        padding : 8px 30px;
+        border : solid 2px #34b982
+    }
+    #alreadyRegisteredButton:hover{
+        background-color: #34b982;
+        color : white;
+    }
     .main-header .main-box .outer-container, .main-header .fixed-header .main-box, .main-header .main-box, .main-header {
         background-color: #34b982;
         transition: all 300ms ease;
