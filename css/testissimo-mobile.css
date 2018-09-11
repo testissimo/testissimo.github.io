@@ -3,6 +3,11 @@
         background-color: #34b982;
         transition: all 300ms ease;
     }
+    pre {
+        background-color : #EEE;
+        border : none;
+        line-height : 2em;
+    }
     pre code {
         background-color : #EEE;
         padding : 15px;
@@ -504,6 +509,11 @@
 @media only screen and (min-width : 763px) and (max-width : 1200px){
     #mobileOnlySection{
         display: none;
+    }
+    pre {
+        background-color : #EEE;
+        border : none;
+        line-height : 2em;
     }
     pre code {
         background-color : #EEE;
