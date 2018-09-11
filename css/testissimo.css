@@ -4,16 +4,6 @@
 #sectionContent{
     margin-top : 50px;
 }
- pre code {
-    background-color : #EEE;
-    padding : 15px;
-    border-radius : 5px;
-    color : #34b982;
-    font-weight: 700;
-    font-size : 12px;
-    font-family: monospace;
-    width : auto;
-}
 #showdownDiv{
     padding-top : 50px;
 }
