@@ -5,12 +5,12 @@
     }
     pre {
         background-color : #EEE;
+        padding : 15px;
         border : none;
         line-height : 2em;
     }
     pre code {
         background-color : #EEE;
-        padding : 15px;
         border-radius : 5px;
         color : #34b982;
         font-weight: 700;
@@ -513,11 +513,11 @@
     pre {
         background-color : #EEE;
         border : none;
+        padding : 15px;
         line-height : 2em;
     }
     pre code {
         background-color : #EEE;
-        padding : 15px;
         border-radius : 5px;
         color : #34b982;
         font-weight: 700;
