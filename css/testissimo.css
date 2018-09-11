@@ -156,6 +156,7 @@ tr:last-child td {
         font-weight: 700;
         font-size : 18px;
         font-family: monospace;
+        line-height : 2em;
         width : auto;
         clear : both;
     }
