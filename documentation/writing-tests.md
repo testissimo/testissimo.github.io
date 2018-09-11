@@ -1,13 +1,13 @@
 # Writing tests
 ## Targeting HTML components
 
-When you write UI automation test, most of your work will be telling your test automation tool how to find HTML elements which you want to interact with. This is no different with Testissimo. In Testissimo you can use full set of CSS selectors and some built-in helpers to always target elements on page with ease.
+When writing an automatized UI test, most of your work consists of administering your testing tool how to find HTML elements which will be interacted with. This is no different with Testissimo. In Testissimo you can use a full set of CSS selectors and some built-in helpers to always target elements on page with ease.
 
 As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the basics of CSS selectors at [flukeout](https://flukeout.github.io/). 
 
-As cheat-sheet we like to use this website where there is a full description of CSS selectors capabilities 
+As a cheat-sheet we like to use this website where you can find a full description of CSS selectors capabilities 
 [CSS selectors capabilities ](https://www.w3schools.com/cssref/css_selectors.asp) 
-Testissimo supports all of css3 selectors and adds custom, extended syntax to fulfill all searching needs.
+Testissimo supports all of CSS3 selectors and adds custom, extended syntax to fulfill all searching needs.
 <br>
 ## Selector Combinators 
 
@@ -31,7 +31,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
     </tr>
     <tr>
       <td style="text-align:center"><strong>“+”</strong></td>
-      <td style="text-align:left">adjanced sibling (first direct next sibling)</td>
+      <td style="text-align:left">adjacent sibling (first direct next sibling)</td>
     </tr>
     <tr>
       <td style="text-align:center"><strong>“~”</strong></td>
@@ -72,7 +72,7 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
     </tr>
     <tr>
       <td style="text-align:center"><strong>“!+”</strong></td>
-      <td style="text-align:left">previous adjanced sibling (first direct previous sibling)</td>
+      <td style="text-align:left">previous adjacent sibling (first direct previous sibling)</td>
     </tr>
     <tr>
       <td style="text-align:center"><strong>“!~”</strong></td>
@@ -93,13 +93,13 @@ Testissimo supports all of css3 selectors and adds custom, extended syntax to fu
 
 ### Attributes Matching 
 
-**Extractable** - when drag-dopping component from preview in app into test, some variables from selector definition can be suggested to user, e.g. 
+**Extractable** - when drag-dropping component from preview in app into test, some variables from selector definition can be suggested to user, e.g. 
 ```javascript
 input:value({variable}) 
 ``` 
 can be extracted from element and suggested
 
-Same as standard css attribute matching, but allways true if value is missing or empty, e.g. [attribute=""] or [attribute\*=""] is same like **[attribute]**     
+Same as standard CSS attribute matching, but always true if value is missing or empty, e.g. [attribute=""] or [attribute\*=""] is same like **[attribute]**     
 
 <table>
   <thead>
@@ -206,7 +206,7 @@ Positional selectors with argument value, for scaffolding reason, if value is em
     </tr>
     <tr>
       <td style="text-align:center"><strong>:eq(0…9)</strong></td>
-      <td style="text-align:left">means equal, it is alias for :index (extractable)</td>
+      <td style="text-align:left">means equal, it is an alias for :index (extractable)</td>
     </tr>
     <tr>
       <td style="text-align:center"><strong>:gt(0…9)</strong></td>
@@ -299,7 +299,7 @@ Location url based filtering - usefull if you have many components, but not all 
   <li> <b>:url-hash-equals(text) </b>- exclude "#"  </li>
 </ul>
 <br>
-Variable based filtering - usefull if you have multiple comma separated options how to select element, and you have to switch between them, e.g. 
+Variable based filtering - usefull if you have multiple comma separated options how to select an element, and you have to switch between them, e.g. 
 ```javascript
 input:value({value}):if-var({value}), 
 input:index({index}):if-not-var({value})    
