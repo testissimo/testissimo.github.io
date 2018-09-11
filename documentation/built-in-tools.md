@@ -1,9 +1,9 @@
 # Built-in tools
-This is a set of basic build-in actions which can be used to create more complex constructs like component methods. These actions are the Testissimo language which all other component are composed of. 
+This is a set of basic built-in actions which can be used to create more complex constructs like component methods. These actions are the Testissimo language which all other component are composed of. 
 
 ![](/documentation/images/By-JXGlX9W.png)
 
-Most of the simple action has a CSS selector which defined the html object on which this action will be executed. If the selector is omitted, the selector from owning component or the last selector from previous execution is used. 
+Most of the simple actions have a CSS selector that define the HTML object which this action will be executed on. If the selector is omitted, the selector from owning component or the last selector from previous execution is used. 
 
 As of the current version, the set of Simple actions is given by Testissimo it-self. They do have an undocumented API and thus even custom simple action can be plugged into Testissimo. If you are interested in doing so, please contact the Testissimo development team for further information. 
 <br>
@@ -15,11 +15,12 @@ TODO
 
 The action has tree variants. It can be used 
 
-* to simulate typing sequence of character on some html object
-* to simulate typing single character on some html object
-* to focuse some html object
+* to simulate typing a sequence of character on some HTML object
+* to simulate typing single character on some HTML object
+* to focus some HTML object
 <br>
-Following example demonstrates a component method which is writing sequence of character into an INPUT html object
+
+Following example demonstrates a component method which is writing sequence of character into an input HTML object:
 
 ![](/documentation/images/HkYq9UcGX.png)  
 
@@ -27,9 +28,9 @@ Following example demonstrates a component method which is writing sequence of c
 <br>
 ## Mouse click (Left / Middle / Right / Double)
 
-The action simulates click on some html object. The action has four variants depending on which mouse button you want to click and if the click should be single or double. 
+The action simulates a click on some HTML object. The action has four variants depending on which mouse button you want to click and if the click should be single or double. 
 
-The following example demonstrates component method which click on a button identified by its label
+The following example demonstrates a component method which clicks on a button identified by its label
 
 ![](/documentation/images/rJp9pIqfX.png)  
 
@@ -37,12 +38,13 @@ The following example demonstrates component method which click on a button iden
 <br>
 ## Navigate to (Custom URL, Back, Reload Page)
 
-The action can perform various navigation tasks. It can
+This action can perform various navigation tasks. It can:
 
 * navigate to custom url, which is specified as its parameter
 * simulate the back button click
 * reload the current page
 <br>
+
 The following example demonstrated the navigating the application to some relative path
 
 
@@ -57,7 +59,7 @@ TODO
 <br>
 ## Wait
 
-The action forces Testissimo to wait for certain amount of time. In clear majority of cases, you will not need to use this action. Testissimo will do most of the synchronization for you. 
+This action forces Testissimo to wait for certain amount of time. In clear majority of cases, you will not need to use this action. Testissimo will do most of the synchronization for you. 
 <br>
 ## Extract element values
 
@@ -68,7 +70,7 @@ TODO
 Using this construct, Testissimo can iterate over some collection and execute some set of actions for each element of that collection. There are various ways how to define the collection. The options are
 
 * Parent component occurrences
-* Html elements defined using selector
+* Html elements defined using a selector
 * Values defined in the semi-colon separated list
 * JSON (in the form of array of object)
 * Using values in variable which is of type array of objects
@@ -78,11 +80,11 @@ Using this construct, Testissimo can iterate over some collection and execute so
 Using this construct, you can implement decision making in Testissimo.The decision can be based 
 
 * on some properties of HTML object
-* on count of HTML object
+* on the count of HTML object
 * on the URL parameters
 * on the value of some variable
 <br>
-In the following example, the action check if the variable ‘do-cleanup’ has the value true and if so perform call to some method
+In the following example, the action checks if the variable ‘do-cleanup’ has the value true and if so then performs a call to some other method
 
 
 ![](/documentation/images/rylc-vcG7.png)
