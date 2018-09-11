@@ -3,6 +3,16 @@
         background-color: #34b982;
         transition: all 300ms ease;
     }
+    pre code {
+        background-color : #EEE;
+        padding : 15px;
+        border-radius : 5px;
+        color : #34b982;
+        font-weight: 700;
+        font-size : 18px;
+        font-family: monospace;
+        width : auto;
+    }
     .main-header .main-box{
         padding : 10px 0;
     }
@@ -494,6 +504,16 @@
 @media only screen and (min-width : 763px) and (max-width : 1200px){
     #mobileOnlySection{
         display: none;
+    }
+    pre code {
+        background-color : #EEE;
+        padding : 15px;
+        border-radius : 5px;
+        color : #34b982;
+        font-weight: 700;
+        font-size : 18px;
+        font-family: monospace;
+        width : auto;
     }
     #startTestissimoButton{
         background-color: #34b982;
