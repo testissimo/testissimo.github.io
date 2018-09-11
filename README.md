@@ -1,21 +1,8 @@
-# testissimo
+# Testissimo
 
-## Project setup
-```
-npm install
-```
+## Project intro :
+Testissimo is an Automated Component-Based Web Testing Tool
+Check Testissimo out [here](https://testissimo.io/new)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+## Project documentation : 
+Project documentation can be found [here](https://testissimo.github.io)
