@@ -1,6 +1,6 @@
 @media only screen and (max-width : 762px){
     .main-header .main-box .outer-container, .main-header .fixed-header .main-box, .main-header .main-box, .main-header {
-        background-color: #34b982;
+        background-color: #4bc28b;
         transition: all 300ms ease;
     }
     pre {
@@ -12,7 +12,7 @@
     pre code {
         background-color : #EEE;
         border-radius : 5px;
-        color : #34b982;
+        color : #4bc28b;
         font-weight: 700;
         font-size : 18px;
         font-family: monospace;
@@ -64,17 +64,17 @@
 
     }
     #mojeDropdown div a{
-        color : #34b982
+        color : #4bc28b
     }
     #navbar-button{
         padding : 0px !important;
-        background-color : #34b982;
+        background-color : #4bc28b;
         border : 2px solid white;
     }
     #navbar-button button{
         padding : 5px;
         color : white;
-        background-color : #34b982;
+        background-color : #4bc28b;
         border : none;
         width : 100%;
     }
@@ -89,14 +89,14 @@
         color : white;
     }
     .header-inverse, .header-inverse .main-box .outer-container, .header-inverse .fixed-header .main-box {
-        background-color: #34b982;
+        background-color: #4bc28b;
         transition: all 300ms ease;
     }
     .header-inverse .navigation > li > a{
-        color : #34b982;
+        color : #4bc28b;
     }
     .header-inverse .navigation > li > a:hover{
-        color : #34b982;
+        color : #4bc28b;
     }
     .main-header.fixed-header .main-box {
         box-shadow:  0 2px 30px 0 rgb(144, 144, 144, 0.2);
@@ -105,7 +105,7 @@
         font-weight: 500;
         font-size : 1.1em;
         background-color: white;
-        color: #34b982;
+        color: #4bc28b;
         border : 2px solid white;
         padding: 8px 30px;
     }
@@ -117,8 +117,8 @@
     #freeTrialButtonInverse {
         font-weight: 500;
         font-size : 1.1em;
-        background-color: #34b982;
-        border : 2px solid #34b982;
+        background-color: #4bc28b;
+        border : 2px solid #4bc28b;
         color: white;
         padding: 8px 30px;
     }
@@ -150,10 +150,10 @@
         display: none;
     }
     #banner{
-        background-color : #34b982;
+        background-color : #4bc28b;
     }
     .placeholder{
-        background-color : #34b982;
+        background-color : #4bc28b;
         height : 86px;
     }
 
@@ -197,7 +197,7 @@
         font-size: 1.1em;
         font-weight: 500;
         color : white;
-        background: #34b982;
+        background: #4bc28b;
         border : 2px solid white;
         border-radius : 5px;
         padding : 8px 30px ;
@@ -205,7 +205,7 @@
     }
     #documentationButton:hover {
         background: white;
-        color : #34b982
+        color : #4bc28b
     }
     .inner div span {
         color : #1d6145;
@@ -281,7 +281,7 @@
         transition: 0.4s;
     }
     .header-inverse .navigation > li > a:after{
-        border-bottom: 2px solid #34b982;
+        border-bottom: 2px solid #4bc28b;
     }
     .documentationAnchor a:hover:after, .navigation > li > a:hover:after  {
         width: 100%;
@@ -333,7 +333,7 @@
     .pricing {
         color : white;
         padding : 100px 0;
-        background-color : #34b982;
+        background-color : #4bc28b;
     }    
     .pricing p {
         padding-top : 20px;
@@ -431,7 +431,7 @@
         font-weight: 900;
     }
     footer{
-        background-color: #34b982;
+        background-color: #4bc28b;
         color : white;
         text-align : center;
         padding : 25px;
@@ -451,7 +451,7 @@
     footer button{
         margin-top : 15px;
         font-weight: 500;
-        background-color: #34b982;
+        background-color: #4bc28b;
         border-radius : 4px;
         border: 2px solid white;
         padding : 8px 30px; 
@@ -496,7 +496,7 @@
     }
     body {
         color: #444;
-        /* background-color: #34b982; */
+        /* background-color: #4bc28b; */
         font-family: 'Roboto', sans-serif !important;
         line-height: 2em;
     }
@@ -519,19 +519,19 @@
     pre code {
         background-color : #EEE;
         border-radius : 5px;
-        color : #34b982;
+        color : #4bc28b;
         font-weight: 700;
         font-size : 18px;
         font-family: monospace;
         width : auto;
     }
     #startTestissimoButton{
-        background-color: #34b982;
+        background-color: #4bc28b;
         color : white;
         padding : 8px 30px;
         font-size : 1.1em;
         font-weight: 500;
-        border : 2px solid #34b982
+        border : 2px solid #4bc28b
     }
     #startTestissimoButton:hover{
         background-color : #1d6145;
@@ -549,19 +549,19 @@
         color : #444;
     }
     #alreadyRegisteredButton{
-        color : #34b982;
+        color : #4bc28b;
         background-color: white;
         padding : 8px 30px;
-        border : solid 2px #34b982
+        border : solid 2px #4bc28b
     }
     #alreadyRegisteredButton:hover{
-        background-color: #34b982;
+        background-color: #4bc28b;
         color : white;
     }
     #startTestButton{
         width : 100%;
         color : white;
-        background-color: #34b982;
+        background-color: #4bc28b;
         font-size : 1.1em;
         padding : 8px 30px;
     }
@@ -592,7 +592,7 @@
         font-size : 1.1em; 
         font-family: 'Roboto', sans-serif;
         padding : 8px 30px; 
-        background-color : #34b982; 
+        background-color : #4bc28b; 
         color : white; 
         border-radius : 4px;
     }
@@ -610,14 +610,14 @@
         background-color : crimson !important;
     }
     .main-header .main-box .outer-container, .main-header .fixed-header .main-box, .main-header .main-box, .main-header, .main-box {
-        background-color: #34b982;
+        background-color: #4bc28b;
         transition: all 300ms ease;
     }
     .main-header.fixed-header .main-box{
-        background-color : #34b982;
+        background-color : #4bc28b;
     }
     .main-header .main-box{
-        background-color : #34b982;
+        background-color : #4bc28b;
         padding : 10px 0;
     }
     .hide-me{
@@ -659,17 +659,17 @@
 
     }
     #mojeDropdown div a{
-        color : #34b982
+        color : #4bc28b
     }
     #navbar-button{
         padding : 0px !important;
-        background-color : #34b982;
+        background-color : #4bc28b;
         border : 2px solid white;
     }
     #navbar-button button{
         padding : 5px;
         color : white;
-        background-color : #34b982;
+        background-color : #4bc28b;
         border : none;
         width : 100%;
     }
@@ -684,14 +684,14 @@
         color : white;
     }
     .header-inverse, .header-inverse .main-box .outer-container, .header-inverse .fixed-header .main-box {
-        background-color: #34b982;
+        background-color: #4bc28b;
         transition: all 300ms ease;
     }
     .header-inverse .navigation > li > a{
         color : white;
     }
     .header-inverse .navigation > li > a:hover{
-        color : #34b982;
+        color : #4bc28b;
     }
     .main-header.fixed-header .main-box {
         box-shadow:  0 2px 30px 0 rgb(144, 144, 144, 0.2);
@@ -700,7 +700,7 @@
         font-weight: 500;
         font-size : 1.1em;
         background-color: white;
-        color: #34b982;
+        color: #4bc28b;
         border : 2px solid white;
         padding: 8px 30px;
     }
@@ -714,7 +714,7 @@
         font-size : 1.1em;
         background-color: white;
         border : 2px solid white;
-        color: #34b982;
+        color: #4bc28b;
         padding: 8px 30px;
     }
     #freeTrialButtonInverse:hover {
@@ -746,10 +746,10 @@
         display: none;
     }
     #banner{
-        background-color : #34b982;
+        background-color : #4bc28b;
     }
     .placeholder{
-        background-color : #34b982;
+        background-color : #4bc28b;
         height : 86px;
     }
 
@@ -793,7 +793,7 @@
         font-size: 1.1em;
         font-weight: 500;
         color : white;
-        background: #34b982;
+        background: #4bc28b;
         border : 2px solid white;
         border-radius : 5px;
         padding : 8px 30px ;
@@ -801,7 +801,7 @@
     }
     #documentationButton:hover {
         background: white;
-        color : #34b982
+        color : #4bc28b
     }
     .inner div span {
         color : #1d6145;
@@ -877,7 +877,7 @@
         transition: 0.4s;
     }
     .header-inverse .navigation > li > a:after{
-        border-bottom: 2px solid #34b982;
+        border-bottom: 2px solid #4bc28b;
     }
     .documentationAnchor a:hover:after, .navigation > li > a:hover:after  {
         width: 100%;
@@ -929,7 +929,7 @@
     .pricing {
         color : white;
         padding : 100px 0;
-        background-color : #34b982;
+        background-color : #4bc28b;
     }    
     .pricing p {
         padding-top : 20px;
@@ -1029,7 +1029,7 @@
         font-weight: 900;
     }
     footer{
-        background-color: #34b982;
+        background-color: #4bc28b;
         color : white;
         text-align : center;
         padding : 25px;
@@ -1049,7 +1049,7 @@
     footer button{
         margin-top : 15px;
         font-weight: 500;
-        background-color: #34b982;
+        background-color: #4bc28b;
         border-radius : 4px;
         border: 2px solid white;
         padding : 8px 30px; 
@@ -1094,7 +1094,7 @@
     }
     body {
         color: #444;
-        /* background-color: #34b982; */
+        /* background-color: #4bc28b; */
         font-family: 'Roboto', sans-serif !important;
         line-height: 2em;
     }
