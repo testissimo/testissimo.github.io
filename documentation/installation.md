@@ -1,4 +1,5 @@
-# How to start using Testissimo
+#Installation
+
 Add the following snippet to your index.html
 
 ```javascript

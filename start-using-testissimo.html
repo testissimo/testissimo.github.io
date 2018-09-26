@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- tu sa nacita favicon-->
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+	    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+	    
+        <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <title>Testissimo</title>
+        
+        <!-- css import -->
+        <link rel="stylesheet" id="bootstrap-css" href="./css/bootstrap.css" type="text/css" media="all">
+		<link rel="stylesheet" id="animate-css" href="./css/animate.css" type="text/css" media="all">
+        <link rel="stylesheet" id="spring-main-style-css" href="./css/style.css" type="text/css" media="all">
+        <link rel="stylesheet" id="spring-responsive-css" href="./css/responsive.css" type="text/css" media="all">
+        <link rel="stylesheet" id="kc-general-css" href="./css/kingcomposer.min.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./css/landing/testissimo.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./css/landing/testissimo-mobile.css" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <!--JS import-->
+        <script type="text/javascript" src="./js/gifffer.js"></script>
+        <script>
+            //gifffer
+            window.onload = function() {
+                Gifffer();
+            }
+
+            // smoothscroll
+            function currentYPosition() {
+                // Firefox, Chrome, Opera, Safari
+                if (self.pageYOffset) return self.pageYOffset;
+                // Internet Explorer 6 - standards mode
+                if (document.documentElement && document.documentElement.scrollTop)
+                    return document.documentElement.scrollTop;
+                // Internet Explorer 6, 7 and 8
+                if (document.body.scrollTop) return document.body.scrollTop;
+                return 0;
+            }
+            function elmYPosition(eID) {
+                var elm = document.getElementById(eID);
+                var y = elm.offsetTop;
+                var node = elm;
+                while (node.offsetParent && node.offsetParent != document.body) {
+                    node = node.offsetParent;
+                    y += node.offsetTop;
+                } return y;
+            }
+            function smoothScroll(eID) {
+                var startY = currentYPosition();
+                var stopY = elmYPosition(eID);
+                var distance = stopY > startY ? stopY - startY : startY - stopY;
+                if (distance < 100) {
+                    scrollTo(0, stopY); return;
+                }
+                var speed = Math.round(distance / 20);
+                if (speed >= 20) speed = 20;
+                var step = Math.round(distance / 25);
+                var leapY = stopY > startY ? startY + step : startY - step;
+                var timer = 0;
+                if (stopY > startY) {
+                    for ( var i=startY; i<stopY; i+=step ) {
+                        setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                        leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+                    } return;
+                }
+                for ( var i=startY; i>stopY; i-=step ) {
+                    setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                    leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+                }
+            }
+
+            //header sticks on top after scroll
+            window.onscroll = function changeClass(){
+                var scrollPositionY = window.pageYOffset | document.body.scrollTop;
+                if(scrollPositionY > 0) {
+                    mainHeader.className = ('main-header alternate fixed-header header-inverse');
+                    logoBoxBasic.className = ("logo-box hide-me")
+                    logoBoxInverse.className = ("logo-box")
+                    freeTrialButtonInverse.className = ("theme-btn btn-style-one")
+                    freeTrialButton.className = ("theme-btn btn-style-one hide-me")
+                    navbarToggler.className = ("navbar-toggle scrolled");
+
+                } 
+                else if(scrollPositionY == 0) {
+                    mainHeader.className =  ('main-header alternate');
+                    logoBoxBasic.className = ("logo-box")
+                    logoBoxInverse.className = ("logo-box hide-me")
+                    freeTrialButtonInverse.className = ("theme-btn btn-style-one hide-me")
+                    freeTrialButton.className = ("theme-btn btn-style-one")
+                    navbarToggler.className = ("navbar-toggle ");
+
+                }
+                    
+            }
+            function showMobileMenu(){
+                if(mojeDropdown.className == "hide-me"){
+                    mojeDropdown.className = ""
+                    var scrollPositionY = window.pageYOffset | document.body.scrollTop;
+                }
+                else {
+                    mojeDropdown.className = "hide-me"
+                    var scrollPositionY = window.pageYOffset | document.body.scrollTop;
+                }
+            }
+            function loadScript(url, callback){
+                var script = document.createElement("script")
+                script.id = "testissimo"
+                script.type = "text/javascript";
+                if (script.readyState){  //IE
+                    script.onreadystatechange = function(){
+                        if (script.readyState == "loaded" ||
+                                script.readyState == "complete"){
+                            script.onreadystatechange = null;
+                            callback();
+                        }
+                    };
+                } else {  //Others
+                    script.onload = function(){
+                        callback();
+                    };
+                }
+                script.src = url;
+                document.getElementsByTagName("head")[0].appendChild(script);
+                }
+
+                window.onTestissimo = function(testissimo){
+                    console.log(testissimo)
+                }
+        </script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
+        <script src="./js/vue-showdown.min.js"></script>
+</head>
+<body id="start-using-testissimo" style="font-family: 'Roboto', sans-serif !important;">
+    <div id="pageBeginning" class="page-wrapper">
+        <header id="mainHeader" class="main-header alternate">
+            <!-- Main Box -->
+                <div  id="headerContainer" class="main-box" >
+                    
+                    <div class="outer-container header-container" >
+                        <div onclick="location.href='https://testissimo.io/new'" class="logo-container">
+                            <div id="logoBoxBasic" class="logo-box">
+                                <img src="./images/Logo_White.png" alt="logo" width="50%" height="50%">
+                            </div>
+                            <div id="logoBoxInverse" class="logo-box hide-me">
+                                <img src="./images/Logo_Colour.png" alt="logo" width="50%" height="50%">
+                            </div>
+                        </div>
+                        <!--Nav Outer-->
+                        <div class="nav-outer clearfix navbar-container">
+                            <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <button type="button" id="navbarToggler" class="navbar-toggle" onclick="showMobileMenu(); return false;">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div id="collapse-menu" class="navbar-collapse collapse scroll-nav">
+                                    <ul class="navigation clearfix">
+                                        <li>
+                                            <a title="Home" 
+                                            href="#" 
+                                            onclick="smoothScroll('pageBeginning', 86);return false">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Documentation" 
+                                            href="https://testissimo.github.io" >
+                                                Documentation
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Features" 
+                                            href="features.html">
+                                                Features
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Pricing" 
+                                            href="pricing.html"> 
+                                                Pricing
+                                            </a>
+                                        </li>
+                                        <li id="navigationButtonDiv">
+                                            <div>
+                                                <a id="freeTrialButton"  
+                                                onclick="location.href='start-using-testissimo.html'"
+                                                class="theme-btn btn-style-one">
+                                                    Try It Now
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a id="freeTrialButtonInverse"  
+                                                onclick="location.href='start-using-testissimo.html'"
+                                                class="theme-btn btn-style-one hide-me">
+                                                    Try It Now
+                                                </a>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+                        <!--Nav Outer End-->
+                    </div>    
+                    <div id="mojeDropdown" class="hide-me">
+                            <div>
+                                <a onclick="
+                                    smoothScroll('featureSection', 0);
+                                    mojeDropdown.className = ('hide-me')
+                                    return false"
+                                    href="#">Home</a>
+                            </div>
+                            <div>
+                                <a href="https://testissimo.github.io">Documentation</a>
+                            </div>
+                            <div>
+                                <a href="features.html">
+                                    Features
+                                </a>
+                            </div>
+                            <div>
+                                <a href="pricing.html">
+                                    Pricing
+                                </a>
+                            </div>
+                            <div id="navbar-button">
+                                <button onclick="location.href='start-using-testissimo.html'">
+                                    Try It Now
+                                </button>
+                            </div>
+                            
+                        </div>
+                </div>
+        </header>
+        <div class="placeholder"></div>
+    </div>
+    <section class='main-banner banner-two' id='banner'> 
+        <div  class='auto-container '> 
+            <h1 id='siteHeading'>Start using Testissimo</h1> 
+        </div>
+    </section>
+    <section id="mobileOnlySection">
+        <div class="auto-container">
+            <p style="margin-top : 25px;">In order to experience Testissimo we recommend switching to Desktop</p>
+        </div>
+    </section>
+    <section id="startTestissimoSection">
+        <div class="auto-container">
+            <h1>Start Testissimo up</h1>
+            <p>
+                Click the button below to start Testissimo up. 
+            </p>            
+            <button 
+            onclick="
+            document.getElementById('startTestissimoSection').classList.add('hide-me');
+            document.getElementById('signUpSection').classList.remove('hide-me');
+            loadScript('https://app.testissimo.io/testissimo.min.js?uiSignupMode=true', function (){
+                setTimeout(function(){
+                var position = {
+                    position : 'absolute',
+                    top : (document.getElementById('testissimoJavascript').getBoundingClientRect().top) + 'px',
+                    left : (document.getElementById('testissimoJavascript').getBoundingClientRect().right) + 'px',
+                    height : '400px',
+                    width : '400px'
+                }
+                testissimo.container.changeState('custom', position)}, 0)
+            });
+            "
+            id="startTestissimoButton" class="theme-btn btn-style-one">
+                Start Testissimo
+        </button>
+        </div>
+    </section>
+    <section id="signUpSection" class="hide-me">
+        <div class="auto-container">
+            <div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h1>Sign up</h1>
+                <p>
+                    Fill in your e-mail and password to Sign up.
+                </p>            
+                <p>
+                    Your Unique Nick will be used as a prefix to your Repositories.
+                </p>
+                <div style="width : 100%; text-align: left; margin-top : 50px;">
+                    <button onclick="hideStartSection()" id="alreadyRegisteredButton" class="theme-btn btn-style-one">I'm already a registered. Continue</button>
+                </div>
+            </div>
+            <div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h1 id="testissimoJavascript"></h1>
+            </div>
+        </div>
+    </section>
+    <section id="showOffSection" class='hide-me'>
+        <div class="auto-container">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h1>Try Testissimo out</h1>
+                <p>
+                    We have created a small sandbox to showcase you the simplicity of Testissimo. 
+                </p>            
+                <p>
+                    Start your first Test in Testissimo and watch it work!
+                </p>
+                <div id="show-case">
+                    <testform1></testform1>
+                </div>
+                <script src="getting-started.js"></script>
+                <div style="width : 100%; text-align: left; margin-top : 50px;">
+                    <button id="startTestButton" class="theme-btn btn-style-one">Start the Test</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <p></p>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

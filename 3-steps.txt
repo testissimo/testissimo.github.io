@@ -1,0 +1,62 @@
+setup-section
+
+<section id="setupSection" class="setup">
+        <div id="setupInner" class="auto-container">
+            <div class="inner">
+                <h1>3 steps from writing your first Test</h1>
+                <div class="setup-step row">
+                    <div class="setup-step-heading row">
+                        <img src="../images/browser.png" width="90" height="90">
+                        <h3>Download Add-On</h3>
+                    </div>
+                    <p>If you are using Google Chrome or Mozilla Firefox, you can simply Install the plugin from the Add-ons library. Alternatively, you can insert a short piece of code into your web application (index.html)</p>
+                    <div class="downloadDiv" style="margin : 15px 0 15px 0;">
+                        <p>Add-on for</p>    
+                        <button class="theme-btn btn-style-one addonButton" onclick="location.href='https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en'">
+                            <div>
+                                <img class="blackIcon" src="../images/chrome_small.png">
+                                <img class="whiteIcon" src="../images/chrome_white.png">
+                                <span>Chrome</span>
+                            </div>
+                        </button>
+                        <button class="theme-btn btn-style-one addonButton"  onclick="location.href='https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1'">
+                            <div>
+                                <img class="blackIcon" src="../images/firefox_small.png">
+                                <img class="whiteIcon" src="../images/firefox_white.png">
+                                <span>Firefox</span>
+                            </div>
+                        </button>
+                        <p id="dontMoveMe">or use the code below</p>
+                    </div>
+                    <p class="greenCode">
+                        &lt;script id="testissimo" src="https://app.testissimo.io/testissimo.min.js"&gt;&lt;script&gt;
+                    </p>
+                </div>
+                <div class="setup-step row">
+                    <div class="setup-step-heading row">
+                        <img src="../images/user.png" width="90" height="90">
+                        <h3>Sign Up</h3>
+                    </div>
+                    <p>When Testissimo plugin is installed, you can simply activate it and fill the form for registration.</p>
+                    <p>Your nick will be a prefix to all of your test repositories.</p>
+                </div>
+                <div class="setup-step row">
+                    <div class="setup-step-heading row">
+                            <img src="../images/browser2.png" width="90" height="90">
+                            <h3>Start Writing Tests</h3>
+                    </div>
+                    <p>After filling all the information, you are now ready to start using Testissimo.</p> 
+                    <p class="documentationAnchor">We advise you to <a href="https://testissimo.github.io">go through the documentation</a>, if you are using Testissimo for the first time.</p>
+                    </div>
+                <button id="setupIntroButton" 
+                    onclick="
+                        document.getElementById('setupSection').classList.add('hide-me');
+                        document.getElementById('startTestissimoSection').classList.remove('hide-me');
+                        "
+                    class="theme-btn btn-style-one feature-button">
+                    Continue
+                </button>
+            </div>
+        </div>
+    </section>
+    

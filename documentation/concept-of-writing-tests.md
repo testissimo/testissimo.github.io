@@ -1,4 +1,5 @@
-# Writing tests
+# Concept of writing tests
+
 ## Targeting HTML components
 
 When writing an automatized UI test, most of your work consists of administering your testing tool how to find HTML elements which will be interacted with. This is no different with Testissimo. In Testissimo you can use a full set of CSS selectors and some built-in helpers to always target elements on page with ease.
@@ -182,7 +183,7 @@ For strict selection, e.g. if you want to select element with attribute equals t
 </table>
 
 
-Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
+Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
 
 <table>
   <thead>
@@ -227,7 +228,7 @@ Positional selectors with argument value, for scaffolding reason, if value is em
   </tbody>
 </table>
 <br>
-Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
+Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
 
 <table >
   <thead>
@@ -265,11 +266,11 @@ Inner text selectors, will select all elements containing text, not only nearest
 </table>
 
 <br>
-Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
+Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
 Visibility selections, based on element or ancestors "display:none" style  
 <ul>
   <li> <b>:visible</b>, <b>:visible(true/false)</b> - (extractable)  </li>
-  <li> <b>:hidden</b>, <b>:hidden(true/false)</b> - (extractable) </li>      
+  <li> <b>:hidden</b>, <b>:hidden(true/false)</b> - (extractable) </li>      
 </ul>
 <br>
 Input state selectors  
@@ -289,7 +290,7 @@ Selecting by element value property
   <li> <b>:value-ends(value) </b>- (extractable)  </li>
 </ul>
 <br>
-Location url based filtering - usefull if you have many components, but not all of them are suitable for some pages, it helps to filter them    
+Location url based filtering - usefull if you have many components, but not all of them are suitable for some pages, it helps to filter them    
 <ul>
   <li> <b>:url-contains(text)</b>  </li>
   <li> <b>:url-query-contains(text) </b>- exclude "?"  </li>
@@ -302,7 +303,7 @@ Location url based filtering - usefull if you have many components, but not all 
 Variable based filtering - usefull if you have multiple comma separated options how to select an element, and you have to switch between them, e.g. 
 ```javascript
 input:value({value}):if-var({value}), 
-input:index({index}):if-not-var({value})    
+input:index({index}):if-not-var({value})    
 ```
 <ul>
   <li> <b>:if-var({variable})</b> - allways true in suggestiom mode (because variables are not yet defined)  </li>

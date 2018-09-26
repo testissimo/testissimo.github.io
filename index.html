@@ -111,116 +111,123 @@
     	
 </head>
 <body style="font-family: 'Roboto', sans-serif !important;">
-    <div id="pageBeginning" class="page-wrapper">
+    <div id="pageBeginning" @dataLoaded="setSectionDisplayName($event)" class="page-wrapper">
             <header id="mainHeader" class="main-header alternate">
-                    <!-- Main Box -->
-                        <div  id="headerContainer" class="main-box" >
-                            
-                            <div class="outer-container header-container" >
-                                <div class="logo-container">
-                                    <div id="logoBoxBasic" class="logo-box">
-                                        <img src="./images/Logo_White.png" alt="logo" width="50%" height="50%">
-                                    </div>
-                                    <div id="logoBoxInverse" class="logo-box hide-me">
-                                        <img src="./images/Logo_Colour.png" alt="logo" width="50%" height="50%">
-                                    </div>
-                                </div>
-                                <!--Nav Outer-->
-                                <div class="nav-outer clearfix navbar-container">
-                                    <!-- Main Menu -->
-                                    <nav class="main-menu">
-                                        <button type="button" id="navbarToggler" class="navbar-toggle" onclick="showMobileMenu(); return false;">
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <div id="collapse-menu" class="navbar-collapse collapse scroll-nav">
-                                            <ul class="navigation clearfix">
-                                                <li>
-                                                    <a title="Home" 
-                                                    href="https://testissimo.io/new" 
-                                                    onclick="showMobileMenu();smoothScroll('pageBeginning');return false">
-                                                        Home
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a title="Documentation" 
-                                                    href="#" 
-                                                    onclick="showMobileMenu()">
-                                                        Documentation
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a title="Features" 
-                                                    href="#" 
-                                                    onclick="showMobileMenu();smoothScroll('pageContent');return false">
-                                                        Features
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a title="Features" 
-                                                    href="#pageContent" 
-                                                    onclick="showMobileMenu();smoothScroll('pageContent');return false">
-                                                        Pricing
-                                                    </a>
-                                                </li>
-                                                <li id="navigationButtonDiv">
-                                                    <div href="https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en" >
-                                                        <a id="freeTrialButton"  
-                                                        href="https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en"
-                                                        class="theme-btn btn-style-one">
-                                                            Try It Now
-                                                        </a>
-                                                    </div>
-                                                    <div>
-                                                        <a id="freeTrialButtonInverse"  
-                                                        href="https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en"
-                                                        class="theme-btn btn-style-one hide-me">
-                                                            Try It Now
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                </ul>
-                                        </div>
-                                    </nav>
-                                    <!-- Main Menu End-->
-                                </div>
-                                <!--Nav Outer End-->
-                            </div>    
-                            <div id="mojeDropdown" class="hide-me">
-                                    <div>
-                                        <a href="https://testissimo.io/new">Home</a>
-                                    </div>
-                                    <div>
-                                        <a href="#">Documentation</a>
-                                    </div>
-                                    <div>
-                                        <a href="#">Features</a>
-                                    </div>
-                                    <div>
-                                        <a href="#">Pricing</a>
-                                    </div>
-                                    <div id="navbar-button">
-                                        <button onclick="window.location.href='https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en'">
-                                            Try It Now
-                                        </button>
-                                    </div>
-                                    
-                                </div>
+        <!-- Main Box -->
+        	<div  id="headerContainer" class="main-box" >
+                
+                <div class="outer-container header-container" >
+                    <div onclick="location.href='https://testissimo.io'" class="logo-container">
+                        <div id="logoBoxBasic" class="logo-box">
+                            <img src="../images/Logo_White.png" alt="logo" width="50%" height="50%">
                         </div>
-                    </header>
+                        <div id="logoBoxInverse" class="logo-box hide-me">
+                            <img src="../images/Logo_Colour.png" alt="logo" width="50%" height="50%">
+                        </div>
+                    </div>
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix navbar-container">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <button type="button" id="navbarToggler" class="navbar-toggle" onclick="showMobileMenu(); return false;">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div id="collapse-menu" class="navbar-collapse collapse scroll-nav">
+                                <ul class="navigation clearfix">
+                                    <li>
+                                        <a title="Home" 
+                                        href="https://testissimo.io">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Documentation" 
+                                        href="#">
+                                            Documentation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Features" 
+                                        href="https://testissimo.io/features">
+                                            Features
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Pricing" 
+                                        href="https://testissimo.io/pricing"> 
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li id="navigationButtonDiv">
+                                        <div>
+                                            <a id="freeTrialButton"  
+                                            onclick="location.href='https://testissimo.io/start-using-testissimo'"
+                                            class="theme-btn btn-style-one">
+                                                Try It Now
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a id="freeTrialButtonInverse"  
+                                            onclick="location.href='https://testissimo.io/start-using-testissimo'"
+                                            class="theme-btn btn-style-one hide-me">
+                                                Try It Now
+                                            </a>
+                                        </div>
+                                    </li>
+                                    </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                    </div>
+                    <!--Nav Outer End-->
+                </div>    
+                <div id="mojeDropdown" class="hide-me">
+                        <div>
+                            <a href="https://testissimo.io/">Home</a>
+                        </div>
+                        <div>
+                            <a onclick="showMobileMenu(); return false;"href="#">Documentation</a>
+                        </div>
+                        <div>
+                            <a href="https://testissimo.io/features">
+                                Features
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://testissimo.io/pricing">
+                                Pricing
+                            </a>
+                        </div>
+                        <div id="navbar-button">
+                            <button onclick="location.href='https://testissimo.io/start-using-testissimo'">
+                                Try It Now
+                            </button>
+                        </div>
+                        
+                    </div>
+            </div>
+        </header>
         <div class="placeholder"></div>
-        <section class="main-banner banner-two" id="banner">
-            <div  class="auto-container">
-                    <h1 id="siteHeading">{{sectionDisplayName}}</h1>
-            </div>
-        </section>
-        <section id="sectionContent">
-            <div class="auto-container" id="app">
-                <router-view/>
-            </div>
-        </section>
-	<script src="app.js"></script>
+        <router-view/>
+	    
     </div>
+	<footer>
+            <h1>Newsletter Subscribe</h1>
+            <p>Join our subscriber list and get the latest updates, news and special offers</p>
+            <form>
+                <input type="text" name="email" id="email" placeholder="Enter Adress...">
+                <button disabled>Subscribe</button>
+            </form>
+            <div class="links">
+                    <a href="https://testissimo.io">Home</a>
+                    <a href="https://testissimo.github.io">Documentation</a>
+                    <a href="https://testissimo.io/features">Features</a>
+                    <a href="https://testissimo.io/pricing">Pricing</a>
+            </div>
+            <p>Copyright &copy; 2018</p>
+        </footer>
+	<script src="app.js"></script>
 </body>
 </html>

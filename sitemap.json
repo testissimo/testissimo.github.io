@@ -1,9 +1,88 @@
-[{
-    "name": "How to start using Testissimo",
+[
+{
+    "name" : "What is Testissimo ?",
+    "md" : "what-is-testissimo",
+    "children" : [
+        {
+            "name" : "e2e testing tool for web applications",
+            "md" : "e2e"
+        },
+        {
+            "name" : "Testissimo place in software development",
+            "md" : "testissimo-place-in-software-development"
+        }
+    ]
+},
+{
+    "name" : "Installation",
+    "md" : "installation",
+    "children" : [
+        {
+            "name" : "via script",
+            "md" : "installation-via-script"
+        },
+        {
+            "name" : "via browser plugin",
+            "md" : "installation-via-script"
+        }
+    ]
+},
+{
+    "name" : "Getting started",
+    "md" : "getting-started",
+    "children" : [
+        {
+            "name" : "Sign-up new user",
+            "md" : "sign-up-new-user"
+        },
+        {
+            "name" : "create repo",
+            "md" : "create-repo"
+        }
+    ]
+},
+{
+    "name" : "Repositories, users and permissions",
+    "md" : "repositories-users-and-permissions"
+},
+{
+    "name" : "Concept of writing tests",
+    "md" : "concept-of-writing-tests"
+},
+{
+    "name" : "Selectors",
+    "md" : "selectors"
+},
+{
+    "name" : "Actions",
+    "md" : "actions"
+},
+{
+    "name" : "Components and methods",
+    "md" : "components-and-methods"
+},
+{
+    "name" : "Tests",
+    "md" : "tests"
+},
+{
+    "name" : "Test suites",
+    "md" : "test-suites"
+},
+{
+    "name" : "Running tests manually or headless",
+    "md" : "running-tests-manually-or-headless"
+},
+{
+    "name" : "Built-in VCS",
+    "md" : "built-in-vcs"
+},
+{
+    "name": "How to start using Testissimo - old",
     "md": "how-to-start-using-testissimo"
 },
 {
-    "name": "Writing Tests",
+    "name": "Writing Tests - old",
     "md": "writing-tests",
     "children": [{
             "name": "Targeting HTML Components"
@@ -20,7 +99,7 @@
     ]
 },
 {
-    "name": "Built-in Tools",
+    "name": "Built-in Tools - old",
     "md": "built-in-tools",
     "children": [{
             "name": "Fill file input"
@@ -73,11 +152,11 @@
     ]
 },
 {
-    "name": "Parameter",
+    "name": "Parameter - old",
     "md": "parameter"
 },
 {
-    "name": "Page Object pattern and Components",
+    "name": "Page Object pattern and Components - old",
     "md": "page-object-pattern-and-components",
     "children": [{
             "name": "Simple button component"
@@ -88,23 +167,23 @@
     ]
 },
 {
-    "name": "Macro",
+    "name": "Macro - old",
     "md": "macro"
 },
 {
-    "name": "Test",
+    "name": "Test - old",
     "md": "test"
 }, 
 {
-    "name": "Test execution",
+    "name": "Test execution - old",
     "md": "test-execution"
 },
 {
-    "name": "Synchronization",
+    "name": "Synchronization - old",
     "md": "synchronization"
 },
 {
-    "name": "Test maintainability",
+    "name": "Test maintainability - old",
     "md": "test-maintainability",
     "children": [{
             "name": "Maintainability with component based approach"
@@ -115,15 +194,15 @@
     ]
 },
 {
-    "name": "Run anywhere",
+    "name": "Run anywhere - old",
     "md": "run-anywhere"
 },
 {
-    "name": "Built-in version control system",
+    "name": "Built-in version control system - old",
     "md": "built-in-version-control-system"
 },
 {
-    "name": "Test reports",
+    "name": "Test reports - old",
     "md": "test-reports"
 }
 ]

@@ -1,4 +1,5 @@
-# Built-in tools
+# Actions 
+
 This is a set of basic built-in actions which can be used to create more complex constructs like component methods. These actions are the Testissimo language which all other component are composed of. 
 
 ![](/documentation/images/By-JXGlX9W.png)

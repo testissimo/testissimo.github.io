@@ -1,4 +1,5 @@
-# Writing tests
+# Selectors
+
 ## Targeting HTML components
 
 When writing an automatized UI test, most of your work consists of administering your testing tool how to find HTML elements which will be interacted with. This is no different with Testissimo. In Testissimo you can use a full set of CSS selectors and some built-in helpers to always target elements on page with ease.
