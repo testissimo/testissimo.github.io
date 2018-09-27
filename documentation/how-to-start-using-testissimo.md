@@ -1,5 +1,6 @@
 # How to start using Testissimo
 Add the following snippet to your index.html
+hello
 
 ```javascript
 <script id="testissimo" src="https://app.testissimo.io/testissimo.min.js"></script>
