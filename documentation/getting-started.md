@@ -19,10 +19,10 @@ Since, your repo is empty, there are no components to use in test. Lets write te
 
 TODO: hints image
 
-## Run test
+## Run and debug test
 
 TODO: finish
 
 ## Go Throught Documentation
 
-TODO: finish
+We strongly reccomend to go through documentation, you don't have to read all of it, but you should learn about concept of writting tests in testissimo, it is crucial, and you will save many work hours in future.
