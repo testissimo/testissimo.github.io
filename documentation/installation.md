@@ -7,6 +7,7 @@ If you have not access to HTML source, or want to have more comfortable stand-by
 
 2. FireFox [plugin](https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1)
 
+TODO: plugin images
 
 ## 2. Manual Setup Via HTML Script
 
