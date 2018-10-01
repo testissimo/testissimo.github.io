@@ -1,6 +1,6 @@
 # What Is Testissimo
 
-Testissimo is ent-to-end testing tool for web applications, it can help you with building and running automated tests for web applications. It automates browser from inside, as a part of tested application, not from outside as selenium or another testing tools do. So, everything you need to start testing is browser, no server or client installation required. Testissimo perfectly understand tested app, no more "wait for element" needed, therefore it operates at 100% speed of your browser.
+Testissimo is ent-to-end testing tool for web applications, it can help you with building and running automated tests for web applications. It automates browser from inside, as a part of tested application, not from outside as selenium or another testing tools do. So, everything you need to start testing is browser, no installation required. Testissimo perfectly understand tested app, no more "wait for element" needed, therefore it operates at 100% speed of your browser.
 
 # Testissimo Place In Software Development
 
