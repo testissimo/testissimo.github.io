@@ -1,21 +1,16 @@
-#Installation
+# Installation
 
-Add the following snippet to your index.html
+## 1. Setup Via HTML Script
+
+Testissimo client is written in javascript, so it can be part of your web application, just insert this script to the html HEAD before any other scripts:
 
 ```javascript
 <script id="testissimo" src="https://app.testissimo.io/testissimo.min.js"></script>
 ```
 
-or use the Google Chrome [plugin](https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en )
+## 2. Setup Via Browser Plugin
+If you have not access to HTML source, or want to have more comfortable stand-by mode management, we recommend to use browser plugins:
 
-or the FireFox [plugin](https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1)
+1. Google Chrome [plugin](https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en )
 
-Testissimo will appear overlapping your application and prompting you to login. 
-
-![](/documentation/images/rkh4mL5zQ.png)  
-
-After you have successfully logged in, you will need to create new repository (or clone an existing one in case someone already created it and assigned rights to you). The repository is a named place where you store all your tests, components and everything you have done. It is like GIT repository but build-in to Testissimo infrastructure. Your tests are stored safely in cloud and are accessible from everywhere.
-
-In “ **Repos -> Remote** ” section you can either checkout an existing repository or create a new one.
-
-![](/documentation/images/SkYk_85G7.png)  
+2. FireFox [plugin](https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1)
