@@ -1,5 +1,9 @@
 # Getting started
 
-Getting started - section
+## Create User
 
----> treba doplnit <---
+TODO: create user image, with arrows, where what to enter
+
+## Create Repository
+
+TODO: create repository image, with arrows, where what to enter
