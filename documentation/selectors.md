@@ -1,18 +1,29 @@
 # Selectors
 
-## Targeting HTML components
+## Select Action
+
+There is built-in select action in Testissimo, it has some special UI features:
+
+TODO: image of selector picker
+
+1. Pick element from page
+2. Show elements
+3. Pick parent element
+
+## Targeting HTML Elements
 
 When writing an automatized UI test, most of your work consists of administering your testing tool how to find HTML elements which will be interacted with. This is no different with Testissimo. In Testissimo you can use a full set of CSS selectors and some built-in helpers to always target elements on page with ease.
 
-As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the basics of CSS selectors at [flukeout](https://flukeout.github.io/). 
+As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the **basics of CSS selectors at [flukeout](https://flukeout.github.io/)**. 
 
 As a cheat-sheet we like to use this website where you can find a full description of CSS selectors capabilities 
-[CSS selectors capabilities ](https://www.w3schools.com/cssref/css_selectors.asp) 
+**[CSS selectors reference](https://www.w3schools.com/cssref/css_selectors.asp)** 
 Testissimo supports all of CSS3 selectors and adds custom, extended syntax to fulfill all searching needs.
-<br>
+
+
 ## Selector Combinators 
 
-### Standard css combinators:
+### Standard CSS Combinators
 
 <table >
   <thead>
@@ -41,7 +52,7 @@ Testissimo supports all of CSS3 selectors and adds custom, extended syntax to fu
   </tbody>
 </table>
 
-### Extended combinators:
+### Extended Combinators
 
 <table >
   <thead>
