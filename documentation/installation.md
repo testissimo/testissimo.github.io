@@ -13,7 +13,7 @@ TODO: plugin images
 
 Testissimo client is written in javascript, so it can be part of your web application, just insert this script to the HTML head tag before any other scripts, on every page you want to test:
 
-```javascript
+```html
 <script src="https://app.testissimo.io/testissimo-standby.min.js"></script>
 ```
 
