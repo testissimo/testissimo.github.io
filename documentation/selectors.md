@@ -313,8 +313,7 @@ Location url based filtering - usefull if you have many components, but not all 
 <br>
 Variable based filtering - usefull if you have multiple comma separated options how to select an element, and you have to switch between them, e.g. 
 ```javascript
-input:value({value}):if-var({value}), 
-input:index({index}):if-not-var({value})    
+input:value({value}):if-var({value}), input:index({index}):if-not-var({value})    
 ```
 <ul>
   <li> <b>:if-var({variable})</b> - allways true in suggestiom mode (because variables are not yet defined)  </li>
