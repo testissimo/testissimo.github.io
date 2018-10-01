@@ -18,6 +18,6 @@ Testissimo client is written in javascript, so it can be part of your web applic
 
 Testissimo will remain in stabd-by mode. To activate it, place somewhere in url **testissimo=true**, e.g. yourapp.com?testissimo=true or yourapp.com#testissimo=true. Activation state remains in session storage, so it stays active while you deactivate it, just place **testissimo=false** to url.
 
-For better performance, you can download [https://app.testissimo.io/testissimo-standby.min.js](https://app.testissimo.io/testissimo-standby.min.js) script into your app, or copy-paste its content directly to <script> tag.
+For better performance, you can download [https://app.testissimo.io/testissimo-standby.min.js](https://app.testissimo.io/testissimo-standby.min.js) script into your app, or copy-paste its content directly into script tag.
 
 Keep in mind that this script must be in every tested page, if your app is not single-page.
