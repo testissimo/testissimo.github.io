@@ -1,6 +1,6 @@
 [
 {
-    "name" : "What is Testissimo ?",
+    "name" : "What Is Testissimo ?",
     "md" : "what-is-testissimo",
     "children" : [
         {
@@ -28,7 +28,7 @@
     ]
 },
 {
-    "name" : "Getting started",
+    "name" : "Getting Started",
     "md" : "getting-started",
     "children" : [
         {
@@ -42,11 +42,11 @@
     ]
 },
 {
-    "name" : "Repositories, users and permissions",
+    "name" : "Repositories, Users and Permissions",
     "md" : "repositories-users-and-permissions"
 },
 {
-    "name" : "Concept of writing tests",
+    "name" : "Concept Of Writing Tests",
     "md" : "concept-of-writing-tests"
 },
 {
@@ -58,7 +58,7 @@
     "md" : "actions"
 },
 {
-    "name" : "Components and methods",
+    "name" : "Components And Methods",
     "md" : "components-and-methods"
 },
 {
@@ -66,14 +66,14 @@
     "md" : "tests"
 },
 {
-    "name" : "Test suites",
+    "name" : "Test Suites",
     "md" : "test-suites"
 },
 {
-    "name" : "Running tests manually or headless",
+    "name" : "Running Tests Manually Or Headless, Debugging",
     "md" : "running-tests-manually-or-headless"
 },
 {
-    "name" : "Built-in VCS",
+    "name" : "Built-in Version Control System (VCS)",
     "md" : "built-in-vcs"
 }]
