@@ -1,311 +1,93 @@
-# Concept of writing tests
+# Components (Page Object Pattern)
+As soon as you have at least one repository and you know the basics of Testissimo tool.
 
-## Targeting HTML components
+Build-in tools, However, the test you would produce would be very be of poor quality, minimal code reuse and wouldn’t be very resilient to any UI changes. To produce test of high code reuse and thus test with low maintenance cost Testissimo adapt the Page Object patter and implements it in very intuitive and easy to use way. To understand the idea behind Page object patter we advise you to read following [article written by Martin Fowler](https://martinfowler.com/bliki/PageObject.html) and also to read the following chapter: **Test maintainability**.
 
-When writing an automatized UI test, most of your work consists of administering your testing tool how to find HTML elements which will be interacted with. This is no different with Testissimo. In Testissimo you can use a full set of CSS selectors and some built-in helpers to always target elements on page with ease.
-
-As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the basics of CSS selectors at [flukeout](https://flukeout.github.io/). 
-
-As a cheat-sheet we like to use this website where you can find a full description of CSS selectors capabilities 
-[CSS selectors capabilities ](https://www.w3schools.com/cssref/css_selectors.asp) 
-Testissimo supports all of CSS3 selectors and adds custom, extended syntax to fulfill all searching needs.
+Component in Testissimo can by anything from very simple things like button and test fields all the way to complex Grids and component which are very specific to your application. The component is defined by its selector (which can have parameters) and set of method which can be performed on this component. 
 <br>
-## Selector Combinators 
+## Simple button component
 
-### Standard css combinators:
+![](/documentation/images/r1WYsihz7.png)  
 
-<table >
-  <thead>
-    <tr>
-    <th style="text-align:center">Selector combinator</th>
-    <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center"><strong>&quot; &quot;</strong></td>
-      <td style="text-align:left">all descendants (has alias “&gt;&gt;”)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“&gt;”</strong></td>
-      <td style="text-align:left">direct children</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“+”</strong></td>
-      <td style="text-align:left">adjacent sibling (first direct next sibling)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“~”</strong></td>
-      <td style="text-align:left">general siblings (all next siblings)</td>
-    </tr>
-  </tbody>
-</table>
-
-### Extended combinators:
-
-<table >
-  <thead>
-    <tr>
-      <th style="text-align:center">Extended combinator</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center"><strong>“&lt;”</strong></td>
-      <td style="text-align:left">direct parent (alias for “!&gt;”)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“&lt;&lt;”</strong></td>
-      <td style="text-align:left">all ancestors include parent up to HTML document (alias for “!”)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“^”</strong></td>
-      <td style="text-align:left">first direct child (alternative is “&gt; :first”)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“!”</strong></td>
-      <td style="text-align:left">all ancestors (has alias “&lt;&lt;”)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“!&gt;”</strong></td>
-      <td style="text-align:left">direct parent (has alias “&lt;”)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“!+”</strong></td>
-      <td style="text-align:left">previous adjacent sibling (first direct previous sibling)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“!~”</strong></td>
-      <td style="text-align:left">previous siblings</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“!^”</strong></td>
-      <td style="text-align:left">last direct child (alternative is “&gt; :last”)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>“++”</strong></td>
-      <td style="text-align:left">next and previous direct sibling - not implemented yet</td>
-    </tr>
-    </tbody>
-</table>
-
-<br>
-
-### Attributes Matching 
-
-**Extractable** - when drag-dropping component from preview in app into test, some variables from selector definition can be suggested to user, e.g. 
+This is an example of button component which is defined by its selector:  
 ```javascript
-input:value({variable}) 
-``` 
-can be extracted from element and suggested
-
-Same as standard CSS attribute matching, but always true if value is missing or empty, e.g. [attribute=""] or [attribute\*=""] is same like **[attribute]**     
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:center">Attribute</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center"><strong>[attribute]</strong></td>
-      <td style="text-align:left">has attribute, value is irelevant (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>[attribute=value]</strong></td>
-      <td style="text-align:left">attribute equals to value (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>[attribute~=value]</strong></td>
-      <td style="text-align:left">attribute value is in space separated list (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>[attribute|=value]</strong></td>
-      <td style="text-align:left">attribute value is in hyphen separated list (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>[attribute^=value]</strong></td>
-      <td style="text-align:left">attribute starts with value (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>[attribute$=value]</strong></td>
-      <td style="text-align:left">attribute ends with value (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>[attribute*=value]</strong></td>
-      <td style="text-align:left">attribute contains value (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>[attribute!=value]</strong></td>
-      <td style="text-align:left">attribute not equals to</td>
-    </tr>
-  </tbody>
-</table>
-<br>
-
-**Extended attribute matching**
-For strict selection, e.g. if you want to select element with attribute equals to empty value "", use double "==" syntax
-
-* **[attribute==value]**
-* **[attribute\*==value]**
-* **[attribute!==value]**, etc…  
-<br>
-
-### Extended Pseudo Selectors
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:center">Extended Pseudo Selector</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center"><strong>:first</strong></td>
-      <td style="text-align:left">first in selection</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:last</strong></td>
-      <td style="text-align:left">last in selection</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:even</strong></td>
-      <td style="text-align:left">every even element in current selection</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:odd</strong></td>
-      <td style="text-align:left">every odd element in current selection</td>
-    </tr>
-  </tbody>
-</table>
-
-
-Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:center">Positional selector</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center"><strong>:index(0…9)</strong></td>
-      <td style="text-align:left">zero based position number (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:index(0…9)</strong></td>
-      <td style="text-align:left">zero based position number (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:order(1…9)</strong></td>
-      <td style="text-align:left">same as :index but starting from one (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:eq(0…9)</strong></td>
-      <td style="text-align:left">means equal, it is an alias for :index (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:gt(0…9)</strong></td>
-      <td style="text-align:left">greater than</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:gte(0…9)</strong></td>
-      <td style="text-align:left">greater or equal than</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:lt(0…9)</strong></td>
-      <td style="text-align:left">lower than</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:lte(0…9)</strong></td>
-      <td style="text-align:left">lower or equal than</td>
-    </tr>
-  </tbody>
-</table>
-<br>
-Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
-
-<table >
-  <thead>
-    <tr>
-      <th style="text-align:center">Inner text selector</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center"><strong>:contains(text)</strong></td>
-      <td style="text-align:left">contains substring - (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:text(text)</strong></td>
-      <td style="text-align:left">equals substring - (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:text-contains(text)</strong></td>
-      <td style="text-align:left">alias for :contains - (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:text-begins(text)</strong></td>
-      <td style="text-align:left">begins with text (extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:text-ends(text)</strong></td>
-      <td style="text-align:left">(extractable)</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>:text-regex(regextext)</strong></td>
-      <td style="text-align:left">(extractable)</td>
-    </tr>
-    </tbody>
-</table>
-
-<br>
-Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
-Visibility selections, based on element or ancestors "display:none" style  
-<ul>
-  <li> <b>:visible</b>, <b>:visible(true/false)</b> - (extractable)  </li>
-  <li> <b>:hidden</b>, <b>:hidden(true/false)</b> - (extractable) </li>      
-</ul>
-<br>
-Input state selectors  
-<ul>
-  <li> <b>:enabled</b>, <b>:enabled(true/false) </b>- (extractable)  </li>
-  <li> <b>:disabled</b>, <b>:disabled(true/false) </b>- (extractable)  </li>
-  <li> <b>:checked</b>, <b>:checked(true/false) </b>- (extractable)  </li>
-  <li> <b>:selected</b>, <b>:selected(true/false) </b>- (extractable) </li>  
-  <li> <b>:focused</b>, <b>:focused(true/false)</b> - (extractable) </li> 
-</ul>
-<br>
-Selecting by element value property  
-<ul>
-  <li> <b>:value(value) </b>- (extractable)  </li>
-  <li> <b>:value-contains(value) </b>- (extractable)  </li>
-  <li> <b>:value-begins(value) </b>- (extractable) </li>  
-  <li> <b>:value-ends(value) </b>- (extractable)  </li>
-</ul>
-<br>
-Location url based filtering - usefull if you have many components, but not all of them are suitable for some pages, it helps to filter them    
-<ul>
-  <li> <b>:url-contains(text)</b>  </li>
-  <li> <b>:url-query-contains(text) </b>- exclude "?"  </li>
-  <li> <b>:url-hash-contains(text)</b> - exclude "#"  </li>
-  <li> <b>:url-equals(text)</b>  </li>
-  <li> <b>:url-query-equals(text) </b>- exclude "?" </li> 
-  <li> <b>:url-hash-equals(text) </b>- exclude "#"  </li>
-</ul>
-<br>
-Variable based filtering - usefull if you have multiple comma separated options how to select an element, and you have to switch between them, e.g. 
-```javascript
-input:value({value}):if-var({value}), 
-input:index({index}):if-not-var({value})    
+button[class\*=”btn”][@text\*={text}]
 ```
-<ul>
-  <li> <b>:if-var({variable})</b> - allways true in suggestiom mode (because variables are not yet defined)  </li>
-  <li> <b>:if-not-var({variable})</b> - allways true in suggestiom mode (because variables are not yet defined)</li>
-</ul>
+and which has one method **“click”**. The component as we see in here is just the definition. It can be executed in development phase for testing purposes but it doesn’t do anything unless you use it in test. To see if the defined component is on current page, you can click the eye button next to the component name and Testissimo will highlight all occurrences of that component
+
+![](/documentation/images/BJhNfnWxM.png)  
+
+
+
+You can choose which button you want to act on, choose the method and drag drop the method to the test
+
+![](/documentation/images/rkFuGnZgf.png)  
+
+
+
+You will end-up with simple test which click on the “Search” button
+
+![](/documentation/images/BykTf3bgM.png)  
+
+
+
+You can execute your test by clicking on “play” button in the right corner. 
+
+By using components rather than writing test using simple action, we can achieve that all CSS selectors are defined just ones so for example if some completely redesign some grid, we also need to only redesign this grids Testissimo component. No matter how many tests are using this component, if they interact with it inly using this component, they will stay unchanged. 
+
+Furthermore, using component we can create sort of DSL specific to our application and Test can written on much higher level of abstraction than if they would just use simple low-level action. This way we can achieve great amount of code reuse and  
+nice readability of our test. 
+<br>
+## Complex component and components composition
+
+As soon as we have defined the basic components like button, text fields, combos and so on, we can start defining more complex component which are very specific for our application. Of course, we can use already defined simple component (or any  
+component) to implement methods of these higher level component. Let’s look at the following example
+
+![](/documentation/images/S18gXn-xf.png)  
+
+
+
+The application we want to test has one grid which show the documents matching the filter criteria. Let’s call it **“Document grid”**. As the content of this grid are also rather complex component it wouldn’t be good design if we would create all the methods in the **“Document Grid”**. Let’s create two more components. One which represents the row of this grid and thus one document with name **“Grid document”**. Second which represents the component for document tags manipulation with name  
+**“Document tags editor”**. 
+
+As **“Grid document”** always exists in the context of **“Document grid”**, we don’t need to be too specific in its CSS selector definition, because it should always be used in test as part of **“Document grid”** component and its selector must be selective  
+only within this section. The component definition could look like this:
+
+![](/documentation/images/BJMm7hZgf.png)  
+
+
+
+We use document name as the CSS selector parameter so if we want to use it in test we need to specify this name so that the component targets exactly one row. We can also use it to implement method of some different component. For example, let’s implement delete method on **“Documents grid”** component.
+
+![](/documentation/images/r1V87hblG.png)  
+
+
+
+We see that to delete one document, we first need to select the document by checking the checkbox for that document. We can easily use our **“Grid document”** component to accomplish this task, propagate its method parameters to our caller by simple defining the variable name in {} as the parameter value. Clicking on the delete button is also accomplished using another component which we have already defined. To use this method in test we simply need to call it and provide the document name parameter like this
+
+![](/documentation/images/SyWF72Zez.png)  
+
+
+
+Another way how we can use components composition is using the components to narrow the selection scope. Imagine that you want to start working with tags for some document. In order to correctly select the right **“Document tag editor”** we would  
+need to make its CSS selector quite complex to be always able to identify the right tag editor in the whole result set. To avoid this complexity, we can use already defined component to narrow down the selection space. Let’s use component **“Documents grid”** in test without method just to define section on the webpage. We can better visualize the section be clicking on the eye icon next to the component name.
+
+![](/documentation/images/SyL2Qh-xf.png)  
+
+
+
+Let’s further narrow down the scope to single document by using component **“Grid Document”** with name of some specific document.
+
+![](/documentation/images/rk_RX2-gz.png)  
+
+
+
+And now we can start manipulating tags with the **“Document tags editor”**
+
+![](/documentation/images/SyBbVnWgf.png)  
+
+
+
+If we look at the selector definition of “Document tags editor” it is very simple, just **div[multiselect-doctags]**. If we would use this component outside of **“Grid document”** component, the selector would need to be much more precise. Using  
+component composition we can save quite some complexity in the CSS selector and have one aspect of CSS selection defined just once. 
+
