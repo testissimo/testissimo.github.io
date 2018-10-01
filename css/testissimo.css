@@ -27,7 +27,6 @@
     list-style-position: inside;
 }
 #showdownDiv h1 {
-    display : none;
     padding-bottom: 20px;
     font-weight: 700;
 }
