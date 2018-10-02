@@ -2,129 +2,53 @@
 <html lang="en-US">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-        <!-- tu sa nacita favicon-->
-        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-	    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+	    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 	    
-        <!-- Responsive -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-        <title>Testissimo</title>
+        <title>Testissimo - e2e automated testing tool</title>
         
-        <!-- css import -->
-        <link rel="stylesheet" id="bootstrap-css" href="./css/bootstrap.css" type="text/css" media="all">
-		<link rel="stylesheet" id="animate-css" href="./css/animate.css" type="text/css" media="all">
-        <link rel="stylesheet" id="spring-main-style-css" href="./css/style.css" type="text/css" media="all">
-        <link rel="stylesheet" id="spring-responsive-css" href="./css/responsive.css" type="text/css" media="all">
-        <link rel="stylesheet" id="kc-general-css" href="./css/kingcomposer.min.css" type="text/css" media="all">
-        <link rel="stylesheet" id="kc-general-css" href="./css/testissimo.css" type="text/css" media="all">
-        <link rel="stylesheet" id="kc-general-css" href="./css/testissimo-mobile.css" type="text/css" media="all">
+        <!--styles-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" id="animate-css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css" media="all">
+        <link rel="stylesheet" href="../css/testissimo-new.css" type="text/css" media="all">
+        
+        <!--fonts-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-		<!--JS import-->
-        <script>
-     // smoothscroll
-            function currentYPosition() {
-                // Firefox, Chrome, Opera, Safari
-                if (self.pageYOffset) return self.pageYOffset;
-                // Internet Explorer 6 - standards mode
-                if (document.documentElement && document.documentElement.scrollTop)
-                    return document.documentElement.scrollTop;
-                // Internet Explorer 6, 7 and 8
-                if (document.body.scrollTop) return document.body.scrollTop;
-                return 0;
-            }
-            function elmYPosition(eID) {
-                var elm = document.getElementById(eID);
-                var y = elm.offsetTop;
-                var node = elm;
-                while (node.offsetParent && node.offsetParent != document.body) {
-                    node = node.offsetParent;
-                    y += node.offsetTop;
-                } return y;
-            }
-            function smoothScroll(eID) {
-                var startY = currentYPosition();
-                var stopY = elmYPosition(eID);
-                var distance = stopY > startY ? stopY - startY : startY - stopY;
-                if (distance < 100) {
-                    scrollTo(0, stopY); return;
-                }
-                var speed = Math.round(distance / 20);
-                if (speed >= 20) speed = 20;
-                var step = Math.round(distance / 25);
-                var leapY = stopY > startY ? startY + step : startY - step;
-                var timer = 0;
-                if (stopY > startY) {
-                    for ( var i=startY; i<stopY; i+=step ) {
-                        setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
-                        leapY += step; if (leapY > stopY) leapY = stopY; timer++;
-                    } return;
-                }
-                for ( var i=startY; i>stopY; i-=step ) {
-                    setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
-                    leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
-                }
-            }
-     
-     //header sticks on top after scroll
-     window.onscroll = function changeClass(){
-                var scrollPositionY = window.pageYOffset | document.body.scrollTop;
-                if(scrollPositionY > 0) {
-                    mainHeader.className = ('main-header alternate fixed-header header-inverse');
-                    logoBoxBasic.className = ("logo-box hide-me")
-                    logoBoxInverse.className = ("logo-box")
-                    freeTrialButtonInverse.className = ("theme-btn btn-style-one")
-                    freeTrialButton.className = ("theme-btn btn-style-one hide-me")
-                    navbarToggler.className = ("navbar-toggle scrolled");
-
-                } 
-                else if(scrollPositionY == 0) {
-                    mainHeader.className =  ('main-header alternate');
-                    logoBoxBasic.className = ("logo-box")
-                    logoBoxInverse.className = ("logo-box hide-me")
-                    freeTrialButtonInverse.className = ("theme-btn btn-style-one hide-me")
-                    freeTrialButton.className = ("theme-btn btn-style-one")
-                    navbarToggler.className = ("navbar-toggle ");
-
-                }
-                    
-            }
-            function showMobileMenu(){
-                if(mojeDropdown.className == "hide-me"){
-                    mojeDropdown.className = ""
-                    var scrollPositionY = window.pageYOffset | document.body.scrollTop;
-                }
-                else {
-                    mojeDropdown.className = "hide-me"
-                    var scrollPositionY = window.pageYOffset | document.body.scrollTop;
-                }
-            }
-        </script>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.js"></script>
+        
+        <!--scripts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
         <script src="./js/vue-showdown.min.js"></script>
+        <script src="./js/testissimo.js"></script>
     	
 </head>
 <body style="font-family: 'Roboto', sans-serif !important;">
-    <div id="pageBeginning" @dataLoaded="setSectionDisplayName($event)" class="page-wrapper">
-            <header id="mainHeader" class="main-header alternate">
+    <div id="pageBeginning" class="page-wrapper">
+        <header id="mainHeader" class="main-header alternate">
         <!-- Main Box -->
         	<div  id="headerContainer" class="main-box" >
                 
                 <div class="outer-container header-container" >
-                    <div onclick="location.href='https://testissimo.io'" class="logo-container">
-                        <div id="logoBoxBasic" class="logo-box">
-                            <img src="../images/Logo_White.png" alt="logo" width="50%" height="50%">
+                
+                
+                
+                <!--upravit-->
+                
+                    <a href="/">
+                        <div class="logo-container">
+                            <div id="logoBoxBasic" class="logo-box">
+                                <img src="https://testissimo.io/images/Logo_White(1).png" alt="logo" width="50%" height="50%">
+                            </div>
+                            <div id="logoBoxInverse" class="logo-box hide-me">
+                                <img src="https://testissimo.io/images/Logo_Colour(1).png" alt="logo" width="50%" height="50%">
+                            </div>
                         </div>
-                        <div id="logoBoxInverse" class="logo-box hide-me">
-                            <img src="../images/Logo_Colour.png" alt="logo" width="50%" height="50%">
-                        </div>
-                    </div>
+                    </a>
                     <!--Nav Outer-->
                     <div class="nav-outer clearfix navbar-container">
                         <!-- Main Menu -->
@@ -138,13 +62,13 @@
                                 <ul class="navigation clearfix">
                                     <li>
                                         <a title="Home" 
-                                        href="https://testissimo.io">
+                                        href="https://testissimo.io/">
                                             Home
                                         </a>
                                     </li>
                                     <li>
                                         <a title="Documentation" 
-                                        href="#">
+                                        href="https://testissimo.github.io" >
                                             Documentation
                                         </a>
                                     </li>
@@ -163,14 +87,14 @@
                                     <li id="navigationButtonDiv">
                                         <div>
                                             <a id="freeTrialButton"  
-                                            onclick="location.href='https://testissimo.io/start-using-testissimo'"
+                                            href="https://testissimo.io/start-using-testissimo"
                                             class="theme-btn btn-style-one">
                                                 Try It Now
                                             </a>
                                         </div>
                                         <div>
                                             <a id="freeTrialButtonInverse"  
-                                            onclick="location.href='https://testissimo.io/start-using-testissimo'"
+                                            href="https://testissimo.io/start-using-testissimo"
                                             class="theme-btn btn-style-one hide-me">
                                                 Try It Now
                                             </a>
@@ -183,12 +107,12 @@
                     </div>
                     <!--Nav Outer End-->
                 </div>    
-                <div id="mojeDropdown" class="hide-me">
+                <div id="mobileMenu" class="hide-me">
                         <div>
                             <a href="https://testissimo.io/">Home</a>
                         </div>
                         <div>
-                            <a onclick="showMobileMenu(); return false;"href="#">Documentation</a>
+                            <a href="https://testissimo.github.io">Documentation</a>
                         </div>
                         <div>
                             <a href="https://testissimo.io/features">
@@ -201,8 +125,9 @@
                             </a>
                         </div>
                         <div id="navbar-button">
-                            <button onclick="location.href='https://testissimo.io/start-using-testissimo'">
-                                Try It Now
+                            <!--upravit toto-->
+                            <button>
+                                <a  href="https://testissimo.io/start-using-testissimo" style="color : white">Try It Now</a>
                             </button>
                         </div>
                         
@@ -211,23 +136,20 @@
         </header>
         <div class="placeholder"></div>
         <router-view/>
-	    
     </div>
-	<footer>
-            <h1>Newsletter Subscribe</h1>
-            <p>Join our subscriber list and get the latest updates, news and special offers</p>
-            <form>
-                <input type="text" name="email" id="email" placeholder="Enter Adress...">
-                <button disabled>Subscribe</button>
-            </form>
-            <div class="links">
-                    <a href="https://testissimo.io">Home</a>
-                    <a href="https://testissimo.github.io">Documentation</a>
-                    <a href="https://testissimo.io/features">Features</a>
-                    <a href="https://testissimo.io/pricing">Pricing</a>
-            </div>
-            <p>Copyright &copy; 2018</p>
-        </footer>
-	<script src="app.js"></script>
+    <script src="app.js"></script>
+    <footer>
+        <h1>Newsletter Subscribe</h1>
+        <p>Join our subscriber list and get the latest updates, news and special offers</p>
+        newsletter dorobit
+        <div class="links">
+                <a href="https://testissimo.io/">Home</a>
+                <a href="https://testissimo.github.io">Documentation</a>
+                <a href="https://testissimo.io/features">Features</a>
+                <a href="https://testissimo.io/pricing">Pricing</a>
+        </div>
+        <p>Copyright &copy; 2018</p>
+    </footer>
 </body>
 </html>
+

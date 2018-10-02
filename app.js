@@ -4,7 +4,7 @@ const Home = {
   <div>\
     <section class='main-banner banner-two' id='banner'> \
       <div  class='auto-container'> \
-              <h1 id='siteHeading'>Documentation</h1> \
+        <h1 id='siteHeading'>Documentation</h1> \
       </div> \
     </section> \
     <section id='sectionContent'> \
@@ -45,8 +45,8 @@ const Home = {
       .then( function (data, status){
         self.loadSections(data.body,status)
       })
-
     },
+
     loadSections : function(data, status){
       this.sectionList = data;
     }
@@ -59,7 +59,7 @@ const DocumentationComponent = {
   " <div>\
       <section class='main-banner banner-two' id='banner'> \
         <div  class='auto-container'> \
-                <h1 id='siteHeading'>{{title}}</h1> \
+          <h1 id='siteHeading'>{{title}}</h1> \
         </div> \
       </section> \
       <section id='sectionContent'> \
@@ -71,6 +71,10 @@ const DocumentationComponent = {
             <div id='showdownDiv'> \
               <vue-showdown :markdown='mdData'/> \
             </div> \
+            <div> \
+              <router-link to='/'> Previous chapter : prev{{prevChapter.name}} </router-link> \
+              <router-link to='/'> Next chapter : next {{nextChapter.name}} </router-link>\
+            </div> \
           </div> \
         </div> \
       </section>\
@@ -79,12 +83,16 @@ const DocumentationComponent = {
     
   data : function() {
     return {
-        mdData : "Loading MDdata",
-        title : ""
+        mdData : "Loading content, please wait...",
+        title : "",
+        prevChapter : {},
+        nextChapter : {},
+        sectionList : {}
     }
   },
   methods : {
     loadFile : function(id){
+      
         var self = this;
         var path = "./documentation/" + id + ".md";
         this.$http.get(path)
@@ -92,14 +100,31 @@ const DocumentationComponent = {
             self.mdData = data.body;
             self.title = (self.mdData.split('\n')[0]).slice(2, (self.mdData.split('\n')[0]).length);
             this.onDataLoaded(self.title);
+            this.getSiteMap(self.title);
         })
         .catch(function (error){
             self.mdData = "The data you requested could not be found!";
         })
-          },
+      },
+
     onDataLoaded : function(title){
       this.$emit(title);
-    }
+    },
+
+    getSiteMap : function(title){
+      var self = this;
+      this.$http.get("./sitemap.json")
+      .then( function (data, status){
+        this.sectionList = data.body;
+        console.log(title);
+        this.sectionList.forEach(element => {
+          if(element.name == title){
+            console.log(element.id)
+          }
+        });
+      })
+    },
+    
   },
   watch: {
     $route : function(){
@@ -107,7 +132,7 @@ const DocumentationComponent = {
     }
   },
   beforeMount : function() {
-    this.loadFile(this.$route.params.id)
+    this.loadFile(this.$route.params.id);
   },
 };
 
