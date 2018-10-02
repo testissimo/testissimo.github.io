@@ -1,156 +1,54 @@
-var Home = {
-	name: 'Home',
-	template: " \
-		<div>\
-			<section class='main-banner banner-two' id='banner'> \
-			<div  class='auto-container'> \
-				<h1 id='siteHeading'>Documentation</h1> \
-			</div> \
-			</section> \
-			<section id='sectionContent'> \
-			<div class='auto-container' id='app'> \
-				<div id='sitemap'> \
-				<ul class='list-group'> \
-				<li class='list-group-item' v-for='(section, index) in sectionList' :key='index'> \
-					<router-link :to=\"'/documentation/' + section.md\">{{ section.name }} </router-link> \
-				</li> \
-				</ul> \
-				<router-view></router-view> \
-			</div> \
-			</div> \
-			</section>\
-		</div> \
-    ",
-	data: function () {
-		return {
-			sectionList: {},
-			sectionSelectedBoolean: true
+new Vue({
+	el: '#documentation',
+	router: new VueRouter({
+		routes: [{ path: '/:id' }, { path: '*' }]
+	}),
+	data: {
+		sitemap: [],
+		page: {
+			index: -1,
+			id: '',
+			title: '',
+			content: ''
 		}
 	},
-	mounted: function () {
-		this.loadContent();
-	},
-	watch: {
-		$route: function () {
-			this.sectionSelectedBoolean = typeof this.$route.params.id == 'undefined'
-		}
-	},
-	methods: {
-		sectionSelected: function () {
-			return $route.params.length == 0;
+	methods:{
+		getSitemapPromise: function(){
+			var app = this;
+			if(!app._sitemapPromise){
+				app._sitemapPromise = app.$http.get('/sitemap.json').then(function(res, status){
+					app.sitemap = res.body;
+				});
+			}
+			return app._sitemapPromise;
 		},
-		loadContent: function () {
-			var component = this;
-			this.$http.get('./sitemap.json').then(function (data, status) {
-				component.sectionList = data.body;
+		loadPage: function(pageId){
+			var app = this;
+			app.page.id = pageId;
+			app.page.index = app.sitemap.map(function(pageInfo){ return pageInfo.id; }).indexOf(pageId);
+			app.page.content = '';
+			app.page.title = app.page.index === -1 ? 'Documentation' : app.sitemap[app.page.index].title;
+
+			// scroll to top
+			window.scrollTo(0,0);
+
+			// reset route if page is not in sitemap
+			if(app.page.index === -1 && app.page.id) return app.$router.push({ path:'/' });
+			
+			if(pageId) app.$http.get('/documentation/' + app.page.id + '.md').then(function(res, status){
+				app.page.content = res.body;
 			});
 		}
+	},
+	watch:{
+		$route: {
+			immediate: true,
+			handler: function(to, from){
+				var app = this;
+				app.getSitemapPromise().then(function(){
+					app.loadPage(to.params.id);
+				});
+			}
+		}
 	}
-};
-
-var DocumentationComponent = {
-	name: 'DocumentationComponent',
-	template: " <div>\
-      <section class='main-banner banner-two' id='banner'> \
-        <div  class='auto-container'> \
-          <h1 id='siteHeading'>{{title}}</h1> \
-        </div> \
-      </section> \
-      <section id='sectionContent'> \
-        <div class='auto-container' id='app'> \
-          <div id='docContent'> \
-            <div id='breadcrumbs'> \
-              <router-link to='/'>Documentation ></router-link> {{ title }} \
-            </div>  \
-            <div id='showdownDiv'> \
-              <vue-showdown :markdown='mdData'/> \
-            </div> \
-            <div> \
-              <router-link to='/'> Previous chapter : prev {{prevChapter.name}} </router-link> \
-              <router-link to='/'> Next chapter : next {{nextChapter.name}} </router-link>\
-            </div> \
-          </div> \
-        </div> \
-      </section>\
-    </div>\
-    ",
-
-	data: function () {
-		return {
-			mdData: 'Loading content, please wait...',
-			title: '',
-			prevChapter: {},
-			nextChapter: {},
-			sectionList: {}
-		}
-	},
-	methods: {
-		loadFile: function (id) {
-			var self = this;
-			var path = "./documentation/" + id + ".md";
-			this.$http.get(path)
-				.then(function (data) {
-					self.mdData = data.body;
-					self.title = (self.mdData.split('\n')[0]).slice(2, (self.mdData.split('\n')[0]).length);
-					this.onDataLoaded(self.title);
-					this.getSiteMap(self.title);
-				})
-				.catch(function (error) {
-					self.mdData = "The data you requested could not be found!";
-				})
-		},
-
-		onDataLoaded: function (title) {
-			this.$emit(title);
-		},
-
-		getSiteMap: function (title) {
-			var self = this;
-			this.$http.get("./sitemap.json")
-				.then(function (data, status) {
-					this.sectionList = data.body;
-					console.log(title);
-					this.sectionList.forEach(element => {
-						if (element.name == title) {
-							console.log(element.id)
-						}
-					});
-				})
-		},
-
-	},
-	watch: {
-		$route: function () {
-			this.loadFile(this.$route.params.id)
-		}
-	},
-	beforeMount: function () {
-		this.loadFile(this.$route.params.id);
-	},
-};
-
-
-var router = new VueRouter({
-	routes: [{
-			path: '/documentation/:id',
-			component: DocumentationComponent
-		},
-		{
-			path: '/',
-			component: Home
-		},
-	]
 });
-
-new Vue({
-	router: router,
-	el: '#documentation',
-	components: {
-		Home: Home,
-		DocumentationContent: DocumentationComponent,
-		VueShowdown: VueShowdown,
-	},
-	data: {
-		sectionDisplayName: "Documentation"
-	}
-})

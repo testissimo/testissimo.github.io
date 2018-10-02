@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="shortcut icon" href="https://testissimo.io/images/favicon.png" type="image/x-icon">
-	    <link rel="icon" href="https://testissimo.io/images/favicon.png" type="image/x-icon">
-	    
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-        <title>Testissimo - Documentation</title>
-        
-        <!--styles-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" id="animate-css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css" media="all">
-        <link rel="stylesheet" href="/css/testissimo.css" type="text/css" media="all">
-        
-        <!--fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        
-        <!--scripts-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
-        <script src="/js/vue-showdown.min.js"></script>
-        <script src="/js/testissimo.js"></script>
-    	
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="https://testissimo.io/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://testissimo.io/images/favicon.png" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Testissimo - Documentation</title>
+
+    <!--styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" id="animate-css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="/css/testissimo.css" type="text/css" media="all">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!--scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
+    <script src="/js/vue-showdown.min.js"></script>
+    <script src="/js/testissimo.js"></script>
+
 </head>
+
 <body style="font-family: 'Roboto', sans-serif !important;">
-    <div id="documentation" class="page-wrapper">
+    <div class="page-wrapper">
         <header id="mainHeader" class="main-header alternate">
-        <!-- Main Box -->
-        	<div  id="headerContainer" class="main-box" >
-                <div class="outer-container header-container" >
-                <!--upravit-->
+            <!-- Main Box -->
+            <div id="headerContainer" class="main-box">
+                <div class="outer-container header-container">
                     <a href="/">
                         <div class="logo-container">
                             <div id="logoBoxBasic" class="logo-box">
                                 <img src="https://testissimo.io/images/Logo_White(1).png" alt="logo" width="50%" height="50%">
                             </div>
                             <div id="logoBoxInverse" class="logo-box hide-me">
-                                <img src="https://testissimo.io/images/Logo_Colour(1).png" alt="logo" width="50%" height="50%">
+                                <img src="https://testissimo.io/images/Logo_Colour(1).png" alt="logo" width="50%"
+                                    height="50%">
                             </div>
                         </div>
                     </a>
@@ -56,81 +59,106 @@
                             <div id="collapse-menu" class="navbar-collapse collapse scroll-nav">
                                 <ul class="navigation clearfix">
                                     <li>
-                                        <a title="Home" 
-                                        href="https://testissimo.io/">
+                                        <a title="Home" href="https://testissimo.io/">
                                             Home
                                         </a>
                                     </li>
                                     <li>
-                                        <a title="Documentation" 
-                                        href="https://testissimo.github.io" >
+                                        <a title="Documentation" href="/">
                                             Documentation
                                         </a>
                                     </li>
                                     <li>
-                                        <a title="Features" 
-                                        href="https://testissimo.io/features">
+                                        <a title="Features" href="https://testissimo.io/features">
                                             Features
                                         </a>
                                     </li>
                                     <li>
-                                        <a title="Pricing" 
-                                        href="https://testissimo.io/pricing"> 
+                                        <a title="Pricing" href="https://testissimo.io/pricing">
                                             Pricing
                                         </a>
                                     </li>
                                     <li id="navigationButtonDiv">
                                         <div>
-                                            <a id="freeTrialButton"  
-                                            href="https://testissimo.io/start-using-testissimo"
-                                            class="theme-btn btn-style-one">
+                                            <a id="freeTrialButton" href="https://testissimo.io/start-using-testissimo"
+                                                class="theme-btn btn-style-one">
                                                 Try It Now
                                             </a>
                                         </div>
                                         <div>
-                                            <a id="freeTrialButtonInverse"  
-                                            href="https://testissimo.io/start-using-testissimo"
-                                            class="theme-btn btn-style-one hide-me">
+                                            <a id="freeTrialButtonInverse" href="https://testissimo.io/start-using-testissimo"
+                                                class="theme-btn btn-style-one hide-me">
                                                 Try It Now
                                             </a>
                                         </div>
                                     </li>
-                                    </ul>
+                                </ul>
                             </div>
                         </nav>
                         <!-- Main Menu End-->
                     </div>
                     <!--Nav Outer End-->
-                </div>    
+                </div>
                 <div id="mobileMenu" class="hide-me">
-                        <div>
-                            <a href="https://testissimo.io/">Home</a>
-                        </div>
-                        <div>
-                            <a href="https://testissimo.github.io">Documentation</a>
-                        </div>
-                        <div>
-                            <a href="https://testissimo.io/features">
-                                Features
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://testissimo.io/pricing">
-                                Pricing
-                            </a>
-                        </div>
-                        <div id="navbar-button">
-                            <!--upravit toto-->
-                            <button>
-                                <a  href="https://testissimo.io/start-using-testissimo" style="color : white">Try It Now</a>
-                            </button>
-                        </div>
-                        
+                    <div>
+                        <a href="https://testissimo.io/">Home</a>
                     </div>
+                    <div>
+                        <a href="https://testissimo.github.io">Documentation</a>
+                    </div>
+                    <div>
+                        <a href="https://testissimo.io/features">
+                            Features
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://testissimo.io/pricing">
+                            Pricing
+                        </a>
+                    </div>
+                    <div id="navbar-button">
+                        <button>
+                            <a href="https://testissimo.io/start-using-testissimo" style="color : white">Try It Now</a>
+                        </button>
+                    </div>
+
+                </div>
             </div>
         </header>
         <div class="placeholder"></div>
-        <router-view/>
+        <div id="documentation" style="display:none" :style="{display:'block'}">
+
+            <section class="main-banner banner-two" id="banner">
+                <div class="auto-container">
+                    <h1 id="siteHeading">{{page.title}}</h1>
+                </div>
+            </section>
+
+            <section id="sectionContent">
+                <div class="auto-container">
+                    <div v-if="page.index === -1" id="sitemap">
+                        <ul class="list-group">
+                            <li class="list-group-item" v-for="page in sitemap" :key="page.id">
+                                <router-link :to="page.id">{{page.title}} </router-link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div v-else id="docContent">
+                        <h4 v-if="!page.content">Loading content, please wait ...</h4>
+                        <div id="breadcrumbs">
+                            <router-link to="/">Documentation &gt;</router-link> {{page.title}}
+                        </div>
+                        <div id="showdownDiv">
+                            <vue-showdown :markdown="page.content"></vue-showdown>
+                        </div>
+                        <div class="clearfix">
+                            <router-link v-if="sitemap[page.index-1]" :to="sitemap[page.index-1].id" style="float:left">&larr; {{sitemap[page.index-1].title}}</router-link>
+                            <router-link v-if="sitemap[page.index+1]" :to="sitemap[page.index+1].id" style="float:right">{{sitemap[page.index+1].title}} &rarr;</router-link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
     <script src="/js/documentation.js"></script>
     <footer>
@@ -138,13 +166,13 @@
         <p>Join our subscriber list and get the latest updates, news and special offers</p>
         newsletter dorobit
         <div class="links">
-                <a href="https://testissimo.io/">Home</a>
-                <a href="https://testissimo.github.io">Documentation</a>
-                <a href="https://testissimo.io/features">Features</a>
-                <a href="https://testissimo.io/pricing">Pricing</a>
+            <a href="https://testissimo.io/">Home</a>
+            <a href="https://testissimo.github.io">Documentation</a>
+            <a href="https://testissimo.io/features">Features</a>
+            <a href="https://testissimo.io/pricing">Pricing</a>
         </div>
         <p>Copyright &copy; 2018</p>
     </footer>
 </body>
-</html>
 
+</html>

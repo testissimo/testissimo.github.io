@@ -1,92 +1,92 @@
 [
 {
-    "name" : "What Is Testissimo ?",
-    "md" : "what-is-testissimo",
+    "title" : "What Is Testissimo ?",
+    "id" : "what-is-testissimo",
     "children" : [
         {
-            "name" : "e2e testing tool for web applications",
-            "md" : "e2e"
+            "title" : "e2e testing tool for web applications",
+            "id" : "e2e"
         },
         {
-            "name" : "Testissimo place in software development",
-            "md" : "testissimo-place-in-software-development"
+            "title" : "Testissimo place in software development",
+            "id" : "testissimo-place-in-software-development"
         }
     ]
 },
 {
-    "name" : "Installation",
-    "md" : "installation",
+    "title" : "Installation",
+    "id" : "installation",
     "children" : [
         {
-            "name" : "via script",
-            "md" : "installation-via-script"
+            "title" : "via script",
+            "id" : "installation-via-script"
         },
         {
-            "name" : "via browser plugin",
-            "md" : "installation-via-script"
+            "title" : "via browser plugin",
+            "id" : "installation-via-script"
         }
     ]
 },
 {
-    "name" : "Getting Started",
-    "md" : "getting-started",
+    "title" : "Getting Started",
+    "id" : "getting-started",
     "children" : [
         {
-            "name" : "Sign-up new user",
-            "md" : "sign-up-new-user"
+            "title" : "Sign-up new user",
+            "id" : "sign-up-new-user"
         },
         {
-            "name" : "create repo",
-            "md" : "create-repo"
+            "title" : "create repo",
+            "id" : "create-repo"
         }
     ]
 },
 {
-    "name" : "Repositories, Users and Permissions",
-    "md" : "repositories-users-and-permissions"
+    "title" : "Repositories, Users and Permissions",
+    "id" : "repositories-users-and-permissions"
 },
 {
-    "name" : "Concept Of Writing Tests",
-    "md" : "concept-of-writing-tests"
+    "title" : "Concept Of Writing Tests",
+    "id" : "concept-of-writing-tests"
 },
 {
-    "name" : "Selectors",
-    "md" : "selectors"
+    "title" : "Selectors",
+    "id" : "selectors"
 },
 {
-    "name" : "Actions, Assertions And Repeaters",
-    "md" : "actions-assertions-and-repeaters"
+    "title" : "Actions, Assertions And Repeaters",
+    "id" : "actions-assertions-and-repeaters"
 }, 
 {
-    "name" : "If-Else Conditions",
-    "md" : "if-else-conditions"
+    "title" : "If-Else Conditions",
+    "id" : "if-else-conditions"
 },
 {
-    "name" : "Components And Methods",
-    "md" : "components-and-methods"
+    "title" : "Components And Methods",
+    "id" : "components-and-methods"
 },
 {
-    "name" : "Tests",
-    "md" : "tests"
+    "title" : "Tests",
+    "id" : "tests"
 },
 {
-    "name" : "Test Suites",
-    "md" : "test-suites"
+    "title" : "Test Suites",
+    "id" : "test-suites"
 },
 {
-    "name" : "Running Tests Manually Or Headless, Debugging",
-    "md" : "running-tests-manually-or-headless"
+    "title" : "Running Tests Manually Or Headless, Debugging",
+    "id" : "running-tests-manually-or-headless"
 },
 {
-    "name" : "Built-in Version Control System (VCS)",
-    "md" : "built-in-vcs"
+    "title" : "Built-in Version Control System (VCS)",
+    "id" : "built-in-vcs"
 },
 {
-    "name" : "Keyboard Shortcuts And Guides",
-    "md" : "keyboard-shortcuts-and-guides"
+    "title" : "Keyboard Shortcuts And Guides",
+    "id" : "keyboard-shortcuts-and-guides"
 },
 {
-    "name" : "Bugs, Issues And Questions",
-    "md" : "bugs-issues-and-questions"
+    "title" : "Bugs, Issues And Questions",
+    "id" : "bugs-issues-and-questions"
 }
 ]

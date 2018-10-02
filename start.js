@@ -4,8 +4,13 @@
 // https://www.totaljs.com
 // ===================================================
 
-require('total.js/debug')({
+require('total.js').http('debug', {
     config: {
         'directory-public': './'
     }
 });
+
+// disable javascript compilations
+F.onCompileScript = function(filename, content) {
+    return content;
+};
