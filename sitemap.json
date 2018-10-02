@@ -76,4 +76,13 @@
 {
     "name" : "Built-in Version Control System (VCS)",
     "md" : "built-in-vcs"
-}]
+},
+{
+    "name" : "Keyboard Shortcuts And Guides",
+    "md" : "keyboard-shortcuts-and-guides"
+},
+{
+    "name" : "Bugs And Issues",
+    "md" : "bugs-and-issues"
+}
+]
