@@ -4,11 +4,11 @@
 
 There is built-in select action in Testissimo, it has some special UI features:
 
-TODO: image of selector picker
-
 1. Pick element from page
 2. Show elements
 3. Pick parent element
+
+TODO: image of selector picker
 
 ## Targeting HTML Elements
 
@@ -105,11 +105,11 @@ Testissimo supports all of CSS3 selectors and adds custom, extended syntax to fu
 
 ### Attributes Matching 
 
-**Extractable** - when drag-dropping component from preview in app into test, some variables from selector definition can be suggested to user, e.g. 
+**Extractable** - when selecting component from in visual mode, some variables from selector definition can be suggested to user, e.g. 
 ```javascript
 input:value({variable}) 
 ``` 
-can be extracted from element and suggested
+can be extracted from element and suggested.
 
 Same as standard CSS attribute matching, but always true if value is missing or empty, e.g. [attribute=""] or [attribute\*=""] is same like **[attribute]**     
 
@@ -163,7 +163,7 @@ For strict selection, e.g. if you want to select element with attribute equals t
 * **[attribute==value]**
 * **[attribute\*==value]**
 * **[attribute!==value]**, etc…  
-<br>
+
 
 ### Extended Pseudo Selectors
 <table>
@@ -238,7 +238,7 @@ Positional selectors with argument value, for scaffolding reason, if value is em
     </tr>
   </tbody>
 </table>
-<br>
+
 Inner text selectors, will select all elements containing text, not only nearest but all ancestors, so it is often used with pseudo <b>:first</b>, <b>:last</b>      
 
 <table >
@@ -276,14 +276,13 @@ Inner text selectors, will select all elements containing text, not only nearest
     </tbody>
 </table>
 
-<br>
 Allowed boolean values are false,False,no,No,0 and true,True,yes,Yes,1      
 Visibility selections, based on element or ancestors "display:none" style  
 <ul>
   <li> <b>:visible</b>, <b>:visible(true/false)</b> - (extractable)  </li>
   <li> <b>:hidden</b>, <b>:hidden(true/false)</b> - (extractable) </li>      
 </ul>
-<br>
+
 Input state selectors  
 <ul>
   <li> <b>:enabled</b>, <b>:enabled(true/false) </b>- (extractable)  </li>
@@ -292,7 +291,7 @@ Input state selectors
   <li> <b>:selected</b>, <b>:selected(true/false) </b>- (extractable) </li>  
   <li> <b>:focused</b>, <b>:focused(true/false)</b> - (extractable) </li> 
 </ul>
-<br>
+
 Selecting by element value property  
 <ul>
   <li> <b>:value(value) </b>- (extractable)  </li>
@@ -300,7 +299,7 @@ Selecting by element value property
   <li> <b>:value-begins(value) </b>- (extractable) </li>  
   <li> <b>:value-ends(value) </b>- (extractable)  </li>
 </ul>
-<br>
+
 Location url based filtering - usefull if you have many components, but not all of them are suitable for some pages, it helps to filter them    
 <ul>
   <li> <b>:url-contains(text)</b>  </li>
@@ -310,7 +309,7 @@ Location url based filtering - usefull if you have many components, but not all 
   <li> <b>:url-query-equals(text) </b>- exclude "?" </li> 
   <li> <b>:url-hash-equals(text) </b>- exclude "#"  </li>
 </ul>
-<br>
+
 Variable based filtering - usefull if you have multiple comma separated options how to select an element, and you have to switch between them, e.g. 
 ```javascript
 input:value({value}):if-var({value}), input:index({index}):if-not-var({value})    
