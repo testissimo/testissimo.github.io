@@ -33,7 +33,7 @@ new Vue({
 			window.scrollTo(0,0);
 
 			// reset route if page is not in sitemap
-			if(app.page.index === -1 && app.page.id) return app.$router.push({ path:'/' });
+			if(app.page.index === -1 && app.$route.path !== '/') return app.$router.push({ path:'/' });
 			
 			if(pageId) app.$http.get('/documentation/' + app.page.id + '.md').then(function(res, status){
 				app.page.content = res.body;
