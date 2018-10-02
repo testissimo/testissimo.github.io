@@ -4,7 +4,7 @@
 
 In Testissimo, the test is written as simple, readable and parametrised code, composed from:
 1. [Selectors](#/documentation/selectors) - "select: div"
-2. [User Actions](#/documentation/actions-assertions-and-repeaters), [Assertions](#/documentation/actions-assertions-and-repeaters) and [Repeaters](#/documentation/actions-assertions-and-repeaters),  - "do click",  "assert elements count is: 1", "repeat for each value in: 1,2,3" 
+2. [User Actions](#/documentation/actions-assertions-and-repeaters), [Assertions](#/documentation/actions-assertions-and-repeaters) and [Repeaters](#/documentation/actions-assertions-and-repeaters) - "do click",  "assert elements count is: 1", "repeat for each value in: 1,2,3" 
 3. [Components](#/documentation/components-and-methods) - "find button", or "enter panel"
 4. [Methods](#/documentation/components-and-methods) - "call button - click"
 5. [Tests](#/documentation/tests) - "run login"
