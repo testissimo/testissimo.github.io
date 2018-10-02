@@ -19,6 +19,8 @@ Actions are pretty straightforward, there is no need to describe them standalone
 
 Assertions checks some part of current state. They are crucial for testing, you should assert any important state change, e.g. if you write text in HTML input, you should check if value in input is correct. Because if HTML input have some mask (phone, email, etc...), it can discart value and be blank again. If assertion doesn't pass it will stop test and throw exception.
 
+For negative assertion, add "not" after prefix, e.g. "assert **not** elements count is: 1"
+
 ![](/documentation/images/assert.png)
 
 ## Repeaters - use "repeat" prefix
