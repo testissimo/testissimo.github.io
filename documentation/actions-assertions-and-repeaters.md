@@ -17,3 +17,4 @@ Actions are pretty straightforward, there is no need to describe them standalone
 
 ## Assertions (User Simulation) - use "assert" prefix
 
+...
