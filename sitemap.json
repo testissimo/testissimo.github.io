@@ -54,8 +54,8 @@
     "md" : "selectors"
 },
 {
-    "name" : "Actions",
-    "md" : "actions"
+    "name" : "Actions, Assertions And Repeaters",
+    "md" : "actions-assertions-and-repeaters"
 },
 {
     "name" : "Components And Methods",
