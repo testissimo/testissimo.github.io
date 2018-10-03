@@ -1,6 +1,6 @@
 # Testissimo
 
-## Testissimo is an automated component-Based testing tool for web applications
+## Testissimo is an automated testing tool for web applications
 Check out Testissimo website: [https://testissimo.io](https://testissimo.io)
 
 ## This repository contains documentation
