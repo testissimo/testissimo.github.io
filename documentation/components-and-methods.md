@@ -6,7 +6,7 @@ In case if you doesn't **read [concept of writting tests](#/contept-of-writting-
 
 As all Testissimo resources, you can add, remove or rename components and their methods in repository resources tab - to open it, go to main tab and click on local repo you want to edit.
 
-![](/documents/images/components.png)
+![](/documentation/images/components.png)
 
 ## Component Definition
 
@@ -14,13 +14,11 @@ Component definition must contains only select action, and optional variables de
 
 Component Selector
 
-![](/documents/images/component_definition.png)
+![](/documentation/images/component_definition.png)
 
 ## Method Definition
 
-Component
-
-![](/documents/images/method_definition.png)
+![](/documentation/images/method_definition.png)
 
 ## Component And Methods Usage
 
