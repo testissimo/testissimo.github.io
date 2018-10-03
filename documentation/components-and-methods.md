@@ -1,6 +1,6 @@
 # Components And Methods
 
-In case if you have not **read [concept of writing tests](#/contept-of-writing-tests)**, please do so before reading this section.
+In case if you have not **read [concept of writing tests](#/concept-of-writing-tests)**, please do so before reading this section.
 
 ## Components And Methods Management
 
