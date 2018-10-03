@@ -1,3 +1,7 @@
 # Tests 
 
-Test is our final construct where we put the logic of single test. Technically tests and macros are equal so they have the same properties. Test can be organized in executable groups called Test suites which can be executed with a single click.  
+## Visual Editing
+
+Turn it on by clicking on "eye" button and than move cursor forward code. You will see components and methods suggestions on current line.
+
+![](/documentation/images/components_visual_editing.png)
