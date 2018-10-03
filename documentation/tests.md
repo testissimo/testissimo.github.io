@@ -8,14 +8,20 @@ If you have not **read [concept of writing tests](#/concept-of-writing-tests)**,
 
 A test can be referenced in another test, just use prefix "run". Same as components they can be parametrized by variables. Example of write reusable test is log in, with a username and password parameter. 
 
-![](/documentation/images/test_usage.png)
+![](./images/test_usage.png)
 
 ## Visual Editing
 
 Turn it on by clicking on "eye" button and then move cursor forward code. You will see components and methods suggestions on current line.
 
-![](/documentation/images/components_visual_editing.png)
+![](./images/components_visual_editing.png)
 
 ## Running And Debugging Tests
 
 Use "play" and "stop" buttons in right top corner to run and stop test. For more info visit: **[Running Tests Manually Or Headless, Debugging](#/running-tests-manually-or-headless)**
+
+## Tests Management
+
+Same as components.
+
+![](./images/tests_management.png)
