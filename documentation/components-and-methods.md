@@ -22,14 +22,14 @@ Component Selector
 
 ## Component And Methods Usage
 
-### Find
+### Find Component
 
 To use component in test, you must find or enter it first. Find command only sets selector to component element(s), so you can make some assertions on it, or iterate through element collection.
 
-### Enter - Leave
+### Enter / Leave Component
 
 Enter command will focus inside of component, it will lock selectors scope inside it. If you want to step outside, use leave component command. Leave will step out of last entered component identified by name. If there are multiple components with same name inside each another, it will leave the last (lowest).
 
-### Call Method
+### Call Component Method
 
 To call component method, you need to find or enter component first. If you call method of component found somewhere in above code, no matter where (it can be out of currently entered component scope), it will use it as reference and do execute method as his own. In case multiple entered or find component, the last one will be used.
