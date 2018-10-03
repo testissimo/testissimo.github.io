@@ -28,7 +28,7 @@ There is special stop action, just type "stop" where you want to stop run and it
 
 Headless run is same as manual run, but there is headless log and report created. You need to pass special parameters to Testissimo via url, when you want to do this.
 
-#### Create Headless Url 
+### Create Headless Url 
 By clicking on icon inside tab of resource you want to run headless - often it will be test suite
 
 ![](/documentation/images/headless_link.png)
@@ -43,16 +43,16 @@ yourapp.com?testissimo-headless=**UER_APIKEY**|**REPO_ID**|**RESOURCE_ID**|**OPT
 
 You can copy-paste this url to browser, and it will run it in headless mode.
 
-#### Headless Browser
+### Headless Browser
 Start headless browser with this url and it will do all testing headless. Thats all. We strongly recommend to use some of our docker images [https://hub.docker.com/u/testissimo](https://hub.docker.com/u/testissimo) where installed browser including testissimo plugin.
 
-#### Headless Run Results
+### Headless Run Results
 
 Click on the "truck" icon to see headless run results of this resource. Keep in mind that **maximum age of report item is 14 days**, after this period it will be deleted.
 
 ![](/documentation/images/headless_results.png)
 
-#### Fail Snapshot
+### Fail Snapshot
 
 By clicking on the snapshot in results table, you will be redirected to snapshot page. Testissimo is in preview mode to see all scope info as you see while manual running test.
 
