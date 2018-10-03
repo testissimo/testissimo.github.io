@@ -134,10 +134,10 @@
                         </ul>
                     </div>
                     <div v-else id="docContent">
-                        <h4 v-if="!page.content">Loading content, please wait ...</h4>
                         <div id="breadcrumbs">
                             <router-link to="/">Documentation &gt;</router-link> {{page.title}}
                         </div>
+                        <h4 v-if="!page.content">Loading content, please wait ...</h4>
                         <div id="showdownDiv">
                             <vue-showdown :markdown="page.content"></vue-showdown>
                         </div>
