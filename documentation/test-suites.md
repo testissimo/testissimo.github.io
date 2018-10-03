@@ -8,4 +8,4 @@ Test Suites are nothing else than groups or lists of tests to organize test run.
 
 Same as tests and components.
 
-![](./images/testsuite_management.png)
+![](/documentation/images/testsuite_management.png)
