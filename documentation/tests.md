@@ -18,7 +18,7 @@ Turn it on by clicking on "eye" button and then move cursor forward code. You wi
 
 ## Running And Debugging Tests
 
-Use "play" and "stop" buttons in right top corner to run and stop test. For more info visit: **[Running Tests Manually Or Headless, Debugging](#/running-tests-manually-or-headless)**
+Use "play" and "stop" buttons in right top corner to run and stop test. For more info visit: **[Running, Debugging And Headless](#/running-debugging-headless)**
 
 ## Tests Management
 
