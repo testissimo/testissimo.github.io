@@ -7,13 +7,13 @@ The lowest level of units in Testissimo code are actions. There are three types 
 
 ## List Of All Available Actions
 
-![](/documentation/images/actions_list.png)
+![](./images/actions_list.png)
 
 ## Actions (User Simulation) - use "do" prefix
 
 Actions are pretty straightforward, there is no need to describe them standalone. They often need elements selection before, because they are simulating user interaction with none, one or many HTML elements.
 
-![](/documentation/images/action.png)
+![](./images/action.png)
 
 ## Assertions - use "assert" prefix
 
@@ -21,7 +21,7 @@ Assertions check some part of the current state. They are crucial for testing, y
 
 For negative assertion, add "not" after prefix, e.g. "assert **not** elements count is: 1"
 
-![](/documentation/images/assert.png)
+![](./images/assert.png)
 
 ## Repeaters - use "repeat" prefix
 
@@ -31,4 +31,4 @@ Repeaters are blocks. It means they have start and end, and inside can be some o
 2. repeat iteration - iteration order, same as index, but starting with 1
 3. repeat value - current iteration value
 
-![](/documentation/images/repeat.png)
+![](./images/repeat.png)
