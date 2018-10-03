@@ -1,8 +1,7 @@
 # Testissimo
 
-## Project intro :
-Testissimo is an Automated Component-Based Web Testing Tool
-Check Testissimo out [here](https://testissimo.io)
+## Testissimo is an automated component-Based testing tool for web applications
+Check out Testissimo website: [https://testissimo.io](https://testissimo.io)
 
-## Project documentation : 
-Project documentation can be found [here](https://testissimo.github.io)
+## This repository contains documentation
+You can found it as website here: [https://testissimo.github.io](https://testissimo.github.io)
