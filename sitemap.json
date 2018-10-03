@@ -74,8 +74,8 @@
     "id" : "test-suites"
 },
 {
-    "title" : "Running Tests Manually Or Headless, Debugging",
-    "id" : "running-tests-manually-or-headless"
+    "title" : "Running, Debugging And Headless",
+    "id" : "running-debugging-headless"
 },
 {
     "title" : "Built-in Version Control System (VCS)",
