@@ -34,12 +34,12 @@ By clicking on icon inside tab of resource you want to run headless - often it w
 ![](/documentation/images/headless_link.png)
 
 Headless url template:  
-yourapp.com?testissimo-headless=**USER_APIKEY** | **REPO_ID** | **RESOURCE_ID** | **OPTIONAL_COMMIT_ID_OR_TAG** | **OPTIONAL_RUN_TAG**
-* USER_APIKEY - current user API key which will be used to checkout repo, this user must have read access to the repo
-* REPO_ID - repository ID
-* RESOURCE_ID - a resource ID that will be run
-* OPTIONAL_COMMIT_ID_OR_TAG - optional commit ID of commit tag, e.g. latest, release, v1.0, etc... if missing, the latest commit is used
-* OPTIONAL_RUN_TAG - optional headless run tag
+yourapp.com?testissimo-headless=**USER-APIKEY** | **REPO-ID** | **RESOURCE-ID** | **OPTIONAL-COMMIT-ID-OR-TAG** | **OPTIONAL-RUN-TAG**
+* USER-APIKEY - current user API key which will be used to checkout repo, this user must have read access to the repo
+* REPO-ID - repository ID
+* RESOURCE-ID - a resource ID that will be run
+* OPTIONAL-COMMIT-ID-OR-TAG - optional commit ID of commit tag, e.g. latest, release, v1.0, etc... if missing, the latest commit is used
+* OPTIONAL-RUN-TAG - optional headless run tag
 
 You can copy-paste this url to the browser, and it will run it in headless mode.
 
