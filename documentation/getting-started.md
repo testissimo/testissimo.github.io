@@ -1,6 +1,6 @@
 # Getting started
 
-See [installation](https://testissimo.github.io/#/documentation/installation) if you haven't setup Testissimo yet.
+See [installation](https://testissimo.github.io/#/installation) if you haven't setup Testissimo yet.
 
 ## Create User
 After a successful setup of testissimo, you will see the testissimo container. Below login form is the button "Sign Up" - click on it and create a new user.
