@@ -32,19 +32,20 @@ To see content differences, just navigate to resource tab and press "Show Change
 
 ### Push (Upload) Local Changes
 
-Pushing or saving your local changes into remote repository means that all changes made by you will be applied to remote repository. If there are any new changes done by another user in remote repository, which you have not pulled
+Push changes often, do more small commits, not one big, you will avoid many merge conflicts. **Keep in mind all changes in your local repo is in browser indexedDB, so it is not guarented to persist long time period. Clearing browser cache will delete all of it !** Of course, you cannot push new changes before pulling new remote changes - in that case, pull-merge will automatically proceed.
 
 ![](/documentation/images/vcs_push.png)
 
-pozor na indexedDB a persistenciu, treba robit male commity aj kvoli mergovaniu
+### Pull (Download) And Merge Remote Changes
 
-### Pull (Download) New Remote Changes
+If someone esle pushed change into remote repo, you will be notified in local repo list.
 
-If someone esle pushed change into remote repo, you will be notified
+![](/documentation/images/vcs_pull.png)
 
-### Merge changes
+Applying remote changes to local copy is called merging. There may be some merge conflicts when merging. It means someone changed same resource as you and Testissimo cannot decide which version is newer. To finish merge you have to resolve all merge conflicts. If you close merging tab, merging will be dismissed and no remote changes will be applyed do your local copy.
 
-merge changes from one repository to another, usually you do merge between your local and remote repository to synchronize it
+![](/documentation/images/vcs_merge.png)
 
-## Diff And Revert
+### Forking
 
+Fork can be done in commits history (see commits history picture). It will create new remote repository from selected commit. Then you can checkout and edit.
