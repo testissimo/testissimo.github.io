@@ -4,7 +4,15 @@
 If you have not access to HTML source or want to have more comfortable stand-by mode management, we recommend to use browser plugins:
 
 1. [Google Chrome plugin](https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en )
-2. [FireFox plugin](https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1)
+2. [Mozilla Firefox plugin](https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1)
+3. Internet Explorer - in future
+4. Microsoft Edge - in future
+
+**Browser support:**
+1. Google Chrome - latest version (old versions are not tested)
+2. Mozilla Firefox - latest version (old versions are not tested)
+3. Internet Explorer 11 - not tested, some design issues may occur but tests should run
+4. Microsoft Edge - not tested, but should work
 
 ## 2. Manual Setup Via HTML Script
 
