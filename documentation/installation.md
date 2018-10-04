@@ -1,6 +1,12 @@
 # Installation
 
-## 1. Setup Via Browser Plugin
+## Browser Support
+1. Google Chrome - latest version (old versions are not tested)
+2. Mozilla Firefox - latest version (old versions are not tested)
+3. Internet Explorer 11 - not tested, some design issues may occur but tests should run
+4. Microsoft Edge - not tested, but should work
+
+## Setup Via Browser Plugin
 If you have not access to HTML source or want to have more comfortable stand-by mode management, we recommend to use browser plugins:
 
 1. [Google Chrome plugin](https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en )
@@ -8,14 +14,7 @@ If you have not access to HTML source or want to have more comfortable stand-by 
 3. Internet Explorer 11 - in future
 4. Microsoft Edge - in future
 
-**Browser support:**
-1. Google Chrome - latest version (old versions are not tested)
-2. Mozilla Firefox - latest version (old versions are not tested)
-3. Internet Explorer 11 - not tested, some design issues may occur but tests should run
-4. Microsoft Edge - not tested, but should work
-
-## 2. Manual Setup Via HTML Script
-
+## Manual Setup Via HTML Script
 Testissimo client is written in javascript, so it can be part of your web application, just insert this script to the HTML head tag before any other scripts, on every page you want to test:
 
 ```html
