@@ -8,7 +8,7 @@ There is built-in select action in Testissimo, it has some special UI features:
 2. Show elements
 3. Pick parent element
 
-![](/documentation/images/select_picker.png)
+![](/documentation/images/selector.png)
 
 ## Targeting HTML Elements
 
