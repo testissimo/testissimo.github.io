@@ -1,5 +1,7 @@
 # Keyboard Shortcuts And Guides
 
+### Warnings And Errors
+
 ### Testissimo Container Place
 
 ### Searching In Code
