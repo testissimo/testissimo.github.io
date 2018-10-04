@@ -8,7 +8,7 @@ After a successful setup of testissimo, you will see the testissimo container. B
 ![](/documentation/images/user_create.png)
 
 ## Create First Repository
-![](/documentation/repo_create.png)
+![](/documentation/images/repo_create.png)
 
 Then you need to checkout (download) it to your local repos.
 ![](/documentation/images/repo_create_checkout.png)
