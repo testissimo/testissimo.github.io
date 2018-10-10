@@ -2,21 +2,21 @@
 
 ## Select Action
 
-There is built-in select action in Testissimo, it has some special UI features:
+There is a built-in select action in Testissimo and it has some special UI features:
 
-1. Pick element from page
+1. Pick an element from page
 2. Show elements
-3. Pick parent element
+3. Pick a parent of an element
 
 ![](/documentation/images/selector.png)
 
 ## Targeting HTML Elements
 
-When writing an automatized UI test, most of your work consists of administering your testing tool how to find HTML elements which will be interacted with. This is no different with Testissimo. In Testissimo you can use a full set of CSS selectors and some built-in helpers to always target elements on page with ease.
+When writing an automatized UI test, most of your work consists of administering your testing tool how to find HTML elements, which will be interacted with. There is no difference, when using Testissimo. In Testissimo you can use a full set of CSS selectors and some built-in helpers to always target elements on page with ease.
 
-As CSS selectors are standard feature in web development you will find a lot of resources on the internet dealing with how to write them and how they work. For absolute beginners, we recommend playing this game which can train the **basics of CSS selectors at [flukeout](https://flukeout.github.io/)**. 
+As CSS selectors are a standard and common feature in web development you can find a lot of resources across the internet dealing with how to write them and how these selectors work. For absolute beginners, we recommend playing this game which can train the **basics of CSS selectors at [flukeout](https://flukeout.github.io/)**. 
 
-As a cheat-sheet we like to use this website where you can find a full description of CSS selectors capabilities 
+As a cheat-sheet we like to use this website, where you can find a full description of CSS selectors capabilities 
 **[CSS selectors reference](https://www.w3schools.com/cssref/css_selectors.asp)** 
 Testissimo supports all of CSS3 selectors and adds custom, extended syntax to fulfill all searching needs.
 
@@ -105,7 +105,7 @@ Testissimo supports all of CSS3 selectors and adds custom, extended syntax to fu
 
 ### Attributes Matching 
 
-**Extractable** - when selecting component from in visual mode, some variables from selector definition can be suggested to user, e.g. 
+**Extractable** - when selecting component in visual mode, some variables from selector definition can be suggested to user, e.g. 
 ```javascript
 input:value({variable}) 
 ``` 
@@ -194,7 +194,7 @@ For strict selection, e.g. if you want to select element with attribute equals t
 </table>
 
 
-Positional selectors with argument value, for scaffolding reason, if value is empty, it is allways true, e.g. index() or :index will match every element      
+Positional selectors with argument value, for scaffolding reason, if value is empty, it is always true, e.g. index() or :index will match every element      
 
 <table>
   <thead>
@@ -300,7 +300,7 @@ Selecting by element value property
   <li> <b>:value-ends(value) </b>- (extractable)  </li>
 </ul>
 
-Location url based filtering - usefull if you have many components, but not all of them are suitable for some pages, it helps to filter them    
+Location url based filtering - useful if you have many components, but not all of them are suitable for some pages, it helps to filter them    
 <ul>
   <li> <b>:url-contains(text)</b>  </li>
   <li> <b>:url-query-contains(text) </b>- exclude "?"  </li>
@@ -310,7 +310,7 @@ Location url based filtering - usefull if you have many components, but not all 
   <li> <b>:url-hash-equals(text) </b>- exclude "#"  </li>
 </ul>
 
-Variable based filtering - usefull if you have multiple comma separated options how to select an element, and you have to switch between them, e.g. 
+Variable based filtering - useful if you have multiple comma separated options how to select an element, and you have to switch between them, e.g. 
 ```javascript
 input:value({value}):if-var({value}), input:index({index}):if-not-var({value})    
 ```
