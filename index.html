@@ -68,31 +68,33 @@
                     <h1 class="text-left">Documentation{{page.title ? ': '+page.title : ''}}</h1>
                 </div>
             </section>
-
-            <section id="sectionContent">
-                <div class="auto-container">
-                    <div v-if="page.index === -1" id="sitemap">
-                        <ul class="list-group">
-                            <li class="list-group-item" v-for="page in sitemap" :key="page.id">
-                                <router-link :to="'/'+page.id">{{page.title}} </router-link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div v-else id="docContent">
-                        <div id="breadcrumbs">
-                            <router-link to="/">Documentation &gt;</router-link> {{page.title}}
-                        </div>
-                        <h4 v-if="!page.content">Loading content, please wait ...</h4>
-                        <div id="showdownDiv">
-                            <vue-showdown :markdown="page.content"></vue-showdown>
-                        </div>
-                        <div class="clearfix">
-                            <router-link v-if="sitemap[page.index-1]" :to="sitemap[page.index-1].id" style="float:left">&larr; {{sitemap[page.index-1].title}}</router-link>
-                            <router-link v-if="sitemap[page.index+1]" :to="sitemap[page.index+1].id" style="float:right">{{sitemap[page.index+1].title}} &rarr;</router-link>
-                        </div>
-                    </div>
-                </div>
-            </section>
+	    
+	    <section>
+		<div class="container container-tm">
+		    <div class="row">
+			<div :class="{'col-12':page.index === -1,'col-sm-3':page.index !== -1}">
+				<ul class="list-group">
+				    <li class="list-group-item" v-for="page in sitemap" :key="page.id">
+					<router-link :to="'/'+page.id">{{page.title}} </router-link>
+				    </li>
+				</ul>
+			</div>
+			<div v-if="page.index !== -1" class="col-12 col-sm-7 text-left">
+				<div>
+				    <router-link to="/">Documentation &gt; </router-link> {{page.title}}
+				</div>
+				<h4 v-if="!page.content">Loading content, please wait ...</h4>
+				<div id="showdownDiv">
+				    <vue-showdown :markdown="page.content"></vue-showdown>
+				</div>
+				<div class="clearfix">
+				    <router-link v-if="sitemap[page.index-1]" :to="sitemap[page.index-1].id" style="float:left">&larr; {{sitemap[page.index-1].title}}</router-link>
+				    <router-link v-if="sitemap[page.index+1]" :to="sitemap[page.index+1].id" style="float:right">{{sitemap[page.index+1].title}} &rarr;</router-link>
+				</div>
+			</div>
+		    </div>
+		</div>
+	    </section>
         </div>
         
         <footer>
