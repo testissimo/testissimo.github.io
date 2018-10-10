@@ -70,16 +70,16 @@
             </section>
 	    
 	    <section>
-		<div class="container container-tm">
+		<div class="container-fluid">
 		    <div class="row">
-			<div :class="{'col-12':page.index === -1,'col-sm-3':page.index !== -1}">
-				<ul class="list-group">
+			<div :class="{'col-12':page.index === -1,'col-md-3':page.index !== -1}">
+				<ul class="list-group text-left" style="max-width:600px">
 				    <li class="list-group-item" v-for="page in sitemap" :key="page.id">
 					<router-link :to="'/'+page.id">{{page.title}} </router-link>
 				    </li>
 				</ul>
 			</div>
-			<div v-if="page.index !== -1" class="col-12 col-sm-7 text-left">
+			<div v-if="page.index !== -1" class="col-12 col-md-7 text-left">
 				<div>
 				    <router-link to="/">Documentation &gt; </router-link> {{page.title}}
 				</div>
