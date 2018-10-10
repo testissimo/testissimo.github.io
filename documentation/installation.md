@@ -7,7 +7,7 @@
 4. Microsoft Edge - not tested, but should work
 
 ## Setup Via Browser Plugin
-If you have not access to HTML source or want to have more comfortable stand-by mode management, we recommend to use browser plugins:
+If you dont have access to HTML source or want to have a more comfortable stand-by management mode, we recommend using browser plugins:
 
 1. [Google Chrome plugin](https://chrome.google.com/webstore/detail/testissimo/kbndfdpfemdihkbgpaggicjhmfaeeobh?hl=en )
 2. [Mozilla Firefox plugin](https://www.dropbox.com/s/x80m0fzcprgplau/testissimo-0.2.8-an%2Bfx.xpi?dl=1)
@@ -15,14 +15,15 @@ If you have not access to HTML source or want to have more comfortable stand-by 
 4. Microsoft Edge - in future
 
 ## Manual Setup Via HTML Script
-Testissimo client is written in javascript, so it can be part of your web application, just insert this script to the HTML head tag before any other scripts, on every page you want to test:
+Testissimo client is written in JavaScript, so it can be part of your web application. To accomplish this, just insert the script below to the HTML head tag before any other scripts, on every page you want to test:
 
 ```html
 <script src="https://app.testissimo.io/testissimo-standby.min.js"></script>
 ```
 
-Testissimo will remain in standby mode (not loaded by the browser). To activate it, place somewhere in url **testissimo=true**, e.g. yourapp.com?testissimo=true or yourapp.com#testissimo=true. Activation state remains in session storage, so it stays active while you did not deactivate it. To do so, just place **testissimo=false** into url.
+Testissimo will remain in standby mode (not loaded by the browser). To activate it, place **testissimo=true** somewhere in url, e.g. yourapp.com?testissimo=true or yourapp.com#testissimo=true. 
+Activation state remains in session storage, so it stays active until you deactivate it. To do so, just place **testissimo=false** into url.
 
-For better performance, you can download [https://app.testissimo.io/testissimo-standby.min.js](https://app.testissimo.io/testissimo-standby.min.js) script into your app, or copy-paste its content directly into script tag.
+For better performance, you can download [https://app.testissimo.io/testissimo-standby.min.js](https://app.testissimo.io/testissimo-standby.min.js) script into your app, or copy-paste its content directly into the script tag.
 
-Keep in mind that this script must be in every tested page if your app is not single-page.
+Keep in mind that this script must be in every tested page if your app is not single-page app.
