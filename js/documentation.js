@@ -27,7 +27,7 @@ new Vue({
 			app.page.id = pageId;
 			app.page.index = app.sitemap.map(function(pageInfo){ return pageInfo.id; }).indexOf(pageId);
 			app.page.content = '';
-			app.page.title = app.page.index === -1 ? 'Documentation' : app.sitemap[app.page.index].title;
+			app.page.title = app.page.index === -1 ? '' : app.sitemap[app.page.index].title;
 
 			// scroll to top
 			window.scrollTo(0,0);
