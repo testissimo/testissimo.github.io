@@ -29,8 +29,7 @@ There is special stop action, just type "stop" where you want to stop the run an
 Although headless runs work same as the manual runs, there are headless logs and reports generated with running headless. You need to pass special parameters to Testissimo via url, if you want to do this.
 
 ### Create Headless Url 
-By clicking the icon inside tab of resource you want to run headless - often it will be the test suite.
-
+To generate a headless url, click the icon in the middle of the toolbar. You will use this feature often with Test Suites  
 ![](/documentation/images/headless_link.png)
 
 Headless url template:  
