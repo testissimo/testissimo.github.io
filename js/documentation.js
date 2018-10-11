@@ -48,6 +48,9 @@ new Vue({
 				app.getSitemapPromise().then(function(){
 					app.loadPage(to.params.id);
 				});
+
+				// for google analytics tracking purpose
+				if(window.onVueRouteChange) window.onVueRouteChange(to, from);
 			}
 		}
 	}
