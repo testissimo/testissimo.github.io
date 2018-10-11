@@ -1,78 +1,87 @@
 
-#showdownDiv {
-    padding-top : 50px;
-}
-#showdownDiv ul {
+#documentation ul {
     list-style: disc;
     list-style-position: inside;
     padding: 0px;
     margin: 0px;
 }
 
-#showdownDiv ul li{
+#documentation ul li{
     margin-left : 20px;
     list-style: disc;
     list-style-position: inside;
-    
 }
 
-#showdownDiv ol li {
+#documentation ol li {
     margin-left: 20px;
     list-style: decimal;
     list-style-position: inside;
 }
-#showdownDiv h1 {
+#documentation h1 {
     padding-bottom: 20px;
-    font-weight: 700;
 }
-#showdownDiv h2, h3, h4, h5 {
+#documentation h2, h3, h4, h5 {
     padding-bottom: 10px;
     padding-top: 10px;
-    font-weight: 700;
 }
-#showdownDiv img {
-    display : block;
-    margin: 40px auto;
-    max-width: 1000px;
-}
-#showdownDiv a {
-    font-weight: 700;
+
+#documentation a {
     color: #4bc28b;
+    text-decoration: none;
+    font-weight: normal;
 }
-#showdownDiv a:hover {
-    color : #1d6145;
+
+#documentation a:hover {
+    color: #1d6145;
 }
-#breadcrumbs a, #sitemap a {
-    font-weight: 700;
-    color: #444;
+
+#documentation img {
+    display: block;
+    margin: 40px auto;
+    box-shadow: 0px 0px 5px 0px rgba(158,158,158,1);
 }
-#breadcrumbs a:hover, #sitemap a:hover {
-    color : #4bc28b;
+
+#documentation .list-group-item.active {
+    color: #fff;
+    background-color: #4bc28b;
+    border-color: #4bc28b;
 }
-table {
+
+#documentation .list-group-item.active > a {
+    color: #fff;
+}
+
+#documentation table {
     min-width: 100%;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 4px;
     margin-bottom: 35px;
     border-collapse: unset;
 }
-tr :first-child {
-    width: 30%}
-tr :last-child {
+
+#documentation tr :first-child {
+    width: 30%
+}
+
+#documentation tr :last-child {
     border-left: 1px solid rgb(221, 221, 221);
 }
-tr td strong {
+
+#documentation tr td strong {
     border-left: 0px !important;
 }
-td {
+
+#documentation td {
     padding: 5px 20px;
     border-bottom: 1px solid rgb(221, 221, 221);
 }
-th {
+
+#documentation th {
     background-color: rgb(245, 245, 245);
     border-bottom: 1px solid rgb(221, 221, 221);
     padding: 5px 20px;
 }
-tr:last-child td {
+
+#documentation tr:last-child td {
     border-bottom: none;
 }
