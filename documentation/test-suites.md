@@ -1,6 +1,6 @@
 # Test Suites
 
-Test Suites are nothing else than groups or lists of tests to organize test run. They are very useful when running headless. A test suite can be run from another test suite, just use "execute" prefix.
+Put simply, Test Suites are groups or lists of tests organizing a test run. Test Suites are very useful when running headless. A test Suite can be run from another Test Suite, just use the "execute" prefix.
 
 ![](/documentation/images/testsuite.png)
 

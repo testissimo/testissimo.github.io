@@ -40,4 +40,4 @@ The **"Enter"** command focuses the content of the component and also locks sele
 
 ### Call Component Method
 
-To call a component method, you need to find or enter a component first. If you call a method of a previously found component, no matter where (it can be out of currently entered component scope), it will use it as a reference and execute method as its own. In case of multiple entered or found components, the last one will be used.
+To call a component method, you need to find or enter a component first. If you call a method of a previously found component, no matter where (it can be out of currently entered component scope), this component will be used as a reference and its own method will be executed. In case of multiple entered or found components, the last one will be used.
