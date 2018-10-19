@@ -3,8 +3,9 @@
 ## Browser Support
 1. Google Chrome - latest version (old versions are not tested)
 2. Mozilla Firefox - latest version (old versions are not tested)
-3. Internet Explorer 11 - not tested, some design issues may occur but tests should run
-4. Microsoft Edge - not tested, but should work
+3. Safari - latest version (old versions are not tested) **limited storage to 5MB, may not be suitable for large or many repos**
+4. Internet Explorer 11 - not tested, some design issues may occur but tests should run
+5. Microsoft Edge - not tested, but should work
 
 ## Setup Via Browser Plugin
 If you dont have access to HTML source or want to have a more comfortable stand-by management mode, we recommend using browser plugins:
