@@ -10,13 +10,14 @@ new Vue({
 			id: '',
 			title: '',
 			content: ''
-		}
+		},
+		baseUrl: 'https://testissimo.github.io'
 	},
 	methods:{
 		getSitemapPromise: function(){
 			var app = this;
 			if(!app._sitemapPromise){
-				app._sitemapPromise = app.$http.get('/sitemap.json').then(function(res, status){
+				app._sitemapPromise = app.$http.get(app.baseUrl + '/sitemap.json').then(function(res, status){
 					app.sitemap = res.body;
 				});
 			}
@@ -35,7 +36,7 @@ new Vue({
 			// reset route if page is not in sitemap
 			if(app.page.index === -1 && app.$route.path !== '/') return app.$router.push({ path:'/' });
 			
-			if(pageId) app.$http.get('/documentation/' + app.page.id + '.md').then(function(res, status){
+			if(pageId) app.$http.get(app.baseUrl + '/documentation/' + app.page.id + '.md').then(function(res, status){
 				app.page.content = res.body;
 			});
 		}
