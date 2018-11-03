@@ -23,6 +23,12 @@ new Vue({
 			}
 			return app._sitemapPromise;
 		},
+		fixMdImagesUrl: function(md){
+			var app = this;
+			return (md || '').replace(/(?:!\[(.*?)\]\((.*?)\))/g, function(md, alt, src){ 
+				return '!['+alt+'](' + (src[0] === '/' ? app.baseUrl + src : src) + ')';
+			});
+		},
 		loadPage: function(pageId){
 			var app = this;
 			app.page.id = pageId;
@@ -37,7 +43,7 @@ new Vue({
 			if(app.page.index === -1 && app.$route.path !== '/') return app.$router.push({ path:'/' });
 			
 			if(pageId) app.$http.get(app.baseUrl + '/documentation/' + app.page.id + '.md').then(function(res, status){
-				app.page.content = res.body;
+				app.page.content = app.fixMdImagesUrl(res.body);
 			});
 		}
 	},
