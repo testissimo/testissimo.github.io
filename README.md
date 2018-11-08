@@ -4,4 +4,4 @@
 Check out Testissimo website: [https://testissimo.io](https://testissimo.io)
 
 ## This repository contains documentation
-You can found it as website here: [https://testissimo.github.io](https://testissimo.github.io)
+You can found it as website here: [https://testissimo.io/documentation](https://testissimo.io/documentation)
