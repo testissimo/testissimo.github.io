@@ -14,7 +14,8 @@ new Vue({
 			title: '',
 			content: ''
 		},
-		baseUrl: baseUrl
+		baseUrl: baseUrl,
+		imageBaseUrl: 'https://testissimo.github.io'
 	},
 	methods:{
 		getSitemapPromise: function(){
@@ -29,7 +30,7 @@ new Vue({
 		fixMdImagesUrl: function(md){
 			var app = this;
 			return (md || '').replace(/(?:!\[(.*?)\]\((.*?)\))/g, function(md, alt, src){ 
-				return '!['+alt+'](' + (src[0] === '/' ? app.baseUrl + src : src) + ')';
+				return '!['+alt+'](' + (src[0] === '/' ? app.imageBaseUrl + src : src) + ')';
 			});
 		},
 		loadPage: function(pageId){
