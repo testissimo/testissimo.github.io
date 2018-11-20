@@ -1,5 +1,4 @@
 var isOnTestissimoWeb = window.location.host === 'testissimo.io';
-var baseUrl = isOnTestissimoWeb ? '/documentation' : 'https://testissimo.github.io';
 
 new Vue({
 	el: '#documentation',
@@ -14,7 +13,7 @@ new Vue({
 			title: '',
 			content: ''
 		},
-		baseUrl: baseUrl,
+		baseUrl: isOnTestissimoWeb ? '/documentation' : 'https://testissimo.github.io',
 		imageBaseUrl: 'https://testissimo.github.io'
 	},
 	methods:{
