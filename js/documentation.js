@@ -14,7 +14,7 @@ new Vue({
 			content: ''
 		},
 		baseUrl: isOnTestissimoWeb ? '/documentation' : 'https://testissimo.github.io',
-		imageBaseUrl: 'https://testissimo.github.io'
+		imageBaseUrl: 'https://testissimo.github.io/documentation'
 	},
 	methods:{
 		getSitemapPromise: function(){
