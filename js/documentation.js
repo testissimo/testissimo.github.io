@@ -1,3 +1,6 @@
+var isOnTestissimoWeb = window.location.host === 'testissimo.io';
+var baseUrl = isOnTestissimoWeb ? '' : 'https://testissimo.github.io';
+
 new Vue({
 	el: '#documentation',
 	router: new VueRouter({
@@ -11,13 +14,13 @@ new Vue({
 			title: '',
 			content: ''
 		},
-		baseUrl: 'https://testissimo.github.io'
+		baseUrl: baseUrl
 	},
 	methods:{
 		getSitemapPromise: function(){
 			var app = this;
 			if(!app._sitemapPromise){
-				app._sitemapPromise = app.$http.get(app.baseUrl + '/sitemap.json').then(function(res, status){
+				app._sitemapPromise = app.$http.get(app.baseUrl + '/sitemap' + (isOnTestissimoWeb ? '' : '.json')).then(function(res, status){
 					app.sitemap = res.body;
 				});
 			}
@@ -42,7 +45,11 @@ new Vue({
 			// reset route if page is not in sitemap
 			if(app.page.index === -1 && app.$route.path !== '/') return app.$router.push({ path:'/' });
 			
-			if(pageId) app.$http.get(app.baseUrl + '/documentation/' + app.page.id + '.md').then(function(res, status){
+			var pageUrl;
+			if(isOnTestissimoWeb) pageUrl = app.baseUrl + '/' + app.page.id;
+			else pageUrl = app.baseUrl + '/documentation/' + app.page.id + '.md';
+			
+			if(pageId) app.$http.get(pageUrl).then(function(res, status){
 				app.page.content = app.fixMdImagesUrl(res.body);
 			});
 		}
