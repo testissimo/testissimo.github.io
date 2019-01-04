@@ -14,16 +14,16 @@
     ]
 },
 {
-    "title" : "Installation",
-    "id" : "installation",
+    "title" : "Setup",
+    "id" : "setup",
     "children" : [
         {
             "title" : "via script",
-            "id" : "installation-via-script"
+            "id" : "setup-via-script"
         },
         {
             "title" : "via browser plugin",
-            "id" : "installation-via-script"
+            "id" : "setup-via-script"
         }
     ]
 },
