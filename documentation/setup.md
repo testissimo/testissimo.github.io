@@ -8,7 +8,7 @@ This is preferred setup, because it will auto-setup testissimo script on every p
 ## Browser Support
 1. Google Chrome - latest version (old versions are not tested) - plugin available
 2. Mozilla Firefox - latest version (old versions are not tested) - plugin available
-3. Safari - latest version (old versions are not tested) - **limited in browser storage to 5MB, not suitable for large or many repos** - only embed mode, plugin in future
+3. Safari - latest version (old versions are not tested, limited in browser storage to 5MB, not suitable for large or many repos) - only embed mode, plugin in future
 4. Internet Explorer 11 - not tested, some design issues may occur but tests should run - only embed mode, plugin in future
 5. Microsoft Edge - not tested, but should work - only embed mode, plugin in future
 
