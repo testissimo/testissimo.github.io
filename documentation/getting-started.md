@@ -5,7 +5,7 @@ See [setup](#/setup) if you haven't setup Testissimo yet.
 ## Creating a User
 After a successful setup of Testissimo, you will see the Testissimo container. Below the login form is the "Sign Up" button - click it to create a new user.
 
-![](/documentation/images/user_create.png)
+![](/documentation/images/user_signup.png)
 
 ## Create First Repository
 Now that you are logged in, let's create the first repo.
