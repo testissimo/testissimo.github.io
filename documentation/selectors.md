@@ -18,7 +18,7 @@ As CSS selectors are a standard and common feature in web development you can fi
 
 As a cheat-sheet we like to use this website, where you can find a full description of CSS selectors capabilities 
 **[CSS selectors reference](https://www.w3schools.com/cssref/css_selectors.asp)** 
-Testissimo supports all of CSS3 selectors and adds custom, extended syntax to fulfill all searching needs.
+Testissimo supports many useful CSS3 selectors and adds custom, extended syntax to fulfill all searching needs. Read below to discover more.
 
 
 ## Selector Combinators 
