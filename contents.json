@@ -1,19 +1,18 @@
 [
     { 
-        path:'tutorials/setup',
-        title: 'First Time Setup',
-        snippet: 'Create user, new repository and start writing your first test',
-        level: 2,
-        content:'<h2>Content</h2>'
+        "path": "tutorials/setup",
+        "title": "First Time Setup",
+        "snippet": "Create user, new repository and start writing your first test",
+        "level": 2
     },
     {
-        path: 'manuals/selectors',
-        title: 'Selectors',
-        snippet: 'Complete selectors reference'
+        "path": "manuals/selectors",
+        "title": "Selectors",
+        "snippet": "Complete selectors reference"
     },
     {
-        path: 'howtos/example',
-        title: 'Menu traversing',
-        snippet: 'ad asd asdasdasd dasda sd'
+        "path": "howtos/example",
+        "title": "Menu traversing",
+        "snippet": "ad asd asdasdasd dasda sd"
     },
 ]
