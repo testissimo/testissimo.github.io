@@ -3,6 +3,7 @@
         "path": "tutorials/setup",
         "title": "First Time Setup",
         "snippet": "Create user, new repository and start writing your first test",
+        "tags":["first-start","repeated-start"],
         "level": 2
     },
     {
