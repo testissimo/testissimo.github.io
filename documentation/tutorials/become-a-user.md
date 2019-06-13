@@ -7,6 +7,6 @@ After that, Testissimo will send you an email to confirm your account. Once you 
 If you are already a user, click Login and enter your email and password
 
 Login/Sign up Form: 
-![Login/Sign up Form](../images/bu-login.png "Logo Title Text 1")
+![Login/Sign up Form](../documentation/images/user_signup.png "Logo Title Text 1")
 
 It takes only a few steps to become a Testissimo user. Once you log in or sign up, you can start actively using the tool.
