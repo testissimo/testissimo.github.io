@@ -11,6 +11,6 @@ Login/Sign up Form:
 2. You will receive an email to confirm your account:
     - Once you confirm account, you can change both username and password according to personal preferences
     
-If you are **current user**, simply *login* by entering your email and password
+If you are a **current user**, simply *login* by entering your email and password
 
 It takes only a few steps to become a Testissimo user. Once you are logged in (signed up), you can immediately start using the tool.
