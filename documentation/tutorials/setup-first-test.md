@@ -1,12 +1,15 @@
 # SET UP YOUR FIRST TEST
 
-You became a new user of Testissimo app with creating your account quickly and simply. Now is a time for next step: creating a new repository.
-REPOSITORIES = REPOS
+Before you start writing tests, make sure you first set up **tests** and **repositories**. That way every new test will be organized in order to make easier for you to navigate through your content.
 
-In Testissimo, repositories are shortly called repos. We will be reffering to them as repos in the rest of the documentation. They follow the logic of git repos, so calling them this way might be easier for you to grasp their concept. You cn find out more about repositories here
+In Testissimo, **repositories** are reffered to as **repos**. They follow the logic of git repos, You can find out more about repositories here.
 
-1. CREATE NEW REPO
-Whenever you start a new testing project, creating a repo is the first step to take. po. It is a first step in setting up a test. 
+## 1. CREATE NEW REPO
+Whenever you want to start a new testing, creating a repo is the first step to take. It is also a step necessary to take in order to set up a test. 
+
+
+
+
 
 To do that, you have to first click on Repos. Once the drawer opens, you will see the Local repos and Remote repos list, and a + sign next to them on right. Click on a + sign to create a new one.
 The drawer will open and you can here set up a name and choose if you want to make the repo private. After that, simply click + Create new repo. 
