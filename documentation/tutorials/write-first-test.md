@@ -13,5 +13,10 @@ Your repo will be empty considering there are still no components to use in the 
 
 (pic)
 
+select: #test-input:visible
+do write: hello
+do clear
+
+
 ! basic editor overview, where to find list of all actions available, (hint: clicking on browser addon icon starts testissimo client with current url as tested app)
 
