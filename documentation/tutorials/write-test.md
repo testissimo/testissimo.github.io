@@ -1,5 +1,12 @@
 # Write your first test
 
+**In this tutorial you will learn to:**
+> - Find and open test you created
+> - Navigate through basic testing layout
+> - Start writing tests
+> - Interact between writing a test and tested app 
+> - Use a few shortcuts
+
 ## Test Container
 In order to start writing your first test, you first have to **open test container** where you will write code that will enable you to test your applications.
 
@@ -14,9 +21,9 @@ As you can see, the test will open by opening a new container. Here is a short *
 (writeTest0)
 
 Before we show you how to test your applications with Testissimo, let's first give you one very **handy hint**:
-By clicking anywhere in write area, if you press Ctrl + Space (Windows) on your keyboard, a list of all the main **actions, assertions, and repeaters** will open. This will be your **cheatsheet** while writing tests, to help you figure out the next step:
+> By clicking anywhere in write area, if you press **Ctrl + Space** (Windows) on your keyboard, a list of all the main **actions, assertions, and repeaters** will open. This will be your **cheatsheet** while writing tests, to help you figure out the next step
 
-(writeTest2)
+> (writeTest2)
 
 
 ## Start writing tests
