@@ -62,9 +62,11 @@ You can access them on **Home** page, *selecting* **Repos** **Local** list and t
 (createFinal)
 
 **HINTS**:
-> Pay attention to how you name your folder/project - make sure that 
-> ***Download (checkout)*** the **newly created Repo** and that way switch it from **Remote** to **Local** mode. This way you are saving your Repo to Testissimo server.
-> You can after access repos and change them to **Remote** status whenever you want. In further tutorials there will be more about management settings.
+> Pay attention to how you name your folder/project - make sure that
+
+> ***Download (checkout)*** the **newly created Repo** and that way switch it from **Remote** to **Local** mode. This way you are saving your Repo to Testissimo server
+
+> You can after access repos and change them to **Remote** status whenever you want. In further tutorials there will be more about management settings
 
 
 
