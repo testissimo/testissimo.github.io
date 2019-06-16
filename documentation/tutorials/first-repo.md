@@ -59,7 +59,7 @@ Now that you learned to create Repos and Tests, just to give you a quick note on
 
 You can access them on **Home** page, *selecting* **Repos** **Local** list and then a **Repo** you want to create a new test in, or access already saved one:
 
-![createFinal](https://testissimo.github.io/documentation/images/createFinal.png)
+![createFinal](https://testissimo.github.io/documentation/images/createFinal0.png)
 
 **HINTS**:
 > Pay attention to how you name your folder/project - make sure that
