@@ -9,7 +9,7 @@
 ## Running a Test
 You can **run a Test** or any resource by *clickicng* **Play button** **[1]**. Next to it ou will find a **Stop button** **[2]**. **Stop** is useful when the test or UI freezes or if some error stops test from running. 
 
-![RunDebug1](https://testissimo.github.io/documentation/images/RunDebug1.png)
+![RunDebug1](https://testissimo.github.io/documentation/images/ReunDebug1.png)
 
 When **error** is displayed, the whole Testissimo becomes **read-only**. This enables you to traverse through the source and see a current state of **variables** in the scope, **selectors** and entered **components**. 
 - *Click* **Stop** to end this state and make Testissimo editable again
