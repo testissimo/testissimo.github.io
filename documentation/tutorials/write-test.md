@@ -69,7 +69,7 @@ do clear
 ```
 
 **HINTS:**
-> Choose **Ctrl + Space** (Windows) on your keyboard to open shortcut for list of Actions, Assertions, and Repeaters
+> Press **Space**, **Ctrl + Space** (Windows) or **Cmd + Space** (OSX) on your keyboard to open shortcut for list of Actions, Assertions, and Repeaters
 
 > Click on the **Testissimo browser add on icon** and activate the app with current website
 
