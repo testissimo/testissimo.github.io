@@ -18,7 +18,7 @@ You will have to click on **Tests [1]**, and when list of all the Tests created 
 
 As you can see, the test will open by opening a new container. Here is a short **overview of a test container** and its functions:
 
-![writeTest2](https://testissimo.github.io/documentation/images/writeTest0.png)
+![writeTest2](https://testissimo.github.io/documentation/images/writeTest.png)
 
 Before we show you how to test your applications with Testissimo, let's first give you one very **handy hint**:
 > By clicking anywhere in write area, if you press **Ctrl + Space** (Windows) on your keyboard, a list of all the main **actions, assertions, and repeaters** will open. This will be your **cheatsheet** while writing tests, to help you figure out the next step
