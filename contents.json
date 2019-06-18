@@ -111,17 +111,5 @@
     "path": "references/headless-run-options",
     "title": "Headless Run Options",
     "snippet": "Setup headless runs with more specific options."
-  },
-
-
-  {
-    "path": "how-tos/testing-forms",
-    "title": "Testing basic forms",
-    "snippet": "Warm up by having fun with these basic form elements."
-  },
-  {
-    "path": "how-tos/testing-catalogue",
-    "title": "Testing e-shops and catalogues",
-    "snippet": "Select a functionality and test if it really works - on any website."
   }
 ]
