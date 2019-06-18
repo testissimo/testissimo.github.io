@@ -1,5 +1,13 @@
 # Become a user
-Now that you have successfully set up the tool, **Testissimo container** will open on the left side of your screen by default. If you are a new user or a registered user not logged in, a **Login form** will appear in the middle of the Testissimo drawer:
+
+#what 
+In this section you will guided through the sign-up process of **Testissimo**
+#why
+Upon successful setting up of **Testissimo** a registration process is required.
+#how
+Register by filling in the form and verifying your identity by clicking the link in the verification e-mail sent to your adress.
+You will be able to login after you completed the above-mentioned steps.
+<!-- Now that you have successfully set up the tool, **Testissimo container** will open on the left side of your screen by default. If you are a new user or a registered user not logged in, a **Login form** will appear in the middle of the Testissimo drawer:
 
 i made a change here
 
@@ -14,4 +22,4 @@ i made a change here
     
 If you are a **current user**, simply ***login*** by entering your email and password
 
-It takes only a few steps to become a Testissimo user. Once you are logged in (signed up), you can immediately start using the tool.
+It takes only a few steps to become a Testissimo user. Once you are logged in (signed up), you can immediately start using the tool. -->
