@@ -18,8 +18,13 @@ To create your first Repo complete the steps bellow:
 3. Click the Plus button
 4. Name your repository and click Create New Repo
 
+// tu bude gifko s krokmi vyssie
+
 At this point your Repo is remote. In order to follow the VCS standards, you now need to Download (checkout) your newly created Repo.
 You can do so by **clicking the Download (Checkout) button** right next to your Repo.
+
+// tu bude gifko s kliknutim na download repo
+
 #what
 Once you have created your first Repo you can create your first Test.
 #why
@@ -32,6 +37,8 @@ _a new tab will open - this tab will contain every test (and later also componen
 3. Select Tests
 4. Click the Plus button
 5. Name your first test and click Create Test
+
+// tu bude gifko s krokmi vyssie
 
 Congratulations, now you have created your first Repo and your first Test.
 Check out the next section about writing simple tests!
