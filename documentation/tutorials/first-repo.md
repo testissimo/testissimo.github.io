@@ -1,14 +1,46 @@
 # First Repo and Test set up
 
+#what
 **In this tutorial you will learn to:**
 > - Create your first Repo
 > - Save your Repos to Testissimo server
-> - Set up yur first Test
-> - Find and access newly created Repos and Tests
+> - Set up your first Test
 
-Before you start writing tests, make sure you first set up **tests** and **repositories**. That way every new test will be organized and it will be easier for you to navigate through content.
+#why
+In Testissimo, **Repositories (repos)** are the key asset to writing maintainable tests. Repositories in Testissimo are no different from repositories in any other VCS.
+If you never heard of VCS before, make sure to read the VCS section in the How-Tos category.
 
-In Testissimo, **repositories** are reffered to as **repos**. They follow the logic of git repos, so it shouldn't be hard to grasp their concepts.
+#how
+## Create you first Repo
+To create your first Repo complete the steps bellow:
+1. Navigate to Home 
+2. Select Repos
+3. Click the Plus button
+4. Name your repository and click Create New Repo
+
+At this point your Repo is remote. In order to follow the VCS standards, you now need to Download (checkout) your newly created Repo.
+You can do so by **clicking the Download (Checkout) button** right next to your Repo.
+#what
+Once you have created your first Repo you can create your first Test.
+#why
+- ???
+#how
+To create you first Test complete the steps below:
+1. Click the **Local** button right next to **Repos**
+2. Select your newly created Repo
+_a new tab will open - this tab will contain every test (and later also components and test suites)_
+3. Select Tests
+4. Click the Plus button
+5. Name your first test and click Create Test
+
+Congratulations, now you have created your first Repo and your first Test.
+Check out the next section about writing simple tests!
+
+
+HINTS:
+- In Testissimo, you can created folders for tests. This feature allows you to achieve better maintainibility by organization and categorization.
+
+<!-- In Testissimo, **repositories** are reffered to as **repos**. They follow the logic of git repos, so it shouldn't be hard to grasp their concepts.
 
 ## Create your first Repo
 Whenever you want to start a new testing, creating a repo is the first step to take. ***It is also a step necessary to take in order to set up a test**. 
@@ -75,4 +107,4 @@ You can access them on **Home** page, *selecting* **Repos** **Local** list and t
 
 
 
-
+ -->
