@@ -7,7 +7,7 @@
 > Debug a test
 
 ## Running a Test
-You can **run a Test** or any resource by *clicking* **Play button** **[1]**. Next to it, there is a **Stop button** **[2]**, which is useful when the test or UI freezes or if some error stops the test from running. 
+You can **run a Test** or any resource by *clicking* **Play button**. Next to it, there is a **Stop button**, which is useful when the test or UI freezes or if some error stops the test from running. 
 
 When **error** is displayed, the whole Testissimo becomes **read-only**. This enables you to traverse through the source and see a current state of **variables** in the scope, **selectors** and entered **components**. 
 - *Click* **Stop** to end this state and make Testissimo editable again
