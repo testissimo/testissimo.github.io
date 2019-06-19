@@ -8,8 +8,8 @@
 In Testissimo, **Repositories (repos)** are the key asset to writing maintainable tests. Repositories in Testissimo are no different from repositories in any other VCS.
 If you never heard of VCS before, make sure to read the Additional Info below.
 
-## Create you first Repo
-To create your first Repo complete the steps bellow:
+## Create your first Repo
+To create your first Repo complete the steps below:
 1. Navigate to **Home** 
 2. Select **Repos**
 3. Click the **plus** button
@@ -39,12 +39,12 @@ Check out the next section about writing simple tests!
 
 ## Additional info
 ### VCS
-VCS stands for Version-Control-System. As maintainibility is valued utmost in Testissimo, there is a VCS solution provided out of the box in Testissimo.
+VCS stands for Version-Control-System. As maintainability is valued utmost in Testissimo, there is a VCS solution provided out of the box in Testissimo.
 Repositories are stored at the Testissimo server. In order to make changes or otherwise edit these repositories, a copy of their current state is needed.
 The process of downloading a copy of the current state of a repository is called Checkout. 
 Once a selected repository is downloaded (checked out) in Testissimo, this repository can be edited. 
 Any changes (i.e. new tests added, new components creations, ...) to any parts of a repository are called Changes. 
-The amount of changes to a Repo can be previewed in Repos > Local tab. 
+The number of changes to a Repo can be previewed in Repos > Local tab. 
 After a set of meaningful changes to a repository, these changes should be uploaded back to the server. This is called Pushing Local Changes. 
 The reason for pushing changes to a remote server is simple. 
 Once these changes are pushed and applied to the Remote Repo - users with access to this repository are informed about these changes and can apply them simply by Downloading (Pulling) and Merging Remote Changes. 
