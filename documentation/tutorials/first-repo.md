@@ -12,7 +12,7 @@ If you never heard of VCS before, make sure to read the Additional Info below.
 To create your first Repo complete the steps bellow:
 1. Navigate to **Home** 
 2. Select **Repos**
-3. Click the p**plus** button
+3. Click the **plus** button
 4. Name your repository and click **Create New Repo**
 
 // tu bude gifko s krokmi vyssie
