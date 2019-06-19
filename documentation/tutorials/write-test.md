@@ -1,75 +1,57 @@
 # Write your first test
 
 **In this tutorial you will learn to:**
-> - Find and open test you created
-> - Navigate through basic testing layout
+> - Find and open the test you created
 > - Start writing tests
-> - Interact between writing a test and tested app 
-> - Use a few shortcuts
+> - Basic shortcuts usage
 
 ## Test Container
-In order to start writing your first test, you first have to **open test container** where you will write code that will enable you to test your applications.
+In order to start writing your first test, navigate to the **Tests** tab. 
 
-Since you already created your first **Repo** and then **Test** inside that Repo, simply go to your **Repos list**, and then select a Repo in which you saved the Test you will use to test your application. Once selected Repo opens, it should show you listed **Tests**, **Components**, and **Test Suites**.
+**Complete the steps below:**
+1. Navigate to Home
+2. Select Repos
+3. Select the Repo you wish to write a test in
+4. Select the Test you want to write in
 
-You will have to click on **Tests [1]**, and when list of all the Tests created in that Repo shows, select the **Test** you want to use. We already created Test named ***new test***, so let's select that one **[2]**:
+gif about navigating to a concrete test (the test is already created)
+ 
+## Start writing a simple test
+<!-- Testissimo makes writing tests quite easy. You will see that code is simple, and follows a logic of you actions and assertions.  -->
+**There are two ways to access a web application you will test:**
+- Put an *url* of a web application into the **url tab**
+- Go to the website, *click* the **Testissimo browser plugin icon** and Testissimo app will activate
 
-![writeTest1](https://testissimo.github.io/documentation/images/writeTest1.png)
+# Write your first test
+A simple example of a Testissimo test is asserting Google Search results.
+In this example Testissimo will assert the first Google Search result of the "testissimo" search query.
 
-As you can see, the test will open by opening a new container. Here is a short **overview of a test container** and its functions:
+The test structure is shown below:
+1. Select the input text field for searching
+2. Type in "testissimo"
+3. Click the "Google Search" button
+4. Select the first result
+5. Make sure that this result contains the link to the Testissimo website
+<!-- We will guide you through the writing of this test. -->
 
-![writeTest2](https://testissimo.github.io/documentation/images/writeTest.png)
+gif (Google - write Testissimo - search)
 
-Before we show you how to test your applications with Testissimo, let's first give you one very **handy hint**:
-> By clicking anywhere in write area, if you press **Space** or **Ctrl + Space** (Windows), or **Cmd + Space** (OSX) on your keyboard, a list of all the main **actions, assertions, and repeaters** will open. This will be your **cheatsheet** while writing tests, to help you figure out the next step
-
-> ![writeTest3](https://testissimo.github.io/documentation/images/writeTest2.png)
-
-## Start writing tests
-Testissimo makes writing tests quite easy. You will see that code is simple, and follows a logic of you actions and assertions. First, just to give you a short insight into how Testissimo testing actually works:
-
-Inside the application, Testissimo container will be on the left side by default. On the right side, there will be a website opened, depending on url that is put in **url tab**. Here ***you can copy-paste the url*** of your application. 
-
-> While on a website, you can *click* on a **Testissimo browser add on icon** - Testissimo app will activate and open, with that same website as main url.
-
-Now, let's see how to **write a test**. Let's say we want to test a part of Testissimo Demo Tutorial and if the input tab succesfully writes in and then erases input:
-
-![writeTest4](https://testissimo.github.io/documentation/images/writeTest3.png)
-
-You can see previously described layout here. Following the nature of this task, you will first have to choose a part of application you want to test. In code, *write* **"select" [1]**. Now, you can *click* on **Pick [2]** if  you are going to manualy pick the part of application. We will pick a **text tab** by *clicking* on it **[3]**. Options for the **Pick element** will open - we will *click* on **arrow sign** to *confirm* our selected *div* **[4]**.
-Notice that the full *div* name will be written on the top.
-
-By confirming selected *div*, Testissimo writes it in a code autamatically with its full name:
-
-![writeTest5](https://testissimo.github.io/documentation/images/writeTest4.png)
-
-The next step would be to do some action with selected *div*. We want to see if it writes in some text, so we can type in do and then select or type further **write** **[1]**. Next to it we can type in whatever text we want **[2]**: 
-
-![writeTest6](https://testissimo.github.io/documentation/images/writeTest5.png)
-
-Let's type in **"hello"**. Now, let's **run** the test nd see what happens:
-
-![writeTest7](https://testissimo.github.io/documentation/images/writeTest6.png)
-
-As you can see, test run succesfully, and **"hello"** got written into a text tab.
-
-We can now choose some different action ar assertion. Let's check if it will erase the written text if we *write* in code **do** and then select or write **clear** **[1]**. Let's run a test again **[2]**:
-
-![writeTest8](https://testissimo.github.io/documentation/images/writeTest7.png)
-
-As we can see, the test run sucessfully and the text tab cleared.
-
-Now you have all the basic information and skills needed and you can start testing your applications.
-
-**Example's Code:**
+**Example's code:**
 ```
-select: #test-input:visible
-do write: hello
-do clear
+select: input:visible[type="text"][name="q"][value=""][aria-label="Search"]
+do write: Testissimo
+
+select: div.UUbT9 input:visible[name="btnK"][type="submit"][value="Google Search"][aria-label="Google Search"]
+
+do click
+
+select: div:visible[data-hveid]:first
+assert element(s) text contains: https://testissimo.io
 ```
 
-**HINTS:**
-> Press **Space**, **Ctrl + Space** (Windows) or **Cmd + Space** (OSX) on your keyboard to open shortcut for list of Actions, Assertions, and Repeaters
+## Additional info
+Before you start writing tests, take a notice that you can access list of all the main Actions, Assertions, and Repeaters you can use by a shortcut:
+> Press **Space** or **Ctrl + Space** (Windows), or **Cmd + Space** (OSX) on your keyboard
 
-> Click on the **Testissimo browser add on icon** and activate the app with current website
+
 
