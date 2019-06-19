@@ -9,8 +9,8 @@
 In order to start writing your first test, navigate to the **Tests** tab. 
 
 **Complete the steps below:**
-1. Navigate to Home
-2. Select Repos
+1. Navigate to **Home**
+2. Select **Repos**
 3. Select the Repo you wish to write a test in
 4. Select the Test you want to write in
 
