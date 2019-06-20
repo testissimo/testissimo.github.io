@@ -9,3 +9,5 @@ Testissimo is web application, so only web browser with Testissimo plugin is req
 * ![](/documentation/images/icon-edge.png) *Microsoft Edge* - will be supported in future
 
 And open [Testissimo App](https://app.testissimo.io "Testissimo App"), or click on the plugin icon:
+
+![](/documentation/images/setup-plugin-hint.gif)
