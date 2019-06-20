@@ -1,6 +1,6 @@
 # Set Up Testissimo
 
-Testissimo is web app, so only web browser with Testissimo plugin is required.
+Testissimo is web application, so only web browser with Testissimo plugin is required.
 
 **Just install browser plugin:**
 
