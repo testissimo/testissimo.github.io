@@ -6,5 +6,5 @@ To identify repositories created by you in remote repositories listing.
 Your email is hidden, so even if you create public repository only your nick and repository name is visible.
 
 ## Don't forget to confirm your email
-After successful sign up, confirmation email will be sent to you.
+After successful sign up, confirmation email will be sent to you.  
 Just open it and click on confirmation link.
