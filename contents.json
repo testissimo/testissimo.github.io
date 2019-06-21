@@ -3,19 +3,20 @@
       "path": "tutorials/setup",
       "title": "First Time Setup",
       "snippet": "Set up Testissimo and start writing your first tests.",
-      "tags":["first-start","repeated-start"],
       "level": 1
   },
   { 
     "path": "tutorials/become-a-user",
     "title": "Become a User",
     "snippet": "Sign up and log in to your account.",
+    "tags":["first-start"],
     "level": 1
   },
   { 
     "path": "tutorials/first-repo",
     "title": "First Repo and Test Setup",
     "snippet": "Create your first repository for your tests.",
+    "tags":["repeated-start"],
     "level": 1
   },
   { 
