@@ -1,9 +1,9 @@
 # First Repo and Test set up
 
 **In this tutorial you will learn to:**
-> - Create your first Repo
-> - Save your Repos to Testissimo server
-> - Set up your first Test
+- Create your first Repo
+- Save your Repos to Testissimo server
+- Set up your first Test
 
 In Testissimo, **Repositories (repos)** are the key asset to writing maintainable tests. Repositories in Testissimo are no different from repositories in any other VCS.
 If you never heard of VCS before, make sure to read the Additional Info below.
