@@ -51,6 +51,7 @@ assert element(s) text contains: https://testissimo.io
 
 ## Additional info
 Before you start writing tests, take a notice that you can access list of all the main Actions, Assertions, and Repeaters you can use by a shortcut:
+
 Press **Space** or **Ctrl + Space** (Windows), or **Cmd + Space** (OSX) on your keyboard
 
 
