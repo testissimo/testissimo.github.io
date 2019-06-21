@@ -1,5 +1,5 @@
 # Become a user
-![VIDEO-368](/documentation/videos/become-a-user-signup.mp4)
+![VIDEO-338-368](/documentation/videos/become-a-user-signup.mp4)
 
 ## Why unique nick ?
 To identify repositories created by you in remote repositories listing.  
