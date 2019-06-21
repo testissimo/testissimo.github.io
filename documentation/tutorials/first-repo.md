@@ -41,13 +41,13 @@ Check out the next section about writing simple tests!
 ### VCS
 * **VCS** - Version-Control-System
 * **Repositories** - folders containing tests, components, component methods and test suites (in Testissimo)
-  * **Public Repos** - repos visible and accessible to all users.
-  * **Private Repos** - repos visible only to you as the owner by default and for other users selected by manually adding users in Access Management settings.
-  * **Remote** - repos stored at Testissimo server, downloadable and editable afterwards 
-  * **Local** - repos downloaded from Testissimo server, editable and runable
+    * **Public Repos** - repos visible and accessible to all users.
+    * **Private Repos** - repos visible only to you as the owner by default and for other users selected by manually adding users in Access Management settings.
+    * **Remote** - repos stored at Testissimo server, downloadable and editable afterwards 
+    * **Local** - repos downloaded from Testissimo server, editable and runable
 * **Actions** - VCS provides many actions for users to keep their code maintainable and consistent
-  * **Pulling** - downloading changes from a remote repository
-  * **Pushing** - uploading  changes to a remote repository
+    * **Pulling** - downloading changes from a remote repository
+    * **Pushing** - uploading  changes to a remote repository
 
 
 
