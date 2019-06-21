@@ -39,7 +39,21 @@ Check out the next section about writing simple tests!
 
 ## Additional info
 ### VCS
-VCS stands for Version-Control-System. As maintainibility is valued utmost in Testissimo, there is a VCS solution provided out of the box in Testissimo.
+- **VCS** - Version-Control-System
+- **Repositories** - folders containing tests, components, component methods and test suites (in Testissimo)
+  - **Public Repos** - repos visible and accessible to all users.
+  - **Private Repos** - repos visible only to you as the owner by default and for other users selected by manually adding users in Access Management settings.
+-----------------------
+  - **Remote** - repos stored at Testissimo server, downloadable and editable afterwards 
+  - **Local** - repos downloaded from Testissimo server, editable and runable
+- **Actions** - VCS provides many actions for users to keep their code maintainable and consistent
+  - **Pulling** - downloading changes from a remote repository
+  - **Pushing** - uploading  changes to a remote repository
+
+
+
+<!-- VCS stands for Version-Control-System. 
+As maintainibility is valued utmost in Testissimo, there is a VCS solution provided out of the box in Testissimo.
 Repositories are stored at the Testissimo server. In order to make changes or otherwise edit these repositories, a copy of their current state is needed.
 The process of downloading a copy of the current state of a repository is called Checkout. 
 Once a selected repository is downloaded (checked out) in Testissimo, this repository can be edited. 
@@ -49,10 +63,10 @@ After a set of meaningful changes to a repository, these changes should be uploa
 The reason for pushing changes to a remote server is simple. 
 Once these changes are pushed and applied to the Remote Repo - users with access to this repository are informed about these changes and can apply them simply by Downloading (Pulling) and Merging Remote Changes. 
 The process of Pushing and Pulling changes is the integral of any VCS solution.
-Merging is the process of choosing the fitting change from two different versions. In Testissimo, merging is implemented in the same way as in other popular Version Control Systems.  
+Merging is the process of choosing the fitting change from two different versions. In Testissimo, merging is implemented in the same way as in other popular Version Control Systems.   -->
 
-### Public and Private Repo settings
+<!-- ### Public and Private Repo settings
 While working with your Repos, you can use the Private/Public Repo settings.
 - **Public Repos** - repos visible and accessible to all users.
-- **Private Repos** - repos with Private settings are only visible to you as the owner by default. You can still manage access by manually adding users in Access Management settings.
+- **Private Repos** - repos with Private settings are only visible to you as the owner by default. You can still manage access by manually adding users in Access Management settings. -->
 
