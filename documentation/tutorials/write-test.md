@@ -6,7 +6,7 @@
 
 ## Start writing test
 
-(video, example of testing search results)
+(video, example of testing search results, show comments, indent and another editor features)
 
 **Try it yourself**
 ```
