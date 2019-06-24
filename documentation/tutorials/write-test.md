@@ -2,7 +2,7 @@
 
 ## Navigate to test, or create new one
 
-(video)
+If you have not created test already, please see [First Repository And Test Set Up](/documentation/tutorials/first-repo).
 
 ## Start writing test
 
