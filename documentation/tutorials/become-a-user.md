@@ -3,6 +3,7 @@
 
 ## Why unique nick ?
 In Testissimo, repositories are identified by your nick. Hence, the nick needs to be unique. 
+
 Your email is hidden, so even if you create a public repository only your nick and repository name will be visible.
 
 ## Don't forget to confirm your email
