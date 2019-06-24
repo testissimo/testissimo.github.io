@@ -1,7 +1,6 @@
 # Write your first test
 
 ## Navigate to test, or create new one
-
 If you have not created test already, please see [First Repository And Test Set Up](/documentation/tutorials/first-repo).
 
 ## Start writing test
@@ -10,15 +9,21 @@ If you have not created test already, please see [First Repository And Test Set 
 
 **Try it yourself**
 ```
+do navigate to url: https://google.com
+
 select: input:visible[type="text"][name="q"][value=""][aria-label="Search"]
+
 do write: Testissimo
 
 select: div.UUbT9 input:visible[name="btnK"][type="submit"][value="Google Search"][aria-label="Google Search"]
 
 do click
 
-select: div:visible[data-hveid]:first
-assert element(s) text contains: https://testissimo.io
+select: cite:visible:text("https://testissimo.io/")
+
+do click
+
+assert url is: https://testissimo.io/
 ```
 
 ## Where to find all available actions, assertions and repeaters ?
