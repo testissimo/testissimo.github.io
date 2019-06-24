@@ -1,9 +1,9 @@
 ## How to Run and Debug Test
 
-**In this tutorial you will learn to:**
+<!-- **In this tutorial you will learn to:**
 - Run and Stop a test
 - Deal with errors
-- Debug a test
+- Debug a test -->
 
 ## Running a test
 - To **run a test**, click the **Play button**
