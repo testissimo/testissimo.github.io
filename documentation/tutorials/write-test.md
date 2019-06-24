@@ -5,7 +5,7 @@ If you have not created test already, please see [First Repository And Test Set 
 
 ## Start writing test
 
-![VIDEO-529-992](/documentation/videos/write-test.mp4)
+![VIDEO-529-960](/documentation/videos/write-test.mp4)
 
 **Try it yourself**
 ```
@@ -28,4 +28,4 @@ assert url is: https://testissimo.io/
 
 ## Where to find list of available actions, assertions and repeaters ?
 
-![](/documentation/images/write-test.png)
+![](/documentation/images/write-test-actions.png)
