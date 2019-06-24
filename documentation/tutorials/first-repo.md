@@ -1,7 +1,6 @@
 # First Repository And Test Set Up
 
 ## Create repository and test
-
 ![VIDEO-337-367](/documentation/videos/first-repo-test.mp4)
 
 ## Repository editing lifecycle
