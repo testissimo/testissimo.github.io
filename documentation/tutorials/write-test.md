@@ -5,7 +5,7 @@ If you have not created test already, please see [First Repository And Test Set 
 
 ## Start writing test
 
-(video, example of testing search results, show comments, indent and another editor features)
+![VIDEO-529-992](/documentation/videos/write-test.mp4)
 
 **Try it yourself**
 ```
@@ -26,6 +26,6 @@ do click
 assert url is: https://testissimo.io/
 ```
 
-## Where to find all available actions, assertions and repeaters ?
-Press **Space** or **Ctrl + Space** (Windows), or **Cmd + Space** (OSX) on your keyboard
-(video)
+## Where to find list of available actions, assertions and repeaters ?
+
+![](/documentation/images/write-test.png)
