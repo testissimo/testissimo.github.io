@@ -2,7 +2,7 @@
 
 ## Create repository and test
 
-![VIDEO-AUTOPLAY-337-367](/documentation/videos/first-repo-test.mp4)
+![VIDEO-337-367](/documentation/videos/first-repo-test.mp4)
 
 ## Repository editing lifecycle
  1. **Checkout (download)** - download remote repository, it makes a local copy which you can modify
