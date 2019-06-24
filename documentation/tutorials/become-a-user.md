@@ -1,5 +1,5 @@
 # Become a user
-![VIDEO-338-368](/documentation/videos/become-a-user-signup.mp4)
+![VIDEO-AUTOPLAY-338-368](/documentation/videos/become-a-user-signup.mp4)
 
 ## Why unique nick ?
 In Testissimo, repositories are identified by your nick. Hence, the nick needs to be unique. 
