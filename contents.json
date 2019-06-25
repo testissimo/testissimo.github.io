@@ -58,27 +58,27 @@
   { 
     "path": "tutorials/wait-for-element",
     "title": "\"Wait for\" element",
-    "snippet": "Explaining the \"wait for\" elemen.",
+    "snippet": "Explaining the \"wait for\" element.",
     "level": 3
   },
   { 
     "path": "tutorials/test-suites",
-    "title": "Organize Tests with Test Suits",
+    "title": "Test Suites",
     "snippet": "Achieve maintainability by organizing tests into test suites",
     "level": 4
   },
   { 
     "path": "tutorials/components",
-    "title": "Test Components",
+    "title": "Components",
     "snippet": "Understand how to use components in Testissimo",
     "level": 5
   },
-  { 
-    "path": "tutorials/methods",
-    "title": "Test Methods",
-    "snippet": "Use methods to get the best of your components",
-    "level": 5
-  },
+  // { 
+  //   "path": "tutorials/methods",
+  //   "title": "Test Methods",
+  //   "snippet": "Use methods to get the best of your components",
+  //   "level": 5
+  // },
   { 
     "path": "tutorials/components-reusability",
     "title": "Reusability of Components",
