@@ -44,8 +44,8 @@
     "level": 2
   },
   { 
-    "path": "tutorials/test-conditions",
-    "title": "Test Conditions",
+    "path": "tutorials/if-else-conditions",
+    "title": "If-Else Conditions",
     "snippet": "Prepare your tests for different states of the tested app",
     "level": 3
   },
