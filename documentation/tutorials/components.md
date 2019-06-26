@@ -1,13 +1,13 @@
-#Components
+# Components
 
-##What will you learn
+## What will you learn
 In this section, you will learn:
 - about the motivation to abstract 
 - what components are
 - how to use component methods
 - how to design your tests and components to achieve maintainable tests
 
-##Why should you use components
+## Why should you use components
 Let's say your tests cover 100% of use-cases an app provides. 
 Without components, all the elements-selecting and functionality is most likely copied in various places.
 Then, at some point developers decide to change the UI of the app. App functionality doesn't change and neither does the content of the app.
@@ -16,7 +16,7 @@ Such an approach isn't achieving our expectations of maintainability.
 
 Instead, we will now present to you components and methods.
 
-##What are components
+## What are components
 In Testissimo, **components** describe parts of the tested app (i.e. headers, content-holders, menus, links, etc...)
 
 To showcase this, we take an example of Google Contacts layout from Vuetify at [this link](https://www.google.com "Google's Contacts at Vuetify") - if you want to follow this example, navigate to this site in the Testissimo app.
@@ -47,7 +47,7 @@ To achieve our goal, we now need to:
 
 Follow the code snippets below to complete this task:
 
-###Defining components and implementing methods
+### Defining components and implementing methods
 **Side drawer**
 ```
 select: aside:visible
@@ -63,7 +63,7 @@ Both of these components also need an **assert exists** method, which is impleme
 assert element(s) count is greater: 0
 ```
 
-###Using components in testing
+### Using components in testing
 Now that we have everything prepared, let's write a test using these components.
 We want our test to carry out the following:
 1. check if the side-drawer component is present in the app
