@@ -3,7 +3,7 @@
 The lowest level of units in Testissimo code are actions. There are three types of actions: 
 1. **Actions** - user simulated actions (i.e. click, keypress, etc...) 
 2. **Assertions** - value assertions, which will throw an exception if not passed, such as. _assert element(s) count_
-3. **Repeaters** - repeats a block of code inside the repeater
+3. **Repeaters** - repeats a block of code inside the repeater - read more in the **Test Repeaters** tutorial
 
 ## List Of All Available Actions
 To browse the list of all available actions, select the **Actions, Assertions And Repeaters** option in the **Home** tab. 
@@ -25,3 +25,5 @@ Read more in the **Run and Debug Test** tutorial
 For negative assertion, add "not" after prefix, e.g. "assert **not** elements count is: 1"
 
 ![](/documentation/images/assert.png)
+
+Be sure to use the code completion and suggestions by pressing ```Ctrl+Space``` or ```cmd+Space``` (on Mac) at any point of writing code in Testissimo.
