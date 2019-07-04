@@ -1,0 +1,206 @@
+[
+  {
+    "title": "Documentation",
+    "id" : "what-is-testissimo",
+    "children" : [
+      // {
+      //   "title" : "What Is Testissimo ?",
+      //   "id" : "what-is-testissimo",
+      //   "children" : [
+      //     {
+      //       "title" : "e2e testing tool for web applications",
+      //       "id" : "e2e"
+      //     },
+      //     {
+      //       "title" : "Testissimo place in software development",
+      //       "id" : "testissimo-place-in-software-development"
+      //     }
+      //   ]
+      // },
+      {
+        "title" : "Setup",
+        "id" : "setup",
+        "children" : [
+          {
+            "title" : "via script",
+            "id" : "setup-via-script"
+          },
+          {
+            "title" : "via browser plugin",
+            "id" : "setup-via-script"
+          }
+        ]
+      },
+      {
+        "title" : "Getting Started",
+        "id" : "getting-started",
+        "children" : [
+          {
+            "title" : "Sign-up new user",
+            "id" : "sign-up-new-user"
+          },
+          {
+            "title" : "create repo",
+            "id" : "create-repo"
+          }
+        ]
+      },
+      {
+        "title" : "Repositories, Users and Permissions",
+        "id" : "repositories-users-and-permissions"
+      },
+      {
+        "title" : "Concept Of Writing Tests",
+        "id" : "concept-of-writing-tests"
+      },
+      {
+        "title" : "Selectors",
+        "id" : "selectors"
+      },
+      {
+        "title" : "Actions, Assertions And Repeaters",
+        "id" : "actions-assertions-and-repeaters"
+      }, 
+      {
+        "title" : "If-Else Conditions",
+        "id" : "if-else-conditions"
+      },
+      {
+        "title" : "Components And Methods",
+        "id" : "components-and-methods"
+      },
+      {
+        "title" : "Tests",
+        "id" : "tests"
+      },
+      {
+        "title" : "Test Suites",
+        "id" : "test-suites"
+      },
+      {
+        "title" : "Running, Debugging And Headless",
+        "id" : "running-debugging-headless"
+      },
+      {
+        "title" : "Built-in Version Control System (VCS)",
+        "id" : "built-in-vcs"
+      },
+      {
+        "title" : "Keyboard Shortcuts And Guides",
+        "id" : "keyboard-shortcuts-and-guides"
+      },
+      {
+        "title" : "Bugs, Issues And Questions",
+        "id" : "bugs-issues-and-questions"
+      }
+    ]
+  },
+  {
+    "title": "Video tutorials",
+    "id" : "tutorials",
+    "children" : [
+      { 
+        "path": "tutorials/setup",
+        "title": "First Time Setup",
+        "snippet": "Set up Testissimo and start writing your first tests",
+        "level": 1
+      },
+      { 
+        "path": "tutorials/become-a-user",
+        "title": "Become a User",
+        "snippet": "Sign up and log in to your account",
+        "tags":["first-start"],
+        "level": 1
+      },
+      { 
+        "path": "tutorials/first-repo",
+        "title": "First Repo and Test Setup",
+        "snippet": "Create your first repository for your tests",
+        "tags":["repeated-start"],
+        "level": 1
+      },
+      { 
+        "path": "tutorials/write-test",
+        "title": "Write your first Test",
+        "snippet": "Write your very first test in Testissimo",
+        "level": 1
+      },
+      { 
+        "path": "tutorials/run-debug-test",
+        "title": "Run and Debug Test",
+        "snippet": "Run your test, fix failed tests with the help of Testissimo debugger",
+        "level": 1
+      },
+      { 
+        "path": "tutorials/mastering-picker",
+        "title": "Mastering The Picker",
+        "snippet": "Understand what can be done with The Picker",
+        "level": 2
+      },
+      { 
+        "path": "tutorials/variables-reusability",
+        "title": "Test Variables and Reusability",
+        "snippet": "Write maintainable tests with the use of variables",
+        "level": 2
+      },
+      { 
+        "path": "tutorials/if-else-conditions",
+        "title": "If-Else Conditions",
+        "snippet": "Prepare your tests for different states of the tested app",
+        "level": 3
+      },
+      { 
+        "path": "tutorials/test-repeaters",
+        "title": "Test Repeaters",
+        "snippet": "Cycle through data within your tests",
+        "level": 3
+      },
+      { 
+        "path": "tutorials/wait-for-element",
+        "title": "\"Wait for\" element",
+        "snippet": "Explaining the \"wait for\" element.",
+        "level": 3
+      },
+      { 
+        "path": "tutorials/test-suites",
+        "title": "Test Suites",
+        "snippet": "Achieve maintainability by organizing tests into test suites",
+        "level": 4
+      },
+      { 
+        "path": "tutorials/components",
+        "title": "Components",
+        "snippet": "Understand how to use components in Testissimo",
+        "level": 5
+      },
+      { 
+        "path": "tutorials/headless-run",
+        "title": "Headless Runs",
+        "snippet": "Run your tests in a headless enviroment with reports",
+        "level": 5
+      },
+      
+      
+      { 
+        "path": "references/selectors",
+        "title": "Selectors",
+        "snippet": "Need help with some specific way of selecting an element?"
+      },
+      { 
+        "path": "references/actions",
+        "title": "Actions",
+        "snippet": "Got stuck with calling a non-existing action?"
+      },
+      { 
+        "path": "references/testissimo-run-options",
+        "title": "Testissimo Run Options",
+        "snippet": "Your tests aren't working? This might help"
+      },
+      { 
+        "path": "references/headless-run-options",
+        "title": "Headless Run Options",
+        "snippet": "Setup headless runs with more specific options"
+      }
+    ]
+  }
+]
