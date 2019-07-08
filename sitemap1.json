@@ -66,58 +66,58 @@
   {
     "title": "Video Tutorials",
     "id": "video-tutorials",
-    "path": "/tutorials",
+    "path": "/video-tutorials",
     "children":[
       { 
-        "id": "tutorials/setup",
+        "id": "setup",
         "title": "First Time Setup",
       },
       { 
-        "id": "tutorials/become-a-user",
+        "id": "become-a-user",
         "title": "Become a User",
       },
       { 
-        "id": "tutorials/first-repo",
+        "id": "first-repo",
         "title": "First Repo and Test Setup",
       },
       { 
-        "id": "tutorials/write-test",
+        "id": "write-test",
         "title": "Write your first Test",
       },
       { 
-        "id": "tutorials/run-debug-test",
+        "id": "run-debug-test",
         "title": "Run and Debug Test",
       },
       { 
-        "id": "tutorials/mastering-picker",
+        "id": "mastering-picker",
         "title": "Mastering The Picker",
       },
       { 
-        "id": "tutorials/variables-reusability",
+        "id": "variables-reusability",
         "title": "Test Variables and Reusability",
       },
       { 
-        "id": "tutorials/if-else-conditions",
+        "id": "if-else-conditions",
         "title": "If-Else Conditions",
       },
       { 
-        "id": "tutorials/test-repeaters",
+        "id": "test-repeaters",
         "title": "Test Repeaters",
       },
       { 
-        "id": "tutorials/wait-for-element",
+        "id": "wait-for-element",
         "title": "\"Wait for\" element",
       },
       { 
-        "id": "tutorials/test-suites",
+        "id": "test-suites",
         "title": "Test Suites",
       },
       { 
-        "id": "tutorials/components",
+        "id": "components",
         "title": "Components",
       },
       { 
-        "id": "tutorials/headless-run",
+        "id": "headless-run",
         "title": "Headless Runs",
       }
     ]
