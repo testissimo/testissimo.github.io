@@ -59,14 +59,23 @@
                 <div class="container-fluid text-left" style="padding-top:10px">
                     <div v-if="!sitemap" class="text-center">Loading documentation, please wait ...</div>
                     <div class="row">
-                        <div :class="{'col-12':page.index === -1,'col-lg-3 d-none d-lg-block':page.index !== -1}">
+                        <div class="col-3">
                             <ul class="list-group" style="display:table;margin:0 auto;">
+                                <li class="list-group-item">
+                                  Documentation
+                                </li>
                                 <li class="list-group-item" v-for="(navPage,i) in sitemap" :key="navPage.id" :class="{active:i === page.index}">
-                                    <router-link :to="'/'+navPage.id">{{navPage.title}} </router-link>
+                                    - <router-link :to="'/documentation/documentation/'+navPage.id" >{{navPage.title}} </router-link>
+                                </li>
+                                <li class="list-group-item">
+                                  Tutorials
+                                </li>
+                                <li class="list-group-item" v-for="(navPage,i) in tutorialsSitemap" :key="navPage.id">
+                                  - <router-link :to="'/documentation/documentation-tutorials/' +navPage.id">{{navPage.title}}</router-link> 
                                 </li>
                             </ul>
                         </div>
-                        <div v-if="page.index !== -1" class="col-12 col-lg-9">
+                        <div class="col-12 col-lg-9">
                             <div style="position:absolute;top:-40px">
                                 <router-link to="/">Documentation</router-link> &gt; {{page.title}}
                             </div>
@@ -75,8 +84,8 @@
                                 <vue-showdown :markdown="page.content"></vue-showdown>
                             </div>
                             <div class="clearfix">
-                                <router-link v-if="sitemap[page.index-1]" :to="sitemap[page.index-1].id" style="float:left">&larr; {{sitemap[page.index-1].title}}</router-link>
-                                <router-link v-if="sitemap[page.index+1]" :to="sitemap[page.index+1].id" style="float:right">{{sitemap[page.index+1].title}} &rarr;</router-link>
+                                <!-- <router-link v-if="sitemap[page.index-1]" :to="sitemap[page.index-1].id" style="float:left">&larr; {{sitemap[page.index-1].title}}</router-link>
+                                <router-link v-if="sitemap[page.index+1]" :to="sitemap[page.index+1].id" style="float:right">{{sitemap[page.index+1].title}} &rarr;</router-link> -->
                             </div>
                         </div>
                     </div>

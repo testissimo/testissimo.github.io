@@ -28,26 +28,16 @@
     ]
 },
 {
-    "title" : "Getting Started",
-    "id" : "getting-started",
-    "children" : [
-        {
-            "title" : "Sign-up new user",
-            "id" : "sign-up-new-user"
-        },
-        {
-            "title" : "create repo",
-            "id" : "create-repo"
-        }
-    ]
-},
-{
     "title" : "Repositories, Users and Permissions",
     "id" : "repositories-users-and-permissions"
 },
 {
     "title" : "Concept Of Writing Tests",
     "id" : "concept-of-writing-tests"
+},
+{
+  "title" : "Variables",
+  "id" : "variables"
 },
 {
     "title" : "Selectors",
