@@ -17,7 +17,7 @@ Such an approach isn't achieving our expectations of maintainability.
 Instead, we will now present to you components and methods.
 
 ## What are components
-In Testissimo, **components** describe parts of the tested app (i.e. headers, content-holders, menus, links, etc...)
+In Testissimo, **components** describe parts of the tested application (i.e. headers, content-holders, menus, links, etc...)
 
 To showcase this, we take an example of Google Contacts layout from Vuetify at [this link](https://www.google.com "Google's Contacts at Vuetify") - if you want to follow this example, navigate to this site in the Testissimo app.
 The task to carry out is as follows:

@@ -44,6 +44,14 @@
     "id" : "selectors"
 },
 {
+  "title" : "Actions",
+  "id" : "actions"
+}, 
+{
+  "title" : "Assertions",
+  "id" : "assertions"
+}, 
+{
     "title" : "Actions, Assertions And Repeaters",
     "id" : "actions-assertions-and-repeaters"
 }, 
@@ -52,8 +60,12 @@
     "id" : "if-else-conditions"
 },
 {
-    "title" : "Components And Methods",
-    "id" : "components-and-methods"
+    "title" : "Components",
+    "id" : "components"
+},
+{
+    "title" : "Methods",
+    "id" : "methods"
 },
 {
     "title" : "Tests",
