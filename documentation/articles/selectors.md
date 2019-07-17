@@ -1,23 +1,23 @@
 # Selectors
 
-Selecting elements is the fundamental step in testing. 
+Selecting elements is a fundamental step in testing. 
 
-There are severals ways how to select elements in Testissimo:
-- **selecting elements manually** - inspecting HTML source code of the app
+There are several ways how to select elements in Testissimo:
+- **selecting elements manually** - inspecting the HTML source code of the app
 - **using the Picker** - Testissimo has a built-in Picker feature for selecting elements
 <br>
 <br>
 
 You can always preview your selected elements by clicking in-between the **select** keyword and the selector itself. 
 
-The tooltip shows you the amount of selected elements. 
+The tooltip shows you the number of selected elements. 
 
 ![](/documentation/images/manual-selector-usage.png)
 
 
 Also, if you check the HTML source code of the tested app, you will find that each selected element has a _testissimo-selected_ attribute. 
 ```
-<!-- This a element is currently selected by Testissimo -->
+<!-- This an element is currently selected by Testissimo -->
 <a href="https://testissimo.io/" testissimo-selected>
   <h3 class="LC20lb">Testissimo - Test Automation Tool</h3>
   <br>
@@ -32,15 +32,15 @@ The tested website will have the selected elements highlighted with an orange bo
 ![](/documentation/images/testissimo-selected.PNG)
 
 ## Selecting elements manually
-To select a element in Testissimo, type _select:_ **selector**. 
+To select an element in Testissimo, type _select:_ **selector**. 
 
 As CSS selectors are a standard and common feature in web development you can find a lot of resources across the internet dealing with how to write them and how these selectors work. For absolute beginners, we recommend playing this game which can train the **basics of CSS selectors at [flukeout](https://flukeout.github.io/)**. 
 
-As a cheat-sheet we like to use this website, where you can find a full description of CSS selectors capabilities 
+As a cheat-sheet, we like to use this website, where you can find a full description of CSS selectors capabilities 
 **[CSS selectors reference](https://www.w3schools.com/cssref/css_selectors.asp)** 
 Testissimo supports many useful CSS3 selectors and adds custom, extended syntax to fulfill all searching needs. Read below to discover more.
 
-**In Testissimo, you can use a full set of CSS selectors and some built-in helpers to always target elements on page with ease. To understand the algorithm of constructing a selector - [follow this link for reference.](#/documentation/documentation-referencies/selectors-reference)**
+**In Testissimo, you can use a full set of CSS selectors and some built-in helpers to always target elements on a page with ease. To understand the algorithm of constructing a selector - [follow this link for reference.](#/documentation/documentation-referencies/selectors-reference)**
 
 ## Selecting Elements With The Picker 
 The Picker is one of the leading features in Testissimo. Type _select:_ and click the **Pick** button in the tooltip to browse elements.

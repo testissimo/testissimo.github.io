@@ -7,12 +7,11 @@ To set Testissimo up, just add the <a href="https://chrome.google.com/webstore/d
 Testing a website is straight-forward. Visit your desired website and activate the Testissimo extension in your browser settings.
 Once Testissimo is activated, you will be redirected to the <a href="http://app.testissimo.io/http" target="_blank">Testissimo app</a> with the website loaded in Testissimo.
 
-**Using this plugin is safe**. Testissimo is only active on __app.testissimo.io__ website. Plugin source is published here [testissimo browser plugins repository](https://github.com/testissimo/testissimo-browser-plugins).
+**Using this plugin is safe**. Testissimo is only active on __app.testissimo.io__ website. The plugin source code is published here [testissimo browser plugins repository](https://github.com/testissimo/testissimo-browser-plugins).
 
 ## Browser Support
 We support the following browsers so far:
 1. **Google Chrome** - latest version (old versions are not tested) - plugin available
 2. **Mozilla Firefox** - latest version (old versions are not tested) - plugin available
-3. **Safari** - latest version (old versions are not tested, limited in browser storage to 5MB, not suitable for large or many repos) - only embed mode, plugin in future
-4. **Internet Explorer 11** - not tested, some design issues may occur but tests should run - only embed mode, plugin in future
+3. **Safari** - the plugin will be developed in future
 5. **Microsoft Edge** - not tested, but should work - only embed mode, plugin in future

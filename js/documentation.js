@@ -57,6 +57,24 @@ new Vue({
         "title": "Components",
       },
     ],
+    referencesSitemap:[
+      {
+        "id" : "actions-reference",
+        "title" : "Actions list"
+      },
+      {
+        "id" : "assertions-reference",
+        "title" : "Assertions list"
+      },
+      {
+        "id" : "selectors-reference",
+        "title" : "Selectors reference"
+      },
+      {
+        "id" : "picker-reference",
+        "title" : "Picker algorithm"
+      }
+    ],
 		page: {
 			index: -1,
 			id: '',
@@ -84,11 +102,10 @@ new Vue({
 		},
 		loadPage: function(pageId){
 			var app = this;
-			app.page.id = pageId;
-			app.page.index = app.sitemap.map(function(pageInfo){ return pageInfo.id; }).indexOf(pageId);
-			app.page.content = '';
-			app.page.title = app.page.index === -1 ? 'Documentation' : app.sitemap[app.page.index].title;
-
+      app.page.id = pageId;
+      // app.page.index = app.sitemap.map(function(pageInfo){ return pageInfo.id; }).indexOf(pageId);
+      app.page.content = '';
+			app.page.title = 'Documentation';
 			// scroll to top
 			window.scrollTo(0,0);
 

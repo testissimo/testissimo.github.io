@@ -5,10 +5,10 @@ To end an iteration, use the **end repeat** keyword.
 
 ```
 repeat for each value: value1 value2  value3
-	
-	do some_action
+    
+    do some_action
     - autodefined_variable: {repeat-value}
-	do some_other_action
+    do some_other_action
     - autodefined_variable: {repeat-value}
 
 end repeat 

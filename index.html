@@ -60,20 +60,46 @@
                     <div v-if="!sitemap" class="text-center">Loading documentation, please wait ...</div>
                     <div class="row">
                         <div class="col-3">
-                            <ul class="list-group" style="display:table;margin:0 auto;">
-                                <li class="list-group-item">
-                                  Documentation
-                                </li>
-                                <li class="list-group-item" v-for="(navPage,i) in sitemap" :key="navPage.id" :class="{active:i === page.index}">
-                                    - <router-link :to="'/documentation/documentation/'+navPage.id" >{{navPage.title}} </router-link>
-                                </li>
-                                <li class="list-group-item">
-                                  Tutorials
-                                </li>
-                                <li class="list-group-item" v-for="(navPage,i) in tutorialsSitemap" :key="navPage.id">
-                                  - <router-link :to="'/documentation/documentation-tutorials/' +navPage.id">{{navPage.title}}</router-link> 
-                                </li>
-                            </ul>
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <h4 class="list-group-heading">Documentation</h4>
+                              <ul class="list-group-text">
+                                <router-link v-for="(navPage,i) in sitemap" :to="'/documentation/articles/'+navPage.id">
+                                  <li class="list-group-item"  :key="navPage.id" :class="{active: page.id == '/documentation/articles/' + navPage.id || (navPage.hasOwnProperty('children') && navPage.children.map(element=>'/documentation/articles/' + element.id).includes(page.id))}">
+                                    <!-- {{ navPage.id == 'concept-of-writing-tests' ? navPage.children.map(element=>element.id): 'neni'}} -->
+                                    <span class="list-group-heading">{{navPage.title}}</span> 
+                                    <ul class="list-group list-group-text" style="margin-top:0.5rem" v-if="navPage.hasOwnProperty('children')">
+                                      <router-link  v-for="childPage in navPage.children" :to="'/documentation/articles/'+childPage.id" >
+                                        <li class="list-group-item" :class="{active: page.id == '/documentation/articles/' + childPage.id}">
+                                            {{childPage.title}}
+                                        </li>
+                                      </router-link>
+                                    </ul>
+                                  </li>
+                                </router-link>
+                              </ul>
+                            </li>
+                            <li class="list-group-item">
+                              <h4 class="list-group-heading">Tutorials</h4>
+                              <ul class="list-group-text">
+                                <router-link  v-for="(navPage,i) in tutorialsSitemap"  :to="'/documentation/documentation-tutorials/' +navPage.id">
+                                  <li class="list-group-item":key="navPage.id" :class="{active: page.id == '/documentation/documentation-tutorials/' + navPage.id}">
+                                    {{navPage.title}}
+                                  </li>
+                                </router-link> 
+                              </ul>
+                            </li>
+                            <li class="list-group-item">
+                              <h4 class="list-group-heading">References</h4>
+                              <ul class="list-group-text">
+                                <router-link v-for="(navPage,i) in referencesSitemap" :to="'/documentation/documentation-referencies/' +navPage.id">
+                                  <li class="list-group-item"  :key="navPage.id" :class="{active: page.id == '/documentation/documentation-referencies/' + navPage.id}">
+                                    {{navPage.title}}
+                                  </li>
+                                </router-link> 
+                              </ul>
+                            </li>
+                          </ul>
                         </div>
                         <div class="col-12 col-lg-9">
                             <div style="position:absolute;top:-40px">

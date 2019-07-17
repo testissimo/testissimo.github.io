@@ -46,13 +46,16 @@
 }
 
 #documentation .list-group-item.active {
-    color: #fff;
-    background-color: #4bc28b;
+    /* color: #fff; */
+    background-color : unset;
     border-color: #4bc28b;
 }
-
-#documentation .list-group-item.active > a {
-    color: #fff;
+#documentation .list-group-item .active {
+  border-color: #4bc28b;
+}
+#documentation .list-group-item.active{
+    color: #4bc28b;
+    font-weight: 700;
 }
 
 #documentation table {

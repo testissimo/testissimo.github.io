@@ -1,31 +1,11 @@
 [
 {
     "title" : "What Is Testissimo ?",
-    "id" : "what-is-testissimo",
-    "children" : [
-        {
-            "title" : "e2e testing tool for web applications",
-            "id" : "e2e"
-        },
-        {
-            "title" : "Testissimo place in software development",
-            "id" : "testissimo-place-in-software-development"
-        }
-    ]
+    "id" : "what-is-testissimo"
 },
 {
     "title" : "Setup",
-    "id" : "setup",
-    "children" : [
-        {
-            "title" : "via script",
-            "id" : "setup-via-script"
-        },
-        {
-            "title" : "via browser plugin",
-            "id" : "setup-via-script"
-        }
-    ]
+    "id" : "setup"
 },
 {
     "title" : "Repositories, Users and Permissions",
@@ -33,31 +13,33 @@
 },
 {
     "title" : "Concept Of Writing Tests",
-    "id" : "concept-of-writing-tests"
-},
-{
-  "title" : "Variables",
-  "id" : "variables"
-},
-{
-    "title" : "Selectors",
-    "id" : "selectors"
-},
-{
-  "title" : "Actions",
-  "id" : "actions"
-}, 
-{
-  "title" : "Assertions",
-  "id" : "assertions"
-}, 
-{
-    "title" : "Actions, Assertions And Repeaters",
-    "id" : "actions-assertions-and-repeaters"
-}, 
-{
-    "title" : "If-Else Conditions",
-    "id" : "if-else-conditions"
+    "id" : "concept-of-writing-tests",
+    "children":[
+      {
+        "title" : "Variables",
+        "id" : "variables"
+      },
+      {
+          "title" : "Selectors",
+          "id" : "selectors"
+      },
+      {
+        "title" : "Actions",
+        "id" : "actions"
+      }, 
+      {
+        "title" : "Assertions",
+        "id" : "assertions"
+      }, 
+      {
+          "title" : "Repeaters",
+          "id" : "repeaters"
+      }, 
+      {
+          "title" : "if-else Conditions",
+          "id" : "if-else-conditions"
+      }    
+    ]
 },
 {
     "title" : "Components",
@@ -76,19 +58,7 @@
     "id" : "test-suites"
 },
 {
-    "title" : "Running, Debugging And Headless",
-    "id" : "running-debugging-headless"
-},
-{
     "title" : "Built-in Version Control System (VCS)",
     "id" : "built-in-vcs"
-},
-{
-    "title" : "Keyboard Shortcuts And Guides",
-    "id" : "keyboard-shortcuts-and-guides"
-},
-{
-    "title" : "Bugs, Issues And Questions",
-    "id" : "bugs-issues-and-questions"
 }
 ]

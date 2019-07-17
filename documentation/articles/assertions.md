@@ -9,14 +9,14 @@ A crucial part of testing is **asserting**. In Testissimo, the following can be 
 - variables 
 
 <br>
-In Testissimo, for almost each type of assertion, the following is assertable:
+In Testissimo, for almost every type of assertion, the following is assertable:
 - contains - returns true if a substring exists in what's asserted
 - starts/ends - self-explanatory 
 - lower/greater (+ equal) - used to compare numbers and variables
 - regex - typical regex matching 
 
 <br>
-**To see all assertion - [follow this link for reference.](#/documentation/documentation-referencies/assertions-reference)**
+**To see all assertions - [follow this link for reference.](#/documentation/documentation-referencies/assertions-reference)**
 
 ### Assertions usage
 To use an assertion, use the **assert** prefix.<br>
@@ -40,7 +40,7 @@ assert element(s) count is : 1
 ## Error messages
 If an assertion doesn't pass, the test run will stop and an error message will be shown.
 
-In the following examples, different kinds of error messages will be displayed after runnig these tests:
+In the following examples, different kinds of error messages will be displayed after running these tests:
 
 In this code snippet, once the assertion doesn't pass an **informative error message** will be shown:
 ```
@@ -49,7 +49,7 @@ assert url contains: testaissimo
 ```
 ![](/documentation/images/error-message.png)
 
-In this code snippet, once the assertion doesn't pass a **extended error messagea** will be shown:
+In this code snippet, once the assertion doesn't pass a **extended error message** will be shown:
 ```
 do navigate to url: https://www.google.com/search?q=testissimo
 
@@ -61,4 +61,4 @@ assert element(s) count is lower-equal: 0
 Notice the **Test** button in the bottom-right corner.<br>
 Clicking this button will highlight the selected elements.
 
-**To read more about running and debuging tests - [follow this link.](#/documentation/documentation/running-debugging-headless)**
+**To read more about running and debuging tests - [follow this link.](#/documentation/articles/running-debugging-headless)**

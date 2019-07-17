@@ -1,7 +1,7 @@
 # Actions
 
 ## Basic understanding and usage
-To simulate a user interaction with an app in Testissimo, we use what's called an **action**.
+To simulate user interaction with an app in Testissimo, we use what's called an **action**.
 
 The **do** prefix is used to recognize that an action is about to be invoked. Follow the snippet below to understand how to invoke actions:
 
@@ -15,10 +15,10 @@ Considering the need for actions to have element(s) selected before being invoke
 - having exactly one selected element (i.e. **_click_**, **_write_**) - if such action is invoked without having element(s) selected, the test run will stop and throw an error message. 
 - having one or more elements selected (**_wait for element(s) exists_**)
 
-<br>In example, the following test will fail. Reason being having too many **a** elements selected. To fix this test, increase the selector's specificity so that only one **a** element will be selected.  
+<br>As an example, the following test will fail. The reason being having too many **a** elements selected. To fix this test, increase the selector's specificity so that only one **a** element will be selected.  
 ```
 # navigating to Google Search results after searching for "testissimo" 
-do navigate to url: https://www.google.com/search?source=hp&ei=gqElXbb4LITMwQL82bboAQ&q=testissimo
+do navigate to URL: https://www.google.com/search?source=hp&ei=gqElXbb4LITMwQL82bboAQ&q=testissimo
 
 select: a
 do click
@@ -44,12 +44,12 @@ The code snippet below shows the **wait** action being used in a component defin
 ```
 # this is a component definition
 select: aside.side-drawer
-	- wait: true
+    - wait: true
 ```
 The code snippet below shows the **wait** action being used in a component definition (selecting it) with manually defined wait options:
 ```
 select: aside.side-drawer
-	- wait: 500
+    - wait: 500
 ```
 
 

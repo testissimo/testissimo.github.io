@@ -7,15 +7,15 @@ This article covers the following:
 
 <br>In Testissimo, components define stand-alone parts of a application.<br>
 Components can be used to define:
-- an element composition of an application - header, side-drawer, menus, ...
-- a part of application for a more general use in testing - links, buttons, ...
+- element composition of an application - header, side-drawer, menus, ...
+- a part of an application for more general use in testing - links, buttons, ...
 
 <br>Using components in the correct way will make your tests more maintainable.  
 
 ## Component definition
 Defining a component consists of the following:
 - selecting an element - works just like any other selecting in Testissimo
-- providing additional information for selecting an element - declaring parameters for selection, stating the wait parameters ([follow this link for more information](#/documentation/documentation/actions))
+- providing additional information for selecting an element - declaring parameters for selection, stating the wait parameters ([follow this link for more information](#/documentation/articles/actions))
 
 <br>Note that a component definition should not consist of any other logic. 
   
@@ -56,7 +56,7 @@ Typically, **find** is the first step for calling component methods.<br>
 
 ```
 find button: 
-	- button-text: LOG IN
+    - button-text: LOG IN
 ```
 #### Enter and Leave _component_
 In Testissimo, **Enter _component_** is usually used for reducing a scope of selecting elements to a part of application.<br>
@@ -64,8 +64,8 @@ To reverse the **Enter _component_** effect, use the **Leave _component_** keywo
 
 ```
 enter side drawer
-	find link: 
-		- link-text: {repeat value}
+    find link: 
+        - link-text: {repeat value}
 end repeat
 ```
 To practise components and component methods usage - check the **Tutorial > Components** in the Testissimo app.
