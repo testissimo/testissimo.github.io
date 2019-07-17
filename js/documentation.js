@@ -7,74 +7,77 @@ new Vue({
 	}),
 	data: {
     sitemap: null,
-    tutorialsSitemap: [
-      { 
-        "id": "setup",
-        "title": "First Time Setup",
-      },
-      { 
-        "id": "become-a-user",
-        "title": "Become a User",
-      },
-      { 
-        "id": "first-repo",
-        "title": "First Repo and Test Setup",
-      },
-      { 
-        "id": "write-test",
-        "title": "Write your first Test",
-      },
-      { 
-        "id": "run-debug-test",
-        "title": "Run and Debug Test",
-      },
-      { 
-        "id": "mastering-picker",
-        "title": "Mastering The Picker",
-      },
-      { 
-        "id": "variables-reusability",
-        "title": "Test Variables and Reusability",
-      },
-      { 
-        "id": "if-else-conditions",
-        "title": "If-Else Conditions",
-      },
-      { 
-        "id": "test-repeaters",
-        "title": "Test Repeaters",
-      },
-      { 
-        "id": "wait-for-element",
-        "title": "\"Wait for\" element",
-      },
-      { 
-        "id": "test-suites",
-        "title": "Test Suites",
-      },
-      { 
-        "id": "components",
-        "title": "Components",
-      },
-    ],
-    referencesSitemap:[
-      {
-        "id" : "actions-reference",
-        "title" : "Actions list"
-      },
-      {
-        "id" : "assertions-reference",
-        "title" : "Assertions list"
-      },
-      {
-        "id" : "selectors-reference",
-        "title" : "Selectors reference"
-      },
-      {
-        "id" : "picker-reference",
-        "title" : "Picker algorithm"
-      }
-    ],
+    articles: null,
+    tutorials: null,
+    references: null,
+    // tutorialsSitemap: [
+    //   { 
+    //     "id": "setup",
+    //     "title": "First Time Setup",
+    //   },
+    //   { 
+    //     "id": "become-a-user",
+    //     "title": "Become a User",
+    //   },
+    //   { 
+    //     "id": "first-repo",
+    //     "title": "First Repo and Test Setup",
+    //   },
+    //   { 
+    //     "id": "write-test",
+    //     "title": "Write your first Test",
+    //   },
+    //   { 
+    //     "id": "run-debug-test",
+    //     "title": "Run and Debug Test",
+    //   },
+    //   { 
+    //     "id": "mastering-picker",
+    //     "title": "Mastering The Picker",
+    //   },
+    //   { 
+    //     "id": "variables-reusability",
+    //     "title": "Test Variables and Reusability",
+    //   },
+    //   { 
+    //     "id": "if-else-conditions",
+    //     "title": "If-Else Conditions",
+    //   },
+    //   { 
+    //     "id": "test-repeaters",
+    //     "title": "Test Repeaters",
+    //   },
+    //   { 
+    //     "id": "wait-for-element",
+    //     "title": "\"Wait for\" element",
+    //   },
+    //   { 
+    //     "id": "test-suites",
+    //     "title": "Test Suites",
+    //   },
+    //   { 
+    //     "id": "components",
+    //     "title": "Components",
+    //   },
+    // ],
+    // referencesSitemap:[
+    //   {
+    //     "id" : "actions-reference",
+    //     "title" : "Actions list"
+    //   },
+    //   {
+    //     "id" : "assertions-reference",
+    //     "title" : "Assertions list"
+    //   },
+    //   {
+    //     "id" : "selectors-reference",
+    //     "title" : "Selectors reference"
+    //   },
+    //   {
+    //     "id" : "picker-reference",
+    //     "title" : "Picker algorithm"
+    //   }
+    // ],
 		page: {
 			index: -1,
 			id: '',
@@ -89,7 +92,11 @@ new Vue({
 			var app = this;
 			if(!app._sitemapPromise){
 				app._sitemapPromise = app.$http.get(app.baseUrl + '/sitemap.json' ).then(function(res, status){
-					app.sitemap = res.body;
+          app.sitemap = JSON.parse(res.bodyText);
+          app.articles = app.sitemap.articles;
+          app.tutorials = app.sitemap.tutorials;
+          app.references = app.sitemap.references;
+          
 				});
 			}
 			return app._sitemapPromise;
