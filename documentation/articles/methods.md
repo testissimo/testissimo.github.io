@@ -5,14 +5,14 @@
 
 In a method definition, the following can be used:
 - variables
-- all actions - select, do write, ...   
-- other components from the repository - find, enter, leave _component-name_
+- all actions - ```select```, ```do write```, ...   
+- other components from the repository - ```find component-name```, ```enter component-name```, ```leave component-name```
 - methods of components 
 
 ## Usage
-To use a component method, a component needs to be found (**find _component-name_**) or entered (**enter _component-name_**).
+To use a component method, a component needs to be found (```find component-name```) or entered (```enter component-name```).
 
-Once a component is found or entered, use the **call** keyword to use a method of the component. 
+Once a component is found or entered, use the ```call``` keyword to use a method of the component. 
 
 ## Scope
 Using component methods will reduce the scope of elements selecting to component's scope. 
@@ -62,6 +62,8 @@ Step 5:
 
 ## Conclusion
 Using methods in Testissimo partly follows Object-oriented programming (i.e. inheritance is omitted). Think of components as objects and component methods as object methods.
+
+More importantly, we recommend reading **[Martin Fowler's Page Object pattern](https://martinfowler.com/bliki/PageObject.html)** 
 
 Bundling the functionality of application parts with components increases the maintainability of tests. 
 

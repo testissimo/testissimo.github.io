@@ -1,10 +1,10 @@
 # if-else Conditions
 
-In Testissimo, conditional branching of code can be achieved by using logical checks with **_if-else_** keywords.
+In Testissimo, conditional branching of code can be achieved by using logical checks with ```if-else``` keywords.
 
 Logical checks are assertions, so all of the assertions are available for use. 
 
-Use **_not_** as in assertion to define a negative condition.
+Use ```not``` as in assertion to define a negative condition.
 
 
 To understand conditional branching, take a look at the code snippet below:

@@ -93,10 +93,45 @@
     border-bottom: none;
 }
 
+
+#documentation code{
+  background-color: #f8f7f7;
+  /* border: 2px solid #e2e2e2; */
+  border-radius: 3px;
+  padding : 2px;
+  color : #4bc28b
+}
+
 #documentation pre{
   width: max-content;
   padding : 10px;
   border-left : 5px solid #4CAF50;
-  background-color: #f1f1f1;
+  background-color: #f8f7f7;
   color: #616161!important;
+}
+
+#documentation pre code{
+  border: unset;
+  padding: unset;
+  background: unset;
+  color: unset
+}
+#documentation .navigation-div{
+  margin-top : 50px;
+}
+#documentation h4.list-group-heading{
+  margin-bottom : 0;
+}
+#documentation h4.list-group-heading:hover{
+  cursor: pointer;
+  color : #4bc28b;
+}
+#documentation .Tutorials-class ul li img{
+  margin : 0;
+  display : inline;
+  box-shadow: none;
+  margin-right : 10px;
+}
+#documentation .list-group-item{
+  border: none;
 }

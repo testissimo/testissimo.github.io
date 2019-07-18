@@ -6,7 +6,7 @@ Test suites use the same syntax as any other test.
 Running test suites headlessly makes up for brilliant CI management.
 
 ## Usage
-To run a test suite in another test suite - use the **execute _test-suite-name_** keyword. 
+To run a test suite in another test suite - use the ```execute test-suite-name``` keyword. 
 
 ![](/documentation/images/testsuite.png)
 

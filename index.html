@@ -57,19 +57,56 @@
         <div id="documentation" style="display:none" :style="{display:'block'}">
             <section>
                 <div class="container-fluid text-left" style="padding-top:10px">
-                    <div v-if="!sitemap" class="text-center">Loading documentation, please wait ...</div>
+                    <div 
+                      v-if="!sitemap" 
+                      class="text-center">
+                      Loading documentation, please wait ...
+                    </div>
                     <div class="row">
                         <div class="col-3">
                           <ul class="list-group">
-                            <li class="list-group-item" v-for="(section,index) in sitemap" :key="index">
-                              <h4 class="list-group-heading">{{section.title}}</h4>
-                              <ul class="list-group-text">
+                            <li 
+                              class="list-group-item" 
+                              v-for="(section,index) in sitemap" 
+                              :key="index"
+                              >
+                              <h4 
+                                class="list-group-heading"
+                                @click="$refs[section.title+'Ref'][0].classList.contains('collapse') ? $refs[section.title+'Ref'][0].classList.remove('collapse') : $refs[section.title+'Ref'][0].classList.add('collapse') "
+                              >
+                                {{section.title}}
+                              </h4>
+                              <ul
+                                class="list-group-text"
+                                :class="{collapse: section.title != page.category}"
+                                :ref="section.title + 'Ref'"
+                                >
                                 <router-link 
                                   v-for="(sectionPage,i) in section.children" 
                                   :key="i" 
                                   :to="'/documentation/'+ section.path + sectionPage.id">
-                                  <li class="list-group-item">
-                                    {{sectionPage.title}}
+                                  <li 
+                                    class="list-group-item"
+                                    :class="{active: page.id == '/documentation/' + section.path + sectionPage.id || sectionPage.hasOwnProperty('children') && (sectionPage.children.map(element => '/documentation/' + section.path + element.id).includes(page.id))}"
+                                  >
+                                    <span class="list-group-heading">{{sectionPage.title}}</span>
+                                    <ul 
+                                      class="list-group-text"
+                                      v-if="sectionPage.children"
+                                      style="margin-top: 0.75rem"
+                                      >
+                                        <router-link 
+                                          v-for="subSectionPage in sectionPage.children" 
+                                          :to="'/documentation/'+ section.path + subSectionPage.id"
+                                          >
+                                          <li 
+                                            class="list-group-item"
+                                            :class="{active: page.id == '/documentation/' + section.path + subSectionPage.id}"
+                                          >
+                                            {{subSectionPage.title}}
+                                          </li>
+                                        </router-link>
+                                    </ul>
                                   </li>
                                 </router-link>
                               </ul>
@@ -77,16 +114,16 @@
                           </ul>
                         </div>
                         <div class="col-12 col-lg-9">
-                            <div style="position:absolute;top:-40px">
-                                <router-link to="/">Documentation</router-link> &gt; {{page.title}}
+                            <div v-if="page.content" style="position:absolute;top:-40px">
+                                <router-link :to="'/documentation/' + page.categoryPath">{{page.category}}</router-link> &gt; {{page.title}}
                             </div>
                             <h4 v-if="!page.content">Loading content, please wait ...</h4>
-                            <div>
+                            <div :class="page.category + '-class'">
                                 <vue-showdown :markdown="page.content"></vue-showdown>
                             </div>
-                            <div class="clearfix">
-                                <!-- <router-link v-if="sitemap[page.index-1]" :to="sitemap[page.index-1].id" style="float:left">&larr; {{sitemap[page.index-1].title}}</router-link>
-                                <router-link v-if="sitemap[page.index+1]" :to="sitemap[page.index+1].id" style="float:right">{{sitemap[page.index+1].title}} &rarr;</router-link> -->
+                            <div class="navigation-div clearfix">
+                                <router-link v-if="page.previous" :to="page.previous.id" style="float:left">&larr; {{page.previous.title}}</router-link>
+                                <router-link v-if="page.next" :to="page.next.id" style="float:right">{{page.next.title}} &rarr;</router-link>
                             </div>
                         </div>
                     </div>

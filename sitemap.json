@@ -1,9 +1,9 @@
 {
-    "articles":{
-      "path": "articles/",
-      "title": "Documentation",
-      "children":
-      [
+  "articles":{
+    "path": "articles/",
+    "title": "Documentation",
+    "children":
+    [
       {
         "title" : "What Is Testissimo ?",
         "id" : "what-is-testissimo"

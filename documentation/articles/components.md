@@ -17,7 +17,7 @@ Defining a component consists of the following:
 - selecting an element - works just like any other selecting in Testissimo
 - providing additional information for selecting an element - declaring parameters for selection, stating the wait parameters ([follow this link for more information](#/documentation/articles/actions))
 
-<br>Note that a component definition should not consist of any other logic. 
+<br>Note that a component definition should **not** consist of any other logic. 
   
 ### Simple component definition
 ```
@@ -44,23 +44,23 @@ select: button:text({button-text})
 ```
 ### Components usage
 In Testissimo, components can be used in the following ways:
-- **find** **_component-name_** - Testissimo will look for a component 
-- **enter** **_component-name_** - Testissimo will look for a component and if found reduce to scope of selecting to the component's content 
-- **leave** **_component-name_** - the scope of selecting will be restored
+- ```find component-name``` - Testissimo will look for a component 
+- ```enter component-name``` - Testissimo will look for a component and if found reduce to scope of selecting to the component's content 
+- ```leave component-name``` - the scope of selecting will be restored
 
-#### Find _component_
-Typically, **find** is the first step for calling component methods.<br>
-**Find _component_** does not reduce the scope of selecting. 
+#### ```Find component```
+Typically, ```find``` is the first step for calling component methods.<br>
+```find component``` does not reduce the scope of selecting. 
 
-**To read more about component methods - [follow this link.](#/documentation/documentation-referencies/methods)**
+**To read more about component methods - [follow this link.](#/documentation/articles/methods)**
 
 ```
 find button: 
     - button-text: LOG IN
 ```
-#### Enter and Leave _component_
-In Testissimo, **Enter _component_** is usually used for reducing a scope of selecting elements to a part of application.<br>
-To reverse the **Enter _component_** effect, use the **Leave _component_** keyword.
+#### ```Enter component``` and ```Leave component```
+In Testissimo, ```enter  component``` is usually used for reducing a scope of selecting elements to a part of application.<br>
+To reverse the ```enter component``` effect, use the ```leave component``` keyword.
 
 ```
 enter side drawer

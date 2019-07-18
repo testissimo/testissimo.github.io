@@ -10,78 +10,11 @@ new Vue({
     articles: null,
     tutorials: null,
     references: null,
-    // tutorialsSitemap: [
-    //   { 
-    //     "id": "setup",
-    //     "title": "First Time Setup",
-    //   },
-    //   { 
-    //     "id": "become-a-user",
-    //     "title": "Become a User",
-    //   },
-    //   { 
-    //     "id": "first-repo",
-    //     "title": "First Repo and Test Setup",
-    //   },
-    //   { 
-    //     "id": "write-test",
-    //     "title": "Write your first Test",
-    //   },
-    //   { 
-    //     "id": "run-debug-test",
-    //     "title": "Run and Debug Test",
-    //   },
-    //   { 
-    //     "id": "mastering-picker",
-    //     "title": "Mastering The Picker",
-    //   },
-    //   { 
-    //     "id": "variables-reusability",
-    //     "title": "Test Variables and Reusability",
-    //   },
-    //   { 
-    //     "id": "if-else-conditions",
-    //     "title": "If-Else Conditions",
-    //   },
-    //   { 
-    //     "id": "test-repeaters",
-    //     "title": "Test Repeaters",
-    //   },
-    //   { 
-    //     "id": "wait-for-element",
-    //     "title": "\"Wait for\" element",
-    //   },
-    //   { 
-    //     "id": "test-suites",
-    //     "title": "Test Suites",
-    //   },
-    //   { 
-    //     "id": "components",
-    //     "title": "Components",
-    //   },
-    // ],
-    // referencesSitemap:[
-    //   {
-    //     "id" : "actions-reference",
-    //     "title" : "Actions list"
-    //   },
-    //   {
-    //     "id" : "assertions-reference",
-    //     "title" : "Assertions list"
-    //   },
-    //   {
-    //     "id" : "selectors-reference",
-    //     "title" : "Selectors reference"
-    //   },
-    //   {
-    //     "id" : "picker-reference",
-    //     "title" : "Picker algorithm"
-    //   }
-    // ],
-		page: {
+    page: {
 			index: -1,
 			id: '',
-			title: '',
+      title: '',
+      category: '',
 			content: ''
 		},
 		baseUrl: isOnTestissimoWeb ? '' : 'https://testissimo.github.io',
@@ -106,13 +39,44 @@ new Vue({
 			return (md || '').replace(/(?:!\[(.*?)\]\((.*?)\))/g, function(md, alt, src){ 
 				return '!['+alt+'](' + (src[0] === '/' ? app.imageBaseUrl + src : src) + ')';
 			});
-		},
+    },
+    fillArray: function(categoryId){
+      var 
+        retVal = [],
+        app = this;
+      app.sitemap[categoryId].children.forEach(element=>{
+        retVal.push(element)
+        if(element.children) element.children.forEach(child=> retVal.push(child))
+        }
+      )
+      return retVal
+    },
 		loadPage: function(pageId){
 			var app = this;
       app.page.id = pageId;
+      var 
+        splitPageId = pageId.split("/"),
+        categoryId = splitPageId[splitPageId.length-2],
+        articleId = splitPageId[splitPageId.length-1],
+        categoryPossibleChildren = app[categoryId].children.filter(element=>element.children).map(element=>element.children)["0"]
+        indexHelper = this.fillArray(categoryId) 
+        // categoryPossibleChildren ? app[categoryId].children.concat(categoryPossibleChildren) : app[categoryId].children 
+        ;
+
+      app.page.category = app[categoryId].title
+      app.page.categoryPath = app[categoryId].path
+      app.page.title = categoryPossibleChildren ? app[categoryId].children.concat(categoryPossibleChildren).filter(element=>element.id == articleId)["0"].title : app[categoryId].children.filter(element=>element.id == articleId)["0"].title
+      
+      // index - bude navigovat na dalsie casti v kategorii
+      
+      app.page.index = indexHelper.map(element=>element.id).indexOf(articleId)
+      // console.log(app.page.index)
+      app.page.previous = indexHelper[app.page.index - 1]
+      app.page.next = indexHelper[app.page.index + 1]
+      // app.page.previous = 
       // app.page.index = app.sitemap.map(function(pageInfo){ return pageInfo.id; }).indexOf(pageId);
       app.page.content = '';
-			app.page.title = 'Documentation';
+			// app.page.title = 'Documentation';
 			// scroll to top
 			window.scrollTo(0,0);
 

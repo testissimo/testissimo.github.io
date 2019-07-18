@@ -2,7 +2,7 @@
 
 In Testissimo, using variables is simple and straight-forward.
 
-To use a variable, just put a **variable name** in curly brackets (i.e. **{_name_}**). 
+To use a variable, just put a **variable name** in curly brackets (i.e. ```{name}```). 
 
 Variables can be:
 - defined manually - define a variable at the beginning of a test, reuse variables in the code as shown in the example below 
@@ -65,7 +65,7 @@ run login:
 ![](/documentation/images/vars_usage.png)
 
 
-Read more and practise variables in our tutorials : [Variables reusability](#/documentation/documentation-tutorials/variables-reusability) 
+Read more and practise variables in our tutorials : [Variables reusability](#/documentation/tutorials/variables-reusability) 
 
 ## Additional information about variables
 If a test, method or component uses variables, used variables can be overridden when called from one entity to another one. 

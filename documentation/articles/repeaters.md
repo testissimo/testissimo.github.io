@@ -1,7 +1,7 @@
 # Repeaters
 
-To iterate through an array of values and execute code for each of these values, use the  **repeat for each value** keyword.<br>
-To end an iteration, use the **end repeat** keyword.
+To iterate through an array of values and execute code for each of these values, use the  ```repeat for each value``` keyword.<br>
+To end an iteration, use the ```end repeat``` keyword.
 
 ```
 repeat for each value: value1 value2  value3

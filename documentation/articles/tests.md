@@ -9,7 +9,7 @@ Testissimo provides for readable, easily-understandable and most importantly mai
 To achieve this, take a look at the following recommendations:
 - **A test should consist only of components, methods and other tests.**
 - **Decision-making logic should be done with if-else conditions using tests or methods.**
-- **Actions like _select: button_, _do click_, ... should be left out tests. Instead, this logic should be included in component methods.**
+- **Actions like ```select: button```, ```do click```, ... should be left out tests. Instead, this logic should be included in component methods.**
 
 <br>
 
@@ -19,7 +19,7 @@ In the top-right corner of the test container, the following controls are displa
 - ▶ button - for running a test  
 - ■ button - for stopping a test
 
-<br>To reference a test in another test, use the **run _test-name_** prefix. 
+<br>To reference a test in another test, use the ```run test-name``` prefix. 
 
 Tests, just like methods and component definitions, can be parameterized.
 
@@ -31,13 +31,13 @@ variable placeholder-text: Enter Username
 
 select: input[placeholder="{placeholder-text}"]
 ```
-### Input component - _assert component exists_ method
+### Input component - ```assert component exists``` method
 ```
 variable placeholder-text: Enter Username
 
 select: input[placeholder="{placeholder-text}"]
 ```
-### Input component - _fill_ method
+### Input component - ```fill``` method
 ```
 variable input-text: 
 

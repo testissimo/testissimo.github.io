@@ -1,7 +1,7 @@
 # Write your first test
 
 ## Navigate to test, or create new one
-If you have not created test already, please see [First Repository And Test Set Up](/documentation/tutorials/first-repo).
+If you have not created test already, please see [First Repository And Test Set Up](#/documentation/tutorials/first-repo).
 
 ## Start writing test
 

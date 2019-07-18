@@ -3,23 +3,23 @@
 ## Basic understanding and usage
 
 A crucial part of testing is **asserting**. In Testissimo, the following can be asserted:
-- element attributes and properties - text, class, disabled, visible
+- element attributes and properties - ```text```, ```class```, ```disabled```, ```visible```
 - element(s) count 
 - URL - current URL, URL text can be validated just like any other text
 - variables 
 
 <br>
 In Testissimo, for almost every type of assertion, the following is assertable:
-- contains - returns true if a substring exists in what's asserted
-- starts/ends - self-explanatory 
-- lower/greater (+ equal) - used to compare numbers and variables
-- regex - typical regex matching 
+- ```contains``` - returns true if a substring exists in what's asserted
+- ```starts/ends``` - self-explanatory 
+- ```lower/greater``` (+ ```equal```) - used to compare numbers and variables
+- **regex** - typical regex matching 
 
 <br>
-**To see all assertions - [follow this link for reference.](#/documentation/documentation-referencies/assertions-reference)**
+**To see all assertions - [follow this link for reference.](#/documentation/references/assertions-reference)**
 
 ### Assertions usage
-To use an assertion, use the **assert** prefix.<br>
+To use an assertion, use the ```assert``` prefix.<br>
 
 To understand how to use assertions, follow the code snippets below:
 
@@ -61,4 +61,4 @@ assert element(s) count is lower-equal: 0
 Notice the **Test** button in the bottom-right corner.<br>
 Clicking this button will highlight the selected elements.
 
-**To read more about running and debuging tests - [follow this link.](#/documentation/articles/running-debugging-headless)**
+<!-- **To read more about running and debuging tests - [follow this link.](#/documentation/articles/running-debugging-headless)** -->

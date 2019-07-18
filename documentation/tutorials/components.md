@@ -70,10 +70,10 @@ We want our test to carry out the following:
 2. check if all the links are present in the app
 
 Here are some notes before we get to our test:
-- use **find _component-name_** to start using a component in a test
-- use **enter _component-name_** to focus elements selecting to a component
-- use **leave _component-name_** to un-focus elements selecting of a component
-- use **call _component-method-name_** to use a method of a component
+- use ```find component-name``` to start using a component in a test
+- use ```enter component-name``` to focus elements selecting to a component
+- use ```leave component-name``` to un-focus elements selecting of a component
+- use ```call component-method-name``` to use a method of a component
 - keep in mind, that in Testissimo, tests should **ONLY** consist of components and component methods as selectors are meant to be used in component definitions and low-level actions are meant to be used in methods definitions 
 
 The code snippet below wraps our task up:
