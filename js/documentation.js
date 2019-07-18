@@ -60,7 +60,6 @@ new Vue({
         articleId = splitPageId[splitPageId.length-1],
         categoryPossibleChildren = app[categoryId].children.filter(element=>element.children).map(element=>element.children)["0"]
         indexHelper = this.fillArray(categoryId) 
-        // categoryPossibleChildren ? app[categoryId].children.concat(categoryPossibleChildren) : app[categoryId].children 
         ;
 
       app.page.category = app[categoryId].title
@@ -70,14 +69,9 @@ new Vue({
       // index - bude navigovat na dalsie casti v kategorii
       
       app.page.index = indexHelper.map(element=>element.id).indexOf(articleId)
-      // console.log(app.page.index)
       app.page.previous = indexHelper[app.page.index - 1]
       app.page.next = indexHelper[app.page.index + 1]
-      // app.page.previous = 
-      // app.page.index = app.sitemap.map(function(pageInfo){ return pageInfo.id; }).indexOf(pageId);
       app.page.content = '';
-			// app.page.title = 'Documentation';
-			// scroll to top
 			window.scrollTo(0,0);
 
 			// reset route if page is not in sitemap
