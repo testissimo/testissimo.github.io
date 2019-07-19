@@ -10,6 +10,7 @@ Testissimo brings you:
 - **Visual Editing Mode** for non-IT personnel 
 - and much, much more right **out of the box**.
 
+<br>
 During Testissimo development, **maintainibility** was the most important aspect for our team.
 <br>We designed Testissimo in a way so that after a short setup, anyone - even people with little to no coding nor testing experience could compose maintainable tests. 
 <br>**Also, feel free to contact our helpdesk for any kind of support. You will be met with fast, friendly and helpful answers.**

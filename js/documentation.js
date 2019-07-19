@@ -29,7 +29,6 @@ new Vue({
           app.articles = app.sitemap.articles;
           app.tutorials = app.sitemap.tutorials;
           app.references = app.sitemap.references;
-          
 				});
 			}
 			return app._sitemapPromise;
@@ -59,8 +58,7 @@ new Vue({
         categoryId = splitPageId[splitPageId.length-2],
         articleId = splitPageId[splitPageId.length-1],
         categoryPossibleChildren = app[categoryId].children.filter(element=>element.children).map(element=>element.children)["0"]
-        indexHelper = this.fillArray(categoryId) 
-        ;
+        indexHelper = this.fillArray(categoryId);
 
       app.page.category = app[categoryId].title
       app.page.categoryPath = app[categoryId].path
