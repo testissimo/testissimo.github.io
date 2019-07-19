@@ -2,6 +2,7 @@
   "articles":{
     "path": "articles/",
     "title": "Documentation",
+    "open": false,
     "children":
     [
       {
@@ -71,6 +72,7 @@
   "tutorials":{
     "path": "tutorials/",
     "title": "Tutorials",
+    "open": false,
     "children":
     [
       { 
@@ -126,6 +128,7 @@
   "references":{
     "path": "references/",
     "title": "References",
+    "open":false,
     "children":  
     [
       {
