@@ -61,7 +61,8 @@
         "children": [
             {
                 "title": "What Is Testissimo ?",
-                "id": "what-is-testissimo"
+                "id": "what-is-testissimo",
+                "tags":["default"]
             },
             {
                 "title": "Setup",
@@ -74,7 +75,8 @@
             {
                 "title": "Concept Of Writing Tests",
                 "id": "concept-of-writing-tests",
-                "children": [{
+                "children": [
+                    {
                         "title": "Variables",
                         "id": "variables"
                     },
