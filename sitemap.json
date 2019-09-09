@@ -1,9 +1,65 @@
-{
-    "articles": {
-        "path": "articles/",
+[
+    {
+        "id": "tutorials",
+        "title": "Tutorials",
+        "children": [
+            {
+                "id": "setup",
+                "title": "First Time Setup"
+            },
+            {
+                "id": "become-a-user",
+                "title": "Become a User",
+                "tags": ["first-start"]
+            },
+            {
+                "id": "first-repo",
+                "title": "First Repo and Test Setup",
+                "tags": ["repeated-start"]
+            },
+            {
+                "id": "write-test",
+                "title": "Write your first Test"
+            },
+            {
+                "id": "run-debug-test",
+                "title": "Run and Debug Test"
+            },
+            {
+                "id": "mastering-picker",
+                "title": "Mastering The Picker"
+            },
+            {
+                "id": "variables-reusability",
+                "title": "Test Variables and Reusability"
+            },
+            {
+                "id": "if-else-conditions",
+                "title": "If-Else Conditions"
+            },
+            {
+                "id": "test-repeaters",
+                "title": "Test Repeaters"
+            },
+            {
+                "id": "wait-for-element",
+                "title": "\"Wait for\" element"
+            },
+            {
+                "id": "test-suites",
+                "title": "Test Suites"
+            },
+            {
+                "id": "components",
+                "title": "Components"
+            }
+        ]
+    },
+    {
+        "id": "articles",
         "title": "Documentation",
-        "open": false,
-        "children": [{
+        "children": [
+            {
                 "title": "What Is Testissimo ?",
                 "id": "what-is-testissimo"
             },
@@ -66,65 +122,11 @@
             }
         ]
     },
-    "tutorials": {
-        "path": "tutorials/",
-        "title": "Tutorials",
-        "open": false,
-        "children": [{
-                "id": "setup",
-                "title": "First Time Setup"
-            },
+    {
+        "id": "references",
+        "title": "Reference",
+        "children": [
             {
-                "id": "become-a-user",
-                "title": "Become a User"
-            },
-            {
-                "id": "first-repo",
-                "title": "First Repo and Test Setup"
-            },
-            {
-                "id": "write-test",
-                "title": "Write your first Test"
-            },
-            {
-                "id": "run-debug-test",
-                "title": "Run and Debug Test"
-            },
-            {
-                "id": "mastering-picker",
-                "title": "Mastering The Picker"
-            },
-            {
-                "id": "variables-reusability",
-                "title": "Test Variables and Reusability"
-            },
-            {
-                "id": "if-else-conditions",
-                "title": "If-Else Conditions"
-            },
-            {
-                "id": "test-repeaters",
-                "title": "Test Repeaters"
-            },
-            {
-                "id": "wait-for-element",
-                "title": "\"Wait for\" element"
-            },
-            {
-                "id": "test-suites",
-                "title": "Test Suites"
-            },
-            {
-                "id": "components",
-                "title": "Components"
-            }
-        ]
-    },
-    "references": {
-        "path": "references/",
-        "title": "References",
-        "open": false,
-        "children": [{
                 "id": "actions-reference",
                 "title": "Actions list"
             },
@@ -142,4 +144,4 @@
             }
         ]
     }
-}
+]
