@@ -1,0 +1,60 @@
+# List of Assertions
+
+Below is a list of all invokable assertions in Testissimo:
+
+- assertion element(s) accessible - return true if all selected elements are accessible
+- assertion	element(s) attribute contains 
+- assertion	element(s) attribute ends with
+- assertion	element(s) attribute is
+- assertion	element(s) attribute is greater
+- assertion	element(s) attribute is greater-equal
+- assertion	element(s) attribute is in list
+- assertion	element(s) attribute is lower
+- assertion	element(s) attribute is lower-equal
+- assertion	element(s) attribute match regex
+- assertion	element(s) attribute starts with
+- assertion	element(s) checked
+- assertion	element(s) count is
+- assertion	element(s) count is greater
+- assertion	element(s) count is greater-equal
+- assertion	element(s) count is lower
+- assertion	element(s) count is lower-equal
+- assertion	element(s) disabled
+- assertion	element(s) has class
+- assertion	element(s) property contains
+- assertion	element(s) property ends with
+- assertion	element(s) property is
+- assertion	element(s) property is greater
+- assertion	element(s) property is greater-equal
+- assertion	element(s) property is in list
+- assertion	element(s) property is lower
+- assertion	element(s) property is lower-equal
+- assertion	element(s) property match regex
+- assertion	element(s) property starts with
+- assertion	element(s) text contains
+- assertion	element(s) text ends with
+- assertion	element(s) text is
+- assertion	element(s) text match regex
+- assertion	element(s) text starts with
+- assertion	element(s) visible
+- assertion	resource url
+- assertion	url contains
+- assertion	url ends with
+- assertion	url hash contains
+- assertion	url hash ends with
+- assertion	url hash is
+- assertion	url hash match regex
+- assertion	url hash starts with
+- assertion	url is
+- assertion	url match regex
+- assertion	url starts with
+- assertion	variable contains
+- assertion	variable ends with
+- assertion	variable is
+- assertion	variable is greater
+- assertion	variable is greater-equal
+- assertion	variable is in list
+- assertion	variable is lower
+- assertion	variable is lower-equal
+- assertion	variable match regex
+- assertion	variable starts with

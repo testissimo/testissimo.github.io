@@ -6,7 +6,7 @@
 
 require('total.js').http('debug', {
     config: {
-        'directory-public': './'
+        'directory_public': './'
     }
 });
 

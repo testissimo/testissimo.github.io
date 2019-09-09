@@ -17,7 +17,7 @@ Such an approach isn't achieving our expectations of maintainability.
 Instead, we will now present to you components and methods.
 
 ## What are components
-In Testissimo, **components** describe parts of the tested app (i.e. headers, content-holders, menus, links, etc...)
+In Testissimo, **components** describe parts of the tested application (i.e. headers, content-holders, menus, links, etc...)
 
 To showcase this, we take an example of Google Contacts layout from Vuetify at [this link](https://www.google.com "Google's Contacts at Vuetify") - if you want to follow this example, navigate to this site in the Testissimo app.
 The task to carry out is as follows:
@@ -70,10 +70,10 @@ We want our test to carry out the following:
 2. check if all the links are present in the app
 
 Here are some notes before we get to our test:
-- use **find _component-name_** to start using a component in a test
-- use **enter _component-name_** to focus elements selecting to a component
-- use **leave _component-name_** to un-focus elements selecting of a component
-- use **call _component-method-name_** to use a method of a component
+- use ```find component-name``` to start using a component in a test
+- use ```enter component-name``` to focus elements selecting to a component
+- use ```leave component-name``` to un-focus elements selecting of a component
+- use ```call component-method-name``` to use a method of a component
 - keep in mind, that in Testissimo, tests should **ONLY** consist of components and component methods as selectors are meant to be used in component definitions and low-level actions are meant to be used in methods definitions 
 
 The code snippet below wraps our task up:

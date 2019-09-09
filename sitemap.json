@@ -1,92 +1,147 @@
 [
-{
-    "title" : "What Is Testissimo ?",
-    "id" : "what-is-testissimo",
-    "children" : [
-        {
-            "title" : "e2e testing tool for web applications",
-            "id" : "e2e"
-        },
-        {
-            "title" : "Testissimo place in software development",
-            "id" : "testissimo-place-in-software-development"
-        }
-    ]
-},
-{
-    "title" : "Setup",
-    "id" : "setup",
-    "children" : [
-        {
-            "title" : "via script",
-            "id" : "setup-via-script"
-        },
-        {
-            "title" : "via browser plugin",
-            "id" : "setup-via-script"
-        }
-    ]
-},
-{
-    "title" : "Getting Started",
-    "id" : "getting-started",
-    "children" : [
-        {
-            "title" : "Sign-up new user",
-            "id" : "sign-up-new-user"
-        },
-        {
-            "title" : "create repo",
-            "id" : "create-repo"
-        }
-    ]
-},
-{
-    "title" : "Repositories, Users and Permissions",
-    "id" : "repositories-users-and-permissions"
-},
-{
-    "title" : "Concept Of Writing Tests",
-    "id" : "concept-of-writing-tests"
-},
-{
-    "title" : "Selectors",
-    "id" : "selectors"
-},
-{
-    "title" : "Actions, Assertions And Repeaters",
-    "id" : "actions-assertions-and-repeaters"
-}, 
-{
-    "title" : "If-Else Conditions",
-    "id" : "if-else-conditions"
-},
-{
-    "title" : "Components And Methods",
-    "id" : "components-and-methods"
-},
-{
-    "title" : "Tests",
-    "id" : "tests"
-},
-{
-    "title" : "Test Suites",
-    "id" : "test-suites"
-},
-{
-    "title" : "Running, Debugging And Headless",
-    "id" : "running-debugging-headless"
-},
-{
-    "title" : "Built-in Version Control System (VCS)",
-    "id" : "built-in-vcs"
-},
-{
-    "title" : "Keyboard Shortcuts And Guides",
-    "id" : "keyboard-shortcuts-and-guides"
-},
-{
-    "title" : "Bugs, Issues And Questions",
-    "id" : "bugs-issues-and-questions"
-}
+    {
+        "id": "tutorials",
+        "title": "Tutorials",
+        "children": [
+            {
+                "id": "setup",
+                "title": "First Time Setup"
+            },
+            {
+                "id": "become-a-user",
+                "title": "Become a User",
+                "tags": ["first-start"]
+            },
+            {
+                "id": "first-repo",
+                "title": "First Repo and Test Setup",
+                "tags": ["repeated-start"]
+            },
+            {
+                "id": "write-test",
+                "title": "Write your first Test"
+            },
+            {
+                "id": "run-debug-test",
+                "title": "Run and Debug Test"
+            },
+            {
+                "id": "mastering-picker",
+                "title": "Mastering The Picker"
+            },
+            {
+                "id": "variables-reusability",
+                "title": "Test Variables and Reusability"
+            },
+            {
+                "id": "if-else-conditions",
+                "title": "If-Else Conditions"
+            },
+            {
+                "id": "test-repeaters",
+                "title": "Test Repeaters"
+            },
+            {
+                "id": "wait-for-element",
+                "title": "\"Wait for\" element"
+            },
+            {
+                "id": "test-suites",
+                "title": "Test Suites"
+            },
+            {
+                "id": "components",
+                "title": "Components"
+            }
+        ]
+    },
+    {
+        "id": "articles",
+        "title": "Documentation",
+        "children": [
+            {
+                "title": "What Is Testissimo ?",
+                "id": "what-is-testissimo"
+            },
+            {
+                "title": "Setup",
+                "id": "setup"
+            },
+            {
+                "title": "Repositories, Users and Permissions",
+                "id": "repositories-users-and-permissions"
+            },
+            {
+                "title": "Concept Of Writing Tests",
+                "id": "concept-of-writing-tests",
+                "children": [{
+                        "title": "Variables",
+                        "id": "variables"
+                    },
+                    {
+                        "title": "Selectors",
+                        "id": "selectors"
+                    },
+                    {
+                        "title": "Actions",
+                        "id": "actions"
+                    },
+                    {
+                        "title": "Assertions",
+                        "id": "assertions"
+                    },
+                    {
+                        "title": "Repeaters",
+                        "id": "repeaters"
+                    },
+                    {
+                        "title": "if-else Conditions",
+                        "id": "if-else-conditions"
+                    }
+                ]
+            },
+            {
+                "title": "Components",
+                "id": "components"
+            },
+            {
+                "title": "Methods",
+                "id": "methods"
+            },
+            {
+                "title": "Tests",
+                "id": "tests"
+            },
+            {
+                "title": "Test Suites",
+                "id": "test-suites"
+            },
+            {
+                "title": "Built-in Version Control System (VCS)",
+                "id": "built-in-vcs"
+            }
+        ]
+    },
+    {
+        "id": "references",
+        "title": "Reference",
+        "children": [
+            {
+                "id": "actions-reference",
+                "title": "Actions list"
+            },
+            {
+                "id": "assertions-reference",
+                "title": "Assertions list"
+            },
+            {
+                "id": "selectors-reference",
+                "title": "Selectors reference"
+            },
+            {
+                "id": "picker-reference",
+                "title": "Picker algorithm"
+            }
+        ]
+    }
 ]
