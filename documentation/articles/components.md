@@ -15,7 +15,7 @@ Components can be used to define:
 ## Component definition
 Defining a component consists of the following:
 - selecting an element - works just like any other selecting in Testissimo
-- providing additional information for selecting an element - declaring parameters for selection, stating the wait parameters ([follow this link for more information](#/documentation/articles/actions))
+- providing additional information for selecting an element - declaring parameters for selection, stating the wait parameters ([follow this link for more information](#/documentation/articles/concept-of-writting-tests/actions))
 
 <br>Note that a component definition should **not** consist of any other logic. 
   
