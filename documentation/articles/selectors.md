@@ -19,17 +19,17 @@ Also, if you check the HTML source code of the tested app, you will find that ea
 ```
 <!-- This an element is currently selected by Testissimo -->
 <a href="https://testissimo.io/" testissimo-selected>
-  <h3 class="LC20lb">Testissimo - Test Automation Tool</h3>
-  <br>
-  <div class="TbwUpd">
-    <cite class="iUh30">
-      https://testissimo.io/
-    </cite>
-  </div>
+    <h3 class="LC20lb">Testissimo - Test Automation Tool</h3>
+    <br>
+    <div class="TbwUpd">
+        <cite class="iUh30">
+            https://testissimo.io/
+        </cite>
+    </div>
 </a>
 ```
 The tested website will have the selected elements highlighted with an orange border as shown in the picture below:
-![](/documentation/images/testissimo-selected.PNG)
+![](/documentation/images/testissimo-selected.png)
 
 ## Selecting elements manually
 To select an element in Testissimo, type ```select: some-selector```. 

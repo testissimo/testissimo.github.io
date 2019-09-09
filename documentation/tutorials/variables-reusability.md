@@ -20,7 +20,7 @@ variable index: 0
 Auto-defined variables have their values set once called from another entity (i.e. a different test).
 
 The following happens in the code snippet below:
-<!-- z tohto spravit video -->
+<!-- TODO: make video instead of text -->
 - Test **test1** uses the **index** variable as an auto-defined variable. 
 - Test **test2** runs **test1** and sets the **index** value to __0__. 
 
@@ -36,7 +36,7 @@ test2:
 run test1: 
 	- index: 0
 ```
-<!-- potialto je video -->
+
 Keep in mind that:
 - if an entity uses variables, used variables can be overridden once called from one entity to another one,
 - special variable named **"value"** is filled as value (after the colon).

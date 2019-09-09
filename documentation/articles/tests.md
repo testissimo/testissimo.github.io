@@ -77,7 +77,7 @@ Visual Editing Mode is a helpful and straightforward way of writing and setting 
 To turn on Visual Editing Mode, click the **eye** button.<br> 
 Once Visual Editing Mode is turned on, move the cursor across elements. Components and methods suggestions will appear and will be highlighted.
 
-![](/documentation/images/visual_editing_mode.png)
+![](/documentation/images/visual-editing-mode.png)
 
 _In the picture above, the **content** component is selected. The **assert heading** component method is displayed as an option for the user to use._
 

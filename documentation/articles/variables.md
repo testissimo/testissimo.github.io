@@ -8,7 +8,7 @@ Variables can be:
 - defined manually - define a variable at the beginning of a test, reuse variables in the code as shown in the example below 
 - auto-defined -  defined by other entities, such as a test, method or component.  
 
-![](/documentation/images/vars_definition.png)
+![](/documentation/images/vars-definition.png)
 
 ## Manually defined variables
 Use manually defined variables to prevent hard-coded parts. See the example below:
@@ -62,7 +62,7 @@ run login:
     - login-name: {username}
     - login-password: {password}
 ```
-![](/documentation/images/vars_usage.png)
+![](/documentation/images/vars-usage.png)
 
 
 Read more and practise variables in our tutorials : [Variables reusability](#/documentation/tutorials/variables-reusability) 

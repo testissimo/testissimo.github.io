@@ -18,7 +18,7 @@ If an error causes the test to stop, scope info will be shown and all test runs 
 
 Click the "Resource" to observe the lower level of the error to see in what scope the error was thrown.
 
-![](/documentation/images/debug_child.png)
+![](/documentation/images/debug-child.png)
 
 ## Stop Action
 
@@ -30,7 +30,7 @@ Although headless runs work same as the manual runs, there are headless logs and
 
 ### Create Headless Url 
 To generate a headless url, click the icon in the middle of the toolbar. You will use this feature often with Test Suites  
-![](/documentation/images/headless_link.png)
+![](/documentation/images/headless-link.png)
 
 Headless url template:  
 yourapp.com?testissimo-headless=**USER-APIKEY** | **REPO-ID** | **RESOURCE-ID** | **OPTIONAL-COMMIT-ID-OR-TAG** | **OPTIONAL-RUN-TAG**
@@ -49,10 +49,10 @@ Start a browser headless with this url and it will do all testing headless. That
 
 Click on the "truck" icon to see the headless run results of this resource. Keep in mind that **maximum age of report item is 14 days**, as it will be deleted after this period of time .
 
-![](/documentation/images/headless_results.png)
+![](/documentation/images/headless-results.png)
 
 ### Fail Snapshot
 
 By clicking the snapshot in the results table, you will be redirected to the Snapshot page. Testissimo is in preview mode to see all the scope info as you see while running tests manually .
 
-![](/documentation/images/headless_snapshot.png)
+![](/documentation/images/headless-snapshot.png)

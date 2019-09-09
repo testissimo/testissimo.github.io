@@ -10,7 +10,7 @@ A downloaded (checked-out) repository is a local copy of the remote repository.
 
 Once a repository is downloaded, the repository can be edited and changed in any way.
 
-![](/documentation/images/vcs_checkout.png)
+![](/documentation/images/vcs-checkout.png)
 
 ### Commits (Changes), Commit History and Pushing
 
@@ -22,7 +22,7 @@ Optionally, you can add a short message to commit, e.g. "fixed: panel test".
 
 All changes are organized in commits. Commit ID represents a version of a repository and cannot be deleted. To be in sync with your app version, use commits tag if you want to declare a test version. You are free to tag commits however you wish.
 
-![](/documentation/images/vcs_commits.png)
+![](/documentation/images/vcs-commits.png)
 
 Downloading changes from a remote repository is called **pulling**.
 
@@ -43,11 +43,11 @@ In the **Local** tab of **Repository container**, the following is displayed nex
 
 <br>There is also a revert (circle-arrow) button, this will revert (discard) changes made to the selected repository.
 
-![](/documentation/images/vcs_changes.png)
+![](/documentation/images/vcs-changes.png)
 
 To preview content differences, just navigate to the **Resource tab** and click the **Show Changes** button.
 
-![](/documentation/images/vcs_diff.png)
+![](/documentation/images/vcs-diff.png)
 
 
 ### Forking
@@ -56,7 +56,7 @@ In Testissimo's own VCS, creating a new remote repository from a selected commit
 <br>Forks can be created in commits history. 
 <br>Once a fork has been created and checked out, changes can be made to a newly created repository.
 
-![](/documentation/images/vcs_commits.png)
+![](/documentation/images/vcs-commits.png)
 
 ### Additional information and recommendations
 
@@ -68,13 +68,13 @@ Push changes often, do more small commits instead of huge ones. You will avoid m
 
 Of course, you can not push new changes before pulling new remote changes - in that case, pull-merge will automatically proceed.
 
-![](/documentation/images/vcs_push.png)
+![](/documentation/images/vcs-push.png)
 
 #### Pull (Download) And Merge Remote Changes
 
 If changes are pushed into a remote repo, Testissimo will notify you about these changes in the **Local** tab of **Repo** container.
 
-![](/documentation/images/vcs_pull.png)
+![](/documentation/images/vcs-pull.png)
 
 Applying remote changes to a local copy is called **merging**. 
 Differences between a pulled and local version of a repository are called **merge conflicts**. 
@@ -84,5 +84,5 @@ Usually, as with most VCS, Testissimo can decide which version should be accepte
 
 If you close the merging tab, merging will be dismissed and no remote changes will be applied to your local copy.
 
-![](/documentation/images/vcs_merge.png)
+![](/documentation/images/vcs-merge.png)
 

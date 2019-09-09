@@ -22,4 +22,4 @@ The **repeat** cycle also provides you with the following variables:
 - **{repeat-value}** - current iteration value
 You can access these variables just like any other variable.
 
-<!-- + mozno video s repeatom...  -->
+<!-- TODO: decide if add video of repeater -->

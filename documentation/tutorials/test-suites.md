@@ -4,7 +4,7 @@
 - can be run from other test suites (use the **execute** prefix + name of the test)
 - are managed just like tests from the **Repo** overview   
 
-![Test Suite management](/documentation/images/testsuite_management.png)
+![Test Suite management](/documentation/images/testsuite-management.png)
 
 ##Test Suites in Headless runs
 Once an error occurs while running a test suite headlessly, Testissimo won't stop the run. 
