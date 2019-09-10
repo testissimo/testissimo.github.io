@@ -1,5 +1,6 @@
-var useProxy = window.location.host !== 'testissimo.github.io';
-var useFileSuffix = (useProxy && window.location.host.indexOf('localhost') === -1) ? false : true;
+var isLocalDev = window.location.host.indexOf('localhost') === 0,
+    useProxy = window.location.host !== 'testissimo.github.io' && !isLocalDev,
+    useFileSuffix = useProxy ? false : true;
 
 Vue.component('t-documentation-menu', {
     template:   '<div>'+
