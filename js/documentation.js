@@ -1,5 +1,5 @@
 var useProxy = window.location.host !== 'testissimo.github.io';
-var useFileSuffix = (useProxy && window.location.host.indexOf('localhost') === -1) ? '' : '.md';
+var useFileSuffix = (useProxy && window.location.host.indexOf('localhost') === -1) ? false : true;
 
 Vue.component('t-documentation-menu', {
     template:   '<div>'+
@@ -84,7 +84,7 @@ new Vue({
                 }
             }
 
-            app.$http.get(app.baseUrl + '/documentation/menu.json').then(function(res, status){
+            app.$http.get(app.baseUrl + '/documentation/menu' + (useFileSuffix ? '.json' : '')).then(function(res, status){
                 createMenuItems(res.body);
                 if(cb) cb();
             });
@@ -179,7 +179,7 @@ new Vue({
             var app = this;
             if(item.content) return cb ? cb() : null;
 
-            app.$http.get(app.baseUrl + '/documentation/' + item.path + useFileSuffix).then(function(res, status){
+            app.$http.get(app.baseUrl + '/documentation/' + item.path + (useFileSuffix ? '.md' : '')).then(function(res, status){
                 var converter = new showdown.Converter();
                 item.content = app.fixEscapedHtml( converter.makeHtml( app.fixMdImagesUrl(res.body) ));
                 if(cb) cb();
