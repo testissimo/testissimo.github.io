@@ -1,119 +1,216 @@
-// toto sa tiez zmenilo
-var isOnTestissimoWeb = window.location.host === 'localhost:8000';
+var useProxy = window.location.host !== 'testissimo.github.io';
+var useFileSuffix = (useProxy && window.location.host.indexOf('localhost') === -1) ? '' : '.md';
+
+Vue.component('t-documentation-menu', {
+    template:   '<div>'+
+                    '<div class="documentation-menu-item" :class="{ active:activePath === item.path, \'root\':item.treeLevel === 0 }">'+
+                        '<a  v-if="item.children" '+
+                            '@click="toggleOpened(item.path)" '+
+                            ':class="{\'documentation-menu-item-expander-closed\':!item.opened, \'documentation-menu-item-expander-opened\':item.opened}" '+
+                            'class="documentation-menu-item-expander">'+
+                            '&nbsp;'+
+                        '</a>'+
+                        '<a @click="linkActivate" :href="item.href" class="documentation-menu-item-link">'+
+                            '<i v-if="item.treeLevel === 0" :class="item.iconCss" style="margin-right:4px"></i>'+
+                            '{{item.title}}'+
+                        '</a>'+
+                    '</div>'+
+                    '<div v-if="item.children && item.opened" style="padding-left:30px">'+
+                        '<t-documentation-menu v-for="child in item.children" :key="child.id" :item="child" :active-path="activePath" @navigate="navigate" @toggle-opened="toggleOpened"></t-documentation-menu>'+
+                    '</div>'+
+                '</div>',
+    props:{
+        item:{},
+        activePath:{}
+    },
+    data: function(){
+        return {};
+    },
+    methods:{
+        navigate: function(path){
+            this.$emit('navigate', path);
+        },
+        toggleOpened: function(path){
+            this.$emit('toggle-opened', path);
+        },
+        linkActivate: function(e){
+            e.preventDefault();
+            this.toggleOpened(this.item.path);
+            if(this.item.treeLevel > 0) this.navigate(this.item.path);
+        }
+    }
+});
 
 new Vue({
     el: '#documentation',
     router: new VueRouter({
-        routes: [{
-            path: '/:id'
-        }, {
-            path: '*'
-        }]
+        routes: [{ path: '*' }]
     }),
     data: {
-        sitemap: null,
-        articles: null,
-        tutorials: null,
-        references: null,
-        page: {
-            index: -1,
-            id: '',
-            title: '',
-            category: '',
-            content: ''
-        },
-        baseUrl: isOnTestissimoWeb ? '' : 'https://testissimo.github.io',
+        menu: null,
+        menuItemsByPath: null,
+        menuActivePath: null,
+        menuBackPath: null,
+
+        baseUrl: useProxy ? '' : 'https://testissimo.github.io',
         imageBaseUrl: 'https://testissimo.github.io'
     },
     methods: {
-        closeCategories: function () {
+        loadMenu: function(cb){
             var app = this;
-            Object.keys(app.sitemap).forEach(element => {
-                app.sitemap[element].open = false;
-            })
-        },
-        getSitemapPromise: function () {
-            var app = this;
-            if (!app._sitemapPromise) {
-                // tu sa rozhodovalo medzi sitemap.json alebo len sitemap
-                app._sitemapPromise = app.$http.get(app.baseUrl + '/sitemap.json').then(function (res, status) {
-
-                    // pozor ! toto bolo predtym normalne res.body bez JSON.parse
-                    app.sitemap = JSON.parse(res.bodyText);
-
-                    app.articles = app.sitemap.articles;
-                    app.tutorials = app.sitemap.tutorials;
-                    app.references = app.sitemap.references;
-                });
-            }
-            return app._sitemapPromise;
-        },
-        fixMdImagesUrl: function (md) {
-            var app = this;
-            return (md || '').replace(/(?:!\[(.*?)\]\((.*?)\))/g, function (md, alt, src) {
-                return '![' + alt + '](' + (src[0] === '/' ? app.imageBaseUrl + src : src) + ')';
-            });
-        },
-        fillArray: function (categoryId) {
-            var retVal = [],
-                app = this;
-
-            app.sitemap[categoryId].children.forEach(element => {
-                retVal.push(element)
-                if (element.children) element.children.forEach(child => retVal.push(child))
-            })
+            if(app.menu) return cb ? cb() : null;
             
-            return retVal
-        },
-        loadPage: function (pageId) {
-            var app = this;
-            app.page.id = pageId;
-            var
-                splitPageId = pageId.split("/"),
-                categoryId = splitPageId[splitPageId.length - 2],
-                articleId = splitPageId[splitPageId.length - 1],
-                categoryPossibleChildren = app[categoryId].children.filter(element => element.children).map(element => element.children)["0"]
-            indexHelper = this.fillArray(categoryId);
+            var menuItemsByPath = {}, prevItem;
 
-            app.page.category = app[categoryId].title
-            app.page.categoryPath = app[categoryId].path
+            function createMenuItems(sitemap, parent){
+                sitemap.forEach(function(sItem){
+                    sItem.treeLevel = parent ? parent.treeLevel+1 : 0;
+                    sItem.path = parent ? parent.path + '/' + sItem.id : sItem.id;
+                    sItem.parentPath = parent ? parent.path : '';
+                    sItem.prevPath = prevItem ? prevItem.path : '';
+                    sItem.content = '';
+                    sItem.href = app.getFullLocationForPath(sItem.path);
+                    // sItem.iconCss = app.getItemIconCss(sItem);
+                    if(prevItem) prevItem.nextPath = sItem.path;
+                    sItem.opened = false;
+                    menuItemsByPath[ sItem.path ] = sItem;
+                    if(sItem.treeLevel) prevItem = sItem;
+                    if(sItem.children) createMenuItems(sItem.children, sItem);
+                });
 
-            // tato monstroznost sa asi da este prepisat na krajsie nieco
-            app.page.title = categoryPossibleChildren ? app[categoryId].children.concat(categoryPossibleChildren).filter(element => element.id == articleId)["0"].title : app[categoryId].children.filter(element => element.id == articleId)["0"].title
+                if(!parent) {
+                    app.menu = sitemap;
+                    app.menuItemsByPath = menuItemsByPath;
+                }
+            }
 
-            // index - bude navigovat na dalsie casti v kategorii, t.z. posledny clanok nikam dalej neukazuje a analogicky prvy neodkazuje na posledny clanok z predchadzajucej kategorie
-
-            app.page.index = indexHelper.map(element => element.id).indexOf(articleId)
-            app.page.previous = indexHelper[app.page.index - 1]
-            app.page.next = indexHelper[app.page.index + 1]
-            app.page.content = '';
-            window.scrollTo(0, 0);
-
-            app.closeCategories();
-
-            // reset route if page is not in sitemap
-            // if(app.page.index === -1 && app.$route.path !== '/') return app.$router.push({ path:'/' });
-
-            var pageUrl;
-            if (isOnTestissimoWeb) pageUrl = app.baseUrl + app.page.id + '.md';
-            else pageUrl = app.baseUrl + '/documentation/' + app.page.id + '.md';
-
-            if (pageId) app.$http.get(pageUrl).then(function (res, status) {
-                app.page.content = app.fixMdImagesUrl(res.body);
+            app.$http.get(app.baseUrl + '/sitemap.json').then(function(res, status){
+                createMenuItems(res.body);
+                if(cb) cb();
             });
+        },
+
+        iterateMenuItems: function(iterFnc){
+            for(var path in this.menuItemsByPath){
+                if(iterFnc(this.menuItemsByPath[ path ])) return;
+            }
+        },
+
+        iterateMenuParents: function(menuItem, iterFnc){
+            var parent = this.menuItemsByPath[ menuItem.parentPath ];
+            while(parent){
+                iterFnc(parent);
+                parent = this.menuItemsByPath[ parent.parentPath ];
+            }
+        },
+
+        toggleOpened: function(path){
+            var item = this.menuItemsByPath[ path ];
+            if(item) item.opened = !item.opened;
+        },
+
+        navigate: function(pathOrTags){
+            var app = this, path, tags;
+
+            // if no tags or path specified, select default tag
+            if(!pathOrTags) {
+                path = null;
+                tags = ['default'];
+            }
+            else if(Array.isArray(pathOrTags)){
+                path = null;
+                tags = pathOrTags;
+            }
+            else {
+                path = pathOrTags;
+                tags = [pathOrTags];
+            }
+
+            app.loadMenu(function(){
+                var toItem = toItem || app.menuItemsByPath[ path ];
+
+                // try find by tags
+                if(tags) app.iterateMenuItems(function(item){
+                    if(item.tags) for(var i=0;i<item.tags.length;i++){
+                        if(tags.indexOf(item.tags[i]) > -1) {
+                            toItem = item;
+                            return true;
+                        }
+                    }
+                });
+
+                if(!toItem) return;
+                
+                // check location hash if it needs to be updated
+                if(window.location.hash !== toItem.href) {
+                    window.location.hash = toItem.href;
+                    return true;
+                }
+
+                if(app.menuActivePath) app.menuBackPath = app.menuActivePath;
+                app.menuActivePath = toItem.path;
+                app.iterateMenuParents(toItem, function(parentItem){
+                    parentItem.opened = true;
+                });
+                app.loadItemContent(toItem);
+            });
+        },
+
+        fixMdImagesUrl: function(md){
+			var app = this;
+			return (md || '').replace(/(?:!\[(.*?)\]\((.*?)\))/g, function(md, alt, src){
+                if(src[0] === '/') src = app.imageBaseUrl + src;
+                if(alt.indexOf('VIDEO') === 0) {
+                    var autoplay = alt.indexOf('VIDEO-AUTOPLAY') === 0;
+                    alt = alt.replace('VIDEO-AUTOPLAY', '');
+                    var dimensions = alt.split('-');
+                    var style = '';
+                    if(dimensions[1]) style += 'height:'+dimensions[1]+'px;';
+                    if(dimensions[2]) style += 'width:'+dimensions[2]+'px;';
+                    return '<video controls '+(autoplay ? 'autoplay' : '')+' mute loop style="'+style+'"><source src="'+src+'" type="video/mp4"></video>';
+                }
+                else return '!['+alt+'](' + src + ')';
+			});
+        },
+        fixEscapedHtml: function(html){
+            return html.replace(/&amp;nbsp;/g, '&nbsp;');
+        },
+        loadItemContent: function(item, cb){
+            var app = this;
+            if(item.content) return cb ? cb() : null;
+
+            app.$http.get(app.baseUrl + '/documentation/' + item.path + useFileSuffix).then(function(res, status){
+                var converter = new showdown.Converter();
+                item.content = app.fixEscapedHtml( converter.makeHtml( app.fixMdImagesUrl(res.body) ));
+                if(cb) cb();
+            });
+        },
+
+        getFullLocationForPath: function(docItemPath){
+            return '#/documentation/'+ docItemPath;
         }
     },
+
+    computed:{
+        activeItem: function(){
+            if(this.menuActivePath) return this.menuItemsByPath[ this.menuActivePath ];
+        },
+    },
+
     watch: {
         $route: {
             immediate: true,
             handler: function (to, from) {
                 var app = this;
-                app.getSitemapPromise().then(function () {
-                    app.loadPage(to.params[0]);
-                });
+
+                var docPath = to.params[0].slice(1).replace('documentation/','');
+                app.navigate(docPath || 'default');
+
+                // scroll to top
+                window.scrollTo(0,0);
 
                 // for google analytics tracking purpose
-                if (window.onVueRouteChange) window.onVueRouteChange(to, from);
+                if(window.onVueRouteChange) window.onVueRouteChange(to, from);
             }
         }
     }
