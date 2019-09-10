@@ -12,7 +12,7 @@ You can always preview your selected elements by clicking in-between the ```sele
 
 The tooltip shows you the number of selected elements. 
 
-![](/documentation/images/manual-selector-usage.png)
+![](/documentation/images/selectors-usage.png)
 
 
 Also, if you check the HTML source code of the tested app, you will find that each selected element has a **_testissimo-selected_** attribute. 
@@ -29,7 +29,7 @@ Also, if you check the HTML source code of the tested app, you will find that ea
 </a>
 ```
 The tested website will have the selected elements highlighted with an orange border as shown in the picture below:
-![](/documentation/images/testissimo-selected.png)
+![](/documentation/images/selectors-selected.png)
 
 ## Selecting elements manually
 To select an element in Testissimo, type ```select: some-selector```. 
