@@ -62,29 +62,29 @@ new Vue({
             
             var menuItemsByPath = {}, prevItem;
 
-            function createMenuItems(sitemap, parent){
-                sitemap.forEach(function(sItem){
-                    sItem.treeLevel = parent ? parent.treeLevel+1 : 0;
-                    sItem.path = parent ? parent.path + '/' + sItem.id : sItem.id;
-                    sItem.parentPath = parent ? parent.path : '';
-                    sItem.prevPath = prevItem ? prevItem.path : '';
-                    sItem.content = '';
-                    sItem.href = app.getFullLocationForPath(sItem.path);
-                    // sItem.iconCss = app.getItemIconCss(sItem);
-                    if(prevItem) prevItem.nextPath = sItem.path;
-                    sItem.opened = false;
-                    menuItemsByPath[ sItem.path ] = sItem;
-                    if(sItem.treeLevel) prevItem = sItem;
-                    if(sItem.children) createMenuItems(sItem.children, sItem);
+            function createMenuItems(menu, parent){
+                menu.forEach(function(menuItem){
+                    menuItem.treeLevel = parent ? parent.treeLevel+1 : 0;
+                    menuItem.path = parent ? parent.path + '/' + menuItem.id : menuItem.id;
+                    menuItem.parentPath = parent ? parent.path : '';
+                    menuItem.prevPath = prevItem ? prevItem.path : '';
+                    menuItem.content = '';
+                    menuItem.href = app.getFullLocationForPath(menuItem.path);
+                    // menuItem.iconCss = app.getItemIconCss(menuItem);
+                    if(prevItem) prevItem.nextPath = menuItem.path;
+                    menuItem.opened = false;
+                    menuItemsByPath[ menuItem.path ] = menuItem;
+                    if(menuItem.treeLevel) prevItem = menuItem;
+                    if(menuItem.children) createMenuItems(menuItem.children, menuItem);
                 });
 
                 if(!parent) {
-                    app.menu = sitemap;
+                    app.menu = menu;
                     app.menuItemsByPath = menuItemsByPath;
                 }
             }
 
-            app.$http.get(app.baseUrl + '/sitemap.json').then(function(res, status){
+            app.$http.get(app.baseUrl + '/documentation/menu.json').then(function(res, status){
                 createMenuItems(res.body);
                 if(cb) cb();
             });
